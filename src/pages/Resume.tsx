@@ -2,109 +2,85 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Download, MapPin, Mail, Phone, Linkedin, Globe } from "lucide-react";
+import { Download, MapPin, Mail, Phone, Linkedin } from "lucide-react";
 
 const Resume = () => {
   const experience = [
     {
-      title: "Senior UX/UI Designer",
-      company: "Tech Innovation Co.",
-      period: "2022 - Present",
-      location: "San Francisco, CA",
+      title: "Product Designer",
+      company: "UiPath, Bucharest, Romania",
+      period: "JULY 2021 - PRESENT",
       achievements: [
-        "Led design for 3 major product launches resulting in 40% increase in user engagement",
-        "Established design system used across 5 product teams",
-        "Mentored 2 junior designers and conducted user research with 200+ participants"
+        "Leading the design efforts for UiPath's data storage service that brings powerful no-code data modeling and storage capabilities to Robotic Process Automation (RPA) projects.",
+        "Building Studio Web, a tool helping users to create and test enterprise automations by leveraging AI technologies and a high number of third-part apps and service."
       ]
     },
     {
       title: "UX Designer",
-      company: "Digital Solutions Inc.",
-      period: "2021 - 2022",
-      location: "Remote",
+      company: "Lurtis AI, Bucharest, Romania",
+      period: "JAN 2021 - JULY 2021",
       achievements: [
-        "Redesigned core user flows leading to 25% reduction in bounce rate",
-        "Collaborated with engineering teams to implement responsive design solutions",
-        "Created wireframes and prototypes for mobile and web applications"
+        "As a sole UX Designer at Lurtis AI, I helped the development of a buildability estimator.",
+        "Created wireframes and interactive prototypes to visualize design concepts, conducted usability testing, iterated on designs based on user feedback, and proposed a final solution that met accessibility requirements and was aligned with the business goals."
       ]
     },
     {
-      title: "Junior UI Designer",
-      company: "Creative Studio",
-      period: "2020 - 2021",
-      location: "New York, NY",
+      title: "Teaching Assistant",
+      company: "University of Twente, Enschede, Netherlands",
+      period: "NOV 2019 - JULY 2020",
       achievements: [
-        "Designed marketing materials and digital assets for 15+ clients",
-        "Developed brand identity packages for startups",
-        "Maintained design consistency across multiple touchpoints"
+        "As a Teaching Assistant, I mentored students on design thinking methodology and how to apply it."
       ]
     }
   ];
 
   const education = [
     {
-      degree: "Bachelor of Fine Arts in Graphic Design",
-      school: "Art Institute of Design",
-      period: "2016 - 2020",
-      details: "Graduated Summa Cum Laude, Dean's List"
+      degree: "Master's Degree, Accessibility and Inclusive Design",
+      school: "Universidad Politécnica di Madrid, Madrid, Spain",
+      period: "OCT 2015 - JULY 2021"
+    },
+    {
+      degree: "Master's Degree, Human Computer Interaction and Design",
+      school: "University of Twente, Enschede, Netherlands",
+      period: "OCT 2015 - JULY 2021"
+    },
+    {
+      degree: "Bachelor's Degree, Nanotechnology and Optoelectronics",
+      school: "Faculty of Electronics and Telecommunications, Bucharest, Romania",
+      period: "OCT 2015 - JULY 2021"
     }
   ];
 
   const skills = {
-    "Design Tools": ["Figma", "Adobe Creative Suite", "Sketch", "InVision", "Principle"],
-    "Technical Skills": ["HTML/CSS", "JavaScript Basics", "Responsive Design", "Design Systems"],
-    "Soft Skills": ["User Research", "Prototyping", "Team Leadership", "Client Communication"],
-    "Methodologies": ["Design Thinking", "Agile/Scrum", "User-Centered Design", "A/B Testing"]
+    "Skills": ["Product Design", "Design Thinking", "Interaction Design", "Responsive Design", "Product Strategy", "Information Architecture", "Accessibility and Inclusive Design", "Agile Methodology"],
+    "Software": ["Figma", "Miro", "Adobe Photoshop Lightroom"],
+    "Interests": ["AI, Automation", "Digital & Analog photography", "Sports and Health", "Travelling"]
   };
+
+  const conferences = [
+    "Design Matters '24, Tokyo, 2023",
+    "User Experience Lisbon UXLx — Lisbon, 2022"
+  ];
 
   return (
     <div className="pt-16 min-h-screen bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Resume</h1>
-          <p className="text-xl text-muted-foreground mb-8">
-            Download my complete resume or view the highlights below
-          </p>
+          <h1 className="text-4xl font-bold mb-2">Gabriela Mitrana</h1>
+          <p className="text-xl text-muted-foreground mb-2">Product Designer</p>
+          <p className="text-muted-foreground mb-8">Bucharest, Romania</p>
           <Button size="lg" className="group">
             <Download className="mr-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
             Download PDF Resume
           </Button>
         </div>
 
-        {/* Contact Info */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              Contact Information
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Mail className="h-4 w-4" />
-                <span>your.email@example.com</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <MapPin className="h-4 w-4" />
-                <span>San Francisco, CA</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Linkedin className="h-4 w-4" />
-                <span>linkedin.com/in/yourprofile</span>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
         {/* Experience */}
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle>Professional Experience</CardTitle>
+            <CardTitle>Experience</CardTitle>
           </CardHeader>
           <CardContent className="space-y-8">
             {experience.map((job, index) => (
@@ -117,10 +93,6 @@ const Resume = () => {
                   </div>
                   <div className="flex items-center gap-4 text-muted-foreground">
                     <span className="font-medium">{job.company}</span>
-                    <div className="flex items-center gap-1">
-                      <MapPin className="h-3 w-3" />
-                      <span className="text-sm">{job.location}</span>
-                    </div>
                   </div>
                   <ul className="list-disc list-inside space-y-1 text-muted-foreground">
                     {job.achievements.map((achievement, i) => (
@@ -138,27 +110,26 @@ const Resume = () => {
           <CardHeader>
             <CardTitle>Education</CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="space-y-6">
             {education.map((edu, index) => (
               <div key={index} className="space-y-2">
-                <h3 className="text-xl font-semibold">{edu.degree}</h3>
+                <h3 className="text-lg font-semibold">{edu.degree}</h3>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                   <span className="font-medium text-muted-foreground">{edu.school}</span>
                   <Badge variant="outline">{edu.period}</Badge>
                 </div>
-                <p className="text-muted-foreground">{edu.details}</p>
               </div>
             ))}
           </CardContent>
         </Card>
 
-        {/* Skills */}
-        <Card>
+        {/* Skills & Interests */}
+        <Card className="mb-8">
           <CardHeader>
-            <CardTitle>Skills & Expertise</CardTitle>
+            <CardTitle>Skills & Interests</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-1 gap-6">
               {Object.entries(skills).map(([category, skillList]) => (
                 <div key={category} className="space-y-3">
                   <h3 className="font-semibold text-primary">{category}</h3>
@@ -169,6 +140,22 @@ const Resume = () => {
                       </Badge>
                     ))}
                   </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Conferences */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Conferences</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-2">
+              {conferences.map((conference, index) => (
+                <div key={index} className="text-muted-foreground">
+                  {conference}
                 </div>
               ))}
             </div>
