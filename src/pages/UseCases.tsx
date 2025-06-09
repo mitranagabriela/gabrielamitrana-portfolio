@@ -7,12 +7,13 @@ import { ExternalLink, Github } from "lucide-react";
 const UseCases = () => {
   const projects = [
     {
-      title: "E-commerce Mobile App Redesign",
-      description: "Complete redesign of a mobile shopping app focusing on user experience and conversion optimization.",
+      title: "First Run Experience",
+      description: "Redesigned the onboarding flow for a fintech mobile app to improve user activation and reduce drop-off rates during the initial setup process.",
       image: "/placeholder.svg",
-      tags: ["Mobile Design", "UX Research", "Prototyping"],
+      tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
       status: "Completed",
-      results: "35% increase in conversion rate"
+      results: "Reduced onboarding drop-off by 40%",
+      link: "https://gmitrana.myportfolio.com/first-run-experience"
     },
     {
       title: "SaaS Dashboard Design System",
@@ -80,10 +81,19 @@ const UseCases = () => {
                 </div>
                 
                 <div className="flex gap-2">
-                  <Button variant="outline" size="sm" className="flex-1">
-                    <ExternalLink className="mr-2 h-3 w-3" />
-                    View Case Study
-                  </Button>
+                  {project.link ? (
+                    <Button variant="outline" size="sm" className="flex-1" asChild>
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-3 w-3" />
+                        View Case Study
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button variant="outline" size="sm" className="flex-1">
+                      <ExternalLink className="mr-2 h-3 w-3" />
+                      View Case Study
+                    </Button>
+                  )}
                   <Button variant="outline" size="sm" className="flex-1">
                     <Github className="mr-2 h-3 w-3" />
                     Live Project
