@@ -20,20 +20,20 @@ const Index = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-accent/20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-accent/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                   Hi, I'm{" "}
-                  <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                    Your Designer
+                  <span className="bg-gradient-to-r from-primary via-primary/80 to-accent bg-clip-text text-transparent">
+                    Gabriela
                   </span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  A passionate UX/UI designer crafting digital experiences that delight users and drive business results. 
-                  I transform complex problems into elegant, user-centered solutions.
+                  A passionate Product Designer crafting digital experiences that delight users and drive business results. 
+                  I transform complex problems into elegant, user-centered solutions through thoughtful design and research.
                 </p>
               </div>
               
@@ -62,27 +62,31 @@ const Index = () => {
             </div>
 
             <div className="relative">
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-purple-600/20 p-8">
-                <div className="w-full h-full rounded-xl bg-gradient-to-br from-background to-accent flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-purple-600 mx-auto"></div>
-                    <p className="text-muted-foreground">Professional Photo</p>
-                  </div>
+              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/10 via-accent/20 to-primary/5 p-6">
+                <div className="w-full h-full rounded-xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="/lovable-uploads/93e2f568-37e5-4945-b324-c2f4ae322055.png" 
+                    alt="Gabriela Mitrana - Product Designer"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-xl"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-accent/20 rounded-full blur-2xl"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-accent/5">
+      <section className="py-16 bg-gradient-to-r from-accent/5 to-primary/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             {stats.map((stat) => {
               const Icon = stat.icon;
               return (
-                <Card key={stat.label} className="text-center p-6 hover:shadow-lg transition-shadow duration-300">
+                <Card key={stat.label} className="text-center p-6 hover:shadow-lg transition-all duration-300 border-0 bg-card/50 backdrop-blur-sm">
                   <CardContent className="space-y-4">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
                       <Icon className="h-6 w-6 text-primary" />
@@ -106,19 +110,20 @@ const Index = () => {
             <h2 className="text-3xl lg:text-4xl font-bold">About Me</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                I'm a dedicated designer with a passion for creating meaningful digital experiences. 
-                My approach combines user-centered design principles with business objectives to deliver 
-                solutions that not only look beautiful but also drive results.
+                I'm a dedicated Product Designer with a passion for creating meaningful digital experiences that bridge 
+                user needs with business objectives. Currently leading design efforts at UiPath, I specialize in 
+                building intuitive tools for enterprise automation and data management.
               </p>
               <p>
-                With expertise in both UX research and UI design, I bridge the gap between user needs 
-                and business goals. I believe great design is invisible – it just works.
+                With expertise spanning UX research, interaction design, and accessibility, I believe great design 
+                should be both beautiful and functional. My approach combines data-driven insights with empathetic 
+                design thinking to create solutions that truly make a difference.
               </p>
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
               {skills.map((skill) => (
-                <Badge key={skill} variant="outline" className="py-2 justify-center">
+                <Badge key={skill} variant="outline" className="py-2 justify-center hover:bg-accent/20 transition-colors">
                   {skill}
                 </Badge>
               ))}
