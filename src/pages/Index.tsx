@@ -115,14 +115,6 @@ const Index = () => {
                 and business goals. I believe great design is invisible – it just works.
               </p>
             </div>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
-              {skills.map((skill) => (
-                <Badge key={skill} variant="outline" className="py-2 justify-center">
-                  {skill}
-                </Badge>
-              ))}
-            </div>
           </div>
         </div>
       </section>
