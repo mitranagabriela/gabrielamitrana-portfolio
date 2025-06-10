@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const UseCases = () => {
   const projects = [
@@ -13,7 +14,8 @@ const UseCases = () => {
       tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
       status: "Completed",
       results: "Reduced onboarding drop-off by 40%",
-      link: "https://gmitrana.myportfolio.com/first-run-experience"
+      caseStudyPath: "/case-studies/first-run-experience",
+      externalLink: "https://gmitrana.myportfolio.com/first-run-experience"
     },
     {
       title: "SaaS Dashboard Design System",
@@ -21,7 +23,8 @@ const UseCases = () => {
       image: "/placeholder.svg",
       tags: ["Design Systems", "B2B", "Web Design"],
       status: "Completed",
-      results: "50% faster development time"
+      results: "50% faster development time",
+      caseStudyPath: "/case-studies/saas-dashboard"
     },
     {
       title: "Healthcare App UX Study",
@@ -29,7 +32,8 @@ const UseCases = () => {
       image: "/placeholder.svg",
       tags: ["Healthcare", "Accessibility", "User Research"],
       status: "In Progress",
-      results: "Improved accessibility score by 40%"
+      results: "Improved accessibility score by 40%",
+      caseStudyPath: "/case-studies/healthcare-app"
     }
   ];
 
@@ -81,23 +85,20 @@ const UseCases = () => {
                 </div>
                 
                 <div className="flex gap-2">
-                  {project.link ? (
-                    <Button variant="outline" size="sm" className="flex-1" asChild>
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="mr-2 h-3 w-3" />
-                        View Case Study
-                      </a>
-                    </Button>
-                  ) : (
-                    <Button variant="outline" size="sm" className="flex-1">
+                  <Button variant="outline" size="sm" className="flex-1" asChild>
+                    <Link to={project.caseStudyPath}>
                       <ExternalLink className="mr-2 h-3 w-3" />
                       View Case Study
+                    </Link>
+                  </Button>
+                  {project.externalLink && (
+                    <Button variant="outline" size="sm" className="flex-1" asChild>
+                      <a href={project.externalLink} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-2 h-3 w-3" />
+                        External Link
+                      </a>
                     </Button>
                   )}
-                  <Button variant="outline" size="sm" className="flex-1">
-                    <Github className="mr-2 h-3 w-3" />
-                    Live Project
-                  </Button>
                 </div>
               </CardContent>
             </Card>
