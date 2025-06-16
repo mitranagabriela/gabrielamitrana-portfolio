@@ -84,6 +84,13 @@ const FirstRunExperience = () => {
           <p className="text-muted-foreground leading-relaxed">
             We also introduced a guided experience to teach first-time users about the automation building process, providing coachmarks and celebrating their milestones (such as publishing the first automation).
           </p>
+          <div className="w-full">
+            <img 
+              src="/lovable-uploads/6732cbe8-1ea1-42b5-9c3c-e4a4434ebe66.png" 
+              alt="UiPath Studio guided experience showing step-by-step automation building process with modal dialogs and configuration screens"
+              className="w-full rounded-lg"
+            />
+          </div>
         </div>
       )
     },
