@@ -1,5 +1,4 @@
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -51,18 +50,16 @@ export const CaseStudyLayout = ({ title, subtitle, tags, heroContent, sections }
         {/* Sections */}
         <div className="space-y-12">
           {sections.map((section, index) => (
-            <Card key={index}>
-              <CardHeader>
-                <CardTitle className="text-2xl">{section.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <div key={index} className="space-y-4">
+              <h2 className="text-2xl font-semibold">{section.title}</h2>
+              <div>
                 {typeof section.content === 'string' ? (
                   <p className="text-muted-foreground leading-relaxed">{section.content}</p>
                 ) : (
                   section.content
                 )}
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>
