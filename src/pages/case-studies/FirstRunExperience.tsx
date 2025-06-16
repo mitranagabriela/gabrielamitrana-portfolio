@@ -32,7 +32,7 @@ const FirstRunExperience = () => {
               <img 
                 src="/lovable-uploads/04643767-84b8-446f-96fc-408c816fb371.png" 
                 alt="Design process flow showing discovery, story mapping, feature flows, sketch & design, evaluate, design specs, and implement phases"
-                className="w-full rounded-lg shadow-lg"
+                className="w-full rounded-lg"
               />
             </div>
           </div>
@@ -50,7 +50,7 @@ const FirstRunExperience = () => {
             <img 
               src="/lovable-uploads/6f841456-1b56-4de9-8765-e03a19dcf88d.png" 
               alt="UiPath Studio templates page showing various automation templates like Data Entry, Lead Generation, Sales Order Processing, and Document Processing"
-              className="w-full rounded-lg shadow-lg"
+              className="w-full rounded-lg"
             />
           </div>
           <p className="text-muted-foreground leading-relaxed">
@@ -78,7 +78,7 @@ const FirstRunExperience = () => {
             <img 
               src="/lovable-uploads/5189f751-d4e2-4f0f-808e-f4c32257f16f.png" 
               alt="Get started with UiPath Studio screen showing application selection interface with various apps like Google Sheets, Excel, Gmail, Outlook, and others"
-              className="w-full rounded-lg shadow-lg"
+              className="w-full rounded-lg"
             />
           </div>
           <p className="text-muted-foreground leading-relaxed">
@@ -98,7 +98,7 @@ const FirstRunExperience = () => {
             <img 
               src="/lovable-uploads/efa0e2a5-7d22-4167-8626-99774a3e538a.png" 
               alt="Template configuration screens showing step-by-step setup process with modal dialogs for trigger configuration and activity setup"
-              className="w-full rounded-lg shadow-lg"
+              className="w-full rounded-lg"
             />
           </div>
           <p className="text-muted-foreground leading-relaxed">
@@ -108,7 +108,7 @@ const FirstRunExperience = () => {
             <img 
               src="/lovable-uploads/54c95bca-99b8-406a-a275-2fb81b4366b3.png" 
               alt="Template customization interface showing the 'Generate expense report' template with configuration options for Outlook and Google Drive connections"
-              className="w-full rounded-lg shadow-lg"
+              className="w-full rounded-lg"
             />
           </div>
         </div>
