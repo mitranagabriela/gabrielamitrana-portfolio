@@ -6,47 +6,86 @@ const FirstRunExperience = () => {
     <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
       <div className="text-center p-8">
         <div className="w-32 h-32 rounded-lg bg-gradient-to-br from-primary to-purple-600 mx-auto mb-4"></div>
-        <p className="text-muted-foreground">First Run Experience Preview</p>
+        <p className="text-muted-foreground">Getting Started with Studio Web</p>
       </div>
     </div>
   );
 
   const sections = [
     {
-      title: "My Role",
-      content: "As the lead UX/UI designer, I was responsible for redesigning the entire onboarding flow for a fintech mobile application. I worked closely with product managers, developers, and stakeholders to create a seamless first-time user experience that would reduce drop-off rates and improve user activation."
-    },
-    {
       title: "Challenge",
-      content: "The existing onboarding process had a 60% drop-off rate during the initial setup. Users were abandoning the app before completing the registration process due to a complex and lengthy onboarding flow. The challenge was to simplify the process while still collecting necessary information for compliance and personalization."
+      content: "Our enterprise users have specific expectations when engaging with Cloud products, set by their daily interactions with tools like Slack, Zoom, and Atlassian. These products are approachable, easy to try out and require minimal effort to adopt. For successful adoption, Studio Web — UiPath's latest product for building automations — must enable users to start using it right away and understand its value from Day 1."
     },
     {
-      title: "Design Process",
-      content: "I followed a user-centered design approach that included user research, competitive analysis, wireframing, prototyping, and usability testing. The process was iterative, with multiple rounds of testing and refinement based on user feedback and stakeholder input."
+      title: "The Design Process",
+      content: (
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-lg font-semibold mb-3">Discovery</h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              This challenge was part of a broader platform initiative aimed at defining our Cloud strategy for onboarding new users. To align on our mission, we organized a design sprint with multiple stakeholders, including PMs, engineers, designers, and automation developers. During the sprint, we engaged in various exercises such as Crazy 8's, story mapping, and diagramming to generate ideas and sketch the user flow.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              By the end of the design sprint, each team was tasked with taking the general approach, particularize it and implement it within their specific products.
+            </p>
+          </div>
+        </div>
+      )
     },
     {
-      title: "Ideation",
-      content: "Through brainstorming sessions and design workshops, we explored various approaches including progressive disclosure, micro-interactions, and gamification elements. We focused on breaking down the complex process into digestible steps while maintaining user engagement throughout the journey."
+      title: "The Solution",
+      content: (
+        <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            I was the owner for driving the Studio Web design efforts. The solution centered around the creation and utilization of templates. These templates would serve as reusable building blocks, designed to address common automation scenarios and showcase the best practices of our platform.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Each template needed to provide a clear description and an easy mechanism for users to customize it. To achieve this, I created a dedicated template configuration page. This page allows users to:
+          </p>
+          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-1">
+            <li>See the template details: description, author, number of usages, and applications used.</li>
+            <li>Customize the template: provide user credentials and fill in any mandatory data if needed.</li>
+          </ul>
+        </div>
+      )
     },
     {
-      title: "Solution",
-      content: "The final solution featured a 3-step onboarding process with clear progress indicators, contextual help, and optional advanced settings. We implemented smart defaults, reduced form fields by 50%, and added visual cues to guide users through each step. The design emphasized trust and security while maintaining a friendly, approachable tone."
+      title: "Responsiveness",
+      content: "Incorporating responsive design meant our templates had to be adaptable, allowing users to fully engage with the content regardless of their screen size. This involved researching the most common screen resolutions and defining breakpoints to ensure the design could seamlessly adjust to various screen sizes."
     },
     {
-      title: "Research",
-      content: "I conducted user interviews with 20 potential users, analyzed competitor onboarding flows, and performed usability testing with interactive prototypes. The research revealed that users valued transparency, speed, and clear explanations of why information was needed."
+      title: "Profiling & Walkthrough Guide",
+      content: (
+        <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            To provide a tailored experience, we needed a way to recommend templates suited to users' specific needs. We introduced a profiling mechanism that asks users about their department and the applications they use in their daily routine. This allowed us to offer more relevant and useful templates, enhancing the overall user experience.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            We also introduced a guided experience to teach first-time users about the automation building process, providing coachmarks and celebrating their milestones (such as publishing the first automation).
+          </p>
+        </div>
+      )
     },
     {
-      title: "Impact",
-      content: "The redesigned onboarding flow resulted in a 40% reduction in drop-off rates, increasing user activation from 40% to 80%. Time to complete onboarding decreased from an average of 12 minutes to 4 minutes. Post-launch surveys showed a 35% improvement in user satisfaction scores for the initial experience."
+      title: "Hiding Complexity",
+      content: (
+        <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            After multiple rounds of usability testing, we discovered user preferred minimal configuration and favored seeing how the automation works directly on the canvas. Participants also valued clear and concise titles and descriptions that accurately conveyed each template's purpose.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            As a result, we adopted a minimal design that only showcases the essential information. Advanced configuration is handled behind the scenes.
+          </p>
+        </div>
+      )
     }
   ];
 
   return (
     <CaseStudyLayout
-      title="First Run Experience"
-      subtitle="Redesigning the onboarding flow for a fintech mobile app to improve user activation and reduce drop-off rates"
-      tags={["Mobile Design", "UX Research", "Fintech", "Onboarding"]}
+      title="Getting Started with Studio Web"
+      subtitle="Designing an intuitive onboarding experience for UiPath's automation platform to enable enterprise users to understand and adopt the product from Day 1"
+      tags={["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform", "Templates"]}
       heroContent={heroContent}
       sections={sections}
     />
