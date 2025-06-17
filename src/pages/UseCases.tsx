@@ -79,10 +79,7 @@ const UseCases = () => {
                     </Link>
                   </Button>
                   {project.externalLink && <Button variant="outline" size="sm" className="flex-1" asChild>
-                      <a href={project.externalLink} target="_blank" rel="noopener noreferrer">
-                        <Github className="mr-2 h-3 w-3" />
-                        External Link
-                      </a>
+                      
                     </Button>}
                 </div>
               </CardContent>
