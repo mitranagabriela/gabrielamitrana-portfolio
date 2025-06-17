@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const UseCases = () => {
   const projects = [{
     title: "First Run Experience",
-    description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates.",
+    description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates",
     image: "/placeholder.svg",
     tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
     status: "Completed",
@@ -67,12 +67,6 @@ const UseCases = () => {
               </CardHeader>
               
               <CardContent className="space-y-4">
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary">{tag}</Badge>
-                  ))}
-                </div>
-                
                 <div className="p-3 bg-accent/50 rounded-lg">
                   <p className="text-sm font-medium text-primary">Key Result:</p>
                   <p className="text-sm text-muted-foreground">{project.results}</p>
@@ -107,12 +101,6 @@ const UseCases = () => {
               I'm currently working on several exciting projects that will be added to this portfolio. 
               Check back soon for detailed case studies, process documentation, and project outcomes.
             </p>
-            <div className="flex flex-wrap justify-center gap-2 mt-6">
-              <Badge variant="secondary">Design System</Badge>
-              <Badge variant="secondary">Mobile App</Badge>
-              <Badge variant="secondary">Web Platform</Badge>
-              <Badge variant="secondary">Branding</Badge>
-            </div>
           </CardContent>
         </Card>
       </div>

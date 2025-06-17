@@ -1,5 +1,4 @@
 
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -39,11 +38,6 @@ export const CaseStudyLayout = ({
         <div className="mb-12">
           <h1 className="text-4xl font-bold mb-4">{title}</h1>
           <p className="text-xl text-muted-foreground mb-6">{subtitle}</p>
-          <div className="flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <Badge key={tag} variant="secondary">{tag}</Badge>
-            ))}
-          </div>
         </div>
 
         {/* Hero Content */}
