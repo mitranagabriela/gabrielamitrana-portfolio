@@ -1,14 +1,11 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-
 interface CaseStudySection {
   title: string;
   content: string | React.ReactNode;
 }
-
 interface CaseStudyLayoutProps {
   title: string;
   subtitle: string;
@@ -16,10 +13,14 @@ interface CaseStudyLayoutProps {
   heroContent: React.ReactNode;
   sections: CaseStudySection[];
 }
-
-export const CaseStudyLayout = ({ title, subtitle, tags, heroContent, sections }: CaseStudyLayoutProps) => {
-  return (
-    <div className="pt-16 min-h-screen bg-background">
+export const CaseStudyLayout = ({
+  title,
+  subtitle,
+  tags,
+  heroContent,
+  sections
+}: CaseStudyLayoutProps) => {
+  return <div className="pt-16 min-h-screen bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Back Button */}
         <Button variant="ghost" className="mb-8" asChild>
@@ -34,11 +35,7 @@ export const CaseStudyLayout = ({ title, subtitle, tags, heroContent, sections }
           <h1 className="text-4xl font-bold mb-4">{title}</h1>
           <p className="text-xl text-muted-foreground mb-6">{subtitle}</p>
           <div className="flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <Badge key={tag} variant="outline">
-                {tag}
-              </Badge>
-            ))}
+            {tags.map(tag => {})}
           </div>
         </div>
 
@@ -49,20 +46,13 @@ export const CaseStudyLayout = ({ title, subtitle, tags, heroContent, sections }
 
         {/* Sections */}
         <div className="space-y-12">
-          {sections.map((section, index) => (
-            <div key={index} className="space-y-4">
+          {sections.map((section, index) => <div key={index} className="space-y-4">
               <h2 className="text-2xl font-semibold">{section.title}</h2>
               <div>
-                {typeof section.content === 'string' ? (
-                  <p className="text-muted-foreground leading-relaxed">{section.content}</p>
-                ) : (
-                  section.content
-                )}
+                {typeof section.content === 'string' ? <p className="text-muted-foreground leading-relaxed">{section.content}</p> : section.content}
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
