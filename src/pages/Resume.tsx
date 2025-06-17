@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -11,8 +10,9 @@ const Resume = () => {
       company: "UiPath, Bucharest, Romania",
       period: "JULY 2021 - PRESENT",
       achievements: [
-        "Leading the design efforts for UiPath's data storage service that brings powerful no-code data modeling and storage capabilities to Robotic Process Automation (RPA) projects.",
-        "Building Studio Web, a tool helping users to create and test enterprise automations by leveraging AI technologies and a high number of third-part apps and service."
+        "Currently - designing how AI agents are built, deployed, and monitored.",
+        "Led the design of UiPath's data storage service, enabling robust, no-code data modeling and storage for RPA projects—streamlining how businesses manage and leverage data in automation workflows.",
+        "Built Studio Web from the ground up—a powerful, web-based platform for designing, optimizing, and automating business processes at scale."
       ]
     },
     {
