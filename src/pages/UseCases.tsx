@@ -1,10 +1,8 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const UseCases = () => {
   const projects = [{
     title: "First Run Experience",
@@ -32,9 +30,7 @@ const UseCases = () => {
     results: "Improved accessibility score by 40%",
     caseStudyPath: "/case-studies/healthcare-app"
   }];
-
-  return (
-    <div className="pt-16 min-h-screen bg-background">
+  return <div className="pt-16 min-h-screen bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="text-center mb-12">
@@ -47,8 +43,7 @@ const UseCases = () => {
 
         {/* Projects Grid */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          {projects.map((project, index) => <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="w-24 h-24 rounded-lg bg-gradient-to-br from-primary to-purple-600 mx-auto mb-4"></div>
@@ -79,18 +74,12 @@ const UseCases = () => {
                       View Case Study
                     </Link>
                   </Button>
-                  {project.externalLink && (
-                    <Button variant="outline" size="sm" className="flex-1" asChild>
-                      <a href={project.externalLink} target="_blank" rel="noopener noreferrer">
-                        <Github className="mr-2 h-3 w-3" />
-                        External Link
-                      </a>
-                    </Button>
-                  )}
+                  {project.externalLink && <Button variant="outline" size="sm" className="flex-1" asChild>
+                      
+                    </Button>}
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Coming Soon Section */}
@@ -104,8 +93,6 @@ const UseCases = () => {
           </CardContent>
         </Card>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default UseCases;
