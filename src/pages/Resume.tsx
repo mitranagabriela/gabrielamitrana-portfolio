@@ -20,8 +20,7 @@ const Resume = () => {
       company: "Lurtis AI, Bucharest, Romania",
       period: "JAN 2021 - JULY 2021",
       achievements: [
-        "As a sole UX Designer at Lurtis AI, I helped the development of a buildability estimator.",
-        "Created wireframes and interactive prototypes to visualize design concepts, conducted usability testing, iterated on designs based on user feedback, and proposed a final solution that met accessibility requirements and was aligned with the business goals."
+        "As the sole Product Designer at Lurtis AI, I led the design of an AI buildability estimator. I created wireframes and interactive prototypes, conducted usability testing, iterated based on feedback, and delivered an accessible solution aligned with business goals."
       ]
     },
     {
