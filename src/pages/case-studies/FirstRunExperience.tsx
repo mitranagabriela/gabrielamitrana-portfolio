@@ -68,7 +68,7 @@ const FirstRunExperience = () => {
             After multiple rounds of usability testing, we discovered user preferred minimal configuration and favored seeing how the automation works directly on the canvas. Participants also valued clear and concise titles and descriptions that accurately conveyed each template's purpose.
           </p>
           <div className="w-full">
-            <img src="/lovable-uploads/efa0e2a5-7d22-4167-8626-99774a3e538a.png" alt="Template configuration screens showing step-by-step setup process with modal dialogs for trigger configuration and activity setup" className="w-full rounded-lg" />
+            
           </div>
           <p className="text-muted-foreground leading-relaxed">
             As a result, we adopted a minimal design that only showcases the essential information. Advanced configuration is handled behind the scenes.
