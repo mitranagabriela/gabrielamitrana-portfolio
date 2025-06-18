@@ -58,6 +58,7 @@ const Resume = () => {
   };
 
   const conferences = [
+    "Figma Config 2025 | San Francisco",
     "Design Matters '24, Tokyo, 2023",
     "User Experience Lisbon UXLx — Lisbon, 2022"
   ];
