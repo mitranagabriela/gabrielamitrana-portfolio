@@ -13,7 +13,7 @@ const Index = () => {
   const stats = [
     { icon: Eye, label: "Projects Completed", value: "50+" },
     { icon: Users, label: "Happy Clients", value: "25+" },
-    { icon: Award, label: "Years Experience", value: "3+" },
+    { icon: Award, label: "Years Experience", value: "4+" },
   ];
 
   return (
