@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 const Contact = () => {
@@ -67,7 +68,7 @@ const Contact = () => {
                 <div className="pt-4">
                   <p className="text-sm text-muted-foreground">
                     <strong>Best times to reach me:</strong><br />
-                    Monday - Friday, 9 AM - 6 PM PST
+                    Monday - Friday, 9 AM - 6 PM EEST
                   </p>
                 </div>
               </div>
