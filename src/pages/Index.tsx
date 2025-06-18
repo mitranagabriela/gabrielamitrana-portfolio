@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -63,11 +62,12 @@ const Index = () => {
 
             <div className="relative">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-purple-600/20 p-8">
-                <div className="w-full h-full rounded-xl bg-gradient-to-br from-background to-accent flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-purple-600 mx-auto"></div>
-                    <p className="text-muted-foreground">Professional Photo</p>
-                  </div>
+                <div className="w-full h-full rounded-xl overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/79f69057-22b9-4a99-b407-027f7b628e54.png" 
+                    alt="Gabriela Mitrana - Product Designer"
+                    className="w-full h-full object-cover grayscale"
+                  />
                 </div>
               </div>
             </div>
