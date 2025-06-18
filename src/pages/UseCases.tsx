@@ -5,15 +5,6 @@ import { ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 const UseCases = () => {
   const projects = [{
-    title: "First Run Experience",
-    description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates",
-    image: "/placeholder.svg",
-    tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
-    status: "Completed",
-    results: "Reduced onboarding drop-off by 40%",
-    caseStudyPath: "/case-studies/first-run-experience",
-    externalLink: "https://gmitrana.myportfolio.com/first-run-experience"
-  }, {
     title: "SaaS Dashboard Design System",
     description: "Created a comprehensive design system for a B2B software platform used by 10,000+ users.",
     image: "/placeholder.svg",
@@ -29,7 +20,17 @@ const UseCases = () => {
     status: "In Progress",
     results: "Improved accessibility score by 40%",
     caseStudyPath: "/case-studies/healthcare-app"
+  }, {
+    title: "First Run Experience",
+    description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates",
+    image: "/placeholder.svg",
+    tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
+    status: "Completed",
+    results: "Reduced onboarding drop-off by 40%",
+    caseStudyPath: "/case-studies/first-run-experience",
+    externalLink: "https://gmitrana.myportfolio.com/first-run-experience"
   }];
+  
   return <div className="pt-16 min-h-screen bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
@@ -75,7 +76,10 @@ const UseCases = () => {
                     </Link>
                   </Button>
                   {project.externalLink && <Button variant="outline" size="sm" className="flex-1" asChild>
-                      
+                      <a href={project.externalLink} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-2 h-3 w-3" />
+                        External Link
+                      </a>
                     </Button>}
                 </div>
               </CardContent>
