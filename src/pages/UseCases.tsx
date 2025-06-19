@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const UseCases = () => {
@@ -29,8 +29,7 @@ const UseCases = () => {
     tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
     status: "Completed",
     results: "Reduced onboarding drop-off by 40%",
-    caseStudyPath: "/case-studies/first-run-experience",
-    externalLink: "https://gmitrana.myportfolio.com/first-run-experience"
+    caseStudyPath: "/case-studies/first-run-experience"
   }];
   
   return <div className="pt-16 min-h-screen bg-background">
@@ -77,12 +76,6 @@ const UseCases = () => {
                       View Case Study
                     </Link>
                   </Button>
-                  {project.externalLink && <Button variant="outline" size="sm" className="flex-1" asChild>
-                      <a href={project.externalLink} target="_blank" rel="noopener noreferrer">
-                        <Github className="mr-2 h-3 w-3" />
-                        External Link
-                      </a>
-                    </Button>}
                 </div>
               </CardContent>
             </Card>)}
