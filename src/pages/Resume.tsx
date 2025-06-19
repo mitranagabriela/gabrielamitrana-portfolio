@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -24,11 +25,11 @@ const Resume = () => {
       ]
     },
     {
-      title: "Teaching Assistant",
-      company: "University of Twente, Enschede, Netherlands",
-      period: "NOV 2019 - JULY 2020",
+      title: "Digital Verification Engineer",
+      company: "Infineon Technologies",
+      period: "JUN 2018 - SEP 2019",
       achievements: [
-        "As a Teaching Assistant, I mentored students on design thinking methodology and how to apply it."
+        "Specialized in verifying complex automotive digital designs, with a focus on functional accuracy and safety compliance."
       ]
     }
   ];
