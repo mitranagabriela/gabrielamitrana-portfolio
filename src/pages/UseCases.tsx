@@ -1,8 +1,10 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
+
 const UseCases = () => {
   const projects = [{
     title: "SaaS Dashboard Design System",
@@ -17,7 +19,7 @@ const UseCases = () => {
     description: "User research and interface design for a telemedicine application targeting elderly users.",
     image: "/placeholder.svg",
     tags: ["Healthcare", "Accessibility", "User Research"],
-    status: "In Progress",
+    status: "Completed",
     results: "Improved accessibility score by 40%",
     caseStudyPath: "/case-studies/healthcare-app"
   }, {
@@ -99,4 +101,5 @@ const UseCases = () => {
       </div>
     </div>;
 };
+
 export default UseCases;
