@@ -96,12 +96,12 @@ const LurtisAIBuildabilityEstimator = () => {
               <li>Job-related best practices</li>
               <li>Desired features in a new tool</li>
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-3">
+            <p className="text-muted-foreground leading-relaxed mt-3 py-[3px]">
               I followed up with 1:1 interviews to gain deeper qualitative insights. These revealed recurring pain points:
             </p>
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
               
-              <li>Difficulty in aggregating data from multiple sources</li>
+              <li className="py-0">Difficulty in aggregating data from multiple sources</li>
               <li>Manual checking of regulations</li>
               <li>Update artefacts and sync work with other colleagues</li>
             </ul>
