@@ -1,15 +1,49 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
+
 const FirstRunExperience = () => {
-  const heroContent = <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
+  const heroContent = (
+    <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
       <div className="text-center p-8">
         <div className="w-32 h-32 rounded-lg bg-gradient-to-br from-primary to-purple-600 mx-auto mb-4"></div>
         <p className="text-muted-foreground">Getting Started with Studio Web</p>
       </div>
-    </div>;
-  const sections = [{
-    title: "Challenge",
-    content: "Our enterprise users have specific expectations when engaging with Cloud products, set by their daily interactions with tools like Slack, Zoom, and Atlassian. These products are approachable, easy to try out and require minimal effort to adopt. For successful adoption, Studio Web — UiPath's latest product for building automations — must enable users to start using it right away and understand its value from Day 1."
-  }, {
+    </div>
+  );
+
+  const sections = [
+    {
+      title: "Project Overview",
+      content: (
+        <div className="space-y-6">
+          <p className="text-muted-foreground leading-relaxed">
+            Studio Web is UiPath's latest cloud-based automation platform designed to democratize automation building for enterprise users. The challenge was to create an intuitive onboarding experience that would enable users to understand and adopt the product from Day 1, matching the ease-of-use expectations set by popular enterprise tools.
+          </p>
+          <div className="grid md:grid-cols-2 gap-4 mt-6">
+            <div className="p-4 bg-accent/50 rounded-lg">
+              <p className="font-semibold text-primary">Status:</p>
+              <p className="text-muted-foreground">Project completed and delivered</p>
+            </div>
+            <div className="p-4 bg-accent/50 rounded-lg">
+              <p className="font-semibold text-primary">Timeline:</p>
+              <p className="text-muted-foreground">6 months</p>
+            </div>
+            <div className="p-4 bg-accent/50 rounded-lg">
+              <p className="font-semibold text-primary">Role:</p>
+              <p className="text-muted-foreground">Lead UX Designer</p>
+            </div>
+            <div className="p-4 bg-accent/50 rounded-lg">
+              <p className="font-semibold text-primary">Collaborators:</p>
+              <p className="text-muted-foreground">PMs, Engineers, Designers, Automation Developers</p>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Challenge",
+      content: "Our enterprise users have specific expectations when engaging with Cloud products, set by their daily interactions with tools like Slack, Zoom, and Atlassian. These products are approachable, easy to try out and require minimal effort to adopt. For successful adoption, Studio Web — UiPath's latest product for building automations — must enable users to start using it right away and understand its value from Day 1."
+    },
+    {
     title: "The Design Process",
     content: <div className="space-y-6">
           <div>
@@ -78,6 +112,16 @@ const FirstRunExperience = () => {
           </div>
         </div>
   }];
-  return <CaseStudyLayout title="Getting Started with Studio Web" subtitle="Designing an intuitive onboarding experience for UiPath's automation platform to enable enterprise users to understand and adopt the product from Day 1" tags={["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform", "Templates"]} heroContent={heroContent} sections={sections} />;
+
+  return (
+    <CaseStudyLayout
+      title="Getting Started with Studio Web"
+      subtitle="Designing an intuitive onboarding experience for UiPath's automation platform to enable enterprise users to understand and adopt the product from Day 1"
+      tags={["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform", "Templates"]}
+      heroContent={heroContent}
+      sections={sections}
+    />
+  );
 };
+
 export default FirstRunExperience;
