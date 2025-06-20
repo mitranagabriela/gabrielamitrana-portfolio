@@ -22,7 +22,7 @@ const LurtisAIBuildabilityEstimator = () => {
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Team:</p>
-              <p className="text-muted-foreground">[Mention roles if relevant, e.g., data scientists, real estate consultants]</p>
+              <p className="text-muted-foreground">1 PM, 2 engineers, 3 architects</p>
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Tools:</p>
