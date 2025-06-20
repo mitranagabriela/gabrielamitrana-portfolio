@@ -107,9 +107,7 @@ const RevampDataService = () => {
             <li>Inline schema editing.</li>
             <li>One-click sync and validation.</li>
           </ul>
-          <p className="text-muted-foreground leading-relaxed mt-4">
-            This design significantly reduced task time and improved cognitive flow—especially for new developers unfamiliar with the broader platform.
-          </p>
+          
         </div>
   }, {
     title: "Results",
