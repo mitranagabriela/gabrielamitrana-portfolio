@@ -3,21 +3,22 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { ArrowRight, Download, Eye, Users, Award } from "lucide-react";
-
 const Index = () => {
-  const skills = [
-    "UI/UX Design", "Figma", "Adobe Creative Suite", "Prototyping", 
-    "User Research", "Design Systems", "Responsive Design", "Branding"
-  ];
-
-  const stats = [
-    { icon: Eye, label: "Projects Completed", value: "50+" },
-    { icon: Users, label: "Happy Clients", value: "25+" },
-    { icon: Award, label: "Years Experience", value: "4+" },
-  ];
-
-  return (
-    <div className="pt-16">
+  const skills = ["UI/UX Design", "Figma", "Adobe Creative Suite", "Prototyping", "User Research", "Design Systems", "Responsive Design", "Branding"];
+  const stats = [{
+    icon: Eye,
+    label: "Projects Completed",
+    value: "50+"
+  }, {
+    icon: Users,
+    label: "Happy Clients",
+    value: "25+"
+  }, {
+    icon: Award,
+    label: "Years Experience",
+    value: "4+"
+  }];
+  return <div className="pt-16">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-accent/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
@@ -30,18 +31,13 @@ const Index = () => {
                     Gabriela Mitrana
                   </span>
                 </h1>
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  A passionate UX/UI designer crafting digital experiences that delight users and drive business results. 
-                  I transform complex problems into elegant, user-centered solutions.
-                </p>
+                <p className="text-xl text-muted-foreground leading-relaxed">Product designer with a focus on human-centered design, helping people save time, while offering a smooth experience in the process.</p>
               </div>
               
               <div className="flex flex-wrap gap-2">
-                {skills.slice(0, 4).map((skill) => (
-                  <Badge key={skill} variant="secondary" className="text-sm py-1">
+                {skills.slice(0, 4).map(skill => <Badge key={skill} variant="secondary" className="text-sm py-1">
                     {skill}
-                  </Badge>
-                ))}
+                  </Badge>)}
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -63,11 +59,7 @@ const Index = () => {
             <div className="relative">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-purple-600/20 p-8">
                 <div className="w-full h-full rounded-xl overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/79f69057-22b9-4a99-b407-027f7b628e54.png" 
-                    alt="Gabriela Mitrana - Product Designer"
-                    className="w-full h-full object-cover grayscale"
-                  />
+                  <img src="/lovable-uploads/79f69057-22b9-4a99-b407-027f7b628e54.png" alt="Gabriela Mitrana - Product Designer" className="w-full h-full object-cover grayscale" />
                 </div>
               </div>
             </div>
@@ -79,10 +71,9 @@ const Index = () => {
       <section className="py-16 bg-accent/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
-            {stats.map((stat) => {
-              const Icon = stat.icon;
-              return (
-                <Card key={stat.label} className="text-center p-6 hover:shadow-lg transition-shadow duration-300">
+            {stats.map(stat => {
+            const Icon = stat.icon;
+            return <Card key={stat.label} className="text-center p-6 hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="space-y-4">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
                       <Icon className="h-6 w-6 text-primary" />
@@ -92,9 +83,8 @@ const Index = () => {
                       <div className="text-muted-foreground">{stat.label}</div>
                     </div>
                   </CardContent>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
         </div>
       </section>
@@ -118,8 +108,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
