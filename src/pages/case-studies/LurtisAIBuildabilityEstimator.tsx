@@ -136,15 +136,11 @@ const LurtisAIBuildabilityEstimator = () => {
     title: "Results & Reflections",
     content: <div className="space-y-4">
           <div>
-            <p className="font-semibold text-primary mb-2">Outcomes</p>
-            <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-              <li>Reduced feasibility analysis time from weeks to minutes</li>
-              <li>Enabled users to compare multiple project scenarios side-by-side</li>
-              <li>Created a visual, interactive experience that helped stakeholders better communicate and make faster decisions</li>
-            </ul>
+            
+            
           </div>
           <div>
-            <p className="font-semibold text-primary mb-2">What I Learned</p>
+            
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
               <li>Real estate professionals are open to digital tools—but only if they clearly reduce risk and save time.</li>
               <li>Early stakeholder involvement helped avoid overdesigning features no one needed.</li>
