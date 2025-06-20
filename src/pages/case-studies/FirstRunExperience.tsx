@@ -1,24 +1,15 @@
-
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
-
 const FirstRunExperience = () => {
-  const heroContent = (
-    <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
+  const heroContent = <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
       <div className="text-center p-8">
         <div className="w-32 h-32 rounded-lg bg-gradient-to-br from-primary to-purple-600 mx-auto mb-4"></div>
         <p className="text-muted-foreground">Getting Started with Studio Web</p>
       </div>
-    </div>
-  );
-
-  const sections = [
-    {
-      title: "Project Overview",
-      content: (
-        <div className="space-y-6">
-          <p className="text-muted-foreground leading-relaxed">
-            Studio Web is UiPath's latest cloud-based automation platform designed to democratize automation building for enterprise users. The challenge was to create an intuitive onboarding experience that would enable users to understand and adopt the product from Day 1, matching the ease-of-use expectations set by popular enterprise tools.
-          </p>
+    </div>;
+  const sections = [{
+    title: "Project Overview",
+    content: <div className="space-y-6">
+          <p className="text-muted-foreground leading-relaxed">Studio Web is UiPath's latest cloud-based automation platform designed to enable automation building for enterprise users. The challenge was to create an intuitive onboarding experience that would enable users to understand and adopt the product from Day 1, matching the ease-of-use expectations set by popular enterprise tools.</p>
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Status:</p>
@@ -38,26 +29,19 @@ const FirstRunExperience = () => {
             </div>
           </div>
         </div>
-      )
-    },
-    {
-      title: "Challenge",
-      content: "Our enterprise users have specific expectations when engaging with Cloud products, set by their daily interactions with tools like Slack, Zoom, and Atlassian. These products are approachable, easy to try out and require minimal effort to adopt. For successful adoption, Studio Web — UiPath's latest product for building automations — must enable users to start using it right away and understand its value from Day 1."
-    },
-    {
-      title: "The Design Process",
-      content: (
-        <div className="space-y-6">
+  }, {
+    title: "Challenge",
+    content: "Our enterprise users have specific expectations when engaging with Cloud products, set by their daily interactions with tools like Slack, Zoom, and Atlassian. These products are approachable, easy to try out and require minimal effort to adopt. For successful adoption, Studio Web — UiPath's latest product for building automations — must enable users to start using it right away and understand its value from Day 1."
+  }, {
+    title: "The Design Process",
+    content: <div className="space-y-6">
           <div className="w-full">
             <img src="/lovable-uploads/04643767-84b8-446f-96fc-408c816fb371.png" alt="Design process flow showing discovery, story mapping, feature flows, sketch & design, evaluate, design specs, and implement phases" className="w-full rounded-lg" />
           </div>
         </div>
-      )
-    },
-    {
-      title: "Discovery",
-      content: (
-        <div className="space-y-6">
+  }, {
+    title: "Discovery",
+    content: <div className="space-y-6">
           <div>
             <p className="text-muted-foreground leading-relaxed mb-4">
               This challenge was part of a broader platform initiative aimed at defining our Cloud strategy for onboarding new users. To align on our mission, we organized a design sprint with multiple stakeholders, including PMs, engineers, designers, and automation developers. During the sprint, we engaged in various exercises such as Crazy 8's, story mapping, and diagramming to generate ideas and sketch the user flow.
@@ -67,11 +51,9 @@ const FirstRunExperience = () => {
             </p>
           </div>
         </div>
-      )
-    },
-    {
-      title: "The Solution",
-      content: <div className="space-y-6">
+  }, {
+    title: "The Solution",
+    content: <div className="space-y-6">
             <p className="text-muted-foreground leading-relaxed">
               I was the owner for driving the Studio Web design efforts. The solution centered around the creation and utilization of templates. These templates would serve as reusable building blocks, designed to address common automation scenarios and showcase the best practices of our platform.
             </p>
@@ -86,14 +68,12 @@ const FirstRunExperience = () => {
               <li>Customize the template: provide user credentials and fill in any mandatory data if needed.</li>
             </ul>
           </div>
-    },
-    {
-      title: "Responsiveness",
-      content: "Incorporating responsive design meant our templates had to be adaptable, allowing users to fully engage with the content regardless of their screen size. This involved researching the most common screen resolutions and defining breakpoints to ensure the design could seamlessly adjust to various screen sizes."
-    },
-    {
-      title: "Profiling & Walkthrough Guide",
-      content: <div className="space-y-6">
+  }, {
+    title: "Responsiveness",
+    content: "Incorporating responsive design meant our templates had to be adaptable, allowing users to fully engage with the content regardless of their screen size. This involved researching the most common screen resolutions and defining breakpoints to ensure the design could seamlessly adjust to various screen sizes."
+  }, {
+    title: "Profiling & Walkthrough Guide",
+    content: <div className="space-y-6">
             <p className="text-muted-foreground leading-relaxed">
               To provide a tailored experience, we needed a way to recommend templates suited to users' specific needs. We introduced a profiling mechanism that asks users about their department and the applications they use in their daily routine. This allowed us to offer more relevant and useful templates, enhancing the overall user experience.
             </p>
@@ -107,10 +87,9 @@ const FirstRunExperience = () => {
               <img src="/lovable-uploads/6732cbe8-1ea1-42b5-9c3c-e4a4434ebe66.png" alt="UiPath Studio guided experience showing step-by-step automation building process with modal dialogs and configuration screens" className="w-full rounded-lg" />
             </div>
           </div>
-    },
-    {
-      title: "Hiding Complexity",
-      content: <div className="space-y-6">
+  }, {
+    title: "Hiding Complexity",
+    content: <div className="space-y-6">
             <p className="text-muted-foreground leading-relaxed">
               After multiple rounds of usability testing, we discovered user preferred minimal configuration and favored seeing how the automation works directly on the canvas. Participants also valued clear and concise titles and descriptions that accurately conveyed each template's purpose.
             </p>
@@ -124,18 +103,7 @@ const FirstRunExperience = () => {
               <img src="/lovable-uploads/54c95bca-99b8-406a-a275-2fb81b4366b3.png" alt="Template customization interface showing the 'Generate expense report' template with configuration options for Outlook and Google Drive connections" className="w-full rounded-lg" />
             </div>
           </div>
-    }
-  ];
-
-  return (
-    <CaseStudyLayout
-      title="Getting Started with Studio Web"
-      subtitle="Designing an intuitive onboarding experience for UiPath's automation platform to enable enterprise users to understand and adopt the product from Day 1"
-      tags={["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform", "Templates"]}
-      heroContent={heroContent}
-      sections={sections}
-    />
-  );
+  }];
+  return <CaseStudyLayout title="Getting Started with Studio Web" subtitle="Designing an intuitive onboarding experience for UiPath's automation platform to enable enterprise users to understand and adopt the product from Day 1" tags={["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform", "Templates"]} heroContent={heroContent} sections={sections} />;
 };
-
 export default FirstRunExperience;
