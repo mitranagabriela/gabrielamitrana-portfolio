@@ -40,7 +40,7 @@ const LurtisAIBuildabilityEstimator = () => {
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             <li>A lack of digitalization in early-stage planning</li>
             <li>Difficulty in estimating buildable potential and profitability</li>
-            <li>Complex zoning and regulatory factors that vary by region</li>
+            <li>Regulatory factors that vary by region</li>
           </ul>
           <p className="text-muted-foreground leading-relaxed">
             We saw an opportunity to simplify this with an AI-driven tool that would empower professionals to make faster, smarter decisions early in the design phase.
