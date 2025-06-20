@@ -100,7 +100,7 @@ const Index = () => {
                 My approach combines user-centered design principles with business objectives to deliver 
                 solutions that not only look beautiful but also drive results.
               </p>
-              <p>When I'm not designing, I'm usually out photographing or simply enjoying the nature. I'm curious by nature and always seeking new perspectives – a mindset that deeply influences my design work.</p>
+              <p>When I'm not designing, I'm usually out photographing or simply enjoying the outdoors. I'm curious by nature and always seeking new perspectives – a mindset that deeply influences my design work.</p>
             </div>
           </div>
         </div>
