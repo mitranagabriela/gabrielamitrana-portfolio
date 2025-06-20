@@ -163,10 +163,7 @@ const LurtisAIBuildabilityEstimator = () => {
             </div>
           </a>
           <Button variant="outline" className="w-full sm:w-auto" asChild>
-            <a href="https://www.youtube.com/watch?v=41Q5jUUWEaM" target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="mr-2 h-4 w-4" />
-              Watch Product Demo
-            </a>
+            
           </Button>
         </div>
   }];
