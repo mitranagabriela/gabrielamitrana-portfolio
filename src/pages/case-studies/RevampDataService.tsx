@@ -112,9 +112,7 @@ const RevampDataService = () => {
   }, {
     title: "Results",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            The redesign was completed and shipped across two major releases. Key outcomes:
-          </p>
+          <p className="text-muted-foreground leading-relaxed">The redesign was completed and shipped across one release. Key outcomes:</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             <li>35% decrease in schema-related support tickets.</li>
             <li>Improved product NPS from internal surveys and pilot feedback.</li>
