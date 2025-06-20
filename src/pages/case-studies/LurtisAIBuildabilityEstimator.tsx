@@ -26,7 +26,7 @@ const LurtisAIBuildabilityEstimator = () => {
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Tools:</p>
-              <p className="text-muted-foreground">[Figma, Miro, etc.]</p>
+              <p className="text-muted-foreground">Figma, Miro</p>
             </div>
           </div>
         </div>
