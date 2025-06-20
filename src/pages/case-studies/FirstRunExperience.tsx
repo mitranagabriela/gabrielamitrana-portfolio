@@ -1,3 +1,4 @@
+
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 const FirstRunExperience = () => {
   const heroContent = <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
@@ -50,6 +51,9 @@ const FirstRunExperience = () => {
               By the end of the design sprint, each team was tasked with taking the general approach, particularize it and implement it within their specific products.
             </p>
           </div>
+          <div className="w-full">
+            <img src="/lovable-uploads/fbcf841e-f199-48ec-9f2f-fbf5edbef303.png" alt="Design sprint workshop photos showing collaborative exercises, sticky notes, sketching sessions, and team discussions" className="w-full rounded-lg" />
+          </div>
         </div>
   }, {
     title: "The Solution",
@@ -57,8 +61,13 @@ const FirstRunExperience = () => {
             <p className="text-muted-foreground leading-relaxed">
               I was the owner for driving the Studio Web design efforts. The solution centered around the creation and utilization of templates. These templates would serve as reusable building blocks, designed to address common automation scenarios and showcase the best practices of our platform.
             </p>
-            <div className="w-full">
-              <img src="/lovable-uploads/6f841456-1b56-4de9-8765-e03a19dcf88d.png" alt="UiPath Studio templates page showing various automation templates like Data Entry, Lead Generation, Sales Order Processing, and Document Processing" className="w-full rounded-lg" />
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="w-full">
+                <img src="/lovable-uploads/6f841456-1b56-4de9-8765-e03a19dcf88d.png" alt="UiPath Studio templates page showing various automation templates like Data Entry, Lead Generation, Sales Order Processing, and Document Processing" className="w-full rounded-lg" />
+              </div>
+              <div className="w-full">
+                <img src="/lovable-uploads/a510d83f-d8c3-4b00-94ce-f89e1a3bbff7.png" alt="Generate expense report template configuration page showing description, Outlook and Google Drive integrations" className="w-full rounded-lg" />
+              </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
               Each template needed to provide a clear description and an easy mechanism for users to customize it. To achieve this, I created a dedicated template configuration page. This page allows users to:
@@ -77,8 +86,13 @@ const FirstRunExperience = () => {
             <p className="text-muted-foreground leading-relaxed">
               To provide a tailored experience, we needed a way to recommend templates suited to users' specific needs. We introduced a profiling mechanism that asks users about their department and the applications they use in their daily routine. This allowed us to offer more relevant and useful templates, enhancing the overall user experience.
             </p>
-            <div className="w-full">
-              <img src="/lovable-uploads/5189f751-d4e2-4f0f-808e-f4c32257f16f.png" alt="Get started with UiPath Studio screen showing application selection interface with various apps like Google Sheets, Excel, Gmail, Outlook, and others" className="w-full rounded-lg" />
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="w-full">
+                <img src="/lovable-uploads/5189f751-d4e2-4f0f-808e-f4c32257f16f.png" alt="Get started with UiPath Studio screen showing application selection interface with various apps like Google Sheets, Excel, Gmail, Outlook, and others" className="w-full rounded-lg" />
+              </div>
+              <div className="w-full">
+                <img src="/lovable-uploads/954a9a53-6be9-4953-93f3-32f06c61b363.png" alt="Department selection screen for UiPath Studio onboarding with options like Marketing, HR & Legal, Product & Design, Engineering, and Finance" className="w-full rounded-lg" />
+              </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
               We also introduced a guided experience to teach first-time users about the automation building process, providing coachmarks and celebrating their milestones (such as publishing the first automation).
