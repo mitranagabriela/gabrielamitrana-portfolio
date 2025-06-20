@@ -11,6 +11,7 @@ import UseCases from "./pages/UseCases";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import FirstRunExperience from "./pages/case-studies/FirstRunExperience";
+import RevampDataService from "./pages/case-studies/RevampDataService";
 import SaaSDashboard from "./pages/case-studies/SaaSDashboard";
 import HealthcareApp from "./pages/case-studies/HealthcareApp";
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/usecases" element={<UseCases />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/case-studies/first-run-experience" element={<FirstRunExperience />} />
+            <Route path="/case-studies/revamp-data-service" element={<RevampDataService />} />
             <Route path="/case-studies/saas-dashboard" element={<SaaSDashboard />} />
             <Route path="/case-studies/healthcare-app" element={<HealthcareApp />} />
             <Route path="*" element={<NotFound />} />
