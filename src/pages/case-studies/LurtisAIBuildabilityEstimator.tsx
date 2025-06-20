@@ -202,6 +202,18 @@ const LurtisAIBuildabilityEstimator = () => {
           <p className="text-muted-foreground leading-relaxed">
             Watch the product in action and see how the AI-powered buildability estimator transforms real estate feasibility analysis:
           </p>
+          <div className="relative aspect-video bg-muted rounded-lg overflow-hidden mb-4">
+            <img 
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=450&fit=crop&crop=center"
+              alt="Product Demo Thumbnail"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+              <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center">
+                <ExternalLink className="w-6 h-6 text-black" />
+              </div>
+            </div>
+          </div>
           <Button variant="outline" className="w-full sm:w-auto" asChild>
             <a 
               href="https://www.youtube.com/watch?v=41Q5jUUWEaM" 
