@@ -71,7 +71,7 @@ const LurtisAIBuildabilityEstimator = () => {
               <li>Residential markets saw delays due to economic uncertainty and property viewing restrictions.</li>
               <li>The BTR model gained traction in the UK, where investors are prioritizing long-term rental returns. In contrast, Spain's BTR market remained underdeveloped, offering a promising ground for innovation.</li>
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-3">These insights helped me identify a growing need: flexible tools that support early investment decisions focusing on the BTR market in Spain.</p>
+            <p className="text-muted-foreground leading-relaxed mt-3">These insights helped me identify a growing need: genrative tools that support early investment decisions focusing on the BTR market in Spain.</p>
           </div>
 
           <div>
