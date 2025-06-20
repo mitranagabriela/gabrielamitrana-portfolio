@@ -1,159 +1,218 @@
 
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 const LurtisAIBuildabilityEstimator = () => {
   const heroContent = (
     <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
       <div className="text-center p-8">
         <div className="w-32 h-32 rounded-lg bg-gradient-to-br from-primary to-purple-600 mx-auto mb-4"></div>
-        <p className="text-muted-foreground">Lurtis AI Buildability Estimator</p>
+        <p className="text-muted-foreground">AI-Powered Buildability Tool for Real Estate Feasibility</p>
       </div>
     </div>
   );
 
   const sections = [
     {
-      title: "Project Overview",
+      title: "Overview",
       content: (
         <div className="space-y-6">
-          <p className="text-muted-foreground leading-relaxed">
-            The Lurtis AI Buildability Estimator is an innovative tool designed to revolutionize how software development teams approach project estimation. By leveraging advanced AI algorithms and machine learning models, the platform analyzes project requirements, technical specifications, and historical data to provide accurate buildability estimates.
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Traditional estimation methods often fall short due to human bias, incomplete information, and varying interpretations of project scope. As the Lead UX Designer, I spearheaded the design of an intuitive interface that makes complex AI-driven insights accessible to both technical and non-technical stakeholders.
-          </p>
-          <div className="grid md:grid-cols-2 gap-4 mt-6">
+          <div className="grid md:grid-cols-2 gap-4">
             <div className="p-4 bg-accent/50 rounded-lg">
-              <p className="font-semibold text-primary">Status:</p>
-              <p className="text-muted-foreground">Project completed and launched</p>
+              <p className="font-semibold text-primary">Role:</p>
+              <p className="text-muted-foreground">Product Designer</p>
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Timeline:</p>
-              <p className="text-muted-foreground">6 months</p>
+              <p className="text-muted-foreground">[Insert Duration]</p>
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
-              <p className="font-semibold text-primary">Role:</p>
-              <p className="text-muted-foreground">Lead UX Designer</p>
+              <p className="font-semibold text-primary">Team:</p>
+              <p className="text-muted-foreground">[Mention roles if relevant, e.g., data scientists, real estate consultants]</p>
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
-              <p className="font-semibold text-primary">Collaborators:</p>
-              <p className="text-muted-foreground">3 PMs, 12 engineers, 2 data scientists</p>
+              <p className="font-semibold text-primary">Tools:</p>
+              <p className="text-muted-foreground">[Figma, Miro, etc.]</p>
             </div>
           </div>
         </div>
       )
     },
     {
-      title: "Vision & Business Goals",
+      title: "The Challenge",
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            Our vision was to create the most accurate and user-friendly estimation tool in the market, empowering teams to make data-driven decisions about project feasibility and resource allocation.
+            Real estate and construction are among the most economically valuable yet technologically conservative sectors. Despite the growing demand for efficient planning tools, feasibility analysis for property development is still a slow, manual process—often involving time-intensive consultations and fragmented datasets.
           </p>
-          <p className="text-muted-foreground leading-relaxed">Key business objectives included:</p>
+          <p className="text-muted-foreground leading-relaxed">This inefficiency is amplified by:</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Reduce estimation errors by at least 40% compared to traditional methods</li>
-            <li>Increase project planning efficiency and reduce time-to-market</li>
-            <li>Establish Lurtis as a leader in AI-powered project management tools</li>
-            <li>Generate actionable insights for strategic decision-making</li>
+            <li>A lack of digitalization in early-stage planning</li>
+            <li>Difficulty in estimating buildable potential and profitability</li>
+            <li>Complex zoning and regulatory factors that vary by region</li>
           </ul>
+          <p className="text-muted-foreground leading-relaxed">
+            We saw an opportunity to simplify this with an AI-driven tool that would empower professionals to make faster, smarter decisions early in the design phase.
+          </p>
         </div>
       )
     },
     {
-      title: "Research & Discovery",
+      title: "The Solution",
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            I conducted extensive research to understand the pain points in current estimation practices:
+            We designed an AI-based buildability assessment platform that allows users—developers, architects, and consultants—to quickly estimate:
           </p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Interviewed 25+ project managers, developers, and stakeholders across various industries</li>
-            <li>Analyzed existing estimation tools and identified gaps in user experience</li>
-            <li>Studied historical project data to understand common estimation failure patterns</li>
-            <li>Collaborated with data scientists to understand AI model capabilities and limitations</li>
+            <li>What can be built on a given plot</li>
+            <li>The expected profitability of different project scenarios</li>
+            <li>The optimal use of land, based on zoning, market trends, and user-defined constraints</li>
           </ul>
-          <div className="mt-6">
-            <p className="font-semibold text-primary mb-2">Key Research Insights:</p>
+          <p className="text-muted-foreground leading-relaxed">
+            The tool aims to significantly reduce the time spent on pre-design analysis and eliminate guesswork in the decision-making process.
+          </p>
+        </div>
+      )
+    },
+    {
+      title: "Design Process",
+      content: (
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-lg font-semibold mb-3">1. Market Research</h3>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              To understand the opportunity space, I first analyzed key real estate trends, focusing on post-pandemic shifts and the emerging Build-to-Rent (BTR) sector in Europe.
+            </p>
+            <p className="font-semibold text-primary mb-2">Key insights:</p>
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-              <li>Users needed transparency into how AI recommendations were generated</li>
-              <li>Estimation confidence levels were as important as the estimates themselves</li>
-              <li>Integration with existing project management tools was critical for adoption</li>
-              <li>Visual representation of risk factors significantly improved decision-making</li>
+              <li>COVID-19 accelerated remote work and e-commerce, reducing demand for office and retail spaces.</li>
+              <li>Residential markets saw delays due to economic uncertainty and property viewing restrictions.</li>
+              <li>The BTR model gained traction in the UK, where investors are prioritizing long-term rental returns. In contrast, Spain's BTR market remained underdeveloped, offering fertile ground for innovation.</li>
+            </ul>
+            <p className="text-muted-foreground leading-relaxed mt-3">
+              These insights helped me identify a growing need: flexible tools that support early investment decisions across changing urban contexts.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-3">2. Understanding the Context</h3>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              Next, I mapped the ecosystem by conducting a competitive analysis. I evaluated existing tools based on:
+            </p>
+            <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
+              <li>Features and pricing</li>
+              <li>User experience</li>
+              <li>Target markets</li>
+              <li>Gaps in automation and predictive modeling</li>
+            </ul>
+            <p className="text-muted-foreground leading-relaxed mt-3">
+              I also created a stakeholder map, focusing on users with both high power and interest—primarily architects, urban planners, and property developers.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-3">3. Surveys & Interviews</h3>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              To validate assumptions, I designed and distributed surveys targeting stakeholders. Key questions covered:
+            </p>
+            <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
+              <li>Familiarity with AI in real estate</li>
+              <li>Challenges in early feasibility assessments</li>
+              <li>Desired features in a new tool</li>
+            </ul>
+            <p className="text-muted-foreground leading-relaxed mt-3">
+              I followed up with 1:1 interviews to gain deeper qualitative insights. These revealed recurring pain points:
+            </p>
+            <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
+              <li>Time lost collecting zoning data</li>
+              <li>Difficulty comparing multiple project scenarios</li>
+              <li>Lack of confidence in ROI estimations</li>
+            </ul>
+            <p className="text-muted-foreground leading-relaxed mt-3">
+              From this, I created user personas and a customer journey map, which highlighted critical decision-making moments and emotional pain points.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-3">4. Defining the Architecture</h3>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              With a clearer understanding of the user flow, I built a navigation map to represent the product's functional architecture. Each major user action—such as inputting a land parcel or reviewing profitability—became a feature node.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              I translated these actions into screen layouts, starting with low-fidelity wireframes. These served as early artifacts to align the team and get fast feedback on layout, terminology, and interaction patterns.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-3">5. Prototyping & Iteration</h3>
+            <p className="text-muted-foreground leading-relaxed mb-3">The high-fidelity prototype incorporated:</p>
+            <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
+              <li>Smart data input fields</li>
+              <li>Interactive zoning overlays</li>
+              <li>Dynamic charts for buildability and ROI scenarios</li>
+              <li>Scenario comparison dashboards</li>
+            </ul>
+            <p className="text-muted-foreground leading-relaxed mt-3">
+              The design went through multiple iterations based on stakeholder reviews and usability testing. I used cognitive walkthroughs to identify usability friction points and refined the flows accordingly.
+            </p>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Results & Reflections",
+      content: (
+        <div className="space-y-4">
+          <div>
+            <p className="font-semibold text-primary mb-2">Outcomes</p>
+            <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
+              <li>Reduced feasibility analysis time from weeks to minutes</li>
+              <li>Enabled users to compare multiple project scenarios side-by-side</li>
+              <li>Created a visual, interactive experience that helped stakeholders better communicate and make faster decisions</li>
+            </ul>
+          </div>
+          <div>
+            <p className="font-semibold text-primary mb-2">What I Learned</p>
+            <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
+              <li>Real estate professionals are open to digital tools—but only if they clearly reduce risk and save time.</li>
+              <li>Early stakeholder involvement helped avoid overdesigning features no one needed.</li>
+              <li>Iteration is essential. Usability testing uncovered navigation issues that weren't visible during internal reviews.</li>
             </ul>
           </div>
         </div>
       )
     },
     {
-      title: "Design Strategy & Information Architecture",
+      title: "Next Steps",
       content: (
         <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            I developed a three-tier information architecture that balanced simplicity with comprehensive functionality:
-          </p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li><strong>Input Layer:</strong> Streamlined requirement gathering with smart forms and auto-suggestions</li>
-            <li><strong>Analysis Layer:</strong> Real-time AI processing with transparent confidence indicators</li>
-            <li><strong>Output Layer:</strong> Interactive dashboards with customizable views for different stakeholder needs</li>
+            <li>Integrate regional datasets to support expansion beyond initial geographies</li>
+            <li>Add more advanced AI simulations (e.g., traffic impact, sustainability scores)</li>
+            <li>Build a lighter version of the tool for mobile use in field assessments</li>
           </ul>
-          <p className="text-muted-foreground leading-relaxed mt-4">
-            The design strategy focused on progressive disclosure, ensuring that users could access detailed insights without overwhelming the primary workflow.
-          </p>
         </div>
       )
     },
     {
-      title: "Key Features & Innovations",
+      title: "Product Demo",
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            I designed several innovative features that set the platform apart:
+            Watch the product in action and see how the AI-powered buildability estimator transforms real estate feasibility analysis:
           </p>
-          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li><strong>AI Transparency Dashboard:</strong> Visual explanations of how estimates were calculated</li>
-            <li><strong>Risk Heat Map:</strong> Interactive visualization of potential project bottlenecks</li>
-            <li><strong>Collaborative Estimation:</strong> Real-time team input integration with conflict resolution</li>
-            <li><strong>Scenario Planning:</strong> What-if analysis with dynamic estimate adjustments</li>
-            <li><strong>Learning Engine:</strong> System that improves accuracy based on actual project outcomes</li>
-          </ul>
-          <p className="text-muted-foreground leading-relaxed mt-4">
-            Each feature was designed with extensive user testing to ensure intuitive interaction and maximum value delivery.
-          </p>
-        </div>
-      )
-    },
-    {
-      title: "Results & Impact",
-      content: (
-        <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            The platform launched successfully and delivered significant value to our users:
-          </p>
-          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>45% improvement in estimation accuracy compared to traditional methods</li>
-            <li>60% reduction in time spent on project planning activities</li>
-            <li>25% increase in project success rates among early adopters</li>
-            <li>95% user satisfaction score in post-launch surveys</li>
-            <li>Featured in 3 major industry publications as an innovation leader</li>
-          </ul>
-          <p className="text-muted-foreground leading-relaxed mt-4">
-            The platform's success led to expansion into new market segments and additional AI-powered features.
-          </p>
-        </div>
-      )
-    },
-    {
-      title: "Reflections & Learnings",
-      content: (
-        <div className="space-y-4">
-          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>AI transparency is crucial for user trust - users need to understand how decisions are made</li>
-            <li>Collaborative features drive adoption more than individual productivity gains</li>
-            <li>Visual data representation significantly improves decision-making speed and quality</li>
-            <li>Iterative feedback loops with real project outcomes create exponential value improvement</li>
-            <li>Balancing automation with human expertise requires careful UX consideration</li>
-          </ul>
+          <Button variant="outline" className="w-full sm:w-auto" asChild>
+            <a 
+              href="https://www.youtube.com/watch?v=41Q5jUUWEaM&t=44s" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <ExternalLink className="mr-2 h-4 w-4" />
+              Watch Product Demo
+            </a>
+          </Button>
         </div>
       )
     }
@@ -162,8 +221,8 @@ const LurtisAIBuildabilityEstimator = () => {
   return (
     <CaseStudyLayout
       title="Lurtis AI Buildability Estimator"
-      subtitle="Developed an AI-powered tool that analyzes project requirements and provides accurate buildability estimates for software development projects"
-      tags={["AI/ML", "Estimation Tools", "Project Management", "Analytics", "Data Visualization"]}
+      subtitle="AI-Powered Buildability Tool for Real Estate Feasibility"
+      tags={["AI/ML", "Real Estate", "Feasibility Analysis", "Product Design", "UX Research"]}
       heroContent={heroContent}
       sections={sections}
     />
