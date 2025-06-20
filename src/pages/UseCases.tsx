@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const UseCases = () => {
@@ -23,7 +23,8 @@ const UseCases = () => {
       tags: ["Developer Tools", "Platform Design", "Workflow Optimization"],
       status: "Completed",
       results: "Reduced development time by 35%",
-      caseStudyPath: "/case-studies/unified-developer-experience"
+      caseStudyPath: "/case-studies/unified-developer-experience",
+      demoLink: "https://www.youtube.com/watch?v=EOpWMmGHIrc"
     },
     {
       title: "Revamp Data Service",
@@ -50,7 +51,8 @@ const UseCases = () => {
       tags: ["AI/ML", "Estimation Tools", "Project Management", "Analytics"],
       status: "Completed",
       results: "Improved estimation accuracy by 45%",
-      caseStudyPath: "/case-studies/lurtis-ai-buildability-estimator"
+      caseStudyPath: "/case-studies/lurtis-ai-buildability-estimator",
+      demoLink: "https://www.youtube.com/watch?v=41Q5jUUWEaM"
     }
   ];
 
@@ -99,6 +101,14 @@ const UseCases = () => {
                       View Case Study
                     </Link>
                   </Button>
+                  {project.demoLink && (
+                    <Button variant="outline" size="sm" className="flex-1" asChild>
+                      <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                        <Play className="mr-2 h-3 w-3" />
+                        View Demo
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
