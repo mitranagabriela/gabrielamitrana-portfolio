@@ -149,15 +149,6 @@ const LurtisAIBuildabilityEstimator = () => {
           </div>
         </div>
   }, {
-    title: "Next Steps",
-    content: <div className="space-y-4">
-          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Integrate regional datasets to support expansion beyond initial geographies</li>
-            <li>Add more advanced AI simulations (e.g., traffic impact, sustainability scores)</li>
-            <li>Build a lighter version of the tool for mobile use in field assessments</li>
-          </ul>
-        </div>
-  }, {
     title: "Product Demo",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
