@@ -49,15 +49,15 @@ const RevampDataService = () => {
             I started with a heuristic audit to identify usability gaps and friction points. This included:
           </p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Analyzing user workflows across Studio and Data Service.</li>
-            <li>Reviewing support tickets and customer interviews.</li>
+            <li>Analyzing both creation and consumption user workflows </li>
+            <li>Reviewing previous customer feedback</li>
             <li>Mapping UI behaviors to Jakob Nielsen's usability heuristics.</li>
           </ul>
           <div className="mt-6">
             <p className="font-semibold text-primary mb-2">Top Insights:</p>
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
               <li>Schema creation was isolated from the development workflow.</li>
-              <li>There was no access control, creating risk for enterprise use.</li>
+              <li>There was no data access control, creating risks for enterprise use.</li>
               <li>The UI lacked clarity around key actions, making features hard to discover.</li>
             </ul>
           </div>
