@@ -18,7 +18,7 @@ const LurtisAIBuildabilityEstimator = () => {
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Timeline:</p>
-              <p className="text-muted-foreground">[Insert Duration]</p>
+              <p className="text-muted-foreground">6 months</p>
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Team:</p>
