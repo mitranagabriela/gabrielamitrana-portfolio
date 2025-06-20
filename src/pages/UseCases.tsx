@@ -1,10 +1,8 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const UseCases = () => {
   const projects = [{
     title: "AI Agent Orchestrator",
@@ -39,16 +37,12 @@ const UseCases = () => {
     results: "Reduced onboarding drop-off by 40%",
     caseStudyPath: "/case-studies/first-run-experience"
   }];
-  
   return <div className="pt-16 min-h-screen bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Use Cases & Projects</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore my recent design projects and case studies. Each project showcases different aspects 
-            of my design process, from research and ideation to final implementation.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Explore my latest design projects and case studies. Each project showcases different aspects of my design process, from research and ideation to final implementation.</p>
         </div>
 
         {/* Projects Grid */}
@@ -102,5 +96,4 @@ const UseCases = () => {
       </div>
     </div>;
 };
-
 export default UseCases;
