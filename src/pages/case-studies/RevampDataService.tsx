@@ -9,9 +9,7 @@ const RevampDataService = () => {
   const sections = [{
     title: "Project Overview",
     content: <div className="space-y-6">
-          <p className="text-muted-foreground leading-relaxed">
-            Data Service is UiPath's low-code data modeling and management layer—a lightweight, scalable database designed for automation developers. It simplifies how data is stored and accessed without requiring backend expertise.
-          </p>
+          <p className="text-muted-foreground leading-relaxed">Data Service is UiPath's low-code data modeling and management layer — a lightweight database designed for automation developers. It simplifies how data is stored and accessed without requiring backend expertise.</p>
           <p className="text-muted-foreground leading-relaxed">Despite its technical strengths, the product suffered from poor discoverability, disconnected workflows, and lacked critical access control. As the Lead Product Designer, I led the UX revamp to improve usability, trust, and adoption while aligning the experience with UiPath's platform-wide goals.</p>
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="p-4 bg-accent/50 rounded-lg">
