@@ -1,21 +1,14 @@
-
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
-
 const AIAgentOrchestrator = () => {
-  const heroContent = (
-    <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
+  const heroContent = <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
       <div className="text-center p-8">
         <div className="w-32 h-32 rounded-lg bg-gradient-to-br from-primary to-purple-600 mx-auto mb-4"></div>
         <p className="text-muted-foreground">AI Agent Orchestrator</p>
       </div>
-    </div>
-  );
-
-  const sections = [
-    {
-      title: "Project Overview",
-      content: (
-        <div className="space-y-6">
+    </div>;
+  const sections = [{
+    title: "Project Overview",
+    content: <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">
             The AI Agent Orchestrator project involved designing an intelligent agent management system that enables seamless coordination and deployment of AI-powered automation agents across enterprise workflows. This system allows organizations to efficiently manage multiple AI agents, coordinate their activities, and optimize their performance at scale.
           </p>
@@ -26,11 +19,11 @@ const AIAgentOrchestrator = () => {
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Timeline:</p>
-              <p className="text-muted-foreground">12 months (ongoing)</p>
+              <p className="text-muted-foreground">6 months (ongoing)</p>
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Role:</p>
-              <p className="text-muted-foreground">Lead Product Designer</p>
+              <p className="text-muted-foreground">Product Designer</p>
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Collaborators:</p>
@@ -38,16 +31,12 @@ const AIAgentOrchestrator = () => {
             </div>
           </div>
         </div>
-      )
-    },
-    {
-      title: "Challenge",
-      content: "Enterprise organizations were struggling to manage and coordinate multiple AI agents across different departments and workflows. The lack of centralized control, visibility into agent performance, and coordination mechanisms led to inefficiencies, conflicts, and suboptimal resource utilization."
-    },
-    {
-      title: "Understanding AI Agent Complexity",
-      content: (
-        <div className="space-y-4">
+  }, {
+    title: "Challenge",
+    content: "Enterprise organizations were struggling to manage and coordinate multiple AI agents across different departments and workflows. The lack of centralized control, visibility into agent performance, and coordination mechanisms led to inefficiencies, conflicts, and suboptimal resource utilization."
+  }, {
+    title: "Understanding AI Agent Complexity",
+    content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
             Through research with enterprise AI teams, we identified key challenges:
           </p>
@@ -59,12 +48,9 @@ const AIAgentOrchestrator = () => {
             <li>Limited ability to optimize agent interactions</li>
           </ul>
         </div>
-      )
-    },
-    {
-      title: "Design Solution",
-      content: (
-        <div className="space-y-4">
+  }, {
+    title: "Design Solution",
+    content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
             The orchestrator design focused on creating an intuitive control center that provides:
           </p>
@@ -76,12 +62,9 @@ const AIAgentOrchestrator = () => {
             <li><strong>Governance Controls:</strong> Compliance monitoring and policy enforcement</li>
           </ul>
         </div>
-      )
-    },
-    {
-      title: "Key Features",
-      content: (
-        <div className="space-y-4">
+  }, {
+    title: "Key Features",
+    content: <div className="space-y-4">
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             <li><strong>Agent Marketplace:</strong> Centralized repository for discovering and deploying pre-built agents</li>
             <li><strong>Smart Load Balancing:</strong> Automatic distribution of workloads based on agent capabilities</li>
@@ -90,12 +73,9 @@ const AIAgentOrchestrator = () => {
             <li><strong>Integration Hub:</strong> Seamless connections with existing enterprise systems</li>
           </ul>
         </div>
-      )
-    },
-    {
-      title: "Current Results",
-      content: (
-        <div className="space-y-4">
+  }, {
+    title: "Current Results",
+    content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
             Early implementations have shown promising results:
           </p>
@@ -109,19 +89,7 @@ const AIAgentOrchestrator = () => {
             The project is ongoing with continued iterations based on user feedback and expanding enterprise requirements.
           </p>
         </div>
-      )
-    }
-  ];
-
-  return (
-    <CaseStudyLayout
-      title="AI Agent Orchestrator"
-      subtitle="Designing an intelligent agent management system that enables seamless coordination and deployment of AI-powered automation agents across enterprise workflows"
-      tags={["AI/ML", "Agent Systems", "Enterprise Automation", "Orchestration", "System Design"]}
-      heroContent={heroContent}
-      sections={sections}
-    />
-  );
+  }];
+  return <CaseStudyLayout title="AI Agent Orchestrator" subtitle="Designing an intelligent agent management system that enables seamless coordination and deployment of AI-powered automation agents across enterprise workflows" tags={["AI/ML", "Agent Systems", "Enterprise Automation", "Orchestration", "System Design"]} heroContent={heroContent} sections={sections} />;
 };
-
 export default AIAgentOrchestrator;
