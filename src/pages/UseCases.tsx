@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -6,21 +7,13 @@ import { Link } from "react-router-dom";
 
 const UseCases = () => {
   const projects = [{
-    title: "First Run Experience",
-    description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates",
+    title: "AI Agent Orchestrator",
+    description: "Designed an intelligent agent management system that enables seamless coordination and deployment of AI-powered automation agents across enterprise workflows.",
     image: "/placeholder.svg",
-    tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
-    status: "Completed",
-    results: "Reduced onboarding drop-off by 40%",
-    caseStudyPath: "/case-studies/first-run-experience"
-  }, {
-    title: "Revamp Data Service",
-    description: "Transformed the data management experience by redesigning core service interfaces and user workflows for better data accessibility and performance.",
-    image: "/placeholder.svg",
-    tags: ["Data Management", "Service Design", "Enterprise UX"],
-    status: "Completed",
-    results: "Improved data processing efficiency by 60%",
-    caseStudyPath: "/case-studies/revamp-data-service"
+    tags: ["AI/ML", "Agent Systems", "Enterprise Automation", "Orchestration"],
+    status: "In Progress",
+    results: "Enhanced agent deployment speed by 50%",
+    caseStudyPath: "/case-studies/ai-agent-orchestrator"
   }, {
     title: "Unified Developer Experience",
     description: "Created a cohesive development platform that brings together disparate tools and workflows into a single, streamlined developer environment.",
@@ -30,13 +23,21 @@ const UseCases = () => {
     results: "Reduced development time by 35%",
     caseStudyPath: "/case-studies/unified-developer-experience"
   }, {
-    title: "AI Agent Orchestrator",
-    description: "Designed an intelligent agent management system that enables seamless coordination and deployment of AI-powered automation agents across enterprise workflows.",
+    title: "Revamp Data Service",
+    description: "Transformed the data management experience by redesigning core service interfaces and user workflows for better data accessibility and performance.",
     image: "/placeholder.svg",
-    tags: ["AI/ML", "Agent Systems", "Enterprise Automation", "Orchestration"],
-    status: "In Progress",
-    results: "Enhanced agent deployment speed by 50%",
-    caseStudyPath: "/case-studies/ai-agent-orchestrator"
+    tags: ["Data Management", "Service Design", "Enterprise UX"],
+    status: "Completed",
+    results: "Improved data processing efficiency by 60%",
+    caseStudyPath: "/case-studies/revamp-data-service"
+  }, {
+    title: "First Run Experience",
+    description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates",
+    image: "/placeholder.svg",
+    tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
+    status: "Completed",
+    results: "Reduced onboarding drop-off by 40%",
+    caseStudyPath: "/case-studies/first-run-experience"
   }];
   
   return <div className="pt-16 min-h-screen bg-background">
