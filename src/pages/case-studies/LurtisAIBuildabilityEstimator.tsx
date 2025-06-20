@@ -33,7 +33,7 @@ const LurtisAIBuildabilityEstimator = () => {
   }, {
     title: "The Challenge",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">Construction and real estate are industrial sectors with a significant economic value, but they are also quite conventional in adopting of new technologies. Despite the growing demand, feasibility analysis for property development is still a  manual process, often involving time-intensive consultations and fragmented datasets.</p>
+          <p className="text-muted-foreground leading-relaxed">Construction and real estate are industrial sectors with a significant economic value, but they are also quite conventional in adopting of new technologies. Despite the growing demand, feasibility analysis for property development is still a  manual process, often involving time-intensive consultations and fragmented datasets.</p>
           <p className="text-muted-foreground leading-relaxed">This inefficiency is amplified by:</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             <li>A lack of digitalization in early-stage planning</li>
@@ -102,7 +102,8 @@ const LurtisAIBuildabilityEstimator = () => {
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
               
               <li>Difficulty in aggregating data from multiple sources</li>
-              <li>Manual checking of regulations </li>
+              <li>Manual checking of regulations</li>
+              <li>Update artefacts and sync work with other colleagues</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-3">
               From this, I created user personas and a customer journey map, which highlighted critical decision-making moments and emotional pain points.
