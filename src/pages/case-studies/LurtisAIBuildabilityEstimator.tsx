@@ -49,11 +49,9 @@ const LurtisAIBuildabilityEstimator = () => {
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">We designed an AI-based buildability assessment tool that allows developers, architects, and consultants to quickly estimate:</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Smart selection of land</li>
-            <li>Customize preferences</li>
-            <li>Automatic check of regulations</li>
-            <li>Generation of solutions</li>
-            <li>Comparison between solution</li>
+            <li>What can be built on a given plot</li>
+            <li>The expected profitability of different project scenarios</li>
+            <li>The optimal use of land, based on zoning, market trends, and user-defined constraints</li>
           </ul>
           <p className="text-muted-foreground leading-relaxed">
             The tool aims to significantly reduce the time spent on pre-design analysis and eliminate guesswork in the decision-making process.
