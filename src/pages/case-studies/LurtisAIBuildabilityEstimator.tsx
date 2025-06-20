@@ -85,7 +85,7 @@ const LurtisAIBuildabilityEstimator = () => {
               <li>Target markets</li>
               
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest — primarily architects, urban planners, and property developers.</p>
+            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest — primarily architects, urban planners, and property developers.</p>
           </div>
 
           <div>
@@ -103,7 +103,7 @@ const LurtisAIBuildabilityEstimator = () => {
               
               <li>Difficulty in aggregating data from multiple sources</li>
               <li>Manual checking of regulations</li>
-              <li>Update artefacts and sync work with other colleagues</li>
+              <li>Updating artefacts with changes and syncing work with other colleagues</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-3">
               From this, I created user personas and a customer journey map, which highlighted critical decision-making moments and emotional pain points.
