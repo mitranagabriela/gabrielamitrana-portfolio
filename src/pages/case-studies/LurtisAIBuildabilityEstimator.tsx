@@ -85,7 +85,7 @@ const LurtisAIBuildabilityEstimator = () => {
               <li>Target markets</li>
               
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest — primarily architects, urban planners, and property developers.</p>
+            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest — primarily architects, urban planners, and property developers.</p>
           </div>
 
           <div>
@@ -103,7 +103,7 @@ const LurtisAIBuildabilityEstimator = () => {
               
               <li>Difficulty in aggregating data from multiple sources</li>
               <li>Manual checking of regulations</li>
-              <li>Updating artefacts with changes and syncing work with other colleagues</li>
+              <li>Update artefacts and sync work with other colleagues</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-3">
               From this, I created user personas and a customer journey map, which highlighted critical decision-making moments and emotional pain points.
@@ -112,12 +112,9 @@ const LurtisAIBuildabilityEstimator = () => {
 
           <div>
             <h3 className="text-lg font-semibold mb-3">4. Defining the Architecture</h3>
-            <p className="text-muted-foreground leading-relaxed mb-3">
-              With a clearer understanding of the user flow, I built a navigation map to represent the product's functional architecture. Each major user action—such as inputting a land parcel or reviewing profitability—became a feature node.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              I translated these actions into screen layouts, starting with low-fidelity wireframes. These served as early artifacts to align the team and get fast feedback on layout, terminology, and interaction patterns.
-            </p>
+            <p className="text-muted-foreground leading-relaxed mb-3">I created a navigation map to clearly visualize all the features and the relationships between them. The navigation map built on the scenario explored in the customer journey. Each of the actions previously identified became features allowing users to accomplish a goal. 
+        </p>
+            <p className="text-muted-foreground leading-relaxed">Using the navigation map, I started sketching the main screens to establish a layout that everyone in the team would agree with. The wireframes provided a stimulating artifact for discussion and gave everyone an idea of how the interface could look like. ​​​​​​​​​​​​​​​​​​​​​</p>
           </div>
 
           <div>
