@@ -85,7 +85,7 @@ const LurtisAIBuildabilityEstimator = () => {
               <li>Target markets</li>
               
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest, primarily architects, urban planners, and property developers.</p>
+            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest — primarily architects, urban planners, and property developers.</p>
           </div>
 
           <div>
