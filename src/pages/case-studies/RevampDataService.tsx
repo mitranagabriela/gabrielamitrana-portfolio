@@ -103,9 +103,10 @@ const RevampDataService = () => {
             To eliminate this friction, I proposed and designed a unified schema editor directly within Studio. Features included:
           </p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Drag-and-drop entity modeling.</li>
-            <li>Inline schema editing.</li>
-            <li>One-click sync and validation.</li>
+            <li>Inline schema creation and editing.</li>
+            <li>Drag-and-drop entity consumption.</li>
+            <li>Automatic synchronization.</li>
+            <li>Generation of mock data.</li>
           </ul>
           
         </div>
