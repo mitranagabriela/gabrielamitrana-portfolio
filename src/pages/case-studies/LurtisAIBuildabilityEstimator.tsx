@@ -1,26 +1,20 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
-
 const LurtisAIBuildabilityEstimator = () => {
-  const heroContent = (
-    <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
+  const heroContent = <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
       <div className="text-center p-8">
         <div className="w-32 h-32 rounded-lg bg-gradient-to-br from-primary to-purple-600 mx-auto mb-4"></div>
         <p className="text-muted-foreground">AI-Powered Buildability Tool for Real Estate Feasibility</p>
       </div>
-    </div>
-  );
-
-  const sections = [
-    {
-      title: "Overview",
-      content: (
-        <div className="space-y-6">
+    </div>;
+  const sections = [{
+    title: "Overview",
+    content: <div className="space-y-6">
           <div className="grid md:grid-cols-2 gap-4">
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Role:</p>
-              <p className="text-muted-foreground">Product Designer</p>
+              <p className="text-muted-foreground">UX/UI Designer</p>
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Timeline:</p>
@@ -36,12 +30,9 @@ const LurtisAIBuildabilityEstimator = () => {
             </div>
           </div>
         </div>
-      )
-    },
-    {
-      title: "The Challenge",
-      content: (
-        <div className="space-y-4">
+  }, {
+    title: "The Challenge",
+    content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
             Real estate and construction are among the most economically valuable yet technologically conservative sectors. Despite the growing demand for efficient planning tools, feasibility analysis for property development is still a slow, manual process—often involving time-intensive consultations and fragmented datasets.
           </p>
@@ -55,12 +46,9 @@ const LurtisAIBuildabilityEstimator = () => {
             We saw an opportunity to simplify this with an AI-driven tool that would empower professionals to make faster, smarter decisions early in the design phase.
           </p>
         </div>
-      )
-    },
-    {
-      title: "The Solution",
-      content: (
-        <div className="space-y-4">
+  }, {
+    title: "The Solution",
+    content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
             We designed an AI-based buildability assessment platform that allows users—developers, architects, and consultants—to quickly estimate:
           </p>
@@ -73,12 +61,9 @@ const LurtisAIBuildabilityEstimator = () => {
             The tool aims to significantly reduce the time spent on pre-design analysis and eliminate guesswork in the decision-making process.
           </p>
         </div>
-      )
-    },
-    {
-      title: "Design Process",
-      content: (
-        <div className="space-y-6">
+  }, {
+    title: "Design Process",
+    content: <div className="space-y-6">
           <div>
             <h3 className="text-lg font-semibold mb-3">1. Market Research</h3>
             <p className="text-muted-foreground leading-relaxed mb-3">
@@ -158,12 +143,9 @@ const LurtisAIBuildabilityEstimator = () => {
             </p>
           </div>
         </div>
-      )
-    },
-    {
-      title: "Results & Reflections",
-      content: (
-        <div className="space-y-4">
+  }, {
+    title: "Results & Reflections",
+    content: <div className="space-y-4">
           <div>
             <p className="font-semibold text-primary mb-2">Outcomes</p>
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
@@ -181,38 +163,23 @@ const LurtisAIBuildabilityEstimator = () => {
             </ul>
           </div>
         </div>
-      )
-    },
-    {
-      title: "Next Steps",
-      content: (
-        <div className="space-y-4">
+  }, {
+    title: "Next Steps",
+    content: <div className="space-y-4">
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             <li>Integrate regional datasets to support expansion beyond initial geographies</li>
             <li>Add more advanced AI simulations (e.g., traffic impact, sustainability scores)</li>
             <li>Build a lighter version of the tool for mobile use in field assessments</li>
           </ul>
         </div>
-      )
-    },
-    {
-      title: "Product Demo",
-      content: (
-        <div className="space-y-4">
+  }, {
+    title: "Product Demo",
+    content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
             Watch the product in action and see how the AI-powered buildability estimator transforms real estate feasibility analysis:
           </p>
-          <a 
-            href="https://www.youtube.com/watch?v=41Q5jUUWEaM" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="block relative aspect-video bg-muted rounded-lg overflow-hidden mb-4 hover:opacity-90 transition-opacity cursor-pointer"
-          >
-            <img 
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=450&fit=crop&crop=center"
-              alt="Product Demo Thumbnail"
-              className="w-full h-full object-cover"
-            />
+          <a href="https://www.youtube.com/watch?v=41Q5jUUWEaM" target="_blank" rel="noopener noreferrer" className="block relative aspect-video bg-muted rounded-lg overflow-hidden mb-4 hover:opacity-90 transition-opacity cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=450&fit=crop&crop=center" alt="Product Demo Thumbnail" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
               <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors">
                 <Play className="w-6 h-6 text-black ml-1" fill="currentColor" />
@@ -220,29 +187,13 @@ const LurtisAIBuildabilityEstimator = () => {
             </div>
           </a>
           <Button variant="outline" className="w-full sm:w-auto" asChild>
-            <a 
-              href="https://www.youtube.com/watch?v=41Q5jUUWEaM" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.youtube.com/watch?v=41Q5jUUWEaM" target="_blank" rel="noopener noreferrer">
               <ExternalLink className="mr-2 h-4 w-4" />
               Watch Product Demo
             </a>
           </Button>
         </div>
-      )
-    }
-  ];
-
-  return (
-    <CaseStudyLayout
-      title="Lurtis AI Buildability Estimator"
-      subtitle="AI-Powered Buildability Tool for Real Estate Feasibility"
-      tags={["AI/ML", "Real Estate", "Feasibility Analysis", "Product Design", "UX Research"]}
-      heroContent={heroContent}
-      sections={sections}
-    />
-  );
+  }];
+  return <CaseStudyLayout title="Lurtis AI Buildability Estimator" subtitle="AI-Powered Buildability Tool for Real Estate Feasibility" tags={["AI/ML", "Real Estate", "Feasibility Analysis", "Product Design", "UX Research"]} heroContent={heroContent} sections={sections} />;
 };
-
 export default LurtisAIBuildabilityEstimator;
