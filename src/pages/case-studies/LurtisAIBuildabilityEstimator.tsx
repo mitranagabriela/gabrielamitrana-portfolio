@@ -1,18 +1,13 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
-
 const LurtisAIBuildabilityEstimator = () => {
-  const heroContent = (
-    <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg overflow-hidden">
-      <img 
-        src="/lovable-uploads/388510a3-5281-45ea-99af-3883cc7f35d5.png" 
-        alt="Lurtis AI Buildability Estimator Interface Screenshots" 
-        className="w-full h-full object-cover"
-      />
-    </div>
-  );
-
+  const heroContent = <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
+      <div className="text-center p-8">
+        <div className="w-32 h-32 rounded-lg bg-gradient-to-br from-primary to-purple-600 mx-auto mb-4"></div>
+        <p className="text-muted-foreground">AI-Powered Buildability Tool for Real Estate Feasibility</p>
+      </div>
+    </div>;
   const sections = [{
     title: "Overview",
     content: <div className="space-y-6">
@@ -90,7 +85,7 @@ const LurtisAIBuildabilityEstimator = () => {
               <li>Target markets</li>
               
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest — primarily architects, urban planners, and property developers.</p>
+            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest — primarily architects, urban planners, and property developers.</p>
           </div>
 
           <div>
@@ -184,8 +179,6 @@ const LurtisAIBuildabilityEstimator = () => {
           </Button>
         </div>
   }];
-
   return <CaseStudyLayout title="Lurtis AI Buildability Estimator" subtitle="AI-Powered Buildability Tool for Real Estate Feasibility" tags={["AI/ML", "Real Estate", "Feasibility Analysis", "Product Design", "UX Research"]} heroContent={heroContent} sections={sections} />;
 };
-
 export default LurtisAIBuildabilityEstimator;
