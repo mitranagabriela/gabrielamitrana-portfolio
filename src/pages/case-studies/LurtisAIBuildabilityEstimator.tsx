@@ -49,9 +49,7 @@ const LurtisAIBuildabilityEstimator = () => {
   }, {
     title: "The Solution",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            We designed an AI-based buildability assessment platform that allows users—developers, architects, and consultants—to quickly estimate:
-          </p>
+          <p className="text-muted-foreground leading-relaxed">We designed an AI-based buildability assessment tool that allows developers, architects, and consultants to quickly estimate:</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             <li>What can be built on a given plot</li>
             <li>The expected profitability of different project scenarios</li>
@@ -73,11 +71,9 @@ const LurtisAIBuildabilityEstimator = () => {
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
               <li>COVID-19 accelerated remote work and e-commerce, reducing demand for office and retail spaces.</li>
               <li>Residential markets saw delays due to economic uncertainty and property viewing restrictions.</li>
-              <li>The BTR model gained traction in the UK, where investors are prioritizing long-term rental returns. In contrast, Spain's BTR market remained underdeveloped, offering fertile ground for innovation.</li>
+              <li>The BTR model gained traction in the UK, where investors are prioritizing long-term rental returns. In contrast, Spain's BTR market remained underdeveloped, offering a promising ground for innovation.</li>
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-3">
-              These insights helped me identify a growing need: flexible tools that support early investment decisions across changing urban contexts.
-            </p>
+            <p className="text-muted-foreground leading-relaxed mt-3">These insights helped me identify a growing need: flexible tools that support early investment decisions focusing on the BTR market in Spain.</p>
           </div>
 
           <div>
@@ -89,30 +85,26 @@ const LurtisAIBuildabilityEstimator = () => {
               <li>Features and pricing</li>
               <li>User experience</li>
               <li>Target markets</li>
-              <li>Gaps in automation and predictive modeling</li>
+              
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-3">
-              I also created a stakeholder map, focusing on users with both high power and interest—primarily architects, urban planners, and property developers.
-            </p>
+            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest, primarily architects, urban planners, and property developers.</p>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-3">3. Surveys & Interviews</h3>
-            <p className="text-muted-foreground leading-relaxed mb-3">
-              To validate assumptions, I designed and distributed surveys targeting stakeholders. Key questions covered:
-            </p>
+            <p className="text-muted-foreground leading-relaxed mb-3">To validate assumptions, I designed and distributed surveys targeting the main stakeholders identified in the previous stage. Key questions covered:</p>
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
               <li>Familiarity with AI in real estate</li>
-              <li>Challenges in early feasibility assessments</li>
+              <li>Job-related best practices</li>
               <li>Desired features in a new tool</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-3">
               I followed up with 1:1 interviews to gain deeper qualitative insights. These revealed recurring pain points:
             </p>
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-              <li>Time lost collecting zoning data</li>
-              <li>Difficulty comparing multiple project scenarios</li>
-              <li>Lack of confidence in ROI estimations</li>
+              
+              <li>Difficulty in aggregating data from multiple sources</li>
+              <li>Manual checking of regulations </li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-3">
               From this, I created user personas and a customer journey map, which highlighted critical decision-making moments and emotional pain points.
