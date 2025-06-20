@@ -1,4 +1,3 @@
-
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
@@ -205,7 +204,7 @@ const LurtisAIBuildabilityEstimator = () => {
           </p>
           <Button variant="outline" className="w-full sm:w-auto" asChild>
             <a 
-              href="https://www.youtube.com/watch?v=41Q5jUUWEaM&t=44s" 
+              href="https://www.youtube.com/watch?v=41Q5jUUWEaM" 
               target="_blank" 
               rel="noopener noreferrer"
             >
