@@ -3,51 +3,71 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+
 const UseCases = () => {
-  const projects = [{
-    title: "AI Agent Orchestrator",
-    description: "Designed an intelligent agent management system that enables seamless coordination and deployment of AI-powered automation agents across enterprise workflows.",
-    image: "/placeholder.svg",
-    tags: ["AI/ML", "Agent Systems", "Enterprise Automation", "Orchestration"],
-    status: "In Progress",
-    results: "Enhanced agent deployment speed by 50%",
-    caseStudyPath: "/case-studies/ai-agent-orchestrator"
-  }, {
-    title: "Unified Developer Experience",
-    description: "Created a cohesive development platform that brings together disparate tools and workflows into a single, streamlined developer environment.",
-    image: "/placeholder.svg",
-    tags: ["Developer Tools", "Platform Design", "Workflow Optimization"],
-    status: "Completed",
-    results: "Reduced development time by 35%",
-    caseStudyPath: "/case-studies/unified-developer-experience"
-  }, {
-    title: "Revamp Data Service",
-    description: "Transformed the data management experience by redesigning core service interfaces and user workflows for better data accessibility and performance.",
-    image: "/placeholder.svg",
-    tags: ["Data Management", "Service Design", "Enterprise UX"],
-    status: "Completed",
-    results: "Improved data processing efficiency by 60%",
-    caseStudyPath: "/case-studies/revamp-data-service"
-  }, {
-    title: "First Run Experience",
-    description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates",
-    image: "/placeholder.svg",
-    tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
-    status: "Completed",
-    results: "Reduced onboarding drop-off by 40%",
-    caseStudyPath: "/case-studies/first-run-experience"
-  }];
-  return <div className="pt-16 min-h-screen bg-background">
+  const projects = [
+    {
+      title: "First Run Experience",
+      description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates",
+      image: "/placeholder.svg",
+      tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
+      status: "Completed",
+      results: "Reduced onboarding drop-off by 40%",
+      caseStudyPath: "/case-studies/first-run-experience"
+    },
+    {
+      title: "Revamp Data Service",
+      description: "Transformed the data management experience by redesigning core service interfaces and user workflows for better data accessibility and performance.",
+      image: "/placeholder.svg",
+      tags: ["Data Management", "Service Design", "Enterprise UX"],
+      status: "Completed",
+      results: "Improved data processing efficiency by 60%",
+      caseStudyPath: "/case-studies/revamp-data-service"
+    },
+    {
+      title: "Unified Developer Experience",
+      description: "Created a cohesive development platform that brings together disparate tools and workflows into a single, streamlined developer environment.",
+      image: "/placeholder.svg",
+      tags: ["Developer Tools", "Platform Design", "Workflow Optimization"],
+      status: "Completed",
+      results: "Reduced development time by 35%",
+      caseStudyPath: "/case-studies/unified-developer-experience"
+    },
+    {
+      title: "AI Agent Orchestrator",
+      description: "Designed an intelligent agent management system that enables seamless coordination and deployment of AI-powered automation agents across enterprise workflows.",
+      image: "/placeholder.svg",
+      tags: ["AI/ML", "Agent Systems", "Enterprise Automation", "Orchestration"],
+      status: "In Progress",
+      results: "Enhanced agent deployment speed by 50%",
+      caseStudyPath: "/case-studies/ai-agent-orchestrator"
+    },
+    {
+      title: "Lurtis AI Buildability Estimator",
+      description: "Developed an AI-powered tool that analyzes project requirements and provides accurate buildability estimates for software development projects.",
+      image: "/placeholder.svg",
+      tags: ["AI/ML", "Estimation Tools", "Project Management", "Analytics"],
+      status: "Completed",
+      results: "Improved estimation accuracy by 45%",
+      caseStudyPath: "/case-studies/lurtis-ai-buildability-estimator"
+    }
+  ];
+
+  return (
+    <div className="pt-16 min-h-screen bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Use Cases & Projects</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Explore my latest design projects and case studies. Each project showcases different aspects of my design process, from research and ideation to final implementation.</p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Explore my latest design projects and case studies. Each project showcases different aspects of my design process, from research and ideation to final implementation.
+          </p>
         </div>
 
         {/* Projects Grid */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          {projects.map((project, index) => <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          {projects.map((project, index) => (
+            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="w-24 h-24 rounded-lg bg-gradient-to-br from-primary to-purple-600 mx-auto mb-4"></div>
@@ -80,7 +100,8 @@ const UseCases = () => {
                   </Button>
                 </div>
               </CardContent>
-            </Card>)}
+            </Card>
+          ))}
         </div>
 
         {/* Coming Soon Section */}
@@ -94,6 +115,8 @@ const UseCases = () => {
           </CardContent>
         </Card>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default UseCases;

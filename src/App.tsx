@@ -14,6 +14,7 @@ import FirstRunExperience from "./pages/case-studies/FirstRunExperience";
 import RevampDataService from "./pages/case-studies/RevampDataService";
 import SaaSDashboard from "./pages/case-studies/SaaSDashboard";
 import HealthcareApp from "./pages/case-studies/HealthcareApp";
+import LurtisAIBuildabilityEstimator from "./pages/case-studies/LurtisAIBuildabilityEstimator";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/case-studies/revamp-data-service" element={<RevampDataService />} />
             <Route path="/case-studies/saas-dashboard" element={<SaaSDashboard />} />
             <Route path="/case-studies/healthcare-app" element={<HealthcareApp />} />
+            <Route path="/case-studies/lurtis-ai-buildability-estimator" element={<LurtisAIBuildabilityEstimator />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
