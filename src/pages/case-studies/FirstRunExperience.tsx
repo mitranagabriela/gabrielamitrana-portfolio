@@ -1,4 +1,3 @@
-
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 const FirstRunExperience = () => {
   const heroContent = <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
@@ -88,10 +87,10 @@ const FirstRunExperience = () => {
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="w-full">
-                <img src="/lovable-uploads/5189f751-d4e2-4f0f-808e-f4c32257f16f.png" alt="Get started with UiPath Studio screen showing application selection interface with various apps like Google Sheets, Excel, Gmail, Outlook, and others" className="w-full rounded-lg" />
+                <img src="/lovable-uploads/954a9a53-6be9-4953-93f3-32f06c61b363.png" alt="Department selection screen for UiPath Studio onboarding with options like Marketing, HR & Legal, Product & Design, Engineering, and Finance" className="w-full rounded-lg" />
               </div>
               <div className="w-full">
-                <img src="/lovable-uploads/954a9a53-6be9-4953-93f3-32f06c61b363.png" alt="Department selection screen for UiPath Studio onboarding with options like Marketing, HR & Legal, Product & Design, Engineering, and Finance" className="w-full rounded-lg" />
+                <img src="/lovable-uploads/5189f751-d4e2-4f0f-808e-f4c32257f16f.png" alt="Get started with UiPath Studio screen showing application selection interface with various apps like Google Sheets, Excel, Gmail, Outlook, and others" className="w-full rounded-lg" />
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
