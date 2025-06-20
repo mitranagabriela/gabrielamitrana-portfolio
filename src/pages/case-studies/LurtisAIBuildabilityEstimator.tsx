@@ -121,10 +121,11 @@ const LurtisAIBuildabilityEstimator = () => {
             <h3 className="text-lg font-semibold mb-3">5. Prototyping & Iteration</h3>
             <p className="text-muted-foreground leading-relaxed mb-3">The high-fidelity prototype incorporated:</p>
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-              <li>Smart data input fields</li>
-              <li>Interactive zoning overlays</li>
-              <li>Dynamic charts for buildability and ROI scenarios</li>
-              <li>Scenario comparison dashboards</li>
+              <li>Smart selection of land</li>
+              <li>Customize preferences</li>
+              <li>Automatic check of regulations</li>
+              <li>Generation of solutions</li>
+              <li>Comparison between solution</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-3">
               The design went through multiple iterations based on stakeholder reviews and usability testing. I used cognitive walkthroughs to identify usability friction points and refined the flows accordingly.
