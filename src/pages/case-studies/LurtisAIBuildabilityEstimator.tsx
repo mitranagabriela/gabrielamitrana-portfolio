@@ -33,9 +33,7 @@ const LurtisAIBuildabilityEstimator = () => {
   }, {
     title: "The Challenge",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            Real estate and construction are among the most economically valuable yet technologically conservative sectors. Despite the growing demand for efficient planning tools, feasibility analysis for property development is still a slow, manual process—often involving time-intensive consultations and fragmented datasets.
-          </p>
+          <p className="text-muted-foreground leading-relaxed">Construction and real estate are industrial sectors with a significant economic value, but they are also quite conventional in adopting of new technologies. Despite the growing demand, feasibility analysis for property development is still a  manual process, often involving time-intensive consultations and fragmented datasets.</p>
           <p className="text-muted-foreground leading-relaxed">This inefficiency is amplified by:</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             <li>A lack of digitalization in early-stage planning</li>
