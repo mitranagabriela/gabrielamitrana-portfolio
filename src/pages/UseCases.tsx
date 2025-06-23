@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 const UseCases = () => {
   const projects = [
     {
-      title: "AI Agent Orchestrator",
-      description: "Designed an intelligent agent management system that enables seamless coordination and deployment of AI-powered automation agents across enterprise workflows.",
+      title: "AI Agents",
+      description: "Designing how AI agents are built, deployed, and monitored",
       image: "/placeholder.svg",
       tags: ["AI/ML", "Agent Systems", "Enterprise Automation", "Orchestration"],
       status: "In Progress",
