@@ -63,7 +63,9 @@ const UseCases = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Use Cases & Projects</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore my latest design projects and case studies. Each project showcases different aspects of my design process, from research and ideation to final implementation.
+            Explore my latest design projects and case studies.<br/>
+            Each project showcases different aspects of my design process,<br/>
+            from research and ideation to final implementation.
           </p>
         </div>
 
