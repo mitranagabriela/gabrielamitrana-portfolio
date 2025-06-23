@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -28,7 +27,7 @@ const UseCases = () => {
     },
     {
       title: "Revamp Data Service",
-      description: "Transformed the data management experience by redesigning core service interfaces and user workflows for better data accessibility and performance.",
+      description: "Transformed the data management experience by addressing core user workflows and data access",
       image: "/placeholder.svg",
       tags: ["Data Management", "Service Design", "Enterprise UX"],
       status: "Completed",
