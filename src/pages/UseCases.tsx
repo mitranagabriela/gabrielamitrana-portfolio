@@ -46,7 +46,7 @@ const UseCases = () => {
     },
     {
       title: "Lurtis AI Buildability Estimator",
-      description: "Developed an AI-powered tool that analyzes project requirements and provides accurate buildability estimates for software development projects.",
+      description: "Developed an AI-powered tool that analyzes a land potential and provides accurate buildability estimates",
       image: "/placeholder.svg",
       tags: ["AI/ML", "Estimation Tools", "Project Management", "Analytics"],
       status: "Completed",
