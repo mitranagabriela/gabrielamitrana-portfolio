@@ -18,7 +18,7 @@ const UseCases = () => {
     },
     {
       title: "Unified Developer Experience",
-      description: "Created a cohesive development platform that brings together disparate tools and workflows into a single, streamlined developer environment.",
+      description: "Brought together disparate tools and workflows into a single, streamlined developer environment.",
       image: "/placeholder.svg",
       tags: ["Developer Tools", "Platform Design", "Workflow Optimization"],
       status: "Completed",
