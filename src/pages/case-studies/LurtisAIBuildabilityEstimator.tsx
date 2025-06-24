@@ -1,3 +1,4 @@
+
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
@@ -85,7 +86,7 @@ const LurtisAIBuildabilityEstimator = () => {
               <li>Target markets</li>
               
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest — primarily architects, urban planners, and property developers.</p>
+            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest — primarily architects, urban planners, and property developers.</p>
           </div>
 
           <div>
@@ -114,7 +115,24 @@ const LurtisAIBuildabilityEstimator = () => {
             <h3 className="text-lg font-semibold mb-3">4. Defining the Architecture</h3>
             <p className="text-muted-foreground leading-relaxed mb-3">I created a navigation map to clearly visualize all the features and the relationships between them. The navigation map built on the scenario explored in the customer journey. Each of the actions previously identified became features allowing users to accomplish a goal. 
         </p>
-            <p className="text-muted-foreground leading-relaxed">Using the navigation map, I started sketching the main screens to establish a layout that everyone in the team would agree with. The wireframes provided a stimulating artifact for discussion and gave everyone an idea of how the interface could look like. ​​​​​​​​​​​​​​​​​​​​​</p>
+            
+            <div className="my-6">
+              <img 
+                src="/lovable-uploads/dfe315c2-8dce-41d2-aa8d-a961e03401a5.png" 
+                alt="Navigation map showing user flow from main page through 4 steps with detailed sub-processes" 
+                className="w-full rounded-lg shadow-lg"
+              />
+            </div>
+
+            <p className="text-muted-foreground leading-relaxed mb-3">Using the navigation map, I started sketching the main screens to establish a layout that everyone in the team would agree with. The wireframes provided a stimulating artifact for discussion and gave everyone an idea of how the interface could look like.</p>
+            
+            <div className="my-6">
+              <img 
+                src="/lovable-uploads/b39075f0-ffe9-4361-a950-528073793bfe.png" 
+                alt="Wireframe mockups showing the 4-step interface design with different views for land selection, regulations, user preferences, and design comparison" 
+                className="w-full rounded-lg shadow-lg"
+              />
+            </div>
           </div>
 
           <div>
