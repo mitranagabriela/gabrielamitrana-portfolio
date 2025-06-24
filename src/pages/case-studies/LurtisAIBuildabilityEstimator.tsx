@@ -1,4 +1,3 @@
-
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
@@ -9,6 +8,7 @@ const LurtisAIBuildabilityEstimator = () => {
         <p className="text-muted-foreground">AI-Powered Buildability Tool for Real Estate Feasibility</p>
       </div>
     </div>;
+  
   const sections = [{
     title: "Overview",
     content: <div className="space-y-6">
@@ -135,6 +135,7 @@ const LurtisAIBuildabilityEstimator = () => {
             </div>
           </div>
 
+          
           <div>
             <h3 className="text-lg font-semibold mb-3">5. Prototyping & Iteration</h3>
             <p className="text-muted-foreground leading-relaxed mb-3">The high-fidelity prototype incorporated:</p>
