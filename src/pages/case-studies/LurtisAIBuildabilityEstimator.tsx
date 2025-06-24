@@ -1,3 +1,4 @@
+
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
@@ -85,7 +86,7 @@ const LurtisAIBuildabilityEstimator = () => {
               <li>Target markets</li>
               
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest — primarily architects, urban planners, and property developers.</p>
+            <p className="text-muted-foreground leading-relaxed mt-3">I also created a stakeholder map, focusing on users with both high power and interest — primarily architects, urban planners, and property developers.</p>
           </div>
 
           <div>
@@ -117,14 +118,14 @@ const LurtisAIBuildabilityEstimator = () => {
             <p className="text-muted-foreground leading-relaxed mb-6">Using the navigation map, I started sketching the main screens to establish a layout that everyone in the team would agree with. The wireframes provided a stimulating artifact for discussion and gave everyone an idea of how the interface could look like. ​​​​​​​​​​​​​​​​​​​​​</p>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="rounded-lg overflow-hidden border">
+              <div className="rounded-lg overflow-hidden">
                 <img 
                   src="/lovable-uploads/f4042a07-e321-4a83-98ec-4baa8cc656b8.png" 
                   alt="Navigation map showing the system architecture and user flow" 
                   className="w-full h-auto"
                 />
               </div>
-              <div className="rounded-lg overflow-hidden border">
+              <div className="rounded-lg overflow-hidden">
                 <img 
                   src="/lovable-uploads/f0315d9b-ea8a-4c6f-beab-e79abb946bb5.png" 
                   alt="Wireframes showing the main screens and interface layout" 
