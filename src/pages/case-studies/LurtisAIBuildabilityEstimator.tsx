@@ -1,4 +1,3 @@
-
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
@@ -120,7 +119,7 @@ const LurtisAIBuildabilityEstimator = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="rounded-lg overflow-hidden">
                 <img 
-                  src="/lovable-uploads/f4042a07-e321-4a83-98ec-4baa8cc656b8.png" 
+                  src="/lovable-uploads/e5db0158-478b-40b8-84fe-bbb472baa31c.png" 
                   alt="Navigation map showing the system architecture and user flow" 
                   className="w-full h-auto"
                 />
