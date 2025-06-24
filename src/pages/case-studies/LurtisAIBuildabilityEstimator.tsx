@@ -71,7 +71,7 @@ const LurtisAIBuildabilityEstimator = () => {
               <li>Residential markets saw delays due to economic uncertainty and property viewing restrictions.</li>
               <li>The BTR model gained traction in the UK, where investors are prioritizing long-term rental returns. In contrast, Spain's BTR market remained underdeveloped, offering a promising ground for innovation.</li>
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-3">These insights helped me identify a growing need: genrative tools that support early investment decisions focusing on the BTR market in Spain.</p>
+            <p className="text-muted-foreground leading-relaxed mt-3">These insights helped me identify a growing need: generative tools that support early investment decisions focusing on the BTR market in Spain.</p>
           </div>
 
           <div>
@@ -118,18 +118,10 @@ const LurtisAIBuildabilityEstimator = () => {
             
             <div className="grid md:grid-cols-2 gap-6">
               <div className="rounded-lg overflow-hidden">
-                <img 
-                  src="/lovable-uploads/e5db0158-478b-40b8-84fe-bbb472baa31c.png" 
-                  alt="Navigation map showing the system architecture and user flow" 
-                  className="w-full h-auto"
-                />
+                <img src="/lovable-uploads/e5db0158-478b-40b8-84fe-bbb472baa31c.png" alt="Navigation map showing the system architecture and user flow" className="w-full h-auto" />
               </div>
               <div className="rounded-lg overflow-hidden">
-                <img 
-                  src="/lovable-uploads/f0315d9b-ea8a-4c6f-beab-e79abb946bb5.png" 
-                  alt="Wireframes showing the main screens and interface layout" 
-                  className="w-full h-auto"
-                />
+                <img src="/lovable-uploads/f0315d9b-ea8a-4c6f-beab-e79abb946bb5.png" alt="Wireframes showing the main screens and interface layout" className="w-full h-auto" />
               </div>
             </div>
           </div>
