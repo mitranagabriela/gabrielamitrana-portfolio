@@ -96,9 +96,7 @@ const LurtisAIBuildabilityEstimator = () => {
               <li>Job-related best practices</li>
               <li>Desired features in a new tool</li>
             </ul>
-            <p className="text-muted-foreground leading-relaxed mt-3 py-[3px]">
-              I followed up with 1:1 interviews to gain deeper qualitative insights. These revealed recurring pain points:
-            </p>
+            
             
             <p className="text-muted-foreground leading-relaxed mt-3">
               From this, I created user personas and a customer journey map, which highlighted critical decision-making moments and emotional pain points.
