@@ -114,7 +114,24 @@ const LurtisAIBuildabilityEstimator = () => {
             <h3 className="text-lg font-semibold mb-3">4. Defining the Architecture</h3>
             <p className="text-muted-foreground leading-relaxed mb-3">I created a navigation map to clearly visualize all the features and the relationships between them. The navigation map built on the scenario explored in the customer journey. Each of the actions previously identified became features allowing users to accomplish a goal. 
         </p>
-            <p className="text-muted-foreground leading-relaxed">Using the navigation map, I started sketching the main screens to establish a layout that everyone in the team would agree with. The wireframes provided a stimulating artifact for discussion and gave everyone an idea of how the interface could look like. ​​​​​​​​​​​​​​​​​​​​​</p>
+            <p className="text-muted-foreground leading-relaxed mb-6">Using the navigation map, I started sketching the main screens to establish a layout that everyone in the team would agree with. The wireframes provided a stimulating artifact for discussion and gave everyone an idea of how the interface could look like. ​​​​​​​​​​​​​​​​​​​​​</p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="rounded-lg overflow-hidden border">
+                <img 
+                  src="/lovable-uploads/f4042a07-e321-4a83-98ec-4baa8cc656b8.png" 
+                  alt="Navigation map showing the system architecture and user flow" 
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden border">
+                <img 
+                  src="/lovable-uploads/f0315d9b-ea8a-4c6f-beab-e79abb946bb5.png" 
+                  alt="Wireframes showing the main screens and interface layout" 
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
           </div>
 
           <div>
@@ -163,7 +180,10 @@ const LurtisAIBuildabilityEstimator = () => {
             </div>
           </a>
           <Button variant="outline" className="w-full sm:w-auto" asChild>
-            
+            <a href="https://www.youtube.com/watch?v=41Q5jUUWEaM" target="_blank" rel="noopener noreferrer">
+              Watch Demo
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </a>
           </Button>
         </div>
   }];
