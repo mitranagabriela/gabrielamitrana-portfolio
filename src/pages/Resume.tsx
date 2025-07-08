@@ -13,7 +13,7 @@ const Resume = () => {
     title: "Product Designer",
     company: "UiPath, Bucharest, Romania",
     period: "JULY 2021 - PRESENT",
-    achievements: ["Currently - designing how AI agents are built, deployed, and monitored.", "Led the design of UiPath's data storage service, enabling robust, no-code data modeling and storage for RPA projects—streamlining how businesses manage and leverage data in automation workflows.", "Built Studio Web from the ground up—a powerful, web-based platform for designing, optimizing, and automating business processes at scale."]
+    achievements: ["Led the design of UiPath's data storage service, enabling robust, no-code data modeling and storage for RPA projects—streamlining how businesses manage and leverage data in automation workflows.", "Built Studio Web from the ground up—a powerful, web-based platform for designing, optimizing, and automating business processes at scale."]
   }, {
     title: "UX Designer",
     company: "Lurtis AI, Bucharest, Romania",
