@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Home, FileText, Briefcase, Mail, Menu, X } from "lucide-react";
@@ -8,7 +7,7 @@ import { cn } from "@/lib/utils";
 const navigationItems = [
   { name: "Home", href: "/", icon: Home },
   { name: "Resume", href: "/resume", icon: FileText },
-  { name: "Use Cases", href: "/usecases", icon: Briefcase },
+  { name: "Case Studies", href: "/usecases", icon: Briefcase },
   { name: "Contact", href: "/contact", icon: Mail },
 ];
 
