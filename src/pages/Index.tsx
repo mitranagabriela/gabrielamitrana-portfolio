@@ -12,7 +12,7 @@ const Index = () => {
   }, {
     icon: Users,
     label: "Stakeholders Involved",
-    value: "75"
+    value: "75+"
   }, {
     icon: Award,
     label: "Years Experience",
