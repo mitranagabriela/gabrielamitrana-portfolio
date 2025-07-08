@@ -1,9 +1,15 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Download, MapPin, Mail, Phone, Linkedin } from "lucide-react";
 const Resume = () => {
   const experience = [{
+    title: "Senior Product Designer",
+    company: "UiPath, Bucharest, Romania",
+    period: "JULY 2025 - PRESENT",
+    achievements: ["Currently - designing how AI agents are built, deployed, and monitored."]
+  }, {
     title: "Product Designer",
     company: "UiPath, Bucharest, Romania",
     period: "JULY 2021 - PRESENT",
