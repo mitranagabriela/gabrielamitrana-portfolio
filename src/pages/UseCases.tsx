@@ -7,25 +7,6 @@ import { Link } from "react-router-dom";
 const UseCases = () => {
   const projects = [
     {
-      title: "AI Agents",
-      description: "Designing how AI agents are built, deployed, and monitored",
-      image: "/placeholder.svg",
-      tags: ["AI/ML", "Agent Systems", "Enterprise Automation", "Orchestration"],
-      status: "In Progress",
-      results: "Enhanced agent deployment speed by 50%",
-      caseStudyPath: "/case-studies/ai-agent-orchestrator"
-    },
-    {
-      title: "Unified Developer Experience",
-      description: "Brought together disparate tools and workflows into a single, streamlined developer environment.",
-      image: "/placeholder.svg",
-      tags: ["Developer Tools", "Platform Design", "Workflow Optimization"],
-      status: "Completed",
-      results: "Reduced development time by 35%",
-      caseStudyPath: "/case-studies/unified-developer-experience",
-      demoLink: "https://www.youtube.com/watch?v=EOpWMmGHIrc"
-    },
-    {
       title: "Revamp Data Service",
       description: "Transformed the data management experience by addressing core user workflows and data access",
       image: "/placeholder.svg",
