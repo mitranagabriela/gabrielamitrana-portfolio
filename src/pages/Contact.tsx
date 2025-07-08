@@ -28,6 +28,7 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">I'm interested in new opportunities and collaborations. Whether you have a project in mind or just want to chat about design, I'd love to hear from you.</p>
         </div>
 
         <div className="max-w-2xl mx-auto space-y-8">
