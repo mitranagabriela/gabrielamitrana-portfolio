@@ -11,7 +11,7 @@ const Index = () => {
     value: "50+"
   }, {
     icon: Users,
-    label: "Happy Clients",
+    label: "Stakeholders Involved",
     value: "25+"
   }, {
     icon: Award,
