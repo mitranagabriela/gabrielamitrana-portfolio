@@ -164,12 +164,6 @@ const LurtisAIBuildabilityEstimator = () => {
               </div>
             </div>
           </a>
-          <Button variant="outline" className="w-full sm:w-auto" asChild>
-            <a href="https://www.youtube.com/watch?v=41Q5jUUWEaM" target="_blank" rel="noopener noreferrer">
-              Watch Demo
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </a>
-          </Button>
         </div>
   }];
   return <CaseStudyLayout title="Lurtis AI Buildability Estimator" subtitle="AI-Powered Buildability Tool for Real Estate Feasibility" tags={["AI/ML", "Real Estate", "Feasibility Analysis", "Product Design", "UX Research"]} heroContent={heroContent} sections={sections} />;
