@@ -77,9 +77,6 @@ const FirstRunExperience = () => {
             </ul>
           </div>
   }, {
-    title: "Responsiveness",
-    content: "Incorporating responsive design meant our templates had to be adaptable, allowing users to fully engage with the content regardless of their screen size. This involved researching the most common screen resolutions and defining breakpoints to ensure the design could seamlessly adjust to various screen sizes."
-  }, {
     title: "Profiling & Walkthrough Guide",
     content: <div className="space-y-6">
             <p className="text-muted-foreground leading-relaxed">
