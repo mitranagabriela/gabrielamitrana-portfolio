@@ -52,7 +52,7 @@ export const CaseStudyLayout = ({
               <h2 className="text-2xl font-semibold">{section.title}</h2>
               <div>
                 {typeof section.content === 'string' ? (
-                  <p className="text-muted-foreground leading-relaxed">{section.content}</p>
+                  section.content
                 ) : (
                   section.content
                 )}
