@@ -153,7 +153,7 @@ const RevampDataService = () => {
             <img 
               src="/src/assets/unified-experience-workflow.png" 
               alt="Unified schema editing workflow showing the integrated development experience within UiPath Studio"
-              className="w-full rounded-lg border shadow-sm"
+              className="w-full max-w-6xl mx-auto rounded-lg shadow-sm"
             />
             <p className="text-sm text-muted-foreground text-center mt-2">
               Integrated schema editing workflow eliminating the need for context switching
