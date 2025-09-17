@@ -93,7 +93,7 @@ const RevampDataService = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <div className="text-center">
-                  <span className="inline-block px-3 py-1 text-sm font-semibold text-red-600 bg-red-50 rounded-full border border-red-200">
+                  <span className="inline-block px-3 py-1 text-sm font-semibold text-muted-foreground bg-accent/50 rounded-full border">
                     BEFORE
                   </span>
                 </div>
@@ -111,7 +111,7 @@ const RevampDataService = () => {
               
               <div className="space-y-4">
                 <div className="text-center">
-                  <span className="inline-block px-3 py-1 text-sm font-semibold text-green-600 bg-green-50 rounded-full border border-green-200">
+                  <span className="inline-block px-3 py-1 text-sm font-semibold text-muted-foreground bg-accent/50 rounded-full border">
                     AFTER
                   </span>
                 </div>
