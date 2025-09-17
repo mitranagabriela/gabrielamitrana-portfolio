@@ -88,6 +88,46 @@ const RevampDataService = () => {
           <p className="text-muted-foreground leading-relaxed mt-4">
             This design was validated through usability tests with key enterprise customers and contributed directly to several deals moving forward.
           </p>
+          
+          <div className="mt-8">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="text-center">
+                  <span className="inline-block px-3 py-1 text-sm font-semibold text-red-600 bg-red-50 rounded-full border border-red-200">
+                    BEFORE
+                  </span>
+                </div>
+                <div className="border rounded-lg overflow-hidden shadow-sm">
+                  <img 
+                    src="/src/assets/data-service-before.png" 
+                    alt="Before: Complex role management interface with cluttered layout and unclear permissions structure"
+                    className="w-full h-auto"
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground text-center">
+                  Complex interface with unclear permissions and cluttered role management
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="text-center">
+                  <span className="inline-block px-3 py-1 text-sm font-semibold text-green-600 bg-green-50 rounded-full border border-green-200">
+                    AFTER
+                  </span>
+                </div>
+                <div className="border rounded-lg overflow-hidden shadow-sm">
+                  <img 
+                    src="/src/assets/data-service-after.png" 
+                    alt="After: Clean, organized role creation interface with clear permission structure and intuitive layout"
+                    className="w-full h-auto"
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground text-center">
+                  Streamlined interface with clear permission structure and intuitive role creation flow
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
   }, {
     title: "Unified Experience: Ending the Context Switch",
