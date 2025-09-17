@@ -152,14 +152,54 @@ const RevampDataService = () => {
         </div>
   }, {
     title: "Results",
-    content: <div className="space-y-4">
+    content: <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">The redesign was completed and shipped across one release. Key outcomes:</p>
-          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>35% decrease in schema-related support tickets.</li>
-            <li>Improved product NPS from internal surveys and pilot feedback.</li>
-            <li>Increased adoption among enterprise customers, driven by access control capabilities.</li>
-            <li>Streamlined development experience, reducing task time by ~25% (based on internal QA testing).</li>
-          </ul>
+          
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg border border-green-200">
+              <div className="flex items-center justify-between mb-2">
+                <div className="text-3xl font-bold text-green-700">35%</div>
+                <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">↓</span>
+                </div>
+              </div>
+              <p className="text-sm font-semibold text-green-800">Decrease in Support Tickets</p>
+              <p className="text-xs text-green-600 mt-1">Schema-related issues</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border border-blue-200">
+              <div className="flex items-center justify-between mb-2">
+                <div className="text-3xl font-bold text-blue-700">25%</div>
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">⚡</span>
+                </div>
+              </div>
+              <p className="text-sm font-semibold text-blue-800">Faster Development</p>
+              <p className="text-xs text-blue-600 mt-1">Reduced task completion time</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg border border-purple-200">
+              <div className="flex items-center justify-between mb-2">
+                <div className="text-2xl font-bold text-purple-700">NPS</div>
+                <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">↑</span>
+                </div>
+              </div>
+              <p className="text-sm font-semibold text-purple-800">Improved Product Rating</p>
+              <p className="text-xs text-purple-600 mt-1">Internal surveys & pilot feedback</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg border border-orange-200">
+              <div className="flex items-center justify-between mb-2">
+                <div className="text-2xl font-bold text-orange-700">ENT</div>
+                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">🏢</span>
+                </div>
+              </div>
+              <p className="text-sm font-semibold text-orange-800">Enterprise Adoption</p>
+              <p className="text-xs text-orange-600 mt-1">Driven by access control features</p>
+            </div>
+          </div>
         </div>
   }, {
     title: "Reflections & Learnings",
