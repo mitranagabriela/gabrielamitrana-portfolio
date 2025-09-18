@@ -70,23 +70,6 @@ const UseCases = () => {
                   <p className="text-sm text-muted-foreground">{project.results}</p>
                 </div>
                 
-                {project.demoLink && <div className="flex justify-center">
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      asChild
-                    >
-                      <a 
-                        href={project.demoLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        <Play className="mr-2 h-3 w-3" />
-                        View Demo
-                      </a>
-                    </Button>
-                  </div>}
               </CardContent>
             </Card>
             </Link>)}
