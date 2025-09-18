@@ -62,9 +62,9 @@ const RevampDataService = () => {
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">Given limited engineering bandwidth, I worked with the PM to define quick wins — changes that required low dev effort but delivered noticeable UX improvements. These included:</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Simplified CTAs and reduced decision paralysis through cleaner UI hierarchy.</li>
-            <li>Contextual tips for first-time users.</li>
-            <li>Streamlined sync between entity definitions and Studio.</li>
+            
+            
+            
           </ul>
           <p className="text-muted-foreground leading-relaxed mt-4">These changes were shipped in the first few sprints  and immediately improved usability metrics from internal QA and pilot users.</p>
           <div className="w-full mt-8">
@@ -97,11 +97,7 @@ const RevampDataService = () => {
               </span>
             </div>
             <div className="w-full">
-              <img 
-                src="/src/assets/revamp-data-service-access-control.png" 
-                alt="Access control interface showing before and after states of role management"
-                className="w-full rounded-lg"
-              />
+              <img src="/src/assets/revamp-data-service-access-control.png" alt="Access control interface showing before and after states of role management" className="w-full rounded-lg" />
             </div>
           </div>
         </div>
@@ -126,11 +122,7 @@ const RevampDataService = () => {
           </ul>
           
           <div className="w-full mt-8">
-            <img 
-              src="/src/assets/revamp-data-service-unified-experience.png" 
-              alt="Unified experience workflow showing integrated development interface"
-              className="w-full rounded-lg"
-            />
+            <img src="/src/assets/revamp-data-service-unified-experience.png" alt="Unified experience workflow showing integrated development interface" className="w-full rounded-lg" />
           </div>
           
         </div>
