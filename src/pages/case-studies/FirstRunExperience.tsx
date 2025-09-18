@@ -1,6 +1,6 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 const FirstRunExperience = () => {
-  const heroContent;
+  const heroContent = null;
   const sections = [{
     title: "Project Overview",
     content: <div className="space-y-6">
