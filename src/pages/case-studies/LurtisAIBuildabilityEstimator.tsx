@@ -2,7 +2,7 @@ import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
 const LurtisAIBuildabilityEstimator = () => {
-  const heroContent;
+  const heroContent = null;
   const sections = [{
     title: "Overview",
     content: <div className="space-y-6">
