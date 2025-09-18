@@ -1,11 +1,6 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 const FirstRunExperience = () => {
-  const heroContent = <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 rounded-lg flex items-center justify-center">
-      <div className="text-center p-8">
-        <div className="w-32 h-32 rounded-lg bg-gradient-to-br from-primary to-purple-600 mx-auto mb-4"></div>
-        <p className="text-muted-foreground">Getting Started with Studio Web</p>
-      </div>
-    </div>;
+  const heroContent;
   const sections = [{
     title: "Project Overview",
     content: <div className="space-y-6">
