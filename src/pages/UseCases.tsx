@@ -44,7 +44,8 @@ const UseCases = () => {
 
         {/* Projects Grid */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          {projects.map((project, index) => <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          {projects.map((project, index) => <Link key={index} to={project.caseStudyPath}>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer">
               <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="w-24 h-24 rounded-lg bg-gradient-to-br from-primary to-purple-600 mx-auto mb-4"></div>
@@ -68,22 +69,26 @@ const UseCases = () => {
                   <p className="text-sm text-muted-foreground">{project.results}</p>
                 </div>
                 
-                <div className="flex gap-2">
-                  <Button variant="outline" size="sm" className="flex-1" asChild>
-                    <Link to={project.caseStudyPath}>
-                      <ExternalLink className="mr-2 h-3 w-3" />
-                      View Case Study
-                    </Link>
-                  </Button>
-                  {project.demoLink && <Button variant="outline" size="sm" className="flex-1" asChild>
-                      <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                {project.demoLink && <div className="flex justify-center">
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      asChild
+                    >
+                      <a 
+                        href={project.demoLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                      >
                         <Play className="mr-2 h-3 w-3" />
                         View Demo
                       </a>
-                    </Button>}
-                </div>
+                    </Button>
+                  </div>}
               </CardContent>
-            </Card>)}
+            </Card>
+            </Link>)}
         </div>
 
         {/* Coming Soon Section */}
