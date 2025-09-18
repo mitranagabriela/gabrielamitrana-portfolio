@@ -31,7 +31,10 @@ const Index = () => {
                     Gabriela Mitrana
                   </span>
                 </h1>
-                <p className="text-xl text-muted-foreground leading-relaxed">Product designer with a focus on human-centered design, helping people save time, while offering a smooth experience in the process.</p>
+                <p className="text-xl text-muted-foreground leading-relaxed">I'm a product designer with a passion for creating meaningful digital experiences. My approach combines user-centered design principles with business objectives to deliver solutions that not only look beautiful but also drive results.
+
+
+              </p>
               </div>
               
               <div className="flex flex-wrap gap-2">
