@@ -7,7 +7,7 @@ const UseCases = () => {
   const projects = [{
     title: "Revamp Data Service",
     description: "Transformed the data management experience by addressing core user workflows and data access",
-    image: "/placeholder.svg",
+    image: "/src/assets/revamp-data-service-cover.png",
     tags: ["Data Management", "Service Design", "Enterprise UX"],
     status: "Completed",
     results: "Improved data processing efficiency by 60%",
@@ -46,11 +46,12 @@ const UseCases = () => {
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {projects.map((project, index) => <Link key={index} to={project.caseStudyPath}>
               <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer">
-              <div className="aspect-video bg-gradient-to-br from-primary/10 to-purple-600/10 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 rounded-lg bg-gradient-to-br from-primary to-purple-600 mx-auto mb-4"></div>
-                  <p className="text-muted-foreground">Project Preview</p>
-                </div>
+              <div className="aspect-video overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={`${project.title} preview`}
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               <CardHeader>

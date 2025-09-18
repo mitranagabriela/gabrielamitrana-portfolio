@@ -49,7 +49,7 @@ const RevampDataService = () => {
             I started with a heuristic audit to identify usability gaps and friction points. This included:
           </p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Analyzing both creation and consumption user workflows </li>
+            <li>Analyzing both creation and consumption user workflows </li>
             <li>Reviewing previous customer feedback</li>
             <li>Mapping UI behaviors to Jakob Nielsen's usability heuristics.</li>
           </ul>
@@ -71,7 +71,10 @@ const RevampDataService = () => {
             <li>Contextual tips for first-time users.</li>
             <li>Streamlined sync between entity definitions and Studio.</li>
           </ul>
-          <p className="text-muted-foreground leading-relaxed mt-4">These changes were shipped in the first few sprints  and immediately improved usability metrics from internal QA and pilot users.</p>
+          <p className="text-muted-foreground leading-relaxed mt-4">These changes were shipped in the first few sprints  and immediately improved usability metrics from internal QA and pilot users.</p>
+          <div className="w-full mt-8">
+            <img src="/src/assets/revamp-data-service-anatomy.png" alt="Data service anatomy showing improved interface structure" className="w-full rounded-lg" />
+          </div>
         </div>
   }, {
     title: "Designing for Security: Access Control",
@@ -90,42 +93,20 @@ const RevampDataService = () => {
           </p>
           
           <div className="mt-8">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="text-center">
-                  <span className="inline-block px-3 py-1 text-sm font-semibold text-muted-foreground bg-accent/50 rounded-full border">
-                    BEFORE
-                  </span>
-                </div>
-                <div className="border rounded-lg overflow-hidden shadow-sm">
-                  <img 
-                    src="/src/assets/data-service-before.png" 
-                    alt="Before: Complex role management interface with cluttered layout and unclear permissions structure"
-                    className="w-full h-auto"
-                  />
-                </div>
-                <p className="text-sm text-muted-foreground text-center">
-                  Complex interface with unclear permissions and cluttered role management
-                </p>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="text-center">
-                  <span className="inline-block px-3 py-1 text-sm font-semibold text-muted-foreground bg-accent/50 rounded-full border">
-                    AFTER
-                  </span>
-                </div>
-                <div className="border rounded-lg overflow-hidden shadow-sm">
-                  <img 
-                    src="/src/assets/data-service-after.png" 
-                    alt="After: Clean, organized role creation interface with clear permission structure and intuitive layout"
-                    className="w-full h-auto"
-                  />
-                </div>
-                <p className="text-sm text-muted-foreground text-center">
-                  Streamlined interface with clear permission structure and intuitive role creation flow
-                </p>
-              </div>
+            <div className="flex justify-center gap-4 mb-4">
+              <span className="inline-block px-3 py-1 text-sm font-semibold text-muted-foreground bg-accent/50 rounded-full">
+                BEFORE
+              </span>
+              <span className="inline-block px-3 py-1 text-sm font-semibold text-muted-foreground bg-accent/50 rounded-full">
+                AFTER
+              </span>
+            </div>
+            <div className="w-full">
+              <img 
+                src="/src/assets/revamp-data-service-access-control.png" 
+                alt="Access control interface showing before and after states of role management"
+                className="w-full rounded-lg"
+              />
             </div>
           </div>
         </div>
@@ -149,15 +130,12 @@ const RevampDataService = () => {
             <li>Generation of mock data.</li>
           </ul>
           
-          <div className="mt-8">
+          <div className="w-full mt-8">
             <img 
-              src="/src/assets/unified-experience-workflow.png" 
-              alt="Unified schema editing workflow showing the integrated development experience within UiPath Studio"
-              className="w-full rounded-lg border shadow-sm"
+              src="/src/assets/revamp-data-service-unified-experience.png" 
+              alt="Unified experience workflow showing integrated development interface"
+              className="w-full rounded-lg"
             />
-            <p className="text-sm text-muted-foreground text-center mt-2">
-              Integrated schema editing workflow eliminating the need for context switching
-            </p>
           </div>
           
         </div>
