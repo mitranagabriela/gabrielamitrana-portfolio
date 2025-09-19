@@ -4,7 +4,7 @@ const RevampDataService = () => {
   const sections = [{
     title: "Project Overview",
     content: <div className="space-y-6">
-          <p className="text-muted-foreground leading-relaxed">Data Service is UiPath's low-code data modeling and management layer — a lightweight database designed for automation developers. It simplifies how data is stored and accessed without requiring backend expertise.</p>
+          <p className="text-muted-foreground leading-relaxed">Data Fabric is UiPath's low-code data modeling and management layer — a lightweight database designed for automation developers. It simplifies how data is stored and accessed without requiring backend expertise.</p>
           <p className="text-muted-foreground leading-relaxed">Despite its technical strengths, the product suffered from poor discoverability, interaction difficulties, and lacked critical access control. As the Lead Product Designer, I revamped the UX to improve usability, trust, and adoption.</p>
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="p-4 bg-accent/50 rounded-lg">
@@ -29,7 +29,7 @@ const RevampDataService = () => {
     title: "Vision & Business Goals",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            Our vision was to make Data Service the default system of record within UiPath.
+            Our vision was to make Data Fabric the default system of record within UiPath.
             Design objectives were driven by two key business goals:
           </p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
@@ -68,7 +68,7 @@ const RevampDataService = () => {
           </ul>
           <p className="text-muted-foreground leading-relaxed mt-4">These changes were shipped in the first few sprints  and immediately improved usability metrics from internal QA and pilot users.</p>
           <div className="w-full mt-8">
-            <img src="/src/assets/revamp-data-service-anatomy.png" alt="Data service anatomy showing improved interface structure" className="w-full rounded-lg" />
+            <img src="/src/assets/revamp-data-service-anatomy.png" alt="Data fabric anatomy showing improved interface structure" className="w-full rounded-lg" />
           </div>
         </div>
   }, {
@@ -167,6 +167,6 @@ const RevampDataService = () => {
           </ul>
         </div>
   }];
-  return <CaseStudyLayout title="Revamp Data Service" subtitle="Transforming the data management experience by redesigning core service interfaces and user workflows for better data accessibility and performance" tags={["Data Management", "Service Design", "Enterprise UX", "Access Control", "Platform Integration"]} heroContent={heroContent} sections={sections} />;
+  return <CaseStudyLayout title="Revamp Data Fabric" subtitle="Transforming the data management experience by redesigning core service interfaces and user workflows for better data accessibility and performance" tags={["Data Management", "Service Design", "Enterprise UX", "Access Control", "Platform Integration"]} heroContent={heroContent} sections={sections} />;
 };
 export default RevampDataService;

@@ -5,7 +5,7 @@ import { ExternalLink, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 const UseCases = () => {
   const projects = [{
-    title: "Revamp Data Service",
+    title: "Revamp Data Fabric",
     description: "Transformed the data management experience by addressing core user workflows and data access",
     image: "/src/assets/revamp-data-service-cover.png",
     tags: ["Data Management", "Service Design", "Enterprise UX"],
