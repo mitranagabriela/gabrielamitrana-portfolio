@@ -49,7 +49,7 @@ const RevampDataService = () => {
             <p className="font-semibold text-primary mb-2">Top Insights:</p>
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
               <li>Schema creation was isolated from the development experience.</li>
-              <li>There was no data access control, creating risks for enterprise use.</li>
+              <li>Data access control was poorly handled, creating risks for enterprise use.</li>
               <li>The UI lacked clarity around key actions, making features hard to discover.</li>
             </ul>
           </div>
