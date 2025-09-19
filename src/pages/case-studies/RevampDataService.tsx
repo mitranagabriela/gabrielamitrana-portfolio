@@ -43,7 +43,7 @@ const RevampDataService = () => {
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             <li>Analyzing both creation and consumption user workflows </li>
             <li>Reviewing previous customer feedback</li>
-            <li>Mapping UI behaviors to Jakob Nielsen's usability heuristics.</li>
+            <li>Mapping interactions to Jakob Nielsen's usability heuristics.</li>
           </ul>
           <div className="mt-6">
             <p className="font-semibold text-primary mb-2">Top Insights:</p>
