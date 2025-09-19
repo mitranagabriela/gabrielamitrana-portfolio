@@ -71,7 +71,7 @@ const RevampDataService = () => {
   }, {
     title: "Designing for Security: Access Control",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">One of the most critical upgrades was introducing access control — a top customer request and a blocker for adoption in the enterprise environment.</p>
+          <p className="text-muted-foreground leading-relaxed">One of the most critical upgrades was improving access control — a top customer request and a blocker for adoption in the enterprise environment.</p>
           <p className="text-muted-foreground leading-relaxed">
             I designed a role-based permission model that balanced simplicity and scalability:
           </p>
