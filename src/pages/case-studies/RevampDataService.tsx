@@ -68,7 +68,7 @@ const RevampDataService = () => {
           </ul>
           <p className="text-muted-foreground leading-relaxed mt-4">These changes were shipped in the first few sprints  and immediately improved usability metrics from internal QA and pilot users.</p>
           <div className="w-full mt-8">
-            <img src="/src/assets/revamp-data-service-anatomy.png" alt="Data fabric anatomy showing improved interface structure" className="w-full rounded-lg" />
+            
           </div>
         </div>
   }, {
