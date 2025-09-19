@@ -71,7 +71,7 @@ const RevampDataService = () => {
   }, {
     title: "Designing for Security: Access Control",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">One of the most critical upgrades was improving access control — a top customer request and a blocker for adoption in the enterprise environment.</p>
+          <p className="text-muted-foreground leading-relaxed">The next step was to introduce a clear way to manage who owns and who can access data. Previously, there were no restrictions — anyone using an automation could read and edit records without limits. This gap was a major concern for large customers, especially when sensitive business information was involved. Without proper access control, Data Service couldn't be considered a serious option for enterprise use.</p>
           <p className="text-muted-foreground leading-relaxed">
             I designed a role-based permission model that balanced simplicity and scalability:
           </p>
