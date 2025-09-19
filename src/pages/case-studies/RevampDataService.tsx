@@ -63,7 +63,7 @@ const RevampDataService = () => {
             
             
           </ul>
-          <p className="text-muted-foreground leading-relaxed mt-4">These changes were shipped in the first few sprints  and immediately improved usability metrics from internal QA and pilot users.</p>
+          <p className="text-muted-foreground leading-relaxed mt-4">These changes were shipped in the first few sprints and immediately improved the overall look and feel of the product.</p>
           <div className="w-full mt-8">
             
           </div>
