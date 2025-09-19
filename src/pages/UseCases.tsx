@@ -15,7 +15,7 @@ const UseCases = () => {
   }, {
     title: "First Run Experience",
     description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates",
-    image: "/placeholder.svg",
+    image: "/src/assets/first-run-experience-cover.png",
     tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
     status: "Completed",
     results: "Reduced onboarding drop-off by 40%",
