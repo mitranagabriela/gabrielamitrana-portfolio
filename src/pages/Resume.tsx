@@ -51,14 +51,6 @@ const Resume = () => {
           <h1 className="text-4xl font-bold mb-2">Gabriela Mitrana</h1>
           <p className="text-xl text-muted-foreground mb-2">Senior Product Designer</p>
           <p className="text-muted-foreground mb-8">Bucharest, Romania</p>
-          <Button 
-            size="lg" 
-            className="group"
-            onClick={() => window.print()}
-          >
-            <Download className="mr-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
-            Download PDF Resume
-          </Button>
         </div>
 
         {/* Experience */}
