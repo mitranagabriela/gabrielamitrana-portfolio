@@ -32,7 +32,7 @@ const Resume = () => {
   }, {
     degree: "Master's Degree, Human Computer Interaction and Design",
     school: "University of Twente, Enschede, Netherlands",
-    period: "OCT 2015 - JULY 2021"
+    period: "2019 - 2020"
   }, {
     degree: "Bachelor's Degree, Nanotechnology and Optoelectronics",
     school: "Faculty of Electronics and Telecommunications, Bucharest, Romania",
