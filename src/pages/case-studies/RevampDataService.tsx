@@ -86,17 +86,21 @@ const RevampDataService = () => {
           
           <div className="mt-8">
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="relative">
+              <div className="space-y-3">
+                <div className="flex justify-center">
+                  <span className="inline-block px-3 py-1 text-sm font-semibold text-muted-foreground bg-accent/50 rounded-full">
+                    BEFORE
+                  </span>
+                </div>
                 <img src="/src/assets/access-control-before.png" alt="Access control interface before redesign showing role management" className="w-full rounded-lg" />
-                <span className="absolute top-4 left-1/2 -translate-x-1/2 px-3 py-1 text-sm font-semibold text-muted-foreground bg-accent/50 rounded-full">
-                  BEFORE
-                </span>
               </div>
-              <div className="relative">
+              <div className="space-y-3">
+                <div className="flex justify-center">
+                  <span className="inline-block px-3 py-1 text-sm font-semibold text-muted-foreground bg-accent/50 rounded-full">
+                    AFTER
+                  </span>
+                </div>
                 <img src="/src/assets/access-control-after.png" alt="Access control interface after redesign showing improved role management" className="w-full rounded-lg" />
-                <span className="absolute top-4 left-1/2 -translate-x-1/2 px-3 py-1 text-sm font-semibold text-muted-foreground bg-accent/50 rounded-full">
-                  AFTER
-                </span>
               </div>
             </div>
           </div>
