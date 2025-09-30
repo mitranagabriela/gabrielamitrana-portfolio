@@ -12,7 +12,7 @@ const Resume = () => {
   }, {
     title: "Product Designer",
     company: "UiPath, Bucharest, Romania",
-    period: "JULY 2021 - PRESENT",
+    period: "JULY 2021 - JULY 2025",
     achievements: ["Led the design of UiPath's data storage service, enabling robust, no-code data modeling and storage for RPA projects", "Built Studio Web from the ground up — a powerful, web-based platform for designing, optimizing, and automating business processes at scale."]
   }, {
     title: "UX Designer",
