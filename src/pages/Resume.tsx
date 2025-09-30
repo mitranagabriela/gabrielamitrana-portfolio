@@ -28,7 +28,7 @@ const Resume = () => {
   const education = [{
     degree: "Master's Degree, Accessibility and Inclusive Design",
     school: "Universidad Politécnica di Madrid, Madrid, Spain",
-    period: "OCT 2015 - JULY 2021"
+    period: "2020 - 2021"
   }, {
     degree: "Master's Degree, Human Computer Interaction and Design",
     school: "University of Twente, Enschede, Netherlands",
