@@ -7,7 +7,7 @@ const UseCases = () => {
   const projects = [{
     title: "Revamp Data Fabric",
     description: "Transformed the data management experience by addressing core user workflows and data access",
-    image: "/src/assets/revamp-data-service-cover.png",
+    image: "/lovable-uploads/revamp-data-fabric-cover.png",
     tags: ["Data Management", "Service Design", "Enterprise UX"],
     status: "Completed",
     results: "Improved data processing efficiency by 60%",
@@ -15,7 +15,7 @@ const UseCases = () => {
   }, {
     title: "First Run Experience",
     description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates",
-    image: "/src/assets/first-run-experience-cover.png",
+    image: "/lovable-uploads/first-run-experience-cover.png",
     tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
     status: "Completed",
     results: "Reduced onboarding drop-off by 40%",
