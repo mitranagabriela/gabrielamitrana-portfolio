@@ -126,7 +126,7 @@ const RevampDataService = () => {
           </ul>
           
           <div className="w-full mt-8">
-            <img src="/src/assets/revamp-data-service-unified-experience.png" alt="Unified experience workflow showing integrated development interface" className="w-full rounded-lg" />
+            <img src="/src/assets/unified-experience-workflow.png" alt="Unified experience workflow showing integrated development interface" className="w-full rounded-lg" />
           </div>
           
         </div>
