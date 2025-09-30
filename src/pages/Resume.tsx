@@ -36,7 +36,7 @@ const Resume = () => {
   }, {
     degree: "Bachelor's Degree, Nanotechnology and Optoelectronics",
     school: "Faculty of Electronics and Telecommunications, Bucharest, Romania",
-    period: "OCT 2015 - JULY 2021"
+    period: "2015 - 2019"
   }];
   const skills = {
     "Skills": ["Product Design", "Design Thinking", "Interaction Design", "Responsive Design", "Product Strategy", "Information Architecture", "Accessibility and Inclusive Design", "Agile Methodology"],
