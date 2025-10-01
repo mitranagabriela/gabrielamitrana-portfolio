@@ -13,7 +13,7 @@ const UseCases = () => {
     results: "Improved data processing efficiency by 60%",
     caseStudyPath: "/case-studies/revamp-data-service"
   }, {
-    title: "First Run Experience",
+    title: "Getting Started with Studio Web",
     description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates",
     image: "/lovable-uploads/first-run-experience-cover.png",
     tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
