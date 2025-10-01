@@ -21,6 +21,14 @@ const UseCases = () => {
     results: "Reduced onboarding drop-off by 40%",
     caseStudyPath: "/case-studies/first-run-experience"
   }, {
+    title: "Unified Build",
+    description: "Streamlined the build configuration experience by unifying multiple tools and workflows into a single cohesive interface",
+    image: "/placeholder.svg",
+    tags: ["Developer Tools", "Platform Design", "Workflow Optimization", "Enterprise UX"],
+    status: "Completed",
+    results: "Reduced build configuration time by 50%",
+    caseStudyPath: "/case-studies/unified-build"
+  }, {
     title: "Lurtis AI Buildability Estimator",
     description: "Developed an AI-powered tool that analyzes a land potential and provides accurate buildability estimates",
     image: "/placeholder.svg",

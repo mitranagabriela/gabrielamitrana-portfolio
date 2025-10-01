@@ -17,6 +17,7 @@ import HealthcareApp from "./pages/case-studies/HealthcareApp";
 import LurtisAIBuildabilityEstimator from "./pages/case-studies/LurtisAIBuildabilityEstimator";
 import UnifiedDeveloperExperience from "./pages/case-studies/UnifiedDeveloperExperience";
 import AIAgentOrchestrator from "./pages/case-studies/AIAgentOrchestrator";
+import UnifiedBuild from "./pages/case-studies/UnifiedBuild";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/case-studies/lurtis-ai-buildability-estimator" element={<LurtisAIBuildabilityEstimator />} />
             <Route path="/case-studies/unified-developer-experience" element={<UnifiedDeveloperExperience />} />
             <Route path="/case-studies/ai-agent-orchestrator" element={<AIAgentOrchestrator />} />
+            <Route path="/case-studies/unified-build" element={<UnifiedBuild />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
