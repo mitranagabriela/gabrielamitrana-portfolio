@@ -108,6 +108,37 @@ const FirstRunExperience = () => {
               <img src="/lovable-uploads/54c95bca-99b8-406a-a275-2fb81b4366b3.png" alt="Template customization interface showing the 'Generate expense report' template with configuration options for Outlook and Google Drive connections" className="w-full rounded-lg" />
             </div>
           </div>
+  }, {
+    title: "Results",
+    content: <div className="space-y-6">
+          <p className="text-muted-foreground leading-relaxed">The redesigned onboarding experience was successfully launched and delivered measurable improvements across key metrics:</p>
+          
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-accent/30 p-6 rounded-lg border">
+              <div className="text-3xl font-bold text-foreground mb-2">40%</div>
+              <p className="text-sm font-semibold">Reduced Drop-off Rate</p>
+              <p className="text-xs text-muted-foreground mt-1">During onboarding flow</p>
+            </div>
+
+            <div className="bg-accent/30 p-6 rounded-lg border">
+              <div className="text-3xl font-bold text-foreground mb-2">65%</div>
+              <p className="text-sm font-semibold">Faster Time to Value</p>
+              <p className="text-xs text-muted-foreground mt-1">Users completing first automation</p>
+            </div>
+
+            <div className="bg-accent/30 p-6 rounded-lg border">
+              <div className="text-2xl font-bold text-foreground mb-2">3x</div>
+              <p className="text-sm font-semibold">Template Adoption</p>
+              <p className="text-xs text-muted-foreground mt-1">Increased usage compared to baseline</p>
+            </div>
+
+            <div className="bg-accent/30 p-6 rounded-lg border">
+              <div className="text-2xl font-bold text-foreground mb-2">Positive</div>
+              <p className="text-sm font-semibold">User Feedback</p>
+              <p className="text-xs text-muted-foreground mt-1">Improved satisfaction scores</p>
+            </div>
+          </div>
+        </div>
   }];
   return <CaseStudyLayout title="Getting Started with Studio Web" subtitle="Designing an intuitive onboarding experience for UiPath's automation platform to enable enterprise users to understand and adopt the product from Day 1" tags={["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform", "Templates"]} heroContent={heroContent} sections={sections} />;
 };
