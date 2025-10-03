@@ -13,7 +13,7 @@ const UnifiedBuild = () => {
       content: (
         <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">
-            [Add your project overview here - describe the context, the product, and what challenge you were solving]
+            In 2024, we launched a strategic investment into creating a Unified Developer Experience. Our goal was to remove barriers that slowed developers down and to help enterprises unlock value faster from end-to-end automation.
           </p>
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="p-4 bg-accent/50 rounded-lg">
@@ -38,7 +38,20 @@ const UnifiedBuild = () => {
     },
     {
       title: "Challenge",
-      content: "[Describe the main challenge or problem you were trying to solve. What pain points did users face? What business goals needed to be addressed?]"
+      content: "Building anything beyond simple task automations is complex and fragmented. Developers are forced to work across multiple disconnected tools and interfaces, making it difficult to stay in flow, collaborate effectively, and manage data and deployments consistently."
+    },
+    {
+      title: "Target audience",
+      content: (
+        <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            <strong>Developers:</strong> who need a streamlined, powerful toolset to build and deploy complex solutions without leaving their development environment.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            <strong>Centers of Excellence (CoEs):</strong> who are responsible for scaling automation across the enterprise and require repeatability, reusability, and efficient deployment at scale.
+          </p>
+        </div>
+      )
     },
     {
       title: "Discovery & Research",
