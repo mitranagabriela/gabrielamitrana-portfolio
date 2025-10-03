@@ -78,9 +78,6 @@ export const BeforeAfterSlider = ({
           className="w-full h-full object-cover"
           draggable={false}
         />
-        <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-md text-sm font-medium">
-          {beforeLabel}
-        </div>
       </div>
 
       {/* After Image (Left side, clipped) */}
@@ -94,9 +91,14 @@ export const BeforeAfterSlider = ({
           className="w-full h-full object-cover"
           draggable={false}
         />
-        <div className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-md text-sm font-medium">
-          {afterLabel}
-        </div>
+      </div>
+
+      {/* Labels - Always visible */}
+      <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-md text-sm font-medium pointer-events-none">
+        {beforeLabel}
+      </div>
+      <div className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-md text-sm font-medium pointer-events-none">
+        {afterLabel}
       </div>
 
       {/* Slider Handle */}
