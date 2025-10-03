@@ -5,7 +5,7 @@ import { ExternalLink, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 const UseCases = () => {
   const projects = [{
-    title: "Unified Build",
+    title: "Unified Developer Experience",
     description: "Streamlined the build configuration experience by unifying multiple tools and workflows into a single cohesive interface",
     image: "/placeholder.svg",
     tags: ["Developer Tools", "Platform Design", "Workflow Optimization", "Enterprise UX"],

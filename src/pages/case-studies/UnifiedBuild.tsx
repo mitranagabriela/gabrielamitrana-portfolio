@@ -153,7 +153,7 @@ const UnifiedBuild = () => {
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            Watch the demo to see the unified build experience in action:
+            Watch the demo to see the unified developer experience in action:
           </p>
           <a 
             href="https://www.youtube.com/watch?v=EOpWMmGHIrc" 
@@ -179,7 +179,7 @@ const UnifiedBuild = () => {
 
   return (
     <CaseStudyLayout
-      title="Unified Build"
+      title="Unified Developer Experience"
       subtitle="Streamlined the build configuration experience by unifying multiple tools and workflows into a single cohesive interface"
       tags={["Developer Tools", "Platform Design", "Workflow Optimization", "Enterprise UX"]}
       heroContent={heroContent}
