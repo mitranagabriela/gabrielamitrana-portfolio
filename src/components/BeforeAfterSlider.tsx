@@ -93,14 +93,6 @@ export const BeforeAfterSlider = ({
         />
       </div>
 
-      {/* Labels - Always visible */}
-      <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-md text-sm font-medium pointer-events-none">
-        {beforeLabel}
-      </div>
-      <div className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-md text-sm font-medium pointer-events-none">
-        {afterLabel}
-      </div>
-
       {/* Slider Handle */}
       <div
         className="absolute top-0 bottom-0 w-1 bg-primary cursor-ew-resize"
@@ -108,6 +100,13 @@ export const BeforeAfterSlider = ({
         onMouseDown={handleMouseDown}
         onTouchStart={handleMouseDown}
       >
+        {/* Labels near slider */}
+        <div className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-md text-sm font-medium pointer-events-none whitespace-nowrap">
+          {beforeLabel}
+        </div>
+        <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-md text-sm font-medium pointer-events-none whitespace-nowrap">
+          {afterLabel}
+        </div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-primary rounded-full shadow-lg flex items-center justify-center">
           <svg
             width="20"
