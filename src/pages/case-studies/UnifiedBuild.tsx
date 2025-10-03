@@ -38,7 +38,16 @@ const UnifiedBuild = () => {
     },
     {
       title: "Challenge",
-      content: "Building anything beyond simple task automations is complex and fragmented. Developers are forced to work across multiple disconnected tools and interfaces, making it difficult to stay in flow, collaborate effectively, and manage data and deployments consistently."
+      content: (
+        <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            Building anything beyond simple task automations is complex and fragmented. Developers are forced to work across multiple disconnected tools and interfaces, making it difficult to stay in flow, collaborate effectively, and manage data and deployments consistently.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Our vision is to make UiPath the one-stop shop for Business Process Automation Development — a place where developers, Centers of Excellence (CoEs), and business users can collaborate seamlessly.
+          </p>
+        </div>
+      )
     },
     {
       title: "Target audience",
