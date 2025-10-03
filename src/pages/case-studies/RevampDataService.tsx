@@ -83,17 +83,10 @@ const RevampDataService = () => {
             <li>The UI guided users with smart defaults.</li>
             <li>Consumers had a clear summary of their permissions.</li>
           </ul>
-          <p className="text-muted-foreground leading-relaxed mt-4">
-            This design was validated through usability tests with key enterprise customers and contributed directly to several deals moving forward.
-          </p>
+          
           
           <div className="mt-8">
-            <BeforeAfterSlider
-              beforeImage={beforeImage}
-              afterImage={afterImage}
-              beforeLabel="Before"
-              afterLabel="After"
-            />
+            <BeforeAfterSlider beforeImage={beforeImage} afterImage={afterImage} beforeLabel="Before" afterLabel="After" />
           </div>
         </div>
   }, {
