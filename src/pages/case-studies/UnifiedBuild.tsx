@@ -1,5 +1,6 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
+import { Play } from "lucide-react";
 import beforeImage from "@/assets/unified-build-before.png";
 import afterImage from "@/assets/unified-build-after.png";
 
@@ -131,6 +132,33 @@ const UnifiedBuild = () => {
             <li>[Key learning or reflection 2]</li>
             <li>[Key learning or reflection 3]</li>
           </ul>
+        </div>
+      )
+    },
+    {
+      title: "Demo",
+      content: (
+        <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            Watch the demo to see the unified build experience in action:
+          </p>
+          <a 
+            href="https://www.youtube.com/watch?v=EOpWMmGHIrc" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="block relative aspect-video bg-muted rounded-lg overflow-hidden mb-4 hover:opacity-90 transition-opacity cursor-pointer"
+          >
+            <img 
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=450&fit=crop&crop=center" 
+              alt="Product Demo Thumbnail" 
+              className="w-full h-full object-cover" 
+            />
+            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+              <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                <Play className="w-6 h-6 text-black ml-1" fill="currentColor" />
+              </div>
+            </div>
+          </a>
         </div>
       )
     }
