@@ -103,12 +103,7 @@ const RevampDataService = () => {
           <p className="text-muted-foreground leading-relaxed mt-4">
             To eliminate this friction, I proposed and designed a unified schema editor directly within Studio. Features included:
           </p>
-          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Inline schema creation and editing.</li>
-            <li>Drag-and-drop entity consumption.</li>
-            <li>Automatic synchronization.</li>
-            <li>Generation of mock data.</li>
-          </ul>
+          
           
           <div className="w-full mt-8">
             <img src={unifiedExperienceImage} alt="Unified experience workflow showing integrated development interface" className="w-full rounded-lg" />
