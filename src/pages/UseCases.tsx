@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
 import { Link } from "react-router-dom";
+import firstRunCover from "@/assets/first-run-experience-cover-new.png";
 const UseCases = () => {
   const projects = [{
     title: "Unified Developer Experience",
@@ -23,7 +24,7 @@ const UseCases = () => {
   }, {
     title: "Getting Started with Studio Web",
     description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates",
-    image: "/lovable-uploads/first-run-experience-cover.png",
+    image: firstRunCover,
     tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
     status: "Completed",
     results: "Reduced onboarding drop-off by 40%",
