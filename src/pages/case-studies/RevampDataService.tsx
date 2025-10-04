@@ -2,6 +2,7 @@ import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import beforeImage from "@/assets/access-control-before.png";
 import afterImage from "@/assets/access-control-after.png";
+import unifiedExperienceImage from "@/assets/unified-experience-data-fabric.png";
 const RevampDataService = () => {
   const heroContent = null;
   const sections = [{
@@ -110,7 +111,7 @@ const RevampDataService = () => {
           </ul>
           
           <div className="w-full mt-8">
-            <img src="/src/assets/unified-experience-workflow.png" alt="Unified experience workflow showing integrated development interface" className="w-full rounded-lg" />
+            <img src={unifiedExperienceImage} alt="Unified experience workflow showing integrated development interface" className="w-full rounded-lg" />
           </div>
           
         </div>
