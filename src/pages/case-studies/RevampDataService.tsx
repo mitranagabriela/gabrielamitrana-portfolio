@@ -100,9 +100,8 @@ const RevampDataService = () => {
             <li>Leave UiPath Studio to edit schemas.</li>
             <li>Return and manually sync changes.</li>
           </ul>
-          <p className="text-muted-foreground leading-relaxed mt-4">
-            To eliminate this friction, I proposed and designed a unified schema editor directly within Studio. Features included:
-          </p>
+          <p className="text-muted-foreground leading-relaxed mt-4">To eliminate this friction, I proposed and designed a unified schema editor directly within Studio. 
+ included:</p>
           
           
           <div className="w-full mt-8">
