@@ -3,6 +3,7 @@ import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import beforeImage from "@/assets/access-control-before.png";
 import afterImage from "@/assets/access-control-after.png";
 import unifiedExperienceImage from "@/assets/unified-experience-data-fabric.png";
+import quickFixesImage from "@/assets/quick-fixes.png";
 const RevampDataService = () => {
   const heroContent = null;
   const sections = [{
@@ -69,7 +70,7 @@ const RevampDataService = () => {
           </ul>
           <p className="text-muted-foreground leading-relaxed mt-4">These changes were shipped in the first few sprints and immediately improved the overall look and feel of the product.</p>
           <div className="w-full mt-8">
-            
+            <img src={quickFixesImage} alt="Quick fixes and UI improvements showing before and after states of the data entities interface" className="w-full rounded-lg" />
           </div>
         </div>
   }, {
