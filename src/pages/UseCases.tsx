@@ -27,7 +27,7 @@ const UseCases = () => {
     image: firstRunCover,
     tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
     status: "Completed",
-    results: "Reduced the time to build by 40% compared to the baseline.",
+    results: "Reduced the time to build by 40% compared to the baseline",
     caseStudyPath: "/case-studies/first-run-experience"
   }, {
     title: "Lurtis AI Buildability Estimator",
