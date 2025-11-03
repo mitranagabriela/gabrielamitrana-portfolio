@@ -23,7 +23,7 @@ const UseCases = () => {
     caseStudyPath: "/case-studies/revamp-data-service"
   }, {
     title: "Getting Started with Studio Web",
-    description: "Redesigned the onboarding experience for an automation platform to increase adoption and reduce drop-off rates",
+    description: "Designed the onboarding experience for an automation platform to increase adoption and reduce drop-off rates",
     image: firstRunCover,
     tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
     status: "Completed",
