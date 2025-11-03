@@ -131,6 +131,6 @@ const FirstRunExperience = () => {
           </div>
         </div>
   }];
-  return <CaseStudyLayout title="Getting Started with Studio Web" subtitle="Designing an intuitive onboarding experience for UiPath's automation platform to enable enterprise users to understand and adopt the product from Day 1" tags={["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform", "Templates"]} heroContent={heroContent} sections={sections} />;
+  return <CaseStudyLayout title="Getting Started with Studio Web" subtitle="Designed the onboarding experience for an automation platform to increase adoption and reduce drop-off rates" tags={["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform", "Templates"]} heroContent={heroContent} sections={sections} />;
 };
 export default FirstRunExperience;
