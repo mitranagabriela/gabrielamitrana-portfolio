@@ -125,7 +125,7 @@ const FirstRunExperience = () => {
             </div>
 
             <div className="bg-accent/30 p-6 rounded-lg border">
-              <p className="text-sm font-semibold mb-2">MAU Growth</p>
+              <p className="text-sm font-semibold mb-2">MAU</p>
               <div className="text-3xl font-bold text-foreground">28.6% higher</div>
             </div>
           </div>
