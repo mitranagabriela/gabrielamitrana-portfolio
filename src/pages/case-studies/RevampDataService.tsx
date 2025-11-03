@@ -96,8 +96,8 @@ const RevampDataService = () => {
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">With access control solved, the next step was to make Data Fabric feel seamless within developers’ workflows. At the time, schema editing lived in a separate portal — forcing users to leave UiPath Studio, make changes, then manually sync them back.</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Leave UiPath Studio to edit schemas.</li>
-            <li>Return and manually sync changes.</li>
+            
+            
           </ul>
           <p className="text-muted-foreground leading-relaxed mt-4">To eliminate this friction, I proposed and designed a unified schema editor and consumption mechanism directly inside Studio, </p>
           
