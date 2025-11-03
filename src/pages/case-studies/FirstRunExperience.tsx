@@ -115,21 +115,24 @@ const FirstRunExperience = () => {
           
           <div className="grid md:grid-cols-3 gap-4">
             <div className="bg-accent/30 p-6 rounded-lg border">
-              <div className="text-3xl font-bold text-foreground mb-2">40%</div>
+              <div className="text-3xl font-bold text-foreground mb-2">40% lower</div>
               <p className="text-sm font-semibold">Time to Build</p>
-              <p className="text-xs text-muted-foreground mt-1">Lower than the baseline</p>
+              <p className="text-xs text-muted-foreground mt-1">
+          </p>
             </div>
 
             <div className="bg-accent/30 p-6 rounded-lg border">
               <div className="text-3xl font-bold text-foreground mb-2">40+</div>
               <p className="text-sm font-semibold">NPS Score</p>
-              <p className="text-xs text-muted-foreground mt-1">Above baseline</p>
+              <p className="text-xs text-muted-foreground mt-1">
+          </p>
             </div>
 
             <div className="bg-accent/30 p-6 rounded-lg border">
-              <div className="text-3xl font-bold text-foreground mb-2">28.6%</div>
+              <div className="text-3xl font-bold text-foreground mb-2">28.6% higher</div>
               <p className="text-sm font-semibold">MAU Growth</p>
-              <p className="text-xs text-muted-foreground mt-1">Higher than the baseline</p>
+              <p className="text-xs text-muted-foreground mt-1">
+          </p>
             </div>
           </div>
         </div>
