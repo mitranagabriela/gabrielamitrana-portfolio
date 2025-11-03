@@ -72,8 +72,6 @@ const UnifiedBuild = () => {
             [Describe the final solution. What did you design? How does it solve the problem?]
           </p>
           
-          <BeforeAfterSlider beforeImage={beforeImage} afterImage={afterImage} beforeLabel="Before" afterLabel="After" className="my-8" />
-          
           <p className="text-muted-foreground leading-relaxed">
             [Add more details about specific features or design decisions]
           </p>
