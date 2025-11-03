@@ -33,7 +33,7 @@ const RevampDataService = () => {
   }, {
     title: "Vision & Business Goals",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">Our aim was to make Data Service the natural place for developers to store and manage their information. To get there, design focused on:</p>
+          <p className="text-muted-foreground leading-relaxed">Our aim was to make Data Fabric the natural place for developers to store and manage their information. To get there, design focused on:</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             <li>Making things easier to find and use → so developers could work faster with fewer mistakes.</li>
             <li>Building confidence in the platform → so enterprises would trust it as their system of record.</li>
