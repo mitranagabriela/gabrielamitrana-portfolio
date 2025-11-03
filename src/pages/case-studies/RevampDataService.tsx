@@ -46,7 +46,7 @@ const RevampDataService = () => {
             I started with a heuristic audit to identify usability gaps and friction points. This included:
           </p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Analyzing both creation and consumption user workflows </li>
+            <li>Analyzing both creation and consumption flows</li>
             <li>Reviewing previous customer feedback</li>
             <li>Mapping interactions to Jakob Nielsen's usability heuristics.</li>
           </ul>
