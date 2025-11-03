@@ -113,29 +113,23 @@ const FirstRunExperience = () => {
     content: <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">The redesigned onboarding experience was successfully launched and delivered measurable improvements across key metrics:</p>
           
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-3 gap-4">
             <div className="bg-accent/30 p-6 rounded-lg border">
               <div className="text-3xl font-bold text-foreground mb-2">40%</div>
-              <p className="text-sm font-semibold">Reduced Drop-off Rate</p>
-              <p className="text-xs text-muted-foreground mt-1">During onboarding flow</p>
+              <p className="text-sm font-semibold">Time to Build</p>
+              <p className="text-xs text-muted-foreground mt-1">Lower than the baseline</p>
             </div>
 
             <div className="bg-accent/30 p-6 rounded-lg border">
-              <div className="text-3xl font-bold text-foreground mb-2">65%</div>
-              <p className="text-sm font-semibold">Faster Time to Value</p>
-              <p className="text-xs text-muted-foreground mt-1">Users completing first automation</p>
+              <div className="text-3xl font-bold text-foreground mb-2">40+</div>
+              <p className="text-sm font-semibold">NPS Score</p>
+              <p className="text-xs text-muted-foreground mt-1">Above baseline</p>
             </div>
 
             <div className="bg-accent/30 p-6 rounded-lg border">
-              <div className="text-2xl font-bold text-foreground mb-2">3x</div>
-              <p className="text-sm font-semibold">Template Adoption</p>
-              <p className="text-xs text-muted-foreground mt-1">Increased usage compared to baseline</p>
-            </div>
-
-            <div className="bg-accent/30 p-6 rounded-lg border">
-              <div className="text-2xl font-bold text-foreground mb-2">Positive</div>
-              <p className="text-sm font-semibold">User Feedback</p>
-              <p className="text-xs text-muted-foreground mt-1">Improved satisfaction scores</p>
+              <div className="text-3xl font-bold text-foreground mb-2">28.6%</div>
+              <p className="text-sm font-semibold">MAU Growth</p>
+              <p className="text-xs text-muted-foreground mt-1">Higher than the baseline</p>
             </div>
           </div>
         </div>
