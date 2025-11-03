@@ -16,7 +16,7 @@ const FirstRunExperience = () => {
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Role:</p>
-              <p className="text-muted-foreground">Lead UX Designer</p>
+              <p className="text-muted-foreground">Lead Designer</p>
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Collaborators:</p>
