@@ -23,11 +23,11 @@ const UseCases = () => {
     caseStudyPath: "/case-studies/revamp-data-service"
   }, {
     title: "Getting Started with Studio Web",
-    description: "Redesigned the onboarding flow for an automation web app to increase adoption and reduce drop-off rates",
+    description: "Redesigned the onboarding experience for an automation platform to increase adoption and reduce drop-off rates",
     image: firstRunCover,
     tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
     status: "Completed",
-    results: "Reduced onboarding drop-off by 40%",
+    results: "Reduced the time to build by 40% compared to the baseline.",
     caseStudyPath: "/case-studies/first-run-experience"
   }, {
     title: "Lurtis AI Buildability Estimator",
