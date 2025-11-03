@@ -94,9 +94,7 @@ const RevampDataService = () => {
   }, {
     title: "Unified Experience: Ending the Context Switch",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            Previously, schema editing was siloed in a separate portal. The workflow required users to:
-          </p>
+          <p className="text-muted-foreground leading-relaxed">With access control solved, the next step was to make Data Fabric feel seamless within developers’ workflows. At the time, schema editing lived in a separate portal — forcing users to leave UiPath Studio, make changes, then manually sync them back.</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             <li>Leave UiPath Studio to edit schemas.</li>
             <li>Return and manually sync changes.</li>
