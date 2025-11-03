@@ -144,7 +144,7 @@ const RevampDataService = () => {
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             <li>Small wins add up. Even simple UI changes can deliver real value under tight constraints.</li>
             <li>Meet users where they are. Embedding tools into existing workflows drove adoption more than feature depth.</li>
-            <li>Designing for trust matters. Access control wasn't just a security feature—it unlocked business value and customer confidence.</li>
+            <li>Designing for trust matters. Access control wasn't just a security feature — it unlocked business value and customer confidence.</li>
           </ul>
         </div>
   }];
