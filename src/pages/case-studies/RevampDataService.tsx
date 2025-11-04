@@ -139,6 +139,6 @@ const RevampDataService = () => {
           </ul>
         </div>
   }];
-  return <CaseStudyLayout title="Revamp Data Fabric" subtitle="Simplified the data management flow — from fragmentation to a cohesive experience." tags={["Data Management", "Service Design", "Enterprise UX", "Access Control", "Platform Integration"]} heroContent={heroContent} sections={sections} />;
+  return <CaseStudyLayout title="Revamp Data Fabric" subtitle="Simplified the data management flow for UiPath — from fragmentation to a cohesive experience." tags={["Data Management", "Service Design", "Enterprise UX", "Access Control", "Platform Integration"]} heroContent={heroContent} sections={sections} />;
 };
 export default RevampDataService;
