@@ -10,7 +10,7 @@ const RevampDataService = () => {
     title: "Project Overview",
     content: <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">Data Fabric is UiPath's low-code data modeling and management layer — a lightweight database designed for automation developers. It simplifies how data is stored and accessed without requiring backend expertise.</p>
-          <p className="text-muted-foreground leading-relaxed">Despite the product's technical strengths, automation developers struggled to store and manage data without leaving their workflows. On top of this, the lack of access control limited enterprise adoption, while usability issues issues frustrated even advanced users. </p>
+          <p className="text-muted-foreground leading-relaxed">Despite the product's technical strengths, automation developers struggled to store and manage data without leaving their workflows. On top of this, the lack of access control limited enterprise adoption, while usability issues issues frustrated even advanced users. </p>
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Status:</p>
@@ -94,12 +94,12 @@ const RevampDataService = () => {
   }, {
     title: "Unified Experience: Ending the Context Switch",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">With access control solved, the next step was to make Data Fabric feel seamless within developers’ workflows. At the time, schema editing lived in a separate portal — forcing users to leave UiPath Studio, make changes, then manually sync them back.</p>
+          <p className="text-muted-foreground leading-relaxed">With access control solved, the next step was to make Data Fabric feel seamless within developers' workflows. At the time, schema editing lived in a separate portal — forcing users to leave UiPath Studio, make changes, then manually sync them back.</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             
             
           </ul>
-          <p className="text-muted-foreground leading-relaxed mt-4">To eliminate this friction, I proposed and designed a unified schema editor and consumption mechanism directly inside Studio, </p>
+          <p className="text-muted-foreground leading-relaxed mt-4">To eliminate this friction, I proposed and designed a unified schema editor and consumption mechanism directly inside Studio, </p>
           
           
           <div className="w-full mt-8">
@@ -112,29 +112,20 @@ const RevampDataService = () => {
     content: <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">The redesign was completed and shipped across one release. Key outcomes:</p>
           
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-3 gap-4">
             <div className="bg-accent/30 p-6 rounded-lg border">
-              <div className="text-3xl font-bold text-foreground mb-2">35%</div>
-              <p className="text-sm font-semibold">Decrease in Support Tickets</p>
-              <p className="text-xs text-muted-foreground mt-1">Schema-related issues</p>
+              <p className="text-sm font-semibold mb-2">Data Operations</p>
+              <div className="text-3xl font-bold text-foreground">100% growth</div>
             </div>
 
             <div className="bg-accent/30 p-6 rounded-lg border">
-              <div className="text-3xl font-bold text-foreground mb-2">25%</div>
-              <p className="text-sm font-semibold">Faster Development</p>
-              <p className="text-xs text-muted-foreground mt-1">Reduced task completion time</p>
+              <p className="text-sm font-semibold mb-2">Attach Rate</p>
+              <div className="text-3xl font-bold text-foreground">19% growth</div>
             </div>
 
             <div className="bg-accent/30 p-6 rounded-lg border">
-              <div className="text-2xl font-bold text-foreground mb-2">NPS ↑</div>
-              <p className="text-sm font-semibold">Improved Product Rating</p>
-              <p className="text-xs text-muted-foreground mt-1">Internal surveys & pilot feedback</p>
-            </div>
-
-            <div className="bg-accent/30 p-6 rounded-lg border">
-              <div className="text-2xl font-bold text-foreground mb-2">Enterprise</div>
-              <p className="text-sm font-semibold">Increased Adoption</p>
-              <p className="text-xs text-muted-foreground mt-1">Driven by access control features</p>
+              <p className="text-sm font-semibold mb-2">Monthly Active Users</p>
+              <div className="text-3xl font-bold text-foreground">14% growth</div>
             </div>
           </div>
         </div>
