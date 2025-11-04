@@ -19,7 +19,7 @@ const UseCases = () => {
     image: "/lovable-uploads/revamp-data-fabric-cover.png",
     tags: ["Data Management", "Service Design", "Enterprise UX"],
     status: "Completed",
-    results: "Increased the data operations by 100% compared to the baseline",
+    results: "Increased the data operations by 100%",
     caseStudyPath: "/case-studies/revamp-data-service"
   }, {
     title: "Getting Started with Studio Web",
