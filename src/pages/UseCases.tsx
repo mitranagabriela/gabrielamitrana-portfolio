@@ -15,11 +15,11 @@ const UseCases = () => {
     caseStudyPath: "/case-studies/unified-build"
   }, {
     title: "Revamp Data Fabric",
-    description: "Transformed the data management experience by addressing core user workflows and data access",
+    description: "Simplified the data management flow for UiPath — from fragmentation to a cohesive experience.",
     image: "/lovable-uploads/revamp-data-fabric-cover.png",
     tags: ["Data Management", "Service Design", "Enterprise UX"],
     status: "Completed",
-    results: "Improved data processing efficiency by 60%",
+    results: "Increased the data operations by 100% compared to the baseline",
     caseStudyPath: "/case-studies/revamp-data-service"
   }, {
     title: "Getting Started with Studio Web",
