@@ -99,18 +99,6 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             Our biggest challenge was simplifying complexity — helping power users to debug, track failures, and identify common patterns without overwhelming them.
           </p>
-          <div className="mt-8">
-            <p className="text-sm font-semibold text-primary mb-4">Agent Monitoring Lifecycle</p>
-            <div className="bg-accent/30 p-6 rounded-lg">
-              <div className="text-xs text-muted-foreground space-y-2">
-                <div><strong>Design Phase:</strong> Create and configure agent artifacts with skills and parameters</div>
-                <div><strong>Evaluation Phase:</strong> Test agent behavior and validate performance criteria</div>
-                <div><strong>Deployment Phase:</strong> Deploy validated agents to production environment</div>
-                <div><strong>Runtime Monitoring:</strong> Track executions, collect performance data, and analyze metrics</div>
-                <div><strong>Optimization Loop:</strong> Debug issues and refine agents based on insights</div>
-              </div>
-            </div>
-          </div>
         </div>
       )
     },
