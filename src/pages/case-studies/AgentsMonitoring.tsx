@@ -3,9 +3,6 @@ import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 const AgentsMonitoring = () => {
   const heroContent = (
     <div className="space-y-6">
-      <div className="aspect-video bg-accent/50 rounded-lg flex items-center justify-center">
-        <p className="text-muted-foreground">Agent Monitoring Interface</p>
-      </div>
     </div>
   );
 
