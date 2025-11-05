@@ -5,6 +5,7 @@ import { ExternalLink, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import agentsMonitoringCover from "@/assets/agents-monitoring-cover-new.jpg";
 import revampDataFabricCover from "@/assets/revamp-data-fabric-cover-generated.jpg";
+import firstRunCover from "@/assets/first-run-experience-hero.jpg";
 const UseCases = () => {
   const projects = [{
     title: "New IA for Agents Monitoring",
@@ -25,6 +26,7 @@ const UseCases = () => {
   }, {
     title: "Getting Started with Studio Web",
     description: "Designed the onboarding experience for an automation platform to increase adoption and reduce drop-off rates",
+    image: firstRunCover,
     tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
     status: "Completed",
     results: "Reduced the time to build by 40%",
