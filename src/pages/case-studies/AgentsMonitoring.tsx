@@ -129,7 +129,7 @@ const AgentsMonitoring = () => {
 
   return (
     <CaseStudyLayout
-      title="New IA for Agent Monitoring"
+      title="New IA for Agents Monitoring"
       subtitle="Redesigning how enterprises monitor and optimize AI agents"
       tags={["Information Architecture", "AI Monitoring", "Enterprise UX", "Data Visualization"]}
       heroContent={heroContent}
