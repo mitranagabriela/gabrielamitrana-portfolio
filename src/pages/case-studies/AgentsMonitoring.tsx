@@ -63,6 +63,29 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             These findings became the foundation for a centralized, insight-rich monitoring experience.
           </p>
+          <div className="mt-8">
+            <div className="relative mx-auto max-w-4xl">
+              {/* Monitor Frame */}
+              <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3 shadow-2xl">
+                {/* Monitor Bezel */}
+                <div className="bg-background rounded-t-xl overflow-hidden border-8 border-muted/80">
+                  <video 
+                    className="w-full h-auto"
+                    controls
+                    playsInline
+                  >
+                    <source src="/lovable-uploads/figma-make-prototype.mov" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              {/* Monitor Stand */}
+              <div className="flex flex-col items-center">
+                <div className="w-32 h-6 bg-gradient-to-b from-muted/80 to-muted/60 rounded-b-lg"></div>
+                <div className="w-48 h-2 bg-muted/60 rounded-full mt-1"></div>
+              </div>
+            </div>
+          </div>
         </div>
   }, {
     title: "User Flows & Iterations",
