@@ -60,7 +60,7 @@ const RevampDataService = () => {
             </ul>
           </div>
           <div className="w-full mt-8">
-            <img src={createEntityFlowsImage} alt="User flow analysis showing creation and consumption patterns across multiple screens" className="w-full" />
+            
           </div>
         </div>
   }, {
