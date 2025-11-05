@@ -29,13 +29,6 @@ const AgentsMonitoring = () => {
           </div>
         </div>
   }, {
-    title: "Goal",
-    content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            Create a unified, insight-driven monitoring experience that helps users understand the lifecycle of their agents from design to production.
-          </p>
-        </div>
-  }, {
     title: "Vision & Business Goals",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
