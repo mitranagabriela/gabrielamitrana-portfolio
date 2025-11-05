@@ -130,6 +130,19 @@ const FirstRunExperience = () => {
             </div>
           </div>
         </div>
+  }, {
+    title: "Reflections & Learnings",
+    content: <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            <strong>Templates accelerate adoption.</strong> Providing ready-to-use automation templates helped users see value instantly, reducing friction and cutting build time by 40%.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            <strong>Personalization drives engagement.</strong> Tailoring onboarding through user profiling made the experience more relevant.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            <strong>Simplicity wins.</strong> Minimizing configuration and hiding complexity improved usability and confidence, leading to higher satisfaction levels measured through the NPS score.
+          </p>
+        </div>
   }];
   return <CaseStudyLayout title="Getting Started with Studio Web" subtitle="Designed the onboarding experience for an automation platform to increase adoption and reduce drop-off rates" tags={["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform", "Templates"]} heroContent={heroContent} sections={sections} />;
 };
