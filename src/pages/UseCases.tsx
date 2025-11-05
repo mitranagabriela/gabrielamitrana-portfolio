@@ -3,13 +3,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
 import { Link } from "react-router-dom";
-import firstRunCover from "@/assets/first-run-experience-cover-new.jpg";
-import revampDataFabricCover from "@/assets/revamp-data-fabric-cover.jpg";
+import agentsMonitoringCover from "@/assets/agents-monitoring-cover.jpg";
+import revampDataFabricCover from "@/assets/revamp-data-fabric-cover-generated.jpg";
+import firstRunCover from "@/assets/first-run-experience-cover-generated.jpg";
 const UseCases = () => {
   const projects = [{
     title: "New IA for Agents Monitoring",
     description: "Redesigning how enterprises monitor and optimize AI agents",
-    image: "/placeholder.svg",
+    image: agentsMonitoringCover,
     tags: ["Information Architecture", "AI Monitoring", "Enterprise UX", "Data Visualization"],
     status: "In progress",
     results: "In progress",
