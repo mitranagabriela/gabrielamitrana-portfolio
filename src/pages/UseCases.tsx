@@ -43,7 +43,7 @@ const UseCases = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-6xl mx-auto">
           {projects.map((project, index) => <Link key={index} to={project.caseStudyPath} className="group">
               <Card className="overflow-hidden transition-all duration-500 ease-out cursor-pointer border-2 hover:border-primary/20 hover:shadow-2xl hover:-translate-y-2">
               <div className="aspect-video overflow-hidden relative bg-accent/30">
