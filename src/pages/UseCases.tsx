@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
 import { Link } from "react-router-dom";
-import agentsMonitoringCover from "@/assets/agents-monitoring-cover.jpg";
+import agentsMonitoringCover from "@/assets/agents-monitoring-cover-new.jpg";
 import revampDataFabricCover from "@/assets/revamp-data-fabric-cover-generated.jpg";
 import firstRunCover from "@/assets/first-run-experience-cover-new.jpg";
 const UseCases = () => {
