@@ -44,30 +44,31 @@ const UseCases = () => {
 
         {/* Projects Grid */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          {projects.map((project, index) => <Link key={index} to={project.caseStudyPath}>
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer">
-              <div className="aspect-video overflow-hidden">
+          {projects.map((project, index) => <Link key={index} to={project.caseStudyPath} className="group">
+              <Card className="overflow-hidden transition-all duration-500 ease-out cursor-pointer border-2 hover:border-primary/20 hover:shadow-2xl hover:-translate-y-2">
+              <div className="aspect-video overflow-hidden relative bg-accent/30">
                 <img 
                   src={project.image} 
                   alt={`${project.title} preview`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
               
-              <CardHeader>
+              <CardHeader className="relative">
                 <div className="flex items-start justify-between gap-4">
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
-                  <Badge variant={project.status === "Completed" ? "default" : "secondary"} className="whitespace-nowrap">
+                  <CardTitle className="text-xl transition-colors duration-300 group-hover:text-primary">{project.title}</CardTitle>
+                  <Badge variant={project.status === "Completed" ? "default" : "secondary"} className="whitespace-nowrap transition-transform duration-300 group-hover:scale-110">
                     {project.status}
                   </Badge>
                 </div>
-                <p className="text-muted-foreground">{project.description}</p>
+                <p className="text-muted-foreground transition-colors duration-300 group-hover:text-foreground/80">{project.description}</p>
               </CardHeader>
               
               <CardContent className="space-y-4">
-                <div className="p-3 bg-accent/50 rounded-lg">
+                <div className="p-3 bg-accent/50 rounded-lg transition-all duration-300 group-hover:bg-accent group-hover:shadow-md">
                   <p className="text-sm font-medium text-primary">Key Result:</p>
-                  <p className="text-sm text-muted-foreground">{project.results}</p>
+                  <p className="text-sm text-muted-foreground group-hover:text-foreground/70 transition-colors duration-300">{project.results}</p>
                 </div>
                 
               </CardContent>
