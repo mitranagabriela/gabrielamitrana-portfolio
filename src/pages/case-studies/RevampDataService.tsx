@@ -11,7 +11,7 @@ const RevampDataService = () => {
     title: "Project Overview",
     content: <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">Data Fabric is UiPath's low-code data modeling and management layer — a lightweight database designed for automation developers. It simplifies how data is stored and accessed without requiring backend expertise.</p>
-          <p className="text-muted-foreground leading-relaxed">Despite the product's technical strengths, automation developers struggled to store and manage data without leaving their workflows. On top of this, the lack of access control limited enterprise adoption, while usability issues issues frustrated even advanced users. </p>
+          <p className="text-muted-foreground leading-relaxed">Despite the product's technical strengths, automation developers struggled to store and manage data without leaving their workflows. On top of this, the lack of access control limited enterprise adoption, while usability issues frustrated even advanced users. </p>
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Status:</p>
