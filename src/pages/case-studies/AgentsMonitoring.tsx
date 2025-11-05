@@ -65,10 +65,10 @@ const AgentsMonitoring = () => {
           </p>
           <div className="mt-8">
             <div className="relative mx-auto max-w-4xl">
-              {/* iMac Monitor */}
-              <div className="relative rounded-2xl bg-gradient-to-b from-slate-900 to-black p-3 shadow-2xl">
-                {/* Screen with black bezel */}
-                <div className="relative bg-black rounded-lg overflow-hidden border-[12px] border-black">
+              {/* Monitor Frame */}
+              <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3 shadow-2xl">
+                {/* Monitor Bezel */}
+                <div className="bg-background rounded-t-xl overflow-hidden border-8 border-muted/80">
                   <video 
                     className="w-full h-auto"
                     controls
@@ -78,22 +78,11 @@ const AgentsMonitoring = () => {
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                {/* Aluminum chin with Apple logo */}
-                <div className="h-16 bg-gradient-to-b from-slate-300 via-slate-200 to-slate-300 rounded-b-xl flex items-center justify-center relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-                  <svg className="w-6 h-6 fill-slate-600/40" viewBox="0 0 24 24">
-                    <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
-                  </svg>
-                </div>
               </div>
-              {/* Aluminum Stand */}
-              <div className="flex flex-col items-center -mt-1">
-                <div className="w-24 h-20 bg-gradient-to-b from-slate-300 via-slate-200 to-slate-300 rounded-b-2xl relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-                </div>
-                <div className="w-56 h-3 bg-gradient-to-b from-slate-300 via-slate-200 to-slate-300 rounded-full shadow-lg relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
-                </div>
+              {/* Monitor Stand */}
+              <div className="flex flex-col items-center">
+                <div className="w-32 h-6 bg-gradient-to-b from-muted/80 to-muted/60 rounded-b-lg"></div>
+                <div className="w-48 h-2 bg-muted/60 rounded-full mt-1"></div>
               </div>
             </div>
           </div>
