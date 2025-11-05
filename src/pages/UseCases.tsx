@@ -6,6 +6,14 @@ import { Link } from "react-router-dom";
 import firstRunCover from "@/assets/first-run-experience-cover.png";
 const UseCases = () => {
   const projects = [{
+    title: "New IA for Agents Monitoring",
+    description: "Redesigning how enterprises monitor and optimize AI agents",
+    image: "/placeholder.svg",
+    tags: ["Information Architecture", "AI Monitoring", "Enterprise UX", "Data Visualization"],
+    status: "In progress",
+    results: "In progress",
+    caseStudyPath: "/case-studies/agents-monitoring"
+  }, {
     title: "Unified Developer Experience",
     description: "Streamlined the build configuration experience by unifying multiple tools and workflows into a single cohesive interface",
     image: "/placeholder.svg",
@@ -29,14 +37,6 @@ const UseCases = () => {
     status: "Completed",
     results: "Reduced the time to build by 40%",
     caseStudyPath: "/case-studies/first-run-experience"
-  }, {
-    title: "New Information Architecture for Agents Monitoring",
-    description: "Redesigning how enterprises monitor and optimize AI agents",
-    image: "/placeholder.svg",
-    tags: ["Information Architecture", "AI Monitoring", "Enterprise UX", "Data Visualization"],
-    status: "In progress",
-    results: "In progress",
-    caseStudyPath: "/case-studies/agents-monitoring"
   }, {
     title: "Lurtis AI Buildability Estimator",
     description: "Developed an AI-powered tool that analyzes a land potential and provides accurate buildability estimates",
@@ -74,7 +74,7 @@ const UseCases = () => {
               <CardHeader>
                 <div className="flex items-start justify-between gap-4">
                   <CardTitle className="text-xl">{project.title}</CardTitle>
-                  <Badge variant={project.status === "Completed" ? "default" : "secondary"}>
+                  <Badge variant={project.status === "Completed" ? "default" : "secondary"} className="whitespace-nowrap">
                     {project.status}
                   </Badge>
                 </div>
