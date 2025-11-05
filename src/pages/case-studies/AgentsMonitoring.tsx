@@ -1,4 +1,5 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
+import chartEvolution from "@/assets/chart-evolution.png";
 const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
     </div>;
@@ -97,6 +98,13 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             The success of these visuals led to their adoption into the company-wide design system, extending the project's impact beyond this feature.
           </p>
+          <div className="mt-6">
+            <img 
+              src={chartEvolution} 
+              alt="Chart visualization evolution showing different data visualization styles" 
+              className="w-full rounded-lg border border-border"
+            />
+          </div>
         </div>
   }, {
     title: "Results",
