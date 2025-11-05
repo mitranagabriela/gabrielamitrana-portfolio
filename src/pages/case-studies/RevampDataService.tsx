@@ -4,6 +4,7 @@ import beforeImage from "@/assets/access-control-before.png";
 import afterImage from "@/assets/access-control-after.png";
 import unifiedExperienceImage from "@/assets/unified-experience-data-fabric.png";
 import quickFixesImage from "@/assets/quick-fixes.png";
+import createEntityFlowsImage from "@/assets/create-entity-flows.jpg";
 const RevampDataService = () => {
   const heroContent = null;
   const sections = [{
@@ -57,6 +58,9 @@ const RevampDataService = () => {
               <li>Data access control was poorly handled, creating risks for enterprise use.</li>
               <li>The UI lacked clarity around key actions, making features hard to discover.</li>
             </ul>
+          </div>
+          <div className="w-full mt-8">
+            <img src={createEntityFlowsImage} alt="User flow analysis showing creation and consumption patterns across multiple screens" className="w-full rounded-lg shadow-lg" />
           </div>
         </div>
   }, {
