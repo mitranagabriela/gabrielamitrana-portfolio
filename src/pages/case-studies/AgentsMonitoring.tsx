@@ -41,7 +41,7 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             Our goal was to connect the dots between design-time agent artifacts and their deployed instances, giving users visibility into the full lifecycle of agent executions.
           </p>
-          <p className="text-muted-foreground leading-relaxed">Key business objectives included:</p>
+          <p className="font-bold text-foreground leading-relaxed">Key business objectives included:</p>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
             <li>Map the relationships between design artifacts and deployed instances.</li>
             <li>Centralize agent execution data to support debugging and performance analysis.</li>
