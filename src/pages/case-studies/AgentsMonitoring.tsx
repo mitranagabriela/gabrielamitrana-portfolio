@@ -71,7 +71,7 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             To move fast, I built a prototype in Figma Make and tested it with internal users who build and deploy agents daily. Their feedback was invaluable.
           </p>
-          <p className="text-muted-foreground leading-relaxed">Key insights:</p>
+          <p className="font-bold text-foreground leading-relaxed">Key insights:</p>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
             <li>Users needed clear visibility into design artifacts and their connection to runtime data.</li>
             <li>They lacked optimization insights and clear attribution for errors.</li>
