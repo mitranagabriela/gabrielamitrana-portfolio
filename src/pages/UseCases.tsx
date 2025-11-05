@@ -30,6 +30,14 @@ const UseCases = () => {
     results: "Reduced the time to build by 40%",
     caseStudyPath: "/case-studies/first-run-experience"
   }, {
+    title: "New Information Architecture for Agents Monitoring",
+    description: "Redesigning how enterprises monitor and optimize AI agents",
+    image: "/placeholder.svg",
+    tags: ["Information Architecture", "AI Monitoring", "Enterprise UX", "Data Visualization"],
+    status: "In progress",
+    results: "In progress",
+    caseStudyPath: "/case-studies/agents-monitoring"
+  }, {
     title: "Lurtis AI Buildability Estimator",
     description: "Developed an AI-powered tool that analyzes a land potential and provides accurate buildability estimates",
     image: "/placeholder.svg",

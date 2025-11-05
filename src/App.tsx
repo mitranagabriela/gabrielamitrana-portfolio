@@ -18,6 +18,7 @@ import LurtisAIBuildabilityEstimator from "./pages/case-studies/LurtisAIBuildabi
 import UnifiedDeveloperExperience from "./pages/case-studies/UnifiedDeveloperExperience";
 import AIAgentOrchestrator from "./pages/case-studies/AIAgentOrchestrator";
 import UnifiedBuild from "./pages/case-studies/UnifiedBuild";
+import AgentsMonitoring from "./pages/case-studies/AgentsMonitoring";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App = () => (
             <Route path="/case-studies/unified-developer-experience" element={<UnifiedDeveloperExperience />} />
             <Route path="/case-studies/ai-agent-orchestrator" element={<AIAgentOrchestrator />} />
             <Route path="/case-studies/unified-build" element={<UnifiedBuild />} />
+            <Route path="/case-studies/agents-monitoring" element={<AgentsMonitoring />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
