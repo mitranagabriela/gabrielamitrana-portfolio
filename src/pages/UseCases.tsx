@@ -65,7 +65,7 @@ const UseCases = () => {
                     </p>
                   </div>
                   
-                  <div className="mt-8 p-4 bg-background/60 rounded-lg transition-all duration-300 group-hover:bg-background/80 group-hover:shadow-md">
+                  <div className="mt-8 border-t border-border/40 pt-6">
                     <p className="text-sm font-semibold text-primary mb-1">Key Result:</p>
                     <p className="text-sm text-muted-foreground group-hover:text-foreground/70 transition-colors duration-300">
                       {project.results}
