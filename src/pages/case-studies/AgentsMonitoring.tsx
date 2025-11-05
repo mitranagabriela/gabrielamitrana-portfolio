@@ -79,11 +79,6 @@ const AgentsMonitoring = () => {
                   </video>
                 </div>
               </div>
-              {/* Monitor Stand */}
-              <div className="flex flex-col items-center">
-                <div className="w-32 h-6 bg-gradient-to-b from-muted/80 to-muted/60 rounded-b-lg"></div>
-                <div className="w-48 h-2 bg-muted/60 rounded-full mt-1"></div>
-              </div>
             </div>
           </div>
         </div>
