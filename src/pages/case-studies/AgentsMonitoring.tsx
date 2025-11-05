@@ -20,9 +20,6 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             However, the monitoring experience quickly became fragmented. Agent executions lived across design, evaluation, and runtime environments, with no clear connection between them. Enterprises struggled to see the full picture — how agents were performing, where issues originated, and what could be optimized.
           </p>
-          <p className="text-muted-foreground leading-relaxed">
-            <strong>Goal:</strong> Create a unified, insight-driven monitoring experience that helps users understand the lifecycle of their agents from design to production.
-          </p>
           <div className="grid grid-cols-2 gap-4 mt-6">
             <div>
               <p className="font-semibold">Status</p>
@@ -41,6 +38,16 @@ const AgentsMonitoring = () => {
               <p className="text-muted-foreground">1 PM, 6 Engineers</p>
             </div>
           </div>
+        </div>
+      )
+    },
+    {
+      title: "Goal",
+      content: (
+        <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            Create a unified, insight-driven monitoring experience that helps users understand the lifecycle of their agents from design to production.
+          </p>
         </div>
       )
     },
