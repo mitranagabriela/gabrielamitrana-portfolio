@@ -3,7 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
 import { Link } from "react-router-dom";
-import firstRunCover from "@/assets/first-run-experience-cover.png";
+import firstRunCover from "@/assets/first-run-experience-cover-new.jpg";
+import revampDataFabricCover from "@/assets/revamp-data-fabric-cover.jpg";
 const UseCases = () => {
   const projects = [{
     title: "New IA for Agents Monitoring",
@@ -16,7 +17,7 @@ const UseCases = () => {
   }, {
     title: "Revamp Data Fabric",
     description: "Simplified the data management flow for UiPath — from fragmentation to a cohesive experience.",
-    image: "/lovable-uploads/revamp-data-fabric-cover.png",
+    image: revampDataFabricCover,
     tags: ["Data Management", "Service Design", "Enterprise UX"],
     status: "Completed",
     results: "Increased the data operations by 100%",
