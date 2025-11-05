@@ -5,7 +5,7 @@ import { ExternalLink, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import agentsMonitoringCover from "@/assets/agents-monitoring-cover.jpg";
 import revampDataFabricCover from "@/assets/revamp-data-fabric-cover-generated.jpg";
-import firstRunCover from "@/assets/first-run-experience-cover-generated.jpg";
+import firstRunCover from "@/assets/first-run-experience-cover-new.jpg";
 const UseCases = () => {
   const projects = [{
     title: "New IA for Agents Monitoring",
