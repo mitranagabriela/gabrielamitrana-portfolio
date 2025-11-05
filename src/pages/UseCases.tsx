@@ -14,14 +14,6 @@ const UseCases = () => {
     results: "In progress",
     caseStudyPath: "/case-studies/agents-monitoring"
   }, {
-    title: "Unified Developer Experience",
-    description: "Streamlined the build configuration experience by unifying multiple tools and workflows into a single cohesive interface",
-    image: "/placeholder.svg",
-    tags: ["Developer Tools", "Platform Design", "Workflow Optimization", "Enterprise UX"],
-    status: "Completed",
-    results: "Reduced build configuration time by 50%",
-    caseStudyPath: "/case-studies/unified-build"
-  }, {
     title: "Revamp Data Fabric",
     description: "Simplified the data management flow for UiPath — from fragmentation to a cohesive experience.",
     image: "/lovable-uploads/revamp-data-fabric-cover.png",
@@ -37,15 +29,6 @@ const UseCases = () => {
     status: "Completed",
     results: "Reduced the time to build by 40%",
     caseStudyPath: "/case-studies/first-run-experience"
-  }, {
-    title: "Lurtis AI Buildability Estimator",
-    description: "Developed an AI-powered tool that analyzes a land potential and provides accurate buildability estimates",
-    image: "/placeholder.svg",
-    tags: ["AI/ML", "Estimation Tools", "Project Management", "Analytics"],
-    status: "Completed",
-    results: "Improved estimation accuracy by 45%",
-    caseStudyPath: "/case-studies/lurtis-ai-buildability-estimator",
-    demoLink: "https://www.youtube.com/watch?v=41Q5jUUWEaM"
   }];
   return <div className="pt-16 min-h-screen bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
