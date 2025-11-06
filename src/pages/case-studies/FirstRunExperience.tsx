@@ -137,7 +137,7 @@ const FirstRunExperience = () => {
             <strong className="text-foreground">Templates accelerate adoption.</strong> Providing ready-to-use automation templates helped users see value instantly, reducing friction and cutting build time by 40%.
           </li>
           <li>
-            <strong className="text-foreground">Personalization drives engagement.</strong> Tailoring onboarding through user profiling made the experience more relevant.
+            <strong className="text-foreground">Personalization drives engagement.</strong> Tailoring templates through user profiling made the experience more relevant.
           </li>
           <li>
             <strong className="text-foreground">Simplicity wins.</strong> Minimizing configuration and hiding complexity improved usability and confidence, leading to higher satisfaction levels measured through the NPS score.
