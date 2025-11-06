@@ -1,4 +1,5 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
+import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
 const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
     </div>;
@@ -87,6 +88,13 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             Our biggest challenge was simplifying complexity — helping power users to debug, track failures, and identify common patterns without overwhelming them.
           </p>
+          <div className="mt-8">
+            <img 
+              src={userFlowsImage} 
+              alt="Agent monitoring user interface showing overview and detailed performance metrics" 
+              className="w-full rounded-lg shadow-lg"
+            />
+          </div>
         </div>
   }, {
     title: "Evolving the Design System",
