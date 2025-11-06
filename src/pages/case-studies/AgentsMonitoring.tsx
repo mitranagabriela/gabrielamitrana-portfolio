@@ -97,6 +97,22 @@ const AgentsMonitoring = () => {
           </div>
         </div>
   }, {
+    title: "Enhancing the Agent Trace",
+    content: <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            To fully support debugging, we also needed to rethink the agent trace experience. The existing trace lacked clarity and depth, making it difficult to understand why an execution failed or behaved unexpectedly.
+          </p>
+          <p className="font-bold text-foreground leading-relaxed">We introduced several key improvements:</p>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li><span className="font-semibold">Explainability:</span> Added contextual information to help users understand why agents made certain decisions or actions.</li>
+            <li><span className="font-semibold">Smart Search Patterns:</span> Enabled users to quickly locate specific events, variables, or anomalies within complex traces.</li>
+            <li><span className="font-semibold">Transparent Token Usage:</span> Visualized token consumption clearly, helping users monitor costs and identify inefficiencies.</li>
+          </ul>
+          <p className="text-muted-foreground leading-relaxed">
+            These updates transformed the trace from a simple log into a powerful diagnostic and optimization tool, empowering users to uncover root causes faster and act with confidence.
+          </p>
+        </div>
+  }, {
     title: "Evolving the Design System",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
