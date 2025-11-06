@@ -92,7 +92,7 @@ const AgentsMonitoring = () => {
             <img 
               src={userFlowsImage} 
               alt="Agent monitoring user interface showing overview and detailed performance metrics" 
-              className="w-full rounded-lg shadow-lg"
+              className="w-full"
             />
           </div>
         </div>
