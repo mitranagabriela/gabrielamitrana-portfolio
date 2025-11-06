@@ -106,7 +106,7 @@ const AgentsMonitoring = () => {
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
             <li><span className="font-semibold text-foreground">Explainability:</span> Added contextual information to help users understand why agents made certain decisions or actions.</li>
             <li><span className="font-semibold">Smart Search Patterns:</span> Enabled users to quickly locate specific events, variables, or anomalies within complex traces.</li>
-            <li><span className="font-semibold">Transparent Token Usage:</span> Visualized token consumption clearly, helping users monitor costs and identify inefficiencies.</li>
+            <li><span className="font-semibold text-foreground">Transparent Token Usage:</span> Visualized token consumption clearly, helping users monitor costs and identify inefficiencies.</li>
           </ul>
           <p className="text-muted-foreground leading-relaxed">
             These updates transformed the trace from a simple log into a powerful diagnostic and optimization tool, empowering users to uncover root causes faster and act with confidence.
