@@ -1,6 +1,7 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
 import traceAgentSpanImage from "@/assets/trace-agent-span.png";
+import designSystemChartsImage from "@/assets/design-system-charts.png";
 const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
     </div>;
@@ -128,6 +129,9 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             The success of these visuals led to their adoption into the company-wide design system, extending the project's impact beyond this feature.
           </p>
+          <div className="w-full mt-8">
+            <img src={designSystemChartsImage} alt="Chart components in light and dark mode showing various visualization styles" className="w-full rounded-lg shadow-lg" />
+          </div>
         </div>
   }, {
     title: "Results",
