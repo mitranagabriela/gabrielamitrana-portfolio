@@ -1,18 +1,6 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
-import { useState } from "react";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
-import agentTraceImage from "@/assets/agent-trace-interface.png";
-
 const AgentsMonitoring = () => {
-  const [magnifierPosition, setMagnifierPosition] = useState({ x: 0, y: 0 });
-  const [showMagnifier, setShowMagnifier] = useState(false);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    setMagnifierPosition({ x, y });
-  };
   const heroContent = <div className="space-y-6">
     </div>;
   const sections = [{
@@ -60,24 +48,12 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             To move fast, I built a prototype in Figma Make and tested it with internal users who build and deploy agents daily. Their feedback was invaluable.
           </p>
-          <p className="font-bold text-foreground leading-relaxed mb-6">Key insights from user feedback:</p>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <div className="relative bg-accent/30 p-6 rounded-lg border border-border">
-              <div className="absolute -top-2 -left-2 text-4xl text-primary opacity-50">"</div>
-              <p className="text-muted-foreground leading-relaxed italic">I need to see how my design connects to what's actually running in production. Right now it's like working blind.</p>
-              <div className="absolute -bottom-2 -right-2 text-4xl text-primary opacity-50">"</div>
-            </div>
-            <div className="relative bg-accent/30 p-6 rounded-lg border border-border">
-              <div className="absolute -top-2 -left-2 text-4xl text-primary opacity-50">"</div>
-              <p className="text-muted-foreground leading-relaxed italic">When something breaks, I waste hours trying to figure out where and why. I need better error attribution.</p>
-              <div className="absolute -bottom-2 -right-2 text-4xl text-primary opacity-50">"</div>
-            </div>
-            <div className="relative bg-accent/30 p-6 rounded-lg border border-border md:col-span-2 lg:col-span-1">
-              <div className="absolute -top-2 -left-2 text-4xl text-primary opacity-50">"</div>
-              <p className="text-muted-foreground leading-relaxed italic">I can't show ROI or optimization opportunities to stakeholders. The data just isn't there.</p>
-              <div className="absolute -bottom-2 -right-2 text-4xl text-primary opacity-50">"</div>
-            </div>
-          </div>
+          <p className="font-bold text-foreground leading-relaxed">Key insights:</p>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li>Users needed clear visibility into design artifacts and their connection to runtime data.</li>
+            <li>They lacked optimization insights and clear attribution for errors.</li>
+            <li>ROI signals, AI unit usage, and efficiency data were missing.</li>
+          </ul>
           <p className="text-muted-foreground leading-relaxed">
             These findings became the foundation for a centralized, insight-rich monitoring experience.
           </p>
@@ -135,49 +111,6 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             These updates transformed the trace from a simple log into a powerful diagnostic and optimization tool, empowering users to uncover root causes faster and act with confidence.
           </p>
-          <div className="mt-8 relative">
-            <div 
-              className="relative rounded-lg overflow-hidden border border-border shadow-2xl cursor-crosshair"
-              onMouseMove={handleMouseMove}
-              onMouseEnter={() => setShowMagnifier(true)}
-              onMouseLeave={() => setShowMagnifier(false)}
-            >
-              <img 
-                src={agentTraceImage} 
-                alt="Agent trace interface showing execution details and debugging information" 
-                className="w-full"
-              />
-              {/* Interactive Magnifier */}
-              {showMagnifier && (
-                <div 
-                  className="absolute w-64 h-64 rounded-full border-4 border-primary shadow-2xl overflow-hidden bg-background/95 backdrop-blur-sm pointer-events-none transition-opacity duration-200"
-                  style={{
-                    left: `${magnifierPosition.x}px`,
-                    top: `${magnifierPosition.y}px`,
-                    transform: 'translate(-50%, -50%)',
-                  }}
-                >
-                  <div className="relative w-full h-full overflow-hidden">
-                    <img 
-                      src={agentTraceImage} 
-                      alt="Magnified view of agent execution details" 
-                      className="absolute"
-                      style={{
-                        width: '200%',
-                        left: '50%',
-                        top: '50%',
-                        transform: `translate(calc(-50% - ${magnifierPosition.x}px), calc(-50% - ${magnifierPosition.y}px))`,
-                      }}
-                    />
-                  </div>
-                  {/* Magnifier glass effect */}
-                  <div className="absolute -top-2 -right-2 w-12 h-12 rounded-full border-4 border-primary bg-primary/10 backdrop-blur-sm flex items-center justify-center">
-                    <div className="w-6 h-6 rounded-full border-2 border-primary"></div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
         </div>
   }, {
     title: "Evolving the Design System",
