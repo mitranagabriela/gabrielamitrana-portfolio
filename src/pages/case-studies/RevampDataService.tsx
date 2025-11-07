@@ -1,10 +1,12 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
+import { Hammer, Lock, Target } from "lucide-react";
 import beforeImage from "@/assets/access-control-before.png";
 import afterImage from "@/assets/access-control-after.png";
 import unifiedExperienceImage from "@/assets/unified-experience-data-fabric.png";
 import quickFixesImage from "@/assets/quick-fixes.png";
 import createEntityFlowsImage from "@/assets/create-entity-flows.jpg";
+import createEntityDiscoveryImage from "@/assets/create-entity-discovery.jpg";
 const RevampDataService = () => {
   const heroContent = null;
   const sections = [{
@@ -51,18 +53,21 @@ const RevampDataService = () => {
             <li>Reviewing previous customer feedback.</li>
             <li>Mapping interactions to Jakob Nielsen's usability heuristics.</li>
           </ul>
-          <div className="mt-6 grid md:grid-cols-3 gap-4">
-            <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
-              <div className="text-4xl mb-3">🔌</div>
-              <p className="text-muted-foreground leading-relaxed">Schema creation was isolated from the development experience.</p>
-            </div>
-            <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
-              <div className="text-4xl mb-3">🔒</div>
-              <p className="text-muted-foreground leading-relaxed">Data access control was poorly handled, creating risks for enterprise use.</p>
-            </div>
-            <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
-              <div className="text-4xl mb-3">🎯</div>
-              <p className="text-muted-foreground leading-relaxed">The UI lacked clarity around key actions, making features hard to discover.</p>
+          <div className="mt-6">
+            <p className="font-semibold text-foreground mb-4">Key Insights:</p>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
+                <Hammer className="mb-3 text-primary" size={32} />
+                <p className="text-muted-foreground leading-relaxed">Schema creation was isolated from the development experience.</p>
+              </div>
+              <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
+                <Lock className="mb-3 text-primary" size={32} />
+                <p className="text-muted-foreground leading-relaxed">Data access control was poorly handled, creating risks for enterprise use.</p>
+              </div>
+              <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
+                <Target className="mb-3 text-primary" size={32} />
+                <p className="text-muted-foreground leading-relaxed">The UI lacked clarity around key actions, making features hard to discover.</p>
+              </div>
             </div>
           </div>
           <div className="w-full mt-8">
