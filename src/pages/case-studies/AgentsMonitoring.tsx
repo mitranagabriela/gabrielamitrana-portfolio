@@ -1,4 +1,5 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
+import { ImageMagnifier } from "@/components/ImageMagnifier";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
 import traceAgentSpanImage from "@/assets/trace-agent-span.png";
 import designSystemChartsImage from "@/assets/design-system-charts.png";
@@ -117,7 +118,13 @@ const AgentsMonitoring = () => {
           </ul>
           
           <div className="w-full mt-8">
-            <img src={traceAgentSpanImage} alt="Enhanced agent trace interface showing execution trail with detailed spans and metadata" className="w-full rounded-lg shadow-lg" />
+            <ImageMagnifier 
+              src={traceAgentSpanImage} 
+              alt="Enhanced agent trace interface showing execution trail with detailed spans and metadata" 
+              className="w-full rounded-lg shadow-lg" 
+              magnifierSize={200}
+              zoomLevel={2.5}
+            />
           </div>
         </div>
   }, {
