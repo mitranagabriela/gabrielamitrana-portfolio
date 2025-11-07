@@ -1,5 +1,6 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
+import traceAgentSpanImage from "@/assets/trace-agent-span.png";
 const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
     </div>;
@@ -111,6 +112,9 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             These updates transformed the trace from a simple log into a powerful diagnostic and optimization tool, empowering users to uncover root causes faster and act with confidence.
           </p>
+          <div className="w-full mt-8">
+            <img src={traceAgentSpanImage} alt="Enhanced agent trace interface showing execution trail with detailed spans and metadata" className="w-full rounded-lg" />
+          </div>
         </div>
   }, {
     title: "Evolving the Design System",
