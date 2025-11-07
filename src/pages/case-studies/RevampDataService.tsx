@@ -56,7 +56,7 @@ const RevampDataService = () => {
             <p className="font-semibold text-foreground mb-4">Key Insights:</p>
             <div className="grid md:grid-cols-3 gap-4">
               <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
-                <div className="text-4xl mb-3">🔌</div>
+                <div className="text-4xl mb-3">🛠️</div>
                 <p className="text-muted-foreground leading-relaxed">Schema creation was isolated from the development experience.</p>
               </div>
               <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
