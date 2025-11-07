@@ -5,6 +5,7 @@ import afterImage from "@/assets/access-control-after.png";
 import unifiedExperienceImage from "@/assets/unified-experience-data-fabric.png";
 import quickFixesImage from "@/assets/quick-fixes.png";
 import createEntityFlowsImage from "@/assets/create-entity-flows.jpg";
+import createEntityDiscoveryImage from "@/assets/create-entity-discovery.jpg";
 const RevampDataService = () => {
   const heroContent = null;
   const sections = [{
@@ -60,7 +61,7 @@ const RevampDataService = () => {
             </ul>
           </div>
           <div className="w-full mt-8">
-            
+            <img src={createEntityDiscoveryImage} alt="Create entity flows and user journey analysis from discovery phase" className="w-full rounded-lg" />
           </div>
         </div>
   }, {
