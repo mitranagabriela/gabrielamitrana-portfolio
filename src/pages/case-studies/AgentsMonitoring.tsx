@@ -1,5 +1,6 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
+import agentTraceImage from "@/assets/agent-trace-interface.png";
 const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
     </div>;
@@ -111,6 +112,33 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             These updates transformed the trace from a simple log into a powerful diagnostic and optimization tool, empowering users to uncover root causes faster and act with confidence.
           </p>
+          <div className="mt-8 relative">
+            <div className="relative rounded-lg overflow-hidden border border-border shadow-2xl">
+              <img 
+                src={agentTraceImage} 
+                alt="Agent trace interface showing execution details and debugging information" 
+                className="w-full"
+              />
+              {/* Magnifier effect on bottom panel */}
+              <div className="absolute bottom-4 right-4 w-80 h-48 rounded-lg border-4 border-primary shadow-2xl overflow-hidden bg-background/95 backdrop-blur-sm">
+                <div className="relative w-full h-full overflow-hidden">
+                  <img 
+                    src={agentTraceImage} 
+                    alt="Magnified view of agent execution details" 
+                    className="absolute"
+                    style={{
+                      width: '200%',
+                      transform: 'translate(-25%, -75%)',
+                    }}
+                  />
+                </div>
+                {/* Magnifier glass effect */}
+                <div className="absolute -top-2 -right-2 w-12 h-12 rounded-full border-4 border-primary bg-primary/10 backdrop-blur-sm flex items-center justify-center">
+                  <div className="w-6 h-6 rounded-full border-2 border-primary"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
   }, {
     title: "Evolving the Design System",
