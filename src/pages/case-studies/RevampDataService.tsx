@@ -51,13 +51,19 @@ const RevampDataService = () => {
             <li>Reviewing previous customer feedback.</li>
             <li>Mapping interactions to Jakob Nielsen's usability heuristics.</li>
           </ul>
-          <div className="mt-6">
-            <p className="font-semibold text-primary mb-2">Top Insights:</p>
-            <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-              <li>Schema creation was isolated from the development experience.</li>
-              <li>Data access control was poorly handled, creating risks for enterprise use.</li>
-              <li>The UI lacked clarity around key actions, making features hard to discover.</li>
-            </ul>
+          <div className="mt-6 grid md:grid-cols-3 gap-4">
+            <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
+              <div className="text-4xl mb-3">🔌</div>
+              <p className="text-muted-foreground leading-relaxed">Schema creation was isolated from the development experience.</p>
+            </div>
+            <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
+              <div className="text-4xl mb-3">🔒</div>
+              <p className="text-muted-foreground leading-relaxed">Data access control was poorly handled, creating risks for enterprise use.</p>
+            </div>
+            <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
+              <div className="text-4xl mb-3">🎯</div>
+              <p className="text-muted-foreground leading-relaxed">The UI lacked clarity around key actions, making features hard to discover.</p>
+            </div>
           </div>
           <div className="w-full mt-8">
             
