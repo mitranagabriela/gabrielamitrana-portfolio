@@ -60,12 +60,24 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             To move fast, I built a prototype in Figma Make and tested it with internal users who build and deploy agents daily. Their feedback was invaluable.
           </p>
-          <p className="font-bold text-foreground leading-relaxed">Key insights:</p>
-          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>Users needed clear visibility into design artifacts and their connection to runtime data.</li>
-            <li>They lacked optimization insights and clear attribution for errors.</li>
-            <li>ROI signals, AI unit usage, and efficiency data were missing.</li>
-          </ul>
+          <p className="font-bold text-foreground leading-relaxed mb-6">Key insights from user feedback:</p>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="relative bg-accent/30 p-6 rounded-lg border border-border">
+              <div className="absolute -top-2 -left-2 text-4xl text-primary opacity-50">"</div>
+              <p className="text-muted-foreground leading-relaxed italic">I need to see how my design connects to what's actually running in production. Right now it's like working blind.</p>
+              <div className="absolute -bottom-2 -right-2 text-4xl text-primary opacity-50">"</div>
+            </div>
+            <div className="relative bg-accent/30 p-6 rounded-lg border border-border">
+              <div className="absolute -top-2 -left-2 text-4xl text-primary opacity-50">"</div>
+              <p className="text-muted-foreground leading-relaxed italic">When something breaks, I waste hours trying to figure out where and why. I need better error attribution.</p>
+              <div className="absolute -bottom-2 -right-2 text-4xl text-primary opacity-50">"</div>
+            </div>
+            <div className="relative bg-accent/30 p-6 rounded-lg border border-border md:col-span-2 lg:col-span-1">
+              <div className="absolute -top-2 -left-2 text-4xl text-primary opacity-50">"</div>
+              <p className="text-muted-foreground leading-relaxed italic">I can't show ROI or optimization opportunities to stakeholders. The data just isn't there.</p>
+              <div className="absolute -bottom-2 -right-2 text-4xl text-primary opacity-50">"</div>
+            </div>
+          </div>
           <p className="text-muted-foreground leading-relaxed">
             These findings became the foundation for a centralized, insight-rich monitoring experience.
           </p>
