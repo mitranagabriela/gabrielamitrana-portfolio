@@ -53,7 +53,7 @@ const Index = () => {
                 <Button asChild variant="outline" size="lg">
                   <Link to="/resume">
                     <Download className="mr-2 h-4 w-4" />
-                    Download Resume
+                    View My Resume
                   </Link>
                 </Button>
               </div>
