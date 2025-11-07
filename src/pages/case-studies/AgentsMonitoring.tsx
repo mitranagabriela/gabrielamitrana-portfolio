@@ -95,30 +95,12 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             To fully support debugging, we also needed to rethink the agent trace experience. The existing trace lacked clarity and depth, making it difficult to understand why an execution failed or behaved unexpectedly.
           </p>
-          <p className="font-bold text-foreground leading-relaxed mb-6">We introduced several key improvements:</p>
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="p-6 bg-accent/30 rounded-lg border border-border">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <span className="text-2xl">💡</span>
-              </div>
-              <h3 className="font-semibold text-foreground mb-2">Explainability</h3>
-              <p className="text-sm text-muted-foreground">Added contextual information to help users understand why agents made certain decisions or actions.</p>
-            </div>
-            <div className="p-6 bg-accent/30 rounded-lg border border-border">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <span className="text-2xl">🔍</span>
-              </div>
-              <h3 className="font-semibold text-foreground mb-2">Smart Search Patterns</h3>
-              <p className="text-sm text-muted-foreground">Enabled users to quickly locate specific events, variables, or anomalies within complex traces.</p>
-            </div>
-            <div className="p-6 bg-accent/30 rounded-lg border border-border">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <span className="text-2xl">📊</span>
-              </div>
-              <h3 className="font-semibold text-foreground mb-2">Transparent Token Usage</h3>
-              <p className="text-sm text-muted-foreground">Visualized token consumption clearly, helping users monitor costs and identify inefficiencies.</p>
-            </div>
-          </div>
+          <p className="font-bold text-foreground leading-relaxed">We introduced several key improvements:</p>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li><span className="font-semibold text-foreground">Explainability:</span> Added contextual information to help users understand why agents made certain decisions or actions.</li>
+            <li><span className="font-semibold text-foreground">Smart Search Patterns:</span> Enabled users to quickly locate specific events, variables, or anomalies within complex traces.</li>
+            <li><span className="font-semibold text-foreground">Transparent Token Usage:</span> Visualized token consumption clearly, helping users monitor costs and identify inefficiencies.</li>
+          </ul>
           
           <div className="w-full mt-8">
             <img src={traceAgentSpanImage} alt="Enhanced agent trace interface showing execution trail with detailed spans and metadata" className="w-full rounded-lg shadow-lg" />
