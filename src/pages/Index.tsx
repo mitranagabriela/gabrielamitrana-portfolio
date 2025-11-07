@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
-import { ArrowRight, Eye, FolderOpen, Users, Award } from "lucide-react";
+import { FolderOpen, Users, Award } from "lucide-react";
 const Index = () => {
   const skills = ["UI/UX Design", "Figma", "Adobe Creative Suite", "Prototyping", "User Research", "Design Systems", "Responsive Design", "Branding"];
   const stats = [{
@@ -47,12 +47,10 @@ const Index = () => {
                 <Button asChild size="lg" className="group">
                   <Link to="/usecases">
                     View My Work
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link to="/resume">
-                    <Eye className="mr-2 h-4 w-4" />
                     View My Resume
                   </Link>
                 </Button>
