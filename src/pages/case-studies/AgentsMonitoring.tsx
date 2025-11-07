@@ -1,7 +1,18 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
+import { useState } from "react";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
 import agentTraceImage from "@/assets/agent-trace-interface.png";
+
 const AgentsMonitoring = () => {
+  const [magnifierPosition, setMagnifierPosition] = useState({ x: 0, y: 0 });
+  const [showMagnifier, setShowMagnifier] = useState(false);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    setMagnifierPosition({ x, y });
+  };
   const heroContent = <div className="space-y-6">
     </div>;
   const sections = [{
@@ -113,30 +124,46 @@ const AgentsMonitoring = () => {
             These updates transformed the trace from a simple log into a powerful diagnostic and optimization tool, empowering users to uncover root causes faster and act with confidence.
           </p>
           <div className="mt-8 relative">
-            <div className="relative rounded-lg overflow-hidden border border-border shadow-2xl">
+            <div 
+              className="relative rounded-lg overflow-hidden border border-border shadow-2xl cursor-crosshair"
+              onMouseMove={handleMouseMove}
+              onMouseEnter={() => setShowMagnifier(true)}
+              onMouseLeave={() => setShowMagnifier(false)}
+            >
               <img 
                 src={agentTraceImage} 
                 alt="Agent trace interface showing execution details and debugging information" 
                 className="w-full"
               />
-              {/* Magnifier effect on bottom panel */}
-              <div className="absolute bottom-4 right-4 w-80 h-48 rounded-lg border-4 border-primary shadow-2xl overflow-hidden bg-background/95 backdrop-blur-sm">
-                <div className="relative w-full h-full overflow-hidden">
-                  <img 
-                    src={agentTraceImage} 
-                    alt="Magnified view of agent execution details" 
-                    className="absolute"
-                    style={{
-                      width: '200%',
-                      transform: 'translate(-25%, -75%)',
-                    }}
-                  />
+              {/* Interactive Magnifier */}
+              {showMagnifier && (
+                <div 
+                  className="absolute w-64 h-64 rounded-full border-4 border-primary shadow-2xl overflow-hidden bg-background/95 backdrop-blur-sm pointer-events-none transition-opacity duration-200"
+                  style={{
+                    left: `${magnifierPosition.x}px`,
+                    top: `${magnifierPosition.y}px`,
+                    transform: 'translate(-50%, -50%)',
+                  }}
+                >
+                  <div className="relative w-full h-full overflow-hidden">
+                    <img 
+                      src={agentTraceImage} 
+                      alt="Magnified view of agent execution details" 
+                      className="absolute"
+                      style={{
+                        width: '200%',
+                        left: '50%',
+                        top: '50%',
+                        transform: `translate(calc(-50% - ${magnifierPosition.x}px), calc(-50% - ${magnifierPosition.y}px))`,
+                      }}
+                    />
+                  </div>
+                  {/* Magnifier glass effect */}
+                  <div className="absolute -top-2 -right-2 w-12 h-12 rounded-full border-4 border-primary bg-primary/10 backdrop-blur-sm flex items-center justify-center">
+                    <div className="w-6 h-6 rounded-full border-2 border-primary"></div>
+                  </div>
                 </div>
-                {/* Magnifier glass effect */}
-                <div className="absolute -top-2 -right-2 w-12 h-12 rounded-full border-4 border-primary bg-primary/10 backdrop-blur-sm flex items-center justify-center">
-                  <div className="w-6 h-6 rounded-full border-2 border-primary"></div>
-                </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
