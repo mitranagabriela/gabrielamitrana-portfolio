@@ -37,11 +37,23 @@ const AgentsMonitoring = () => {
             Our goal was to connect the dots between design-time agent artifacts and their deployed instances, giving users visibility into the full lifecycle of agent executions.
           </p>
           <p className="font-bold text-foreground leading-relaxed">Key business objectives included:</p>
-          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>Map the relationships between design artifacts and deployed instances.</li>
-            <li>Centralize agent execution data to support debugging and performance analysis.</li>
-            <li>Surface trends, deviations, and opportunities for optimization—all in one place.</li>
-          </ul>
+          <div className="grid md:grid-cols-3 gap-4 mt-6">
+            <div className="p-6 bg-accent/30 rounded-lg border border-border">
+              <div className="text-3xl mb-3">🔗</div>
+              <p className="font-semibold text-foreground mb-2">Map Relationships</p>
+              <p className="text-sm text-muted-foreground">Connect design artifacts with deployed instances.</p>
+            </div>
+            <div className="p-6 bg-accent/30 rounded-lg border border-border">
+              <div className="text-3xl mb-3">📊</div>
+              <p className="font-semibold text-foreground mb-2">Centralize Data</p>
+              <p className="text-sm text-muted-foreground">Support debugging and performance analysis in one place.</p>
+            </div>
+            <div className="p-6 bg-accent/30 rounded-lg border border-border">
+              <div className="text-3xl mb-3">💡</div>
+              <p className="font-semibold text-foreground mb-2">Surface Insights</p>
+              <p className="text-sm text-muted-foreground">Identify trends, deviations, and optimization opportunities.</p>
+            </div>
+          </div>
         </div>
   }, {
     title: "Discovery: Rapid Iterations with Figma Make",
