@@ -116,7 +116,7 @@ const RevampDataService = () => {
           <p className="text-muted-foreground leading-relaxed mt-4">To eliminate this friction, I proposed and designed a unified schema editor and consumption mechanism directly inside Studio, </p>
           
           
-          <div className="w-full mt-8">
+          <div className="w-full mt-8 -mx-4 sm:-mx-6 lg:-mx-8">
             <img src={unifiedExperienceImage} alt="Unified experience workflow showing integrated development interface" className="w-full rounded-lg" />
           </div>
           
