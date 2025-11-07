@@ -64,11 +64,7 @@ const AgentsMonitoring = () => {
               <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3 shadow-2xl">
                 {/* Monitor Bezel */}
                 <div className="bg-background rounded-t-xl overflow-hidden border-8 border-muted/80">
-                  <video 
-                    className="w-full h-auto"
-                    controls
-                    playsInline
-                  >
+                  <video className="w-full h-auto" controls playsInline>
                     <source src="/lovable-uploads/figma-make-prototype.mov" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
@@ -90,11 +86,7 @@ const AgentsMonitoring = () => {
             Our biggest challenge was simplifying complexity — helping power users to debug, track failures, and identify common patterns without overwhelming them.
           </p>
           <div className="mt-8">
-            <img 
-              src={userFlowsImage} 
-              alt="Agent monitoring user interface showing overview and detailed performance metrics" 
-              className="w-full"
-            />
+            <img src={userFlowsImage} alt="Agent monitoring user interface showing overview and detailed performance metrics" className="w-full" />
           </div>
         </div>
   }, {
@@ -109,9 +101,7 @@ const AgentsMonitoring = () => {
             <li><span className="font-semibold text-foreground">Smart Search Patterns:</span> Enabled users to quickly locate specific events, variables, or anomalies within complex traces.</li>
             <li><span className="font-semibold text-foreground">Transparent Token Usage:</span> Visualized token consumption clearly, helping users monitor costs and identify inefficiencies.</li>
           </ul>
-          <p className="text-muted-foreground leading-relaxed">
-            These updates transformed the trace from a simple log into a powerful diagnostic and optimization tool, empowering users to uncover root causes faster and act with confidence.
-          </p>
+          
           <div className="w-full mt-8">
             <img src={traceAgentSpanImage} alt="Enhanced agent trace interface showing execution trail with detailed spans and metadata" className="w-full rounded-lg shadow-lg" />
           </div>
