@@ -1,4 +1,6 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
+import designProcessImage from "@/assets/first-run-design-process.png";
+
 const FirstRunExperience = () => {
   const heroContent = null;
   const sections = [{
@@ -31,7 +33,7 @@ const FirstRunExperience = () => {
     title: "The Design Process",
     content: <div className="space-y-6">
           <div className="w-full">
-            <img src="/lovable-uploads/04643767-84b8-446f-96fc-408c816fb371.png" alt="Design process flow showing discovery, story mapping, feature flows, sketch & design, evaluate, design specs, and implement phases" className="w-full rounded-lg" />
+            <img src={designProcessImage} alt="Design process flow showing discovery, story mapping, feature flows, sketch & design, evaluate, design specs, and implement phases" className="w-full rounded-lg" />
           </div>
         </div>
   }, {
