@@ -6,6 +6,7 @@ import unifiedExperienceImage from "@/assets/unified-experience-data-fabric.png"
 import quickFixesImage from "@/assets/quick-fixes.png";
 import createEntityFlowsImage from "@/assets/create-entity-flows.jpg";
 import createEntityDiscoveryImage from "@/assets/create-entity-discovery.jpg";
+import designProcessImage from "@/assets/revamp-data-service-design-process.png";
 const RevampDataService = () => {
   const heroContent = null;
   const sections = [{
@@ -42,14 +43,10 @@ const RevampDataService = () => {
         </div>
   }, {
     title: "Design Process",
-    content: <div className="space-y-4">
-          
-          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            
-            
-            
-            
-          </ul>
+    content: <div className="space-y-6">
+          <div className="w-full">
+            <img src={designProcessImage} alt="Design process flow showing discover & empathize, define goals, ideate & sketch, prototype & test, and implement & measure phases" className="w-full rounded-lg" />
+          </div>
         </div>
   }, {
     title: "Discovery: Heuristic Evaluation & Product Audit",
