@@ -87,23 +87,9 @@ const AgentsMonitoring = () => {
             To move fast, I built a prototype in Figma Make and tested it with internal users who build and deploy agents daily. Their feedback was invaluable.
           </p>
           
-          {/* Video - Centered and Larger */}
-          <div className="flex justify-center mt-8">
-            <div className="w-full max-w-5xl">
-              <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3">
-                <div className="bg-background rounded-t-xl overflow-hidden border-8 border-muted/80">
-                  <video className="w-full h-auto" controls playsInline>
-                    <source src="/lovable-uploads/figma-make-prototype.mov" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Key Insights as Cards */}
-          <div className="mt-16">
-            <p className="text-xl font-semibold text-foreground mb-6">Key insights:</p>
+          <div className="mt-8">
+            <p className="font-bold text-foreground leading-relaxed mb-6">Key insights:</p>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="p-6 bg-accent/30 rounded-lg border border-border">
                 <div className="text-3xl mb-3">🔍</div>
@@ -116,6 +102,20 @@ const AgentsMonitoring = () => {
               <div className="p-6 bg-accent/30 rounded-lg border border-border">
                 <div className="text-3xl mb-3">📈</div>
                 <p className="text-sm text-muted-foreground">ROI signals, AI unit usage, and efficiency data were missing.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Video - Centered and Larger */}
+          <div className="flex justify-center mt-8">
+            <div className="w-full max-w-5xl">
+              <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3">
+                <div className="bg-background rounded-t-xl overflow-hidden border-8 border-muted/80">
+                  <video className="w-full h-auto" controls playsInline>
+                    <source src="/lovable-uploads/figma-make-prototype.mov" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
               </div>
             </div>
           </div>
