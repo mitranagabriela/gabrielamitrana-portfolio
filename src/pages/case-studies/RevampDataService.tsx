@@ -33,6 +33,32 @@ const RevampDataService = () => {
           </div>
         </div>
   }, {
+    title: "Challenge",
+    content: <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            Data Fabric faced several critical issues that limited its adoption and effectiveness in enterprise environments.
+          </p>
+          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
+            <li>Developers had to leave their workflow to manage data schemas</li>
+            <li>No access control mechanisms created security concerns for enterprises</li>
+            <li>Poor discoverability made key features hard to find and use</li>
+            <li>Complex interfaces created friction in common tasks</li>
+          </ul>
+        </div>
+  }, {
+    title: "Design Process",
+    content: <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            I approached this project through a structured research and design process to identify and address the most critical pain points.
+          </p>
+          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
+            <li><strong>Heuristic evaluation</strong> to identify usability gaps</li>
+            <li><strong>Customer feedback analysis</strong> to understand real-world pain points</li>
+            <li><strong>Rapid prototyping</strong> to test solutions quickly</li>
+            <li><strong>Iterative validation</strong> with PMs and engineering teams</li>
+          </ul>
+        </div>
+  }, {
     title: "Vision & Business Goals",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">Our aim was to make Data Fabric the natural place for developers to store and manage their information. To get there, design focused on:</p>
