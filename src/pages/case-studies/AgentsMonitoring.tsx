@@ -90,7 +90,7 @@ const AgentsMonitoring = () => {
           {/* Video - Centered and Larger */}
           <div className="flex justify-center mt-8">
             <div className="w-full max-w-5xl">
-              <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3 shadow-2xl">
+              <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3">
                 <div className="bg-background rounded-t-xl overflow-hidden border-8 border-muted/80">
                   <video className="w-full h-auto" controls playsInline>
                     <source src="/lovable-uploads/figma-make-prototype.mov" type="video/mp4" />
