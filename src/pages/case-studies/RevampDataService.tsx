@@ -36,14 +36,9 @@ const RevampDataService = () => {
     title: "Challenge",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            Data Fabric faced several critical issues that limited its adoption and effectiveness in enterprise environments.
+            Despite the product's technical strengths, automation developers struggled to store and manage data without leaving their workflows. On top of this, the lack of access control limited enterprise adoption, while usability issues frustrated even advanced users.
           </p>
-          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Developers had to leave their workflow to manage data schemas</li>
-            <li>No access control mechanisms created security concerns for enterprises</li>
-            <li>Poor discoverability made key features hard to find and use</li>
-            <li>Complex interfaces created friction in common tasks</li>
-          </ul>
+          
         </div>
   }, {
     title: "Design Process",
