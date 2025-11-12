@@ -36,8 +36,8 @@ export const CaseStudyLayout = ({
 
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">{title}</h1>
-          <p className="text-2xl md:text-3xl text-muted-foreground mb-6">{subtitle}</p>
+          <h1 className="text-4xl font-bold mb-4">{title}</h1>
+          <p className="text-xl text-muted-foreground mb-6">{subtitle}</p>
         </div>
 
         {/* Hero Content */}
@@ -48,11 +48,11 @@ export const CaseStudyLayout = ({
         {/* Sections */}
         <div className="space-y-12">
           {sections.map((section, index) => (
-            <div key={index} className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-semibold">{section.title}</h2>
+            <div key={index} className="space-y-4">
+              <h2 className="text-2xl font-semibold">{section.title}</h2>
               <div>
                 {typeof section.content === 'string' ? (
-                  <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">{section.content}</p>
+                  <p className="text-muted-foreground leading-relaxed">{section.content}</p>
                 ) : (
                   section.content
                 )}
