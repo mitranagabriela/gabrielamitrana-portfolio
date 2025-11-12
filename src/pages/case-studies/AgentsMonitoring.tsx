@@ -7,7 +7,7 @@ const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
     </div>;
   const sections = [{
-    title: "Overview",
+    title: "Project Overview",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">UiPath had just launched AI Agents — autonomous systems that perceive, reason, act, and learn. To help enterprises, the team introduced a dedicated space to register, monitor and govern AI agents across their lifecycle. </p>
           <p className="text-muted-foreground leading-relaxed">
