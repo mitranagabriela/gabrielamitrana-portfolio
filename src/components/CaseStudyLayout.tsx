@@ -48,7 +48,7 @@ export const CaseStudyLayout = ({
         {/* Sections */}
         <div className="space-y-12">
           {sections.map((section, index) => (
-            <div key={index} className="space-y-4">
+            <div key={index} className="space-y-6">
               <h2 className="text-3xl font-semibold">{section.title}</h2>
               <div className="text-lg">
                 {typeof section.content === 'string' ? (
