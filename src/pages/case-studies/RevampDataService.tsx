@@ -43,14 +43,12 @@ const RevampDataService = () => {
   }, {
     title: "Design Process",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            I approached this project through a structured research and design process to identify and address the most critical pain points.
-          </p>
+          
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li><strong>Heuristic evaluation</strong> to identify usability gaps</li>
-            <li><strong>Customer feedback analysis</strong> to understand real-world pain points</li>
-            <li><strong>Rapid prototyping</strong> to test solutions quickly</li>
-            <li><strong>Iterative validation</strong> with PMs and engineering teams</li>
+            
+            
+            
+            
           </ul>
         </div>
   }, {
