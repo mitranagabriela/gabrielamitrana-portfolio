@@ -125,7 +125,13 @@ const AgentsMonitoring = () => {
   }, {
     title: "User Flows & Iterations",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">With validated insights, I mapped end-to-end user flows from design to runtime monitoring and built high-fidelity screens for each stage. Each iteration was validated with the PM and engineers to balance technical feasibility with clarity and usability.</p>
+          <p className="text-muted-foreground leading-relaxed">With validated insights, I mapped end-to-end user flows from design to runtime monitoring and built high-fidelity screens for each stage. Each iteration was validated with the PM and engineers to balance technical feasibility with clarity and usability.
+
+
+
+
+
+      </p>
           
           
           <div className="mt-8">
