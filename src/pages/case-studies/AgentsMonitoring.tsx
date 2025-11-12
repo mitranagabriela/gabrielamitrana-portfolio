@@ -102,20 +102,20 @@ const AgentsMonitoring = () => {
           </div>
 
           {/* Key Insights as Cards */}
-          <div className="mt-12">
-            <p className="text-2xl font-semibold text-foreground mb-6">Key insights:</p>
+          <div className="mt-16">
+            <p className="text-xl font-semibold text-foreground mb-6">Key insights:</p>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="p-6 bg-accent/30 rounded-lg border border-border">
                 <div className="text-3xl mb-3">🔍</div>
-                <p className="text-muted-foreground">Users needed clear visibility into design artifacts and their connection to runtime data.</p>
+                <p className="text-sm text-muted-foreground">Users needed clear visibility into design artifacts and their connection to runtime data.</p>
               </div>
               <div className="p-6 bg-accent/30 rounded-lg border border-border">
                 <div className="text-3xl mb-3">⚠️</div>
-                <p className="text-muted-foreground">They lacked optimization insights and clear attribution for errors.</p>
+                <p className="text-sm text-muted-foreground">They lacked optimization insights and clear attribution for errors.</p>
               </div>
               <div className="p-6 bg-accent/30 rounded-lg border border-border">
                 <div className="text-3xl mb-3">📈</div>
-                <p className="text-muted-foreground">ROI signals, AI unit usage, and efficiency data were missing.</p>
+                <p className="text-sm text-muted-foreground">ROI signals, AI unit usage, and efficiency data were missing.</p>
               </div>
             </div>
           </div>
