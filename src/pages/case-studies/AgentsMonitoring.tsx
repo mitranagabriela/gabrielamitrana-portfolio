@@ -104,9 +104,7 @@ const AgentsMonitoring = () => {
                 <li>They lacked optimization insights and clear attribution for errors.</li>
                 <li>ROI signals, AI unit usage, and efficiency data were missing.</li>
               </ul>
-              <p className="text-muted-foreground leading-relaxed">
-                These findings became the foundation for a centralized, insight-rich monitoring experience.
-              </p>
+              
             </div>
             <div className="relative md:col-span-3">
               {/* Monitor Frame */}
