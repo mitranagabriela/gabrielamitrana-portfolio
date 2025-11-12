@@ -118,8 +118,8 @@ const RevampDataService = () => {
           
           
           
-          <div className="w-full mt-8 -mx-4 sm:-mx-6 lg:-mx-8 flex justify-center">
-            <img src={unifiedExperienceImage} alt="Unified experience workflow showing integrated development interface" className="max-w-6xl rounded-lg" />
+          <div className="w-full mt-8 flex justify-center">
+            <img src={unifiedExperienceImage} alt="Unified experience workflow showing integrated development interface" className="w-full max-w-[1600px] rounded-lg" />
           </div>
           
         </div>
