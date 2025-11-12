@@ -76,7 +76,7 @@ const RevampDataService = () => {
   }, {
     title: "Prioritizing Quick Wins",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">Given limited engineering bandwidth, I worked with the PMs to define quick wins — changes that required low dev effort but delivered noticeable UX improvements.</p>
+          <p className="text-muted-foreground leading-relaxed">Given limited engineering bandwidth, I worked with the PMs to define quick wins — changes that required low dev effort but delivered noticeable UX improvements. These changes were shipped in the first few sprints and immediately improved the overall look and feel of the product.</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             
             
