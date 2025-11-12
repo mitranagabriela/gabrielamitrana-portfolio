@@ -91,13 +91,11 @@ const RevampDataService = () => {
     title: "Designing for Security: Access Control",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">The next step was to introduce a clear way to manage who owns and who can access data. Previously, there were no restrictions — anyone using an entity could read and edit records without limits. This gap was a major concern for large customers, especially when sensitive business information was involved. To solve this, I designed a role-based permission model that balanced simplicity and scalability:</p>
-          <p className="text-muted-foreground leading-relaxed">
-            I designed a role-based permission model that balanced simplicity and scalability:
-          </p>
+          
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            <li>Admins could define granular access policies at entity and field level.</li>
-            <li>The UI guided users with smart defaults.</li>
-            <li>Consumers had a clear summary of their permissions.</li>
+            
+            
+            
           </ul>
           
           
