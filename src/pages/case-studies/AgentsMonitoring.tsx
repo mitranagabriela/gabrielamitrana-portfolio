@@ -13,7 +13,7 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             However, the monitoring experience quickly became fragmented. Agent executions lived across design, evaluation, and runtime environments, with no clear connection between them. Enterprises struggled to see the full picture — how agents were performing, where issues originated, and what could be optimized.
           </p>
-          <div className="grid md:grid-cols-2 gap-4 mt-6">
+          <div className="grid md:grid-cols-2 gap-8 mt-6">
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Status:</p>
               <p className="text-muted-foreground">Ongoing</p>
