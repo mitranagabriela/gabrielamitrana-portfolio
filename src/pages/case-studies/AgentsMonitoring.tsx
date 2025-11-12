@@ -129,9 +129,7 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             Each iteration was validated with the PM and engineers to balance technical feasibility with clarity and usability.
           </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Our biggest challenge was simplifying complexity — helping power users to debug, track failures, and identify common patterns without overwhelming them.
-          </p>
+          
           <div className="mt-8">
             <img src={userFlowsImage} alt="Agent monitoring user interface showing overview and detailed performance metrics" className="w-full" />
           </div>
