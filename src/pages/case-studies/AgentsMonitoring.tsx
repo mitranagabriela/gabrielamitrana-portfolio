@@ -33,6 +33,51 @@ const AgentsMonitoring = () => {
           </div>
         </div>
   }, {
+    title: "Challenge",
+    content: <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            The monitoring experience was fragmented across design, evaluation, and runtime environments. Users couldn't see the full lifecycle of their AI agents or understand how design decisions translated into runtime performance.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Key challenges included:
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li>No connection between design-time artifacts and deployed agent instances</li>
+            <li>Lack of centralized performance data and debugging tools</li>
+            <li>Missing visibility into agent behavior, errors, and optimization opportunities</li>
+            <li>Difficulty identifying patterns across multiple agent executions</li>
+          </ul>
+        </div>
+  }, {
+    title: "Design Process",
+    content: <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            I followed a user-centered approach combining rapid prototyping, stakeholder collaboration, and iterative validation:
+          </p>
+          <div className="grid md:grid-cols-2 gap-6 mt-6">
+            <div className="p-6 bg-accent/30 rounded-lg border border-border">
+              <div className="text-2xl mb-3">🔍</div>
+              <p className="font-semibold text-foreground mb-2">Research & Discovery</p>
+              <p className="text-sm text-muted-foreground">Conducted user interviews with internal teams building and deploying AI agents to understand pain points and workflows.</p>
+            </div>
+            <div className="p-6 bg-accent/30 rounded-lg border border-border">
+              <div className="text-2xl mb-3">⚡</div>
+              <p className="font-semibold text-foreground mb-2">Rapid Prototyping</p>
+              <p className="text-sm text-muted-foreground">Built interactive prototypes in Figma Make to quickly test concepts and gather feedback.</p>
+            </div>
+            <div className="p-6 bg-accent/30 rounded-lg border border-border">
+              <div className="text-2xl mb-3">🎯</div>
+              <p className="font-semibold text-foreground mb-2">Iterative Design</p>
+              <p className="text-sm text-muted-foreground">Refined user flows and interfaces through multiple iterations with PM and engineering teams.</p>
+            </div>
+            <div className="p-6 bg-accent/30 rounded-lg border border-border">
+              <div className="text-2xl mb-3">✅</div>
+              <p className="font-semibold text-foreground mb-2">Validation</p>
+              <p className="text-sm text-muted-foreground">Tested high-fidelity designs with users to ensure technical feasibility and usability.</p>
+            </div>
+          </div>
+        </div>
+  }, {
     title: "Vision & Business Goals",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
