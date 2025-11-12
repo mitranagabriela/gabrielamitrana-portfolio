@@ -10,9 +10,7 @@ const AgentsMonitoring = () => {
     title: "Project Overview",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">UiPath had just launched AI Agents — autonomous systems that perceive, reason, act, and learn. To help enterprises, the team introduced a dedicated space to register, monitor and govern AI agents across their lifecycle. </p>
-          <p className="text-muted-foreground leading-relaxed">
-            However, the monitoring experience quickly became fragmented. Agent executions lived across design, evaluation, and runtime environments, with no clear connection between them. Enterprises struggled to see the full picture — how agents were performing, where issues originated, and what could be optimized.
-          </p>
+          
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Status:</p>
@@ -36,16 +34,14 @@ const AgentsMonitoring = () => {
     title: "Challenge",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            The monitoring experience was fragmented across design, evaluation, and runtime environments. Users couldn't see the full lifecycle of their AI agents or understand how design decisions translated into runtime performance.
+            The monitoring experience quickly became fragmented. Agent executions lived across design, evaluation, and runtime environments, with no clear connection between them. Enterprises struggled to see the full picture — how agents were performing, where issues originated, and what could be optimized.
           </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Key challenges included:
-          </p>
+          
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>No connection between design-time artifacts and deployed agent instances</li>
-            <li>Lack of centralized performance data and debugging tools</li>
-            <li>Missing visibility into agent behavior, errors, and optimization opportunities</li>
-            <li>Difficulty identifying patterns across multiple agent executions</li>
+            
+            
+            
+            
           </ul>
         </div>
   }, {
@@ -63,18 +59,10 @@ const AgentsMonitoring = () => {
             <div className="p-6 bg-accent/30 rounded-lg border border-border">
               <div className="text-2xl mb-3">⚡</div>
               <p className="font-semibold text-foreground mb-2">Rapid Prototyping</p>
-              <p className="text-sm text-muted-foreground">Built interactive prototypes in Figma Make to quickly test concepts and gather feedback.</p>
+              
             </div>
-            <div className="p-6 bg-accent/30 rounded-lg border border-border">
-              <div className="text-2xl mb-3">🎯</div>
-              <p className="font-semibold text-foreground mb-2">Iterative Design</p>
-              <p className="text-sm text-muted-foreground">Refined user flows and interfaces through multiple iterations with PM and engineering teams.</p>
-            </div>
-            <div className="p-6 bg-accent/30 rounded-lg border border-border">
-              <div className="text-2xl mb-3">✅</div>
-              <p className="font-semibold text-foreground mb-2">Validation</p>
-              <p className="text-sm text-muted-foreground">Tested high-fidelity designs with users to ensure technical feasibility and usability.</p>
-            </div>
+            
+            
           </div>
         </div>
   }, {
@@ -165,13 +153,7 @@ const AgentsMonitoring = () => {
           </ul>
           
           <div className="w-full mt-8">
-            <ImageMagnifier 
-              src={traceAgentSpanImage} 
-              alt="Enhanced agent trace interface showing execution trail with detailed spans and metadata" 
-              className="w-full rounded-lg shadow-lg" 
-              magnifierSize={200}
-              zoomLevel={2.5}
-            />
+            <ImageMagnifier src={traceAgentSpanImage} alt="Enhanced agent trace interface showing execution trail with detailed spans and metadata" className="w-full rounded-lg shadow-lg" magnifierSize={200} zoomLevel={2.5} />
           </div>
         </div>
   }, {
