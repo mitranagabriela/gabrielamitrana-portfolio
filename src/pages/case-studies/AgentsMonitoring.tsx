@@ -63,8 +63,8 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             To move fast, I built a prototype in Figma Make and tested it with internal users who build and deploy agents daily. Their feedback was invaluable.
           </p>
-          <div className="grid md:grid-cols-2 gap-8 items-start mt-8">
-            <div className="space-y-4">
+          <div className="grid md:grid-cols-5 gap-8 items-start mt-8">
+            <div className="space-y-4 md:col-span-2">
               <p className="font-bold text-foreground leading-relaxed">Key insights:</p>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                 <li>Users needed clear visibility into design artifacts and their connection to runtime data.</li>
@@ -75,7 +75,7 @@ const AgentsMonitoring = () => {
                 These findings became the foundation for a centralized, insight-rich monitoring experience.
               </p>
             </div>
-            <div className="relative">
+            <div className="relative md:col-span-3">
               {/* Monitor Frame */}
               <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3 shadow-2xl">
                 {/* Monitor Bezel */}
