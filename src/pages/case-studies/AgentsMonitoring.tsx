@@ -63,17 +63,19 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             To move fast, I built a prototype in Figma Make and tested it with internal users who build and deploy agents daily. Their feedback was invaluable.
           </p>
-          <p className="font-bold text-foreground leading-relaxed">Key insights:</p>
-          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>Users needed clear visibility into design artifacts and their connection to runtime data.</li>
-            <li>They lacked optimization insights and clear attribution for errors.</li>
-            <li>ROI signals, AI unit usage, and efficiency data were missing.</li>
-          </ul>
-          <p className="text-muted-foreground leading-relaxed">
-            These findings became the foundation for a centralized, insight-rich monitoring experience.
-          </p>
-          <div className="mt-8">
-            <div className="relative mx-auto max-w-4xl">
+          <div className="grid md:grid-cols-2 gap-8 items-start mt-8">
+            <div className="space-y-4">
+              <p className="font-bold text-foreground leading-relaxed">Key insights:</p>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <li>Users needed clear visibility into design artifacts and their connection to runtime data.</li>
+                <li>They lacked optimization insights and clear attribution for errors.</li>
+                <li>ROI signals, AI unit usage, and efficiency data were missing.</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed">
+                These findings became the foundation for a centralized, insight-rich monitoring experience.
+              </p>
+            </div>
+            <div className="relative">
               {/* Monitor Frame */}
               <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3 shadow-2xl">
                 {/* Monitor Bezel */}
