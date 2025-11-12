@@ -86,26 +86,36 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             To move fast, I built a prototype in Figma Make and tested it with internal users who build and deploy agents daily. Their feedback was invaluable.
           </p>
-          <div className="grid md:grid-cols-5 gap-8 items-start mt-8">
-            <div className="space-y-4 md:col-span-2">
-              <p className="font-bold text-foreground leading-relaxed">Key insights:</p>
-              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li>Users needed clear visibility into design artifacts and their connection to runtime data.</li>
-                <li>They lacked optimization insights and clear attribution for errors.</li>
-                <li>ROI signals, AI unit usage, and efficiency data were missing.</li>
-              </ul>
-              
-            </div>
-            <div className="relative md:col-span-3">
-              {/* Monitor Frame */}
+          
+          {/* Video - Centered and Larger */}
+          <div className="flex justify-center mt-8">
+            <div className="w-full max-w-5xl">
               <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3 shadow-2xl">
-                {/* Monitor Bezel */}
                 <div className="bg-background rounded-t-xl overflow-hidden border-8 border-muted/80">
                   <video className="w-full h-auto" controls playsInline>
                     <source src="/lovable-uploads/figma-make-prototype.mov" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Insights as Cards */}
+          <div className="mt-12">
+            <p className="text-2xl font-semibold text-foreground mb-6">Key insights:</p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="p-6 bg-accent/30 rounded-lg border border-border">
+                <div className="text-3xl mb-3">🔍</div>
+                <p className="text-muted-foreground">Users needed clear visibility into design artifacts and their connection to runtime data.</p>
+              </div>
+              <div className="p-6 bg-accent/30 rounded-lg border border-border">
+                <div className="text-3xl mb-3">⚠️</div>
+                <p className="text-muted-foreground">They lacked optimization insights and clear attribution for errors.</p>
+              </div>
+              <div className="p-6 bg-accent/30 rounded-lg border border-border">
+                <div className="text-3xl mb-3">📈</div>
+                <p className="text-muted-foreground">ROI signals, AI unit usage, and efficiency data were missing.</p>
               </div>
             </div>
           </div>
