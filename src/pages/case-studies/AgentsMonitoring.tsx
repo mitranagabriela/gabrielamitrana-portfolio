@@ -47,20 +47,10 @@ const AgentsMonitoring = () => {
   }, {
     title: "Design Process",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            I followed a user-centered approach combining rapid prototyping, stakeholder collaboration, and iterative validation:
-          </p>
+          
           <div className="grid md:grid-cols-2 gap-6 mt-6">
-            <div className="p-6 bg-accent/30 rounded-lg border border-border">
-              <div className="text-2xl mb-3">🔍</div>
-              <p className="font-semibold text-foreground mb-2">Research & Discovery</p>
-              <p className="text-sm text-muted-foreground">Conducted user interviews with internal teams building and deploying AI agents to understand pain points and workflows.</p>
-            </div>
-            <div className="p-6 bg-accent/30 rounded-lg border border-border">
-              <div className="text-2xl mb-3">⚡</div>
-              <p className="font-semibold text-foreground mb-2">Rapid Prototyping</p>
-              
-            </div>
+            
+            
             
             
           </div>
