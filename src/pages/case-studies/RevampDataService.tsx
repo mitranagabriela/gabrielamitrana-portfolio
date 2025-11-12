@@ -82,7 +82,7 @@ const RevampDataService = () => {
             
             
           </ul>
-          <p className="text-muted-foreground leading-relaxed mt-4">These changes were shipped in the first few sprints and immediately improved the overall look and feel of the product.</p>
+          
           <div className="w-full mt-8">
             <img src={quickFixesImage} alt="Quick fixes and UI improvements showing before and after states of the data entities interface" className="w-full rounded-lg" />
           </div>
@@ -108,7 +108,7 @@ const RevampDataService = () => {
   }, {
     title: "Unified Experience: Ending the Context Switch",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">With access control solved, the next step was to make Data Fabric feel seamless within developers' workflows. At the time, schema editing lived in a separate portal — forcing users to leave UiPath Studio, make changes, then manually sync them back.</p>
+          <p className="text-muted-foreground leading-relaxed">With access control solved, the next step was to make Data Fabric feel seamless within developers' workflows. At the time, schema editing lived in a separate portal — forcing users to leave UiPath Studio, make changes, then manually sync them back.    </p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             
             
