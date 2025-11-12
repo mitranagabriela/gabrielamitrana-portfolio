@@ -3,6 +3,7 @@ import { ImageMagnifier } from "@/components/ImageMagnifier";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
 import traceAgentSpanImage from "@/assets/trace-agent-span.png";
 import designSystemChartsImage from "@/assets/design-system-charts.png";
+import designProcessImage from "@/assets/agents-monitoring-design-process.png";
 const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
     </div>;
@@ -47,12 +48,8 @@ const AgentsMonitoring = () => {
   }, {
     title: "Design Process",
     content: <div className="space-y-4">
-          
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            
-            
-            
-            
+          <div className="mt-8">
+            <img src={designProcessImage} alt="Design process workflow showing discover, frame, ideate, design, and implement stages" className="w-full" />
           </div>
         </div>
   }, {
