@@ -67,7 +67,7 @@ const AgentsMonitoring = () => {
                 <p className="text-muted-foreground leading-relaxed">Users needed clear visibility into design artifacts and their connection to runtime data.</p>
               </div>
               <div className="p-6 bg-accent/30 rounded-lg border border-border">
-                <div className="text-3xl mb-3">⚠️</div>
+                <div className="text-3xl mb-3">   🧑‍💻  </div>
                 <p className="text-muted-foreground leading-relaxed">They lacked optimization insights and clear attribution for errors.</p>
               </div>
               <div className="p-6 bg-accent/30 rounded-lg border border-border">
