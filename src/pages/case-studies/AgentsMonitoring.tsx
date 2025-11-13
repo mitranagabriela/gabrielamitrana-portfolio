@@ -81,7 +81,7 @@ const AgentsMonitoring = () => {
           <div className="mt-8">
             <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3">
               <div className="bg-background rounded-t-xl overflow-hidden border-8 border-muted/80">
-                <video className="w-full h-auto" controls playsInline>
+                <video className="w-full h-auto" autoPlay loop muted playsInline>
                   <source src="/lovable-uploads/figma-make-prototype.mov" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
