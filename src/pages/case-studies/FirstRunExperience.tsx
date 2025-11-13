@@ -1,12 +1,11 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import designProcessImage from "@/assets/first-run-design-process.png";
-
 const FirstRunExperience = () => {
   const heroContent = null;
   const sections = [{
     title: "Project Overview",
     content: <div className="space-y-6">
-          <p className="text-muted-foreground leading-relaxed">Studio Web is UiPath's latest cloud-based automation platform designed to enable automation building for enterprise users. The challenge was to create an intuitive onboarding experience that would enable users to understand and adopt the product from Day 1, matching the ease-of-use expectations set by popular enterprise tools.</p>
+          <p className="text-muted-foreground leading-relaxed">Studio Web is UiPath's latest cloud-based automation platform designed to enable automation building for enterprise users. </p>
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Status:</p>
