@@ -45,7 +45,7 @@ const Resume = () => {
   };
   const conferences = ["Figma Config 2025 | San Francisco", "Design Matters '24, Tokyo, 2023", "User Experience Lisbon UXLx — Lisbon, 2022"];
   return <div className="pt-16 min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-2">Gabriela Mitrana</h1>
