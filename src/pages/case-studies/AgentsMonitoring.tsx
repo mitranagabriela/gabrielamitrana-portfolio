@@ -129,9 +129,6 @@ const AgentsMonitoring = () => {
           <p className="text-muted-foreground leading-relaxed">
             As part of this redesign, we introduced a new chart visualization style to better communicate performance trends and relationships. The success of these visuals led to their adoption into the company-wide design system, extending the project's impact beyond this feature.
           </p>
-          <div className="w-full mt-8">
-            <img src={designSystemChartsImage} alt="Chart components in light and dark mode showing various visualization styles" className="w-full rounded-lg shadow-lg" />
-          </div>
         </div>
   }, {
     title: "Results",
