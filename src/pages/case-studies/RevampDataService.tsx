@@ -5,8 +5,7 @@ import afterImage from "@/assets/access-control-after.png";
 import unifiedExperienceImage from "@/assets/unified-experience-data-fabric.png";
 import quickFixesImage from "@/assets/quick-fixes.png";
 import createEntityFlowsImage from "@/assets/create-entity-flows.jpg";
-import createEntityDiscoveryImage from "@/assets/create-entity-discovery.png";
-import createEntityFormImage from "@/assets/create-entity-form.png";
+import unifiedExperienceWorkflowImage from "@/assets/unified-experience-workflow.png";
 import designProcessImage from "@/assets/revamp-data-service-design-process.png";
 const RevampDataService = () => {
   const heroContent = null;
@@ -126,9 +125,8 @@ const RevampDataService = () => {
           
           
           
-          <div className="w-full mt-8 grid md:grid-cols-2 gap-4">
-            <img src={createEntityDiscoveryImage} alt="Entity selection interface in UiPath Studio" className="w-full rounded-lg" />
-            <img src={createEntityFormImage} alt="Entity creation form in UiPath Studio" className="w-full rounded-lg" />
+          <div className="w-full mt-8">
+            <img src={unifiedExperienceWorkflowImage} alt="Unified workflow showing entity creation and management across different views" className="w-full rounded-lg" />
           </div>
           
         </div>
