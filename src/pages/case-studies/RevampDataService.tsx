@@ -125,7 +125,7 @@ const RevampDataService = () => {
           
           
           
-          <div className="w-full mt-8">
+          <div className="w-full">
             <img src={unifiedExperienceWorkflowImage} alt="Unified workflow showing entity creation and management across different views" className="w-full rounded-lg" />
           </div>
           
