@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import { Home, FileText, Briefcase, Mail, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navigationItems = [
   { name: "Home", href: "/", icon: Home },
@@ -25,9 +24,8 @@ export const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-4">
-            <div className="flex space-x-8">
-              {navigationItems.map((item) => {
+          <div className="hidden md:flex space-x-8">
+            {navigationItems.map((item) => {
               const Icon = item.icon;
               const isActive = location.pathname === item.href;
               return (
@@ -45,14 +43,11 @@ export const Navigation = () => {
                   <span>{item.name}</span>
                 </Link>
               );
-              })}
-            </div>
-            <ThemeToggle />
+            })}
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center space-x-2">
-            <ThemeToggle />
+          <div className="md:hidden">
             <Button
               variant="ghost"
               size="sm"
