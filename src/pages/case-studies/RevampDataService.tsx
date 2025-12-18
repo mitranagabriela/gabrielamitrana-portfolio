@@ -138,7 +138,7 @@ const RevampDataService = () => {
           <div className="grid md:grid-cols-3 gap-4">
             <div className="bg-accent/30 p-6 rounded-lg border">
               <p className="text-sm font-semibold mb-2">Data Operations</p>
-              <div className="text-3xl font-bold text-foreground">+ 100% growth</div>
+              <div className="text-3xl font-bold text-foreground">+ 100%</div>
             </div>
 
             <div className="bg-accent/30 p-6 rounded-lg border">
