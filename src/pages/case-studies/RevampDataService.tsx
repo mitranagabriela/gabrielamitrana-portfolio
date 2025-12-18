@@ -117,7 +117,7 @@ const RevampDataService = () => {
   }, {
     title: "Unified Experience: Ending the Context Switch",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">With access control solved, the next step was to make Data Fabric feel seamless within developers' workflows. At the time, schema editing lived in a separate portal — forcing users to leave UiPath Studio, make changes, then manually sync them back. To eliminate this friction, I designed a unified schema editor so developers could create, edit, and use data entities without breaking their flow.</p>
+          <p className="text-muted-foreground leading-relaxed">With access control solved, the next step was to make Data Fabric feel seamless within developers' workflows. Schema editing lived in a separate portal — forcing users to leave UiPath Studio, make changes, then manually sync them back. To eliminate this friction, I designed a unified schema editor so developers could create, edit, and use data entities without breaking their flow.</p>
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
             
             
@@ -138,17 +138,17 @@ const RevampDataService = () => {
           <div className="grid md:grid-cols-3 gap-4">
             <div className="bg-accent/30 p-6 rounded-lg border">
               <p className="text-sm font-semibold mb-2">Data Operations</p>
-              <div className="text-3xl font-bold text-foreground">100% growth</div>
+              <div className="text-3xl font-bold text-foreground">+ 100% growth</div>
             </div>
 
             <div className="bg-accent/30 p-6 rounded-lg border">
               <p className="text-sm font-semibold mb-2">Attach Rate</p>
-              <div className="text-3xl font-bold text-foreground">19% growth</div>
+              <div className="text-3xl font-bold text-foreground">+ 19%</div>
             </div>
 
             <div className="bg-accent/30 p-6 rounded-lg border">
               <p className="text-sm font-semibold mb-2">Monthly Active Users</p>
-              <div className="text-3xl font-bold text-foreground">14% growth</div>
+              <div className="text-3xl font-bold text-foreground">+ 14%</div>
             </div>
           </div>
         </div>
