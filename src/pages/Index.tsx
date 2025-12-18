@@ -16,7 +16,7 @@ const Index = () => {
   }, {
     icon: Award,
     label: "Years Experience",
-    value: "4+"
+    value: "5+"
   }];
   return <div className="pt-16">
       {/* Hero Section */}
