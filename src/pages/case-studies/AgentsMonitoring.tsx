@@ -126,9 +126,7 @@ const AgentsMonitoring = () => {
   }, {
     title: "Evolving the Design System",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            As part of this redesign, we introduced a new chart visualization style to better communicate performance trends and relationships. The success of these visuals led to their adoption into the company-wide design system, extending the project's impact beyond this feature.
-          </p>
+          <p className="text-muted-foreground leading-relaxed">As part of this redesign, we introduced a new chart visualization style to better communicate performance trends and relationships. The integration of these charts into our platform-adopted design system is work in progress.</p>
         </div>
   }, {
     title: "Results",
