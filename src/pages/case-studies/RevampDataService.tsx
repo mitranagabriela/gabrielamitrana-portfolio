@@ -5,7 +5,7 @@ import afterImage from "@/assets/access-control-after.png";
 import unifiedExperienceImage from "@/assets/unified-experience-data-fabric.png";
 import quickFixesImage from "@/assets/quick-fixes.png";
 import createEntityFlowsImage from "@/assets/create-entity-flows.jpg";
-import unifiedExperienceWorkflowImage from "@/assets/unified-experience-workflow.png";
+import unifiedExperienceWorkflowImage from "@/assets/create-entity-unified.png";
 import designProcessImage from "@/assets/revamp-data-service-design-process.png";
 const RevampDataService = () => {
   const heroContent = null;
