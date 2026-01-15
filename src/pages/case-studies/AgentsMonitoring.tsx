@@ -113,7 +113,7 @@ const AgentsMonitoring = () => {
           </p>
           <p className="font-bold text-foreground leading-relaxed">Key improvements:
       </p>
-          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground marker:text-foreground">
             <li><span className="font-semibold text-foreground">Explainability:</span> Added contextual information to help users understand why agents made certain decisions or actions.</li>
             <li><span className="font-semibold text-foreground">Smart Search Patterns:</span> Enabled users to quickly locate specific events, variables, or anomalies within complex traces.</li>
             <li><span className="font-semibold text-foreground">Transparent Token Usage:</span> Visualized token consumption clearly, helping users monitor costs and identify inefficiencies.</li>
