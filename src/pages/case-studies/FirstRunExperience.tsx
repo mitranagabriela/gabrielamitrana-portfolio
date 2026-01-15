@@ -133,7 +133,7 @@ const FirstRunExperience = () => {
         </div>
   }, {
     title: "Reflections & Learnings",
-    content: <ul className="list-disc list-inside text-muted-foreground leading-relaxed space-y-3 ml-2">
+    content: <ul className="list-disc list-inside text-muted-foreground leading-relaxed space-y-3 ml-2 marker:text-foreground">
           <li>
             <strong className="text-foreground">Templates accelerate adoption.</strong> Providing ready-to-use automation templates helped users see value instantly, reducing friction and cutting build time by 40%.
           </li>
