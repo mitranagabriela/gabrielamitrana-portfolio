@@ -128,7 +128,7 @@ const AgentsMonitoring = () => {
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">As part of this redesign, we introduced a new chart visualization style to better communicate performance trends and relationships. The integration of these charts into our platform-adopted design system is work in progress.</p>
           
-          <div className="w-full mt-8">
+          <div className="w-full">
             <img src={designSystemChartsImage} alt="Design system charts showing single line chart, multi line chart, stats chart, and table chart components" className="w-full" />
           </div>
         </div>
