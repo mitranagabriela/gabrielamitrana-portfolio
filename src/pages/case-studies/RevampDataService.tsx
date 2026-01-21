@@ -10,7 +10,7 @@ import designProcessImage from "@/assets/revamp-data-service-design-process.png"
 const RevampDataService = () => {
   const heroContent = null;
   const sections = [{
-    title: "Project Overview",
+    title: "Project Details",
     content: <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">Data Fabric is UiPath's low-code data modeling and management layer — a lightweight database designed for automation developers. It simplifies how data is stored and accessed without requiring backend expertise.</p>
           

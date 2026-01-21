@@ -13,7 +13,7 @@ const UnifiedDeveloperExperience = () => {
 
   const sections = [
     {
-      title: "Project Overview",
+      title: "Project Details",
       content: (
         <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">

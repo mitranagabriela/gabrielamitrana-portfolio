@@ -7,7 +7,7 @@ const AIAgentOrchestrator = () => {
       </div>
     </div>;
   const sections = [{
-    title: "Project Overview",
+    title: "Project Details",
     content: <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">
             The AI Agent Orchestrator project involved designing an intelligent agent management system that enables seamless coordination and deployment of AI-powered automation agents across enterprise workflows. This system allows organizations to efficiently manage multiple AI agents, coordinate their activities, and optimize their performance at scale.
