@@ -37,7 +37,7 @@ const RevampDataService = () => {
     title: "Challenge",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            Despite the product's technical strengths, automation developers struggled to store and manage data without leaving their workflows. On top of this, the lack of access control limited enterprise adoption, while usability issues frustrated even advanced users.
+            Data Fabric is UiPath's low-code data modeling and management layer for automation developers. Despite its technical strengths, developers struggled to store and manage data within their workflows, while insufficient access control limited enterprise adoption.
           </p>
           
         </div>
