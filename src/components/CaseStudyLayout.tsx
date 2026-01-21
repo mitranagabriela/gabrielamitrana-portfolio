@@ -50,7 +50,7 @@ export const CaseStudyLayout = ({
           {sections.map((section, index) => (
             <div key={index} className="space-y-6">
               <h2 className="text-3xl font-semibold">{section.title}</h2>
-              <div className="text-lg">
+              <div className="text-xl">
                 {typeof section.content === 'string' ? (
                   <p className="text-muted-foreground leading-relaxed">{section.content}</p>
                 ) : (
