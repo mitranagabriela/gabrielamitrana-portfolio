@@ -26,7 +26,7 @@ const FirstRunExperience = () => {
         </div>
   }, {
     title: "Challenge",
-    content: "Our enterprise users have specific expectations when engaging with Cloud products, set by their daily interactions with tools like Slack, Zoom, and Atlassian. These products are approachable, easy to try out and require minimal effort to adopt. For successful adoption, Studio Web — UiPath's latest product for building automations — must enable users to start using it right away and understand its value from Day 1."
+    content: "Studio Web is UiPath's cloud-based automation builder for enterprise teams. Enterprise users expect modern cloud tools to be intuitive and instantly useful. Studio Web needed to enable immediate automation creation and clearly communicate its value from the first interaction."
   }, {
     title: "The Design Process",
     content: <div className="space-y-6">
