@@ -65,7 +65,7 @@ const FirstRunExperience = () => {
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Each template needed to provide a clear description and an easy mechanism for users to customize it. To achieve this, I created a dedicated template configuration page. This page allows users to:
+              Each template needed to provide a <span className="font-semibold">clear description</span> and an <span className="font-semibold">easy mechanism for users to customize it</span>. To achieve this, I created a dedicated template configuration page. This page allows users to:
             </p>
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-1">
               <li>See the template details: description, author, number of usages, and applications used.</li>
