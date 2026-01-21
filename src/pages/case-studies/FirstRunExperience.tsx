@@ -3,7 +3,7 @@ import designProcessImage from "@/assets/first-run-design-process.png";
 const FirstRunExperience = () => {
   const heroContent = null;
   const sections = [{
-    title: "Project Overview",
+    title: "Project Details",
     content: <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">Studio Web is UiPath's latest cloud-based automation platform designed to enable automation building for enterprise users. </p>
           <div className="grid md:grid-cols-2 gap-4 mt-6">
