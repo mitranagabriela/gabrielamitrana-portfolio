@@ -6,7 +6,7 @@ import afterImage from "@/assets/unified-build-after.png";
 const UnifiedBuild = () => {
   const heroContent = null;
   const sections = [{
-    title: "Project Overview",
+    title: "Project Details",
     content: <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">
             In 2024, we launched a strategic investment into creating a Unified Developer Experience. Our goal was to remove barriers that slowed developers down and to help enterprises unlock value faster from end-to-end automation.
