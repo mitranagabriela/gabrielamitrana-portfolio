@@ -135,10 +135,10 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           <p className="text-muted-foreground leading-relaxed">As part of this redesign, we also introduced a new chart visualization style to better communicate performance trends and relationships. The integration of these charts into our platform-adopted design system is work in progress.</p>
           
           <div className="grid grid-cols-2 gap-6 mt-6">
-            <img src={chartSingleLine} alt="Single line chart component" className="w-full rounded-lg shadow-2xl" />
-            <img src={chartMultiLine} alt="Multi line chart component" className="w-full rounded-lg shadow-2xl" />
-            <img src={chartStats} alt="Stats chart component" className="w-full rounded-lg shadow-2xl" />
-            <img src={chartTable} alt="Table chart component" className="w-full rounded-lg shadow-2xl" />
+            <img src={chartSingleLine} alt="Single line chart component" className="w-full rounded-lg shadow-md" />
+            <img src={chartMultiLine} alt="Multi line chart component" className="w-full rounded-lg shadow-md" />
+            <img src={chartStats} alt="Stats chart component" className="w-full rounded-lg shadow-md" />
+            <img src={chartTable} alt="Table chart component" className="w-full rounded-lg shadow-md" />
           </div>
         </div>
   }, {
