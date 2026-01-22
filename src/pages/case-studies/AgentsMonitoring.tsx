@@ -1,7 +1,7 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
 import traceAgentSpanImage from "@/assets/trace-agent-span.png";
-import designSystemChartsImage from "@/assets/design-system-charts-new.png";
+import designSystemChartsImage from "@/assets/design-system-charts.png";
 import designProcessImage from "@/assets/agents-monitoring-design-process.png";
 const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
@@ -129,7 +129,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
   }, {
     title: "Evolving the Design System",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">As part of this redesign, we introduced a new chart visualization style to better communicate performance trends and relationships. The integration of these charts into our platform-adopted design system is work in progress.</p>
+          <p className="text-muted-foreground leading-relaxed">As part of this redesign, we also introduced a new chart visualization style to better communicate performance trends and relationships. The integration of these charts into our platform-adopted design system is work in progress.</p>
           
           <div className="w-full -mb-4">
             <img src={designSystemChartsImage} alt="Design system charts showing single line chart, multi line chart, stats chart, and table chart components" className="w-full" />
