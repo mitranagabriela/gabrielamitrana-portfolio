@@ -1,7 +1,7 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
 import traceAgentSpanImage from "@/assets/trace-agent-span.png";
-import designSystemChartsImage from "@/assets/design-system-charts.png";
+import designSystemChartsImage from "@/assets/design-system-charts-new.png";
 import designProcessImage from "@/assets/agents-monitoring-design-process.png";
 const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
