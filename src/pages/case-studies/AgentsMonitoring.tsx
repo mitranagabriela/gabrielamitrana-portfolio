@@ -33,9 +33,12 @@ const AgentsMonitoring = () => {
   }, {
     title: "Challenge",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            The monitoring experience quickly became fragmented. Agent executions lived across design, evaluation, and runtime environments, with no clear connection between them. Enterprises struggled to see the full picture — how agents were performing, where issues originated, and what could be optimized.
-          </p>
+          <p className="text-muted-foreground leading-relaxed">UiPath had just launched AI Agents — autonomous systems that perceive, reason, act, and learn. To help enterprises, the team introduced a dedicated space to register, monitor and govern AI agents across their lifecycle. 
+
+
+
+
+The monitoring experience quickly became fragmented. Agent executions lived across design, evaluation, and runtime environments, with no clear connection between them. Enterprises struggled to see the full picture — how agents were performing, where issues originated, and what could be optimized.</p>
           
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
             
