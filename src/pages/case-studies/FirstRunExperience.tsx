@@ -26,7 +26,7 @@ const FirstRunExperience = () => {
         </div>
   }, {
     title: "Challenge",
-    content: "Studio Web is UiPath's cloud-based automation builder for enterprise teams. Enterprise users expect modern cloud tools to be intuitive and instantly useful. Studio Web needed to enable immediate automation creation and clearly communicate its value from the first interaction."
+    content: "Studio Web is UiPath's cloud-based automation builder for enterprise teams, designed to enable automation creation directly in the browser. Enterprise users, accustomed to everyday tools like Slack and Zoom, expect cloud products to be intuitive, easy to try, and productive with minimal setup. Studio Web needed to remove barriers to getting started, enable users to build automations immediately, and clearly communicate its value from the very first interaction."
   }, {
     title: "The Design Process",
     content: <div className="space-y-6">
