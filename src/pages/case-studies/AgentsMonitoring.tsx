@@ -9,7 +9,7 @@ const AgentsMonitoring = () => {
   const sections = [{
     title: "Project Details",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">UiPath had just launched AI Agents — autonomous systems that perceive, reason, act, and learn. To help enterprises, the team introduced a dedicated space to register, monitor and govern AI agents across their lifecycle. </p>
+          
           
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <div className="p-4 bg-accent/50 rounded-lg">
