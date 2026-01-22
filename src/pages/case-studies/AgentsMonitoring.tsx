@@ -126,7 +126,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           </ul>
           
           <div className="w-full mt-8">
-            <img src={traceAgentSpanImage} alt="Enhanced agent trace interface showing execution trail with detailed spans and metadata" className="w-full rounded-lg shadow-lg" />
+            <img src={traceAgentSpanImage} alt="Enhanced agent trace interface showing execution trail with detailed spans and metadata" className="w-full rounded-lg shadow-md" />
           </div>
         </div>
   }, {
