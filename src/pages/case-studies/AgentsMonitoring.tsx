@@ -78,7 +78,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
               </div>
               <div className="p-6 bg-accent/30 rounded-lg border border-border">
                 <div className="text-3xl mb-3">📈</div>
-                <p className="text-muted-foreground leading-relaxed">ROI signals, token usage, and efficiency data were missing.</p>
+                <p className="text-muted-foreground leading-relaxed">ROI signals, AI unit usage, and efficiency data were missing.</p>
               </div>
             </div>
           </div>
@@ -121,8 +121,8 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
       </p>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground marker:text-foreground">
             <li><span className="font-semibold text-foreground">Explainability:</span> Added contextual information to help users understand why agents made certain decisions or actions.</li>
-            <li><span className="font-semibold text-foreground">Smart Search Patterns:</span>Timeline View: Added a timeline to show where time is spent during agent execution, helping users quickly identify bottlenecks.</li>
-            <li><span className="font-semibold text-foreground">Transparent Token Usage:</span>Transparent Token Usage: Added token consumption to help users monitor costs and identify inefficiencies.</li>
+            <li><span className="font-semibold text-foreground">Smart Search Patterns:</span>Timeline View</li>
+            <li><span className="font-semibold text-foreground">Transparent Token Usage:</span>Transparent Token Usage: Added token consumption to help users monitor costs and identify inefficiencies.</li>
           </ul>
           
           <div className="w-full mt-8">
