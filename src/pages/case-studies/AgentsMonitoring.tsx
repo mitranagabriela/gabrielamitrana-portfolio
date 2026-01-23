@@ -78,7 +78,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
               </div>
               <div className="p-6 bg-accent/30 rounded-lg border border-border">
                 <div className="text-3xl mb-3">📈</div>
-                <p className="text-muted-foreground leading-relaxed">ROI signals, AI unit usage, and efficiency data were missing.</p>
+                <p className="text-muted-foreground leading-relaxed">ROI signals, token usage, and efficiency data were missing.</p>
               </div>
             </div>
           </div>
