@@ -121,12 +121,12 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
       </p>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground marker:text-foreground">
             <li><span className="font-semibold text-foreground">Explainability:</span> Added contextual information to help users understand why agents made certain decisions or actions.</li>
-            <li><span className="font-semibold text-foreground">Smart Search Patterns:</span> Enabled users to quickly locate specific events, variables, or anomalies within complex traces.</li>
+            <li><span className="font-semibold text-foreground">Smart Search Patterns:</span>Timeline View</li>
             <li><span className="font-semibold text-foreground">Transparent Token Usage:</span> Visualized token consumption clearly, helping users monitor costs and identify inefficiencies.</li>
           </ul>
           
           <div className="w-full mt-8">
-            <video className="w-full rounded-lg shadow-md" autoPlay loop muted playsInline>
+            <video className="w-full rounded-lg shadow-md border-0 border-none" autoPlay loop muted playsInline>
               <source src="/lovable-uploads/trace-agent-span-video.mov" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
