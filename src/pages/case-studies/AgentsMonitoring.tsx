@@ -126,7 +126,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           </ul>
           
           <div className="w-full mt-8">
-            <video className="w-full shadow-md" autoPlay loop muted playsInline>
+            <video className="w-full rounded-lg shadow-md" autoPlay loop muted playsInline>
               <source src="/lovable-uploads/trace-agent-span-video.mov" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
