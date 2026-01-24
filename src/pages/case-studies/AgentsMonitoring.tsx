@@ -121,7 +121,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
       </p>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground marker:text-foreground">
             <li><span className="font-semibold text-foreground">Explainability:</span> Added contextual information to help users understand why agents made certain decisions or actions.</li>
-            <li><span className="font-semibold text-foreground">Smart Search Patterns:</span>Timeline View: </li>
+            <li><span className="font-semibold text-foreground">Smart Search Patterns:</span>Timeline View: Added a step-by-step timeline to show where time is spent during agent execution, helping users quickly identify bottlenecks.</li>
             <li><span className="font-semibold text-foreground">Transparent Token Usage:</span>Transparent Token Usage: Added token consumption to help users monitor costs and identify inefficiencies.</li>
           </ul>
           
