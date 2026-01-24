@@ -64,6 +64,18 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
             To move fast, I built a prototype in Figma Make and tested it with internal users who build and deploy agents daily. Their feedback was invaluable.
           </p>
           
+          {/* Video */}
+          <div className="mt-8">
+            <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3">
+              <div className="bg-background rounded-t-xl overflow-hidden border-8 border-muted/80">
+                <video className="w-full h-auto" autoPlay loop muted playsInline>
+                  <source src="/lovable-uploads/figma-make-prototype.mov" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+
           {/* Key Insights as Cards */}
           <div className="mt-8">
             <p className="font-semibold text-foreground mb-4">Key insights:</p>
@@ -73,24 +85,12 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
                 <p className="text-muted-foreground leading-relaxed">Users needed clear visibility into design artifacts and their connection to runtime data.</p>
               </div>
               <div className="p-6 bg-accent/30 rounded-lg border border-border">
-                <div className="text-3xl mb-3">   🧑‍💻  </div>
+                <div className="text-3xl mb-3">   🧑‍💻  </div>
                 <p className="text-muted-foreground leading-relaxed">They lacked optimization insights and clear attribution for errors.</p>
               </div>
               <div className="p-6 bg-accent/30 rounded-lg border border-border">
                 <div className="text-3xl mb-3">📈</div>
                 <p className="text-muted-foreground leading-relaxed">ROI signals, AI unit usage, and efficiency data were missing.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Video */}
-          <div className="mt-8">
-            <div className="bg-gradient-to-b from-muted/50 to-muted rounded-t-2xl p-3">
-              <div className="bg-background rounded-t-xl overflow-hidden border-8 border-muted/80">
-                <video className="w-full h-auto" autoPlay loop muted playsInline>
-                  <source src="/lovable-uploads/figma-make-prototype.mov" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
               </div>
             </div>
           </div>
