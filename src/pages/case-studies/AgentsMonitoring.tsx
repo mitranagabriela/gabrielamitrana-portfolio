@@ -36,7 +36,7 @@ const AgentsMonitoring = () => {
   }, {
     title: "Challenge",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">UiPath had just launched AI Agents — autonomous systems that perceive, reason, act, and learn. To help enterprises, the team introduced a dedicated space to register, monitor and govern AI agents across their lifecycle. 
+          <p className="text-muted-foreground leading-relaxed">UiPath had just launched AI Agents — autonomous systems that perceive, reason, act, and learn. To help enterprises, the team introduced a dedicated space to register, monitor and govern AI agents across their lifecycle. 
 
 
 
@@ -103,7 +103,6 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
 
 
 
-
       </p>
           
           
@@ -122,7 +121,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           <ul className="list-disc list-inside space-y-2 text-muted-foreground marker:text-foreground">
             <li><span className="font-semibold text-foreground">Explainability:</span> Added contextual information to help users understand why agents made certain decisions or actions.</li>
             <li><span className="font-semibold text-foreground">Timeline View:</span> Added a step-by-step timeline to show where time is spent during agent execution, helping users quickly identify bottlenecks.</li>
-            <li><span className="font-semibold text-foreground">Transparent Token Usage:</span>Transparent Token Usage: Added token consumption to help users monitor costs and identify inefficiencies.</li>
+            <li><span className="font-semibold text-foreground">Transparent Token Usage:</span> Added token consumption to help users monitor costs and identify inefficiencies.</li>
           </ul>
           
           <div className="w-full mt-8">
