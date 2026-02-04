@@ -2,6 +2,8 @@ import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
 import traceAgentSpanImage from "@/assets/trace-agent-span.png";
 import designProcessImage from "@/assets/agents-monitoring-design-process.png";
+import traceTimelineImage from "@/assets/trace-timeline.png";
+import traceFilteringImage from "@/assets/trace-filtering.png";
 import { LatencyChart } from "@/components/LatencyChart";
 const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
@@ -115,7 +117,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           </div>
         </div>
   }, {
-    title: "Enhancing the Agent Trace",
+  title: "Enhancing the Agent Trace",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
             To fully support debugging, we also needed to rethink the agent trace experience. The existing trace lacked clarity and depth, making it difficult to understand why an execution failed or behaved unexpectedly.
@@ -126,6 +128,22 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
             <li><span className="font-semibold text-foreground">Timeline View:</span> Added a step-by-step timeline to show where time is spent during agent execution, helping users quickly identify bottlenecks.</li>
             <li><span className="font-semibold text-foreground">Transparent Token Usage:</span> Added token consumption to help users monitor costs and identify inefficiencies.</li>
           </ul>
+          
+          {/* Two-column feature cards */}
+          <div className="grid md:grid-cols-2 gap-8 mt-8">
+            <div className="space-y-4">
+              <div className="rounded-lg border border-border overflow-hidden bg-background">
+                <img src={traceTimelineImage} alt="Execution trail timeline showing agent run stages" className="w-full" />
+              </div>
+              <p className="text-muted-foreground leading-relaxed">Added a step-by-step timeline to show where time is spent during agent execution, helping users quickly identify bottlenecks.</p>
+            </div>
+            <div className="space-y-4">
+              <div className="rounded-lg border border-border overflow-hidden bg-background p-6 flex items-center justify-center">
+                <img src={traceFilteringImage} alt="Settings panel with metrics, timeline toggles and verbosity filter" className="max-w-full" />
+              </div>
+              <p className="text-muted-foreground leading-relaxed">Added detailed filtering so users can customize the information they want to see.</p>
+            </div>
+          </div>
           
           <div className="w-full mt-8">
             <video className="w-full rounded-lg shadow-md border-0 border-none" autoPlay loop muted playsInline>
