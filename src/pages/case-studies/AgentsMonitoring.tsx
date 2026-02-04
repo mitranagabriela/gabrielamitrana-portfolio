@@ -1,11 +1,8 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
 import traceAgentSpanImage from "@/assets/trace-agent-span.png";
-import chartSingleLine from "@/assets/chart-single-line.png";
-import chartMultiLine from "@/assets/chart-multi-line.png";
-import chartStats from "@/assets/chart-stats.png";
-import chartTable from "@/assets/chart-table.png";
 import designProcessImage from "@/assets/agents-monitoring-design-process.png";
+import { LatencyChart } from "@/components/LatencyChart";
 const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
     </div>;
@@ -133,14 +130,11 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
         </div>
   }, {
     title: "Evolving the Design System",
-    content: <div className="space-y-4">
+    content: <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">As part of this redesign, we also introduced a new chart visualization style to better communicate performance trends and relationships. The integration of these charts into our platform-adopted design system is work in progress.</p>
           
-          <div className="grid grid-cols-2 gap-6 mt-6">
-            <img src={chartSingleLine} alt="Single line chart component" className="w-full rounded-lg shadow-md" />
-            <img src={chartMultiLine} alt="Multi line chart component" className="w-full rounded-lg shadow-md" />
-            <img src={chartStats} alt="Stats chart component" className="w-full rounded-lg shadow-md" />
-            <img src={chartTable} alt="Table chart component" className="w-full rounded-lg shadow-md" />
+          <div className="mt-6">
+            <LatencyChart />
           </div>
         </div>
   }, {
