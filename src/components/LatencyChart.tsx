@@ -119,7 +119,8 @@ export const LatencyChart = () => {
             onMouseLeave={() => setActiveIndex(null)}
           >
             <defs>
-              <linearGradient id="latencyGradient" x1="0" y1="0" x2="1" y2="0">
+              {/* Horizontal gradient for line stroke */}
+              <linearGradient id="latencyStrokeGradient" x1="0" y1="0" x2="1" y2="0">
                 {gradientStops.map((stop, index) => (
                   <stop
                     key={index}
@@ -129,9 +130,25 @@ export const LatencyChart = () => {
                   />
                 ))}
               </linearGradient>
-              <linearGradient id="latencyFillGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="url(#latencyGradient)" stopOpacity={0.3} />
-                <stop offset="100%" stopColor="url(#latencyGradient)" stopOpacity={0.05} />
+              {/* Matching fill gradients for each color */}
+              <linearGradient id="greenFillGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#22c55e" stopOpacity={0.35} />
+                <stop offset="100%" stopColor="#22c55e" stopOpacity={0.02} />
+              </linearGradient>
+              <linearGradient id="orangeFillGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#f97316" stopOpacity={0.35} />
+                <stop offset="100%" stopColor="#f97316" stopOpacity={0.02} />
+              </linearGradient>
+              {/* Combined horizontal + vertical gradient for fill area */}
+              <linearGradient id="latencyFillGradient" x1="0" y1="0" x2="1" y2="0">
+                {gradientStops.map((stop, index) => (
+                  <stop
+                    key={index}
+                    offset={stop.offset}
+                    stopColor={stop.color}
+                    stopOpacity={0.25}
+                  />
+                ))}
               </linearGradient>
             </defs>
             
@@ -168,7 +185,7 @@ export const LatencyChart = () => {
             <Area
               type="monotone"
               dataKey="latency"
-              stroke="url(#latencyGradient)"
+              stroke="url(#latencyStrokeGradient)"
               strokeWidth={2.5}
               fill="url(#latencyFillGradient)"
               dot={(props) => {
