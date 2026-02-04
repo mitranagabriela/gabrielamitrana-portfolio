@@ -55,6 +55,13 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           </div>
         </div>
   }, {
+    title: "Competitive Analysis",
+    content: <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            To inform our design direction, I analyzed how leading platforms approach agent monitoring and observability.
+          </p>
+        </div>
+  }, {
     title: "Discovery: Rapid Iterations with Figma Make",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
