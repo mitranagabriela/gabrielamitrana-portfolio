@@ -132,7 +132,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           </p>
           <p className="font-bold text-foreground leading-relaxed">Key decisions:</p>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground marker:text-foreground">
-            <li><span className="font-semibold text-foreground">Explainability:</span> Added contextual information to help users understand why agents made certain decisions or actions.</li>
+            
             
             
           </ul>
