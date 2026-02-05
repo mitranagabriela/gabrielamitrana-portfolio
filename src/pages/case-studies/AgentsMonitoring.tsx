@@ -133,7 +133,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           <p className="font-bold text-foreground leading-relaxed">Key decisions:</p>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground marker:text-foreground">
             <li><span className="font-semibold text-foreground">Explainability:</span> Added contextual information to help users understand why agents made certain decisions or actions.</li>
-            <li className=""><span className="font-semibold text-foreground">Timeline View:</span> Added a step-by-step timeline to show where time is spent during agent execution, helping users quickly identify bottlenecks.</li>
+            
             
           </ul>
           
