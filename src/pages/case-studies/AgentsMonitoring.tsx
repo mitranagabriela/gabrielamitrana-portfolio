@@ -130,18 +130,18 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           </ul>
           
           {/* Two-column feature cards */}
-          <div className="grid md:grid-cols-2 gap-8 mt-8">
+          <div className="grid md:grid-cols-2 gap-8 mt-8 bg-accent/30 rounded-xl p-8">
             <div className="space-y-4">
-              <div className="rounded-lg border border-border overflow-hidden bg-background">
+              <div className="rounded-lg overflow-hidden bg-background">
                 <img src={traceTimelineImage} alt="Execution trail timeline showing agent run stages" className="w-full" />
               </div>
-              <p className="text-muted-foreground leading-relaxed">Added a step-by-step timeline to show where time is spent during agent execution, helping users quickly identify bottlenecks.</p>
+              <p className="text-muted-foreground leading-relaxed">Added a <span className="font-semibold text-foreground">step-by-step timeline</span> to show where time is spent during agent execution, helping users quickly identify bottlenecks.</p>
             </div>
             <div className="space-y-4">
-              <div className="rounded-lg border border-border overflow-hidden bg-background p-6 flex items-center justify-center">
+              <div className="rounded-lg overflow-hidden bg-background p-6 flex items-center justify-center">
                 <img src={traceFilteringImage} alt="Settings panel with metrics, timeline toggles and verbosity filter" className="max-w-full" />
               </div>
-              <p className="text-muted-foreground leading-relaxed">Added detailed filtering so users can customize the information they want to see.</p>
+              <p className="text-muted-foreground leading-relaxed">Added <span className="font-semibold text-foreground">detailed filtering</span> so users can customize the information they want to see.</p>
             </div>
           </div>
           
