@@ -138,7 +138,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
               <p className="text-muted-foreground leading-relaxed">Added a <span className="font-semibold text-foreground">step-by-step timeline</span> to show where time is spent during agent execution, helping users quickly identify bottlenecks.</p>
             </div>
             <div className="space-y-4">
-              <div className="rounded-lg overflow-hidden bg-background border border-border aspect-[16/9] flex items-center justify-center p-4">
+              <div className="rounded-lg overflow-hidden bg-background border border-border p-6 inline-flex items-center justify-center">
                 <img src={traceFilteringImage} alt="Settings panel with metrics, timeline toggles and verbosity filter" className="max-w-full max-h-full object-contain" />
               </div>
               <p className="text-muted-foreground leading-relaxed">Added <span className="font-semibold text-foreground">detailed filtering</span> so users can customize the information they want to see.</p>
