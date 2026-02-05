@@ -67,6 +67,14 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
     title: "Discovery: Rapid Iterations with Figma Make",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
+            I started by mapping the customer journey to understand how different personas interact with agents across the lifecycle — from design and evaluation to deployment and monitoring. This helped identify key pain points and opportunities for a more connected experience.
+          </p>
+          
+          <div className="mt-6">
+            <img src="/placeholder.svg" alt="Customer journey map placeholder" className="w-full rounded-lg border border-border" />
+          </div>
+          
+          <p className="text-muted-foreground leading-relaxed">
             To move fast, I built a prototype in Figma Make and tested it with internal users who build and deploy agents daily. Their feedback was invaluable.
           </p>
           
