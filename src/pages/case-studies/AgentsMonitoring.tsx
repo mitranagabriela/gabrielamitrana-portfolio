@@ -2,8 +2,9 @@ import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
 import traceAgentSpanImage from "@/assets/trace-agent-span.png";
 import designProcessImage from "@/assets/agents-monitoring-design-process.png";
-import traceTimelineImage from "@/assets/trace-timeline.png";
-import traceFilteringImage from "@/assets/trace-filtering.png";
+import traceTimelineImage from "@/assets/trace-timeline-new.png";
+import traceFilteringImage from "@/assets/trace-filtering-new.png";
+import { Separator } from "@/components/ui/separator";
 import { LatencyChart } from "@/components/LatencyChart";
 const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
@@ -138,16 +139,17 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           </ul>
           
           {/* Two-column feature cards */}
-          <div className="grid md:grid-cols-2 gap-8 mt-8 bg-accent/30 rounded-xl p-8">
-            <div className="space-y-4">
-              <div className="rounded-lg overflow-hidden bg-background border border-border">
-                <img src={traceTimelineImage} alt="Execution trail timeline showing agent run stages" className="w-full" />
+          <div className="flex mt-8 bg-accent/30 rounded-xl p-8 gap-0">
+            <div className="flex-[2] space-y-4 pr-8">
+              <div className="rounded-lg overflow-hidden bg-background border border-border h-48 flex items-center justify-center">
+                <img src={traceTimelineImage} alt="Execution trail timeline showing agent run stages" className="w-full h-full object-cover object-top" />
               </div>
               <p className="text-muted-foreground leading-relaxed">Added a <span className="font-semibold text-foreground">step-by-step timeline</span> to show where time is spent during agent execution, helping users quickly identify bottlenecks.</p>
             </div>
-            <div className="space-y-4">
-              <div className="rounded-lg overflow-hidden bg-background border border-border p-6 inline-flex items-center justify-center">
-                <img src={traceFilteringImage} alt="Settings panel with metrics, timeline toggles and verbosity filter" className="max-w-full max-h-full object-contain" />
+            <Separator orientation="vertical" className="h-auto bg-border/50" />
+            <div className="flex-1 space-y-4 pl-8">
+              <div className="rounded-lg overflow-hidden bg-background border border-border h-48 flex items-center justify-center p-4">
+                <img src={traceFilteringImage} alt="Settings panel with metrics, timeline toggles and verbosity filter" className="max-h-full object-contain" />
               </div>
               <p className="text-muted-foreground leading-relaxed">Added <span className="font-semibold text-foreground">detailed filtering</span> so users can customize the information they want to see.</p>
             </div>
