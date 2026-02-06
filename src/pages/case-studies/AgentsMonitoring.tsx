@@ -174,14 +174,6 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           </div>
         </div>
   }, {
-    title: "Next Steps",
-    content: <div className="space-y-4">
-          <ul className="list-decimal list-inside space-y-3 text-muted-foreground">
-            <li className="leading-relaxed">Set up an alerting system to usage anomalies to pinpoint and resolve issues before they impact users.</li>
-            <li className="leading-relaxed">Set up online evaluations to validate that development behavior holds in production.</li>
-          </ul>
-        </div>
-  }, {
     title: "Evolving the Design System",
     content: <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">As part of this redesign, we also introduced a new chart visualization style to better communicate performance trends and relationships. The integration of these charts into our platform-adopted design system is work in progress.</p>
