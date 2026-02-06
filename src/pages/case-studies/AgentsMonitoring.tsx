@@ -131,7 +131,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           <p className="text-muted-foreground leading-relaxed">
             To fully support debugging, we also needed to rethink the agent trace experience. The existing trace lacked clarity and depth, making it difficult to understand why an execution failed or behaved unexpectedly.
           </p>
-          <p className="font-bold text-foreground leading-relaxed">Key decisions:</p>
+          <p className="font-bold text-foreground leading-relaxed">Key decisions</p>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground marker:text-foreground">
             
             
