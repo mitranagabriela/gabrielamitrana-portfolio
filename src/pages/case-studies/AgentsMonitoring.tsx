@@ -72,7 +72,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           </p>
           
           <div className="mt-6">
-            <img src="/placeholder.svg" alt="Customer journey map placeholder" className="w-full rounded-lg border border-border" />
+            
           </div>
           
           <p className="text-muted-foreground leading-relaxed">
