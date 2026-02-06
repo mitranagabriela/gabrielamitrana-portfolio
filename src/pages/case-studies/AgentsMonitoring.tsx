@@ -67,13 +67,6 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
   }, {
     title: "Discovery: Rapid Iterations with Figma Make",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            I started by mapping the customer journey to understand how different personas interact with agents across the lifecycle — from design and evaluation to deployment and monitoring. This helped identify key pain points and opportunities for a more connected experience.
-          </p>
-          
-          <div className="mt-6">
-            
-          </div>
           
           <p className="text-muted-foreground leading-relaxed">
             To move fast, I built a prototype in Figma Make and tested it with internal users who build and deploy agents daily. Their feedback was invaluable.
@@ -113,6 +106,9 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
   }, {
     title: "User Flows & Iterations",
     content: <div className="space-y-4">
+          <p className="text-muted-foreground leading-relaxed">
+            I started by mapping the customer journey to understand how different personas interact with agents across the lifecycle — from design and evaluation to deployment and monitoring. This helped identify key pain points and opportunities for a more connected experience.
+          </p>
           <p className="text-muted-foreground leading-relaxed">With validated insights, I mapped end-to-end user flows from design to runtime monitoring and built high-fidelity screens for each stage. Each iteration was validated with the PM and engineers to balance technical feasibility with clarity and usability.
 
 
