@@ -136,15 +136,15 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           
           {/* Two-column feature cards */}
           <div className="flex mt-8 bg-accent/30 rounded-xl p-8 gap-0">
-            <div className="flex-1 space-y-4 pr-8">
-              <div className="rounded-lg overflow-hidden bg-background border border-border aspect-square flex items-center justify-center">
+            <div className="w-2/3 space-y-4 pr-8">
+              <div className="rounded-lg overflow-hidden bg-background border border-border h-80 flex items-center justify-center">
                 <img src={traceTimelineImage} alt="Execution trail timeline showing agent run stages" className="w-full h-full object-cover object-top" />
               </div>
               <p className="text-muted-foreground leading-relaxed">Added a <span className="font-semibold text-foreground">step-by-step timeline</span> to show where time is spent during agent execution, helping users quickly identify bottlenecks.</p>
             </div>
             <Separator orientation="vertical" className="h-auto bg-border/50" />
-            <div className="flex-1 space-y-4 pl-8">
-              <div className="rounded-lg overflow-hidden bg-background border border-border aspect-square flex items-center justify-center">
+            <div className="w-1/3 space-y-4 pl-8">
+              <div className="rounded-lg overflow-hidden bg-background border border-border h-80 flex items-center justify-center">
                 <img src={traceFilteringImage} alt="Execution trail tree view with cost breakdown" className="w-full h-full object-cover object-top" />
               </div>
               <p className="text-muted-foreground leading-relaxed">Added <span className="font-semibold text-foreground">detailed filtering</span> so users can customize the information they want to see.</p>
