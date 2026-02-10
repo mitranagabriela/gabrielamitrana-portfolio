@@ -170,15 +170,6 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           </div>
         </div>
   }, {
-    title: "Evolving the Design System",
-    content: <div className="space-y-6">
-          <p className="text-muted-foreground leading-relaxed">As part of this redesign, we also introduced a new chart visualization style to better communicate performance trends and relationships. The integration of these charts into our platform-adopted design system is work in progress.</p>
-          
-          <div className="mt-6">
-            <LatencyChart />
-          </div>
-        </div>
-  }, {
     title: "Results",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
