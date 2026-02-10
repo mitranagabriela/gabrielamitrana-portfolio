@@ -144,7 +144,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
             </div>
             <Separator orientation="vertical" className="h-auto bg-border/50" />
             <div className="w-1/3 space-y-4 pl-8">
-              <p className="text-muted-foreground leading-relaxed"><span className="font-semibold text-foreground">2. Detailed filtering</span> — lets users customize the information they want to see.</p>
+              <p className="text-muted-foreground leading-relaxed"><span className="font-semibold text-foreground">2. Detailed filtering</span>2. Detailed filtering — lets users customize which information they want to see.</p>
               <div className="rounded-lg overflow-hidden bg-background border border-border h-80 flex items-center justify-center">
                 <img src={traceFilteringImage} alt="Execution trail tree view with cost breakdown" className="w-full h-full object-cover object-top" />
               </div>
