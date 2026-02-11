@@ -134,7 +134,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           <p className="font-bold text-foreground leading-relaxed">Key decisions</p>
           
           {/* Two-column layout with divider */}
-          <div className="flex mt-4 gap-0 bg-accent/30 rounded-lg p-6">
+          <div className="flex items-start mt-4 gap-0 bg-accent/30 rounded-lg p-6">
             {/* Left column - 2/3 width */}
             <div className="w-2/3 pr-6">
               <p className="text-muted-foreground leading-relaxed mb-4">
