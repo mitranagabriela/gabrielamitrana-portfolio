@@ -158,8 +158,25 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
               </div>
             </div>
           </div>
-
-
+          
+          
+          {/* Laptop Frame */}
+          <div className="w-full mt-8 flex justify-center">
+            <div className="relative w-full max-w-4xl">
+              {/* Screen */}
+              <div className="bg-muted rounded-t-xl p-3 pb-0">
+                <div className="bg-background rounded-t-lg overflow-hidden">
+                  <video className="w-full h-auto" autoPlay loop muted playsInline>
+              <source src="/lovable-uploads/trace-agent-span-video.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+                </div>
+              </div>
+              {/* Laptop Base */}
+              <div className="bg-muted h-4 rounded-b-sm"></div>
+              <div className="bg-muted/80 h-2 mx-auto w-1/3 rounded-b-lg"></div>
+            </div>
+          </div>
         </div>
   }, {
     title: "Results",
