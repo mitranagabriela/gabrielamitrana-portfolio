@@ -134,15 +134,15 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           <p className="font-bold text-foreground leading-relaxed">Key decisions</p>
           
           {/* Two-column layout with divider */}
-          <div className="flex mt-4 gap-0">
+          <div className="flex mt-4 gap-0 bg-accent/30 rounded-lg p-6">
             {/* Left column - 2/3 width */}
             <div className="w-2/3 pr-6">
-              <div className="rounded-lg overflow-hidden shadow-md">
-                <img src={traceTimelineImage} alt="Step-by-step timeline view of agent execution" className="w-full h-auto" />
-              </div>
-              <p className="text-muted-foreground leading-relaxed mt-4">
+              <p className="text-muted-foreground leading-relaxed mb-4">
                 <span className="font-semibold text-foreground">Added a step-by-step timeline</span> — shows where time is spent during agent execution, helping users quickly identify bottlenecks.
               </p>
+              <div className="rounded-lg overflow-hidden border border-border">
+                <img src={traceTimelineImage} alt="Step-by-step timeline view of agent execution" className="w-full h-auto" />
+              </div>
             </div>
             
             {/* Vertical Divider */}
@@ -150,12 +150,12 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
             
             {/* Right column - 1/3 width */}
             <div className="w-1/3 pl-6">
-              <div className="rounded-lg overflow-hidden shadow-md">
-                <img src={traceFilteringImage} alt="Detailed filtering options for agent trace" className="w-full h-auto" />
-              </div>
-              <p className="text-muted-foreground leading-relaxed mt-4">
+              <p className="text-muted-foreground leading-relaxed mb-4">
                 <span className="font-semibold text-foreground">Added detailed filtering</span> — lets users customize which information they want to see.
               </p>
+              <div className="rounded-lg overflow-hidden border border-border">
+                <img src={traceFilteringImage} alt="Detailed filtering options for agent trace" className="w-full h-auto" />
+              </div>
             </div>
           </div>
           
