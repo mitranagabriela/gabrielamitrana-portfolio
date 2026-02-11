@@ -132,11 +132,32 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
             To fully support debugging, we also needed to rethink the agent trace experience. The existing trace lacked clarity and depth, making it difficult to understand why an execution failed or behaved unexpectedly.
           </p>
           <p className="font-bold text-foreground leading-relaxed">Key decisions</p>
-          <ul className="list-disc list-inside space-y-2 text-muted-foreground marker:text-foreground">
+          
+          {/* Two-column layout with divider */}
+          <div className="flex mt-4 gap-0">
+            {/* Left column - 2/3 width */}
+            <div className="w-2/3 pr-6">
+              <div className="rounded-lg overflow-hidden shadow-md">
+                <img src={traceTimelineImage} alt="Step-by-step timeline view of agent execution" className="w-full h-auto" />
+              </div>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                <span className="font-semibold text-foreground">Added a step-by-step timeline</span> — shows where time is spent during agent execution, helping users quickly identify bottlenecks.
+              </p>
+            </div>
             
+            {/* Vertical Divider */}
+            <Separator orientation="vertical" className="h-auto" />
             
-            
-          </ul>
+            {/* Right column - 1/3 width */}
+            <div className="w-1/3 pl-6">
+              <div className="rounded-lg overflow-hidden shadow-md">
+                <img src={traceFilteringImage} alt="Detailed filtering options for agent trace" className="w-full h-auto" />
+              </div>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                <span className="font-semibold text-foreground">Added detailed filtering</span> — lets users customize which information they want to see.
+              </p>
+            </div>
+          </div>
           
           
           {/* Laptop Frame */}
