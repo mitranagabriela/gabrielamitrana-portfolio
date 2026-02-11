@@ -65,7 +65,7 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
             To inform our design direction, I analyzed how leading platforms approach agent monitoring and observability.
           </p>
           <div className="mt-8">
-            <img src={competitiveAnalysisImage} alt="Competitive analysis comparison between Braintrust, Langfuse, and LangSmith" className="w-full rounded-lg shadow-md" />
+            
           </div>
         </div>
   }, {
