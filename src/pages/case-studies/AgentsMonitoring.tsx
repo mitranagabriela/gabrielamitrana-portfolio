@@ -4,6 +4,7 @@ import traceAgentSpanImage from "@/assets/trace-agent-span.png";
 import designProcessImage from "@/assets/agents-monitoring-design-process.png";
 import traceTimelineImage from "@/assets/trace-timeline-new.png";
 import traceFilteringImage from "@/assets/trace-filtering-new.png";
+import competitiveAnalysisImage from "@/assets/competitive-analysis.png";
 import { Separator } from "@/components/ui/separator";
 import { LatencyChart } from "@/components/LatencyChart";
 const AgentsMonitoring = () => {
@@ -63,6 +64,9 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           <p className="text-muted-foreground leading-relaxed">
             To inform our design direction, I analyzed how leading platforms approach agent monitoring and observability.
           </p>
+          <div className="mt-8">
+            <img src={competitiveAnalysisImage} alt="Competitive analysis comparison between Braintrust, Langfuse, and LangSmith" className="w-full rounded-lg shadow-md" />
+          </div>
         </div>
   }, {
     title: "Discovery: Rapid Iterations with Figma Make",
