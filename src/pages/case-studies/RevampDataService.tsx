@@ -125,27 +125,8 @@ const RevampDataService = () => {
           
           
           
-          {/* Laptop Frame */}
-          <div className="w-full my-8 flex justify-center">
-            <div className="relative w-full max-w-4xl">
-              {/* Screen bezel */}
-              <div className="bg-gradient-to-b from-[#2c2c2e] to-[#1c1c1e] rounded-t-2xl p-[10px] pb-0">
-                {/* Camera dot */}
-                <div className="flex justify-center mb-1">
-                  <div className="w-2 h-2 rounded-full bg-[#3a3a3c]"></div>
-                </div>
-                <div className="bg-background rounded-t-sm overflow-hidden">
-                  <video className="w-full h-auto" autoPlay loop muted playsInline>
-                    <source src="/lovable-uploads/revamp-data-service-video.mov" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
-              {/* Laptop hinge */}
-              <div className="bg-gradient-to-b from-[#1c1c1e] to-[#2c2c2e] h-3 rounded-b-[4px]"></div>
-              {/* Laptop base */}
-              <div className="bg-gradient-to-b from-[#3a3a3c] to-[#2c2c2e] h-[6px] mx-auto w-[40%] rounded-b-xl"></div>
-            </div>
+          <div className="w-full my-8">
+            <img src={unifiedExperienceWorkflowImage} alt="Unified workflow showing entity creation and management across different views" className="w-full rounded-lg" />
           </div>
           
         </div>
