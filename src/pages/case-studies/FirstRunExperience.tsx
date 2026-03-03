@@ -1,7 +1,44 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
-import designProcessImage from "@/assets/first-run-design-process.png";
 const FirstRunExperience = () => {
   const heroContent = null;
+  const designProcessSteps = [{
+    title: "Discovery",
+    bullets: ["Crazy 8's", "Story mapping", "Diagramming"]
+  }, {
+    title: "Features list & Flow",
+    bullets: ["MVP definition", "Information architecture"]
+  }, {
+    title: "Ideate & Sketch",
+    bullets: ["Wireframes", "Design critiques"]
+  }, {
+    title: "Design & Evaluate",
+    bullets: ["Prototype", "Usability testing"]
+  }, {
+    title: "Implement & Measure",
+    bullets: ["Development handoff", "Telemetry setup"]
+  }];
+  const ProcessArrow = () => <div className="-mx-[2px] mt-[21px] flex shrink-0 items-center justify-center" aria-hidden="true">
+      <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-80">
+        <path d="M0 7H35" stroke="hsl(var(--muted-foreground))" strokeWidth="1.1" />
+        <path d="M35 1L42 7L35 13V1Z" fill="hsl(var(--muted-foreground))" />
+      </svg>
+    </div>;
+  const ProcessStep = ({
+    title,
+    bullets
+  }: {
+    title: string;
+    bullets: string[];
+  }) => <div className="min-w-0 flex-1">
+      <div className="flex h-14 items-center justify-center rounded-full border border-border/70 bg-white px-4 text-center text-[1rem] font-medium leading-none tracking-tight text-muted-foreground shadow-[0_2px_10px_rgba(2,8,23,0.08)] whitespace-nowrap md:text-[1.1rem]">
+        {title}
+      </div>
+      <div className="mt-3 space-y-1 text-muted-foreground">
+        {bullets.map(item => <p key={item} className="text-[0.95rem] leading-tight">
+            {item}
+          </p>)}
+      </div>
+    </div>;
   const sections = [{
     title: "Project Details",
     content: <div className="space-y-6">
@@ -30,8 +67,15 @@ const FirstRunExperience = () => {
   }, {
     title: "The Design Process",
     content: <div className="space-y-6">
-          <div className="w-full">
-            <img src={designProcessImage} alt="Design process flow showing discovery, story mapping, feature flows, sketch & design, evaluate, design specs, and implement phases" className="w-full rounded-lg" />
+          <div className="w-full py-6">
+            <div className="relative pb-2">
+              <div className="mx-auto flex items-start gap-0">
+                {designProcessSteps.map((step, index) => <div key={step.title} className="flex min-w-0 flex-1 items-start">
+                    <ProcessStep title={step.title} bullets={step.bullets} />
+                    {index < designProcessSteps.length - 1 ? <ProcessArrow /> : null}
+                  </div>)}
+              </div>
+            </div>
           </div>
         </div>
   }, {

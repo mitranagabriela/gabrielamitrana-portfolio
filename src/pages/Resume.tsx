@@ -40,7 +40,7 @@ const Resume = () => {
   }];
   const skills = {
     "Skills": ["Product Design", "Design Thinking", "Interaction Design", "Responsive Design", "Product Strategy", "Information Architecture", "Accessibility and Inclusive Design", "Agile Methodology"],
-    "Software": ["Figma", "Miro", "Adobe Photoshop Lightroom"],
+    "Software": ["Claude Code", "Codex", "Cursor", "Figma", "Miro", "Adobe Photoshop Lightroom"],
     "Interests": ["AI, Automation", "Digital & Analog photography", "Sports and Health", "Travelling"]
   };
   const conferences = ["Figma Config 2025 | San Francisco", "Design Matters '24, Tokyo, 2023", "User Experience Lisbon UXLx — Lisbon, 2022"];

@@ -1,0 +1,16 @@
+---
+description: Trigger the portfolio hiring-manager review skill when prompt includes review
+alwaysApply: true
+---
+
+# Portfolio Review Trigger
+
+When the user prompt contains the word `review` (case-insensitive), use the `portfolio-hiring-manager-review` skill.
+
+Apply this especially for requests about:
+- portfolio quality
+- case study quality
+- storytelling, visuals, coherence
+- senior product designer hiring readiness
+
+Default to the skill's structured output and always end with prioritized recommendations.

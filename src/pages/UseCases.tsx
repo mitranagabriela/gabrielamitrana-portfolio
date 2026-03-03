@@ -17,7 +17,7 @@ const UseCases = () => {
     caseStudyPath: "/case-studies/agents-monitoring"
   }, {
     title: "Revamp Data Fabric",
-    description: "Simplified the data management flow for UiPath — from fragmentation to a cohesive experience.",
+    description: "Simplified the data management flow for UiPath — from fragmentation to a cohesive experience",
     image: revampDataFabricCover,
     tags: ["Data Management", "Service Design", "Enterprise UX"],
     status: "Completed",
@@ -25,7 +25,7 @@ const UseCases = () => {
     caseStudyPath: "/case-studies/revamp-data-service"
   }, {
     title: "Getting Started with Studio Web",
-    description: "Designed the onboarding experience for an automation platform to increase adoption and reduce drop-off rates",
+    description: "Designed the onboarding experience for an automation builder to increase adoption and reduce drop-off rates",
     image: firstRunCover,
     tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
     status: "Completed",

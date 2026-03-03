@@ -1,7 +1,6 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
 import traceAgentSpanImage from "@/assets/trace-agent-span.png";
-import designProcessImage from "@/assets/agents-monitoring-design-process.png";
 import traceTimelineImage from "@/assets/trace-timeline-new.png";
 import traceFilteringImage from "@/assets/trace-filtering-new.png";
 import competitiveAnalysisImage from "@/assets/competitive-analysis.png";
@@ -9,6 +8,44 @@ import { Separator } from "@/components/ui/separator";
 import { LatencyChart } from "@/components/LatencyChart";
 const AgentsMonitoring = () => {
   const heroContent = <div className="space-y-6">
+    </div>;
+  const designProcessSteps = [{
+    title: "Discover & Empathize",
+    bullets: ["Competitive analysis", "Pain points synthesis"]
+  }, {
+    title: "Frame problem",
+    bullets: ["Define goals", "User flows"]
+  }, {
+    title: "Ideate & Sketch",
+    bullets: ["Rapid prototyping", "Co-create with PMs", "Brainstorming"]
+  }, {
+    title: "Design & Test",
+    bullets: ["High fidelity screens", "Internal validation"]
+  }, {
+    title: "Implement & Measure",
+    bullets: ["Engineering handoff", "KPI setup & monitor adoption"]
+  }];
+  const ProcessArrow = () => <div className="-mx-[2px] mt-[21px] flex shrink-0 items-center justify-center" aria-hidden="true">
+      <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-80">
+        <path d="M0 7H35" stroke="hsl(var(--muted-foreground))" strokeWidth="1.1" />
+        <path d="M35 1L42 7L35 13V1Z" fill="hsl(var(--muted-foreground))" />
+      </svg>
+    </div>;
+  const ProcessStep = ({
+    title,
+    bullets
+  }: {
+    title: string;
+    bullets: string[];
+  }) => <div className="min-w-0 flex-1">
+      <div className="flex h-14 items-center justify-center rounded-full border border-border/70 bg-white px-4 text-center text-[1rem] font-medium leading-none tracking-tight text-muted-foreground shadow-[0_2px_10px_rgba(2,8,23,0.08)] whitespace-nowrap md:text-[1.1rem]">
+        {title}
+      </div>
+      <div className="mt-3 space-y-1 text-muted-foreground">
+        {bullets.map(item => <p key={item} className="text-[0.95rem] leading-tight">
+            {item}
+          </p>)}
+      </div>
     </div>;
   const sections = [{
     title: "Project Details",
@@ -22,7 +59,7 @@ const AgentsMonitoring = () => {
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Timeline:</p>
-              <p className="text-muted-foreground">4 months</p>
+              <p className="text-muted-foreground">6 months</p>
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Role:</p>
@@ -37,7 +74,7 @@ const AgentsMonitoring = () => {
   }, {
     title: "Challenge",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">UiPath had just launched AI Agents — autonomous systems that perceive, reason, act, and learn. To help enterprises, the team introduced a dedicated space to register, monitor and govern AI agents across their lifecycle. 
+          <p className="text-muted-foreground leading-relaxed">UiPath had just launched AI Agents — autonomous systems that perceive, reason, act, and learn. To help enterprises, the team introduced a dedicated space to register, monitor, and govern AI agents across their lifecycle. 
 
 
 
@@ -54,8 +91,15 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
   }, {
     title: "Design Process",
     content: <div className="space-y-4">
-          <div className="mt-8">
-            <img src={designProcessImage} alt="Design process workflow showing discover, frame, ideate, design, and implement stages" className="w-full" />
+          <div className="w-full py-6">
+            <div className="relative pb-2">
+              <div className="mx-auto flex items-start gap-0">
+                {designProcessSteps.map((step, index) => <div key={step.title} className="flex min-w-0 flex-1 items-start">
+                    <ProcessStep title={step.title} bullets={step.bullets} />
+                    {index < designProcessSteps.length - 1 ? <ProcessArrow /> : null}
+                  </div>)}
+              </div>
+            </div>
           </div>
         </div>
   }, {
@@ -65,7 +109,53 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
             To inform our design direction, I analyzed how leading platforms approach agent monitoring and observability.
           </p>
           <div className="mt-8">
-            
+            <div className="rounded-2xl border border-border/70 bg-background shadow-sm overflow-hidden font-sans">
+              <div className="overflow-x-auto">
+                <div className="min-w-[760px]">
+                  <div className="grid grid-cols-[1.5fr_1fr_1fr_1fr] bg-muted/40 border-b border-border/70">
+                    <div className="px-4 py-4 text-sm font-semibold text-foreground">Capability</div>
+                    <div className="px-4 py-4 flex items-center justify-center">
+                      <img src="/images/langsmith-color.svg" alt="Langsmith logo" className="h-6 w-auto object-contain" />
+                    </div>
+                    <div className="px-4 py-4 flex items-center justify-center">
+                      <img src="/images/langfuse-color.svg" alt="Langfuse logo" className="h-6 w-auto object-contain" />
+                    </div>
+                    <div className="px-4 py-4 flex items-center justify-center gap-2">
+                      <img src="/images/braintrust-logo.png" alt="Braintrust logo" className="h-6 w-6 rounded-sm object-contain" />
+                      <span className="text-sm font-semibold text-foreground">Braintrust</span>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-[1.5fr_1fr_1fr_1fr] border-b border-border/60">
+                    <div className="px-4 py-4 text-sm text-muted-foreground">Trace-level debugging</div>
+                    <div className="px-4 py-4 text-center text-lg font-semibold text-foreground">✓</div>
+                    <div className="px-4 py-4 text-center text-lg font-semibold text-foreground">✓</div>
+                    <div className="px-4 py-4 text-center text-lg font-semibold text-muted-foreground">—</div>
+                  </div>
+
+                  <div className="grid grid-cols-[1.5fr_1fr_1fr_1fr] border-b border-border/60">
+                    <div className="px-4 py-4 text-sm text-muted-foreground">Prompt and model evaluation workflows</div>
+                    <div className="px-4 py-4 text-center text-lg font-semibold text-muted-foreground">—</div>
+                    <div className="px-4 py-4 text-center text-lg font-semibold text-foreground">✓</div>
+                    <div className="px-4 py-4 text-center text-lg font-semibold text-foreground">✓</div>
+                  </div>
+
+                  <div className="grid grid-cols-[1.5fr_1fr_1fr_1fr] border-b border-border/60">
+                    <div className="px-4 py-4 text-sm text-muted-foreground">Cost and token usage visibility</div>
+                    <div className="px-4 py-4 text-center text-lg font-semibold text-muted-foreground">—</div>
+                    <div className="px-4 py-4 text-center text-lg font-semibold text-foreground">✓</div>
+                    <div className="px-4 py-4 text-center text-lg font-semibold text-muted-foreground">—</div>
+                  </div>
+
+                  <div className="grid grid-cols-[1.5fr_1fr_1fr_1fr]">
+                    <div className="px-4 py-4 text-sm text-muted-foreground">Enterprise governance and collaboration</div>
+                    <div className="px-4 py-4 text-center text-lg font-semibold text-muted-foreground">—</div>
+                    <div className="px-4 py-4 text-center text-lg font-semibold text-foreground">✓</div>
+                    <div className="px-4 py-4 text-center text-lg font-semibold text-foreground">✓</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
   }, {
@@ -133,36 +223,61 @@ The monitoring experience quickly became fragmented. Agent executions lived acro
           </p>
           
           
-          {/* Laptop Frame */}
-          <div className="w-full mt-8 flex justify-center">
-            <div className="relative w-full max-w-4xl">
-              {/* Screen bezel */}
-              <div className="bg-gradient-to-b from-[#2c2c2e] to-[#1c1c1e] rounded-t-2xl p-[10px] pb-0">
-                {/* Camera dot */}
-                <div className="flex justify-center mb-1">
-                  <div className="w-2 h-2 rounded-full bg-[#3a3a3c]"></div>
+          <div className="w-full mt-8">
+            <div className="overflow-hidden rounded-2xl border border-border/70 bg-muted/20">
+              <div className="grid md:grid-cols-2">
+                <div className="border-b border-border/60 p-8 md:p-10 md:border-r">
+                  <h4 className="text-lg md:text-xl font-semibold text-foreground leading-tight mb-6">
+                    Surface trace progress with a <span className="text-muted-foreground">clear timeline view.</span>
+                  </h4>
+                  <div className="overflow-hidden rounded-xl border border-border/60 bg-background">
+                    <img src="/images/trace-timeline-option2.png" alt="Timeline view for agent execution trail" className="w-full h-auto" />
+                  </div>
                 </div>
-                <div className="bg-background rounded-t-sm overflow-hidden">
-                  <video className="w-full h-auto" autoPlay loop muted playsInline>
-                    <source src="/lovable-uploads/trace-agent-span-video.mov" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+
+                <div className="border-b border-border/60 p-8 md:p-10">
+                  <h4 className="text-lg md:text-xl font-semibold text-foreground leading-tight mb-6">
+                    Show execution depth with <span className="text-muted-foreground">step-by-step hierarchy.</span>
+                  </h4>
+                  <div className="overflow-hidden rounded-xl border border-border/60 bg-background">
+                    <img src="/images/trace-execution-trail.png" alt="Execution trail hierarchy with expandable steps" className="w-full h-auto" />
+                  </div>
+                </div>
+
+                <div className="border-b border-border/60 p-8 md:p-10 md:border-b-0 md:border-r">
+                  <h4 className="text-lg md:text-xl font-semibold text-foreground leading-tight mb-6">
+                    Add focused controls for <span className="text-muted-foreground">metrics and verbosity filtering.</span>
+                  </h4>
+                  <div className="overflow-hidden rounded-xl border border-border/60 bg-background">
+                    <img src="/images/trace-filter-view.png" alt="Filter menu for metrics and verbosity" className="w-full h-auto" />
+                  </div>
+                </div>
+
+                <div className="p-8 md:p-10">
+                  <h4 className="text-lg md:text-xl font-semibold text-foreground leading-tight mb-6">
+                    Make debugging faster with <span className="text-muted-foreground">cross-step search.</span>
+                  </h4>
+                  <div className="overflow-hidden rounded-xl border border-border/60 bg-background">
+                    <img src="/images/trace-search-view.png" alt="Search results across agent execution attributes and tool calls" className="w-full h-auto" />
+                  </div>
                 </div>
               </div>
-              {/* Laptop hinge */}
-              <div className="bg-gradient-to-b from-[#1c1c1e] to-[#2c2c2e] h-3 rounded-b-[4px]"></div>
-              {/* Laptop base */}
-              <div className="bg-gradient-to-b from-[#3a3a3c] to-[#2c2c2e] h-[6px] mx-auto w-[40%] rounded-b-xl"></div>
             </div>
           </div>
         </div>
   }, {
-    title: "Results",
-    content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
-            Currently in progress — early feedback suggests the new structure improves clarity, cross-team debugging, and decision-making for enterprise AI teams.
-          </p>
-        </div>
+    title: "Next Steps",
+    content: <ul className="list-disc list-inside text-muted-foreground leading-relaxed space-y-3 ml-2 marker:text-foreground">
+          <li>
+            <strong className="text-foreground">Alerts.</strong> Introduce real-time notifications when agents hit problems — errors, high resource consumption, or slow response times.
+          </li>
+          <li>
+            <strong className="text-foreground">Runtime trends.</strong> Classify the trajectory of agents into common "paths" the agent has taken.
+          </li>
+          <li>
+            <strong className="text-foreground">Online evaluations.</strong> Run evaluations in real-time using live production data.
+          </li>
+        </ul>
   }];
   return <CaseStudyLayout title="New IA for Agents Monitoring" subtitle="Redesigning how enterprises monitor and optimize AI agents" tags={["Information Architecture", "AI Monitoring", "Enterprise UX", "Data Visualization"]} heroContent={heroContent} sections={sections} />;
 };

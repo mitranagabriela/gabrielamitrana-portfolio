@@ -6,9 +6,49 @@ import unifiedExperienceImage from "@/assets/unified-experience-data-fabric.png"
 import quickFixesImage from "@/assets/quick-fixes.png";
 import createEntityFlowsImage from "@/assets/create-entity-flows.jpg";
 import unifiedExperienceWorkflowImage from "@/assets/create-entity-unified.png";
-import designProcessImage from "@/assets/revamp-data-service-design-process.png";
 const RevampDataService = () => {
   const heroContent = null;
+  const designProcessSteps = [{
+    title: "Discover & Empathize",
+    bullets: ["Heuristic evaluation", "Product audit"]
+  }, {
+    title: "Define goals",
+    bullets: ["Problem framing", "Prioritization"]
+  }, {
+    title: "Ideate & Sketch",
+    bullets: ["Brainstorming", "Low-fi sketches", "Co-creation with PMs"]
+  }, {
+    title: "Prototype & Test",
+    bullets: ["Rapid prototyping", "Usability testing"]
+  }, {
+    title: "Implement & Measure",
+    bullets: ["Development handoff", "KPI setup", "Analytics monitoring"]
+  }];
+
+  const ProcessArrow = () => <div className="-mx-[2px] mt-[21px] flex shrink-0 items-center justify-center" aria-hidden="true">
+      <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-80">
+        <path d="M0 7H35" stroke="hsl(var(--muted-foreground))" strokeWidth="1.1" />
+        <path d="M35 1L42 7L35 13V1Z" fill="hsl(var(--muted-foreground))" />
+      </svg>
+    </div>;
+
+  const ProcessStep = ({
+    title,
+    bullets
+  }: {
+    title: string;
+    bullets: string[];
+  }) => <div className="min-w-0 flex-1">
+      <div className="flex h-14 items-center justify-center rounded-full border border-border/70 bg-white px-4 text-center text-[1rem] font-medium leading-none tracking-tight text-muted-foreground shadow-[0_2px_10px_rgba(2,8,23,0.08)] whitespace-nowrap md:text-[1.1rem]">
+        {title}
+      </div>
+      <div className="mt-3 space-y-1 text-muted-foreground">
+        {bullets.map(item => <p key={item} className="text-[0.95rem] leading-tight">
+            {item}
+          </p>)}
+      </div>
+    </div>;
+
   const sections = [{
     title: "Project Details",
     content: <div className="space-y-6">
@@ -44,8 +84,15 @@ const RevampDataService = () => {
   }, {
     title: "Design Process",
     content: <div className="space-y-6">
-          <div className="w-full">
-            <img src={designProcessImage} alt="Design process flow showing discover & empathize, define goals, ideate & sketch, prototype & test, and implement & measure phases" className="w-full rounded-lg" />
+          <div className="w-full py-6">
+            <div className="relative pb-2">
+              <div className="mx-auto flex items-start gap-0">
+                {designProcessSteps.map((step, index) => <div key={step.title} className="flex min-w-0 flex-1 items-start">
+                    <ProcessStep title={step.title} bullets={step.bullets} />
+                    {index < designProcessSteps.length - 1 ? <ProcessArrow /> : null}
+                  </div>)}
+              </div>
+            </div>
           </div>
         </div>
   }, {
@@ -118,17 +165,29 @@ const RevampDataService = () => {
     title: "Unified Experience: Ending the Context Switch",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">With access control solved, the next step was to make Data Fabric feel seamless within developers' workflows. Schema editing lived in a separate portal — forcing users to leave UiPath Studio, make changes, then manually sync them back. To eliminate this friction, I designed a unified schema editor so developers could create, edit, and use data entities without breaking their flow.</p>
-          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            
-            
-          </ul>
-          
-          
-          
-          <div className="w-full my-8">
-            <img src={unifiedExperienceWorkflowImage} alt="Unified workflow showing entity creation and management across different views" className="w-full rounded-lg" />
+          <div className="mt-8">
+            <div className="relative w-full overflow-hidden pt-4 pb-10">
+              <div className="relative mx-auto flex w-full max-w-6xl items-center justify-center">
+                <div className="pointer-events-none absolute left-0 top-1/2 hidden h-[72%] w-[28%] -translate-x-[45%] -translate-y-1/2 overflow-hidden rounded-2xl border border-border/60 bg-muted/40 shadow-xl md:block">
+                  <img src="/images/revamp-side-left.png" alt="" className="h-full w-full object-cover opacity-60 blur-[1px]" />
+                </div>
+
+                <div className="pointer-events-none absolute right-0 top-1/2 hidden h-[72%] w-[28%] translate-x-[45%] -translate-y-1/2 overflow-hidden rounded-2xl border border-border/60 bg-muted/40 shadow-xl md:block">
+                  <img src="/images/revamp-side-right.png" alt="" className="h-full w-full object-cover opacity-60 blur-[1px]" />
+                </div>
+
+                <div className="relative z-10 w-full max-w-4xl">
+                  <div className="overflow-hidden rounded-2xl border border-border/40 bg-background shadow-2xl">
+                    <video className="h-auto w-full" autoPlay loop muted playsInline>
+                      <source src="/videos/revamp-unified-experience.mov" type="video/quicktime" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div className="mx-auto h-5 w-[92%] -translate-y-[2px] rounded-b-2xl bg-gradient-to-b from-border/20 to-transparent blur-[3px]" />
+                </div>
+              </div>
+            </div>
           </div>
-          
         </div>
   }, {
     title: "Results",
