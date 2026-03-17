@@ -26,7 +26,7 @@ Score each dimension from 1-5 (5 is strongest), and explain the score with concr
 
 1. Define scope quickly
    - List which pages/case studies were reviewed.
-   - If scope is unclear, state assumptions.
+   - If scope is unclear, ask the user.
 
 2. Evaluate each dimension
    - Use direct evidence from the portfolio.

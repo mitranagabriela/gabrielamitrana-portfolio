@@ -5,7 +5,7 @@ const FirstRunExperience = () => {
     title: "Discovery",
     bullets: ["Crazy 8's", "Story mapping", "Diagramming"]
   }, {
-    title: "Features list & Flow",
+    title: "Features list & flow",
     bullets: ["MVP definition", "Information architecture"]
   }, {
     title: "Ideate & Sketch",
@@ -53,7 +53,7 @@ const FirstRunExperience = () => {
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Role:</p>
-              <p className="text-muted-foreground">Lead Designer</p>
+              <p className="text-muted-foreground">Lead Product Designer</p>
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Collaborators:</p>
@@ -85,12 +85,10 @@ const FirstRunExperience = () => {
             <p className="text-muted-foreground leading-relaxed mb-4">
               This challenge was part of a broader platform initiative aimed at defining our Cloud strategy for onboarding new users. To align on our mission, we organized a design sprint with multiple stakeholders, including PMs, engineers, designers, and automation developers. During the sprint, we engaged in various exercises such as Crazy 8's, story mapping, and diagramming to generate ideas and sketch the user flow.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              By the end of the design sprint, each team was tasked with taking the general approach, particularize it and implement it within their specific products.
-            </p>
+            <p className="text-muted-foreground leading-relaxed mb-6">By the end of the design sprint, each team was tasked with adapting the shared approach and implementing it within their specific product area.</p>
           </div>
           <div className="w-full">
-            <img src="/lovable-uploads/fbcf841e-f199-48ec-9f2f-fbf5edbef303.png" alt="Design sprint workshop photos showing collaborative exercises, sticky notes, sketching sessions, and team discussions" className="w-full rounded-lg" />
+            <img src="/images/fre-design-sprint.png" alt="Design sprint workshop photos showing collaborative exercises, sticky notes, sketching sessions, and team discussions" className="w-full rounded-lg" />
           </div>
         </div>
   }, {
@@ -101,18 +99,18 @@ const FirstRunExperience = () => {
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="w-full">
-                <img src="/lovable-uploads/6f841456-1b56-4de9-8765-e03a19dcf88d.png" alt="UiPath Studio templates page showing various automation templates like Data Entry, Lead Generation, Sales Order Processing, and Document Processing" className="w-full rounded-lg" />
+                <img src="/images/fre-template-library.png" alt="UiPath Studio templates page showing various automation templates like Data Entry, Lead Generation, Sales Order Processing, and Document Processing" className="w-full rounded-lg" />
               </div>
               <div className="w-full">
-                <img src="/lovable-uploads/a510d83f-d8c3-4b00-94ce-f89e1a3bbff7.png" alt="Generate expense report template configuration page showing description, Outlook and Google Drive integrations" className="w-full rounded-lg" />
+                <img src="/images/fre-template-config.png" alt="Generate expense report template configuration page showing description, Outlook and Google Drive integrations" className="w-full rounded-lg" />
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Each template needed to provide a <span className="font-semibold">clear description</span> and an <span className="font-semibold">easy mechanism for users to customize it</span>. To achieve this, I created a dedicated template configuration page. This page allows users to:
+              Each template needed to provide a clear description and an easy mechanism for users to customize it. To achieve this, I created a dedicated template configuration page. This page allows users to:
             </p>
             <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-1">
-              <li>See the template details: description, author, number of usages, and applications used.</li>
-              <li>Customize the template: provide user credentials and fill in any mandatory data if needed.</li>
+              <li><span className="font-semibold">See the template details:</span> description, author, number of usages, and applications used.</li>
+              <li><span className="font-semibold">Customize the template:</span> provide user credentials and fill in any mandatory data if needed.</li>
             </ul>
           </div>
   }, {
@@ -123,17 +121,17 @@ const FirstRunExperience = () => {
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="w-full">
-                <img src="/lovable-uploads/954a9a53-6be9-4953-93f3-32f06c61b363.png" alt="Department selection screen for UiPath Studio onboarding with options like Marketing, HR & Legal, Product & Design, Engineering, and Finance" className="w-full rounded-lg" />
+                <img src="/images/fre-department-selection.png" alt="Department selection screen for UiPath Studio onboarding with options like Marketing, HR & Legal, Product & Design, Engineering, and Finance" className="w-full rounded-lg" />
               </div>
               <div className="w-full">
-                <img src="/lovable-uploads/5189f751-d4e2-4f0f-808e-f4c32257f16f.png" alt="Get started with UiPath Studio screen showing application selection interface with various apps like Google Sheets, Excel, Gmail, Outlook, and others" className="w-full rounded-lg" />
+                <img src="/images/fre-app-selection.png" alt="Get started with UiPath Studio screen showing application selection interface with various apps like Google Sheets, Excel, Gmail, Outlook, and others" className="w-full rounded-lg" />
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
               We also introduced a guided experience to teach first-time users about the automation building process, providing coachmarks and celebrating their milestones (such as publishing the first automation).
             </p>
             <div className="w-full">
-              <img src="/lovable-uploads/6732cbe8-1ea1-42b5-9c3c-e4a4434ebe66.png" alt="UiPath Studio guided experience showing step-by-step automation building process with modal dialogs and configuration screens" className="w-full rounded-lg" />
+              <img src="/images/fre-guided-experience.png" alt="UiPath Studio guided experience showing step-by-step automation building process with modal dialogs and configuration screens" className="w-full rounded-lg" />
             </div>
           </div>
   }, {
@@ -142,14 +140,11 @@ const FirstRunExperience = () => {
             <p className="text-muted-foreground leading-relaxed">
               After multiple rounds of usability testing, we discovered user preferred minimal configuration and favored seeing how the automation works directly on the canvas. Participants also valued clear and concise titles and descriptions that accurately conveyed each template's purpose.
             </p>
-            <div className="w-full">
-              
-            </div>
             <p className="text-muted-foreground leading-relaxed">
               As a result, we adopted a minimal design that only showcases the essential information. Advanced configuration is handled behind the scenes.
             </p>
             <div className="w-full mt-6">
-              <img src="/lovable-uploads/54c95bca-99b8-406a-a275-2fb81b4366b3.png" alt="Template customization interface showing the 'Generate expense report' template with configuration options for Outlook and Google Drive connections" className="w-full rounded-lg" />
+              <img src="/images/fre-template-customization.png" alt="Template customization interface showing the 'Generate expense report' template with configuration options for Outlook and Google Drive connections" className="w-full rounded-lg" />
             </div>
           </div>
   }, {
@@ -188,6 +183,6 @@ const FirstRunExperience = () => {
           </li>
         </ul>
   }];
-  return <CaseStudyLayout title="Getting Started with Studio Web" subtitle="Designed the onboarding experience for an automation platform to increase adoption and reduce drop-off rates" tags={["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform", "Templates"]} heroContent={heroContent} sections={sections} />;
+  return <CaseStudyLayout title="Getting Started with Studio Web" subtitle="Designed the onboarding experience for an automation builder to increase adoption and reduce drop-off rates" tags={["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform", "Templates"]} heroContent={heroContent} sections={sections} />;
 };
 export default FirstRunExperience;

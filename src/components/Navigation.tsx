@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const navigationItems = [
   { name: "Home", href: "/", icon: Home },
   { name: "Resume", href: "/resume", icon: FileText },
-  { name: "Case Studies", href: "/usecases", icon: Briefcase },
+  { name: "Case Studies", href: "/case-studies", icon: Briefcase },
   { name: "Contact", href: "/contact", icon: Mail },
 ];
 

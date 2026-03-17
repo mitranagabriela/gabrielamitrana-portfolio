@@ -28,9 +28,9 @@ export const CaseStudyLayout = ({
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12">
         {/* Back Button */}
         <Button variant="ghost" className="mb-8" asChild>
-          <Link to="/usecases">
+          <Link to="/case-studies">
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Use Cases
+            Back to Case Studies
           </Link>
         </Button>
 
@@ -41,9 +41,9 @@ export const CaseStudyLayout = ({
         </div>
 
         {/* Hero Content */}
-        <div className="mb-12">
-          {heroContent}
-        </div>
+        {heroContent ? <div className="mb-12">
+            {heroContent}
+          </div> : null}
 
         {/* Sections */}
         <div className="space-y-12">

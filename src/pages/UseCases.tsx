@@ -8,11 +8,11 @@ import revampDataFabricCover from "@/assets/revamp-data-fabric-cover-final.png";
 import firstRunCover from "@/assets/first-run-experience-hero.png";
 const UseCases = () => {
   const projects = [{
-    title: "New IA for Agents Monitoring",
-    description: "Redesigning how enterprises monitor and optimize AI agents",
+    title: "Improving Runtime Monitoring for Agents",
+    description: "Redesigned how enterprises monitor and optimize AI agents",
     image: agentsMonitoringCover,
     tags: ["Information Architecture", "AI Monitoring", "Enterprise UX", "Data Visualization"],
-    status: "In progress",
+    status: "Completed",
     results: "In progress",
     caseStudyPath: "/case-studies/agents-monitoring"
   }, {
@@ -27,7 +27,7 @@ const UseCases = () => {
     title: "Getting Started with Studio Web",
     description: "Designed the onboarding experience for an automation builder to increase adoption and reduce drop-off rates",
     image: firstRunCover,
-    tags: ["Mobile Design", "UX Research", "Fintech", "Onboarding"],
+    tags: ["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform"],
     status: "Completed",
     results: "Reduced the time to build by 40%",
     caseStudyPath: "/case-studies/first-run-experience"

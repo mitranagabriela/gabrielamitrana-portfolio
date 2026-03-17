@@ -2,10 +2,7 @@ import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import beforeImage from "@/assets/access-control-before.png";
 import afterImage from "@/assets/access-control-after.png";
-import unifiedExperienceImage from "@/assets/unified-experience-data-fabric.png";
 import quickFixesImage from "@/assets/quick-fixes.png";
-import createEntityFlowsImage from "@/assets/create-entity-flows.jpg";
-import unifiedExperienceWorkflowImage from "@/assets/create-entity-unified.png";
 const RevampDataService = () => {
   const heroContent = null;
   const designProcessSteps = [{
@@ -65,7 +62,7 @@ const RevampDataService = () => {
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Role:</p>
-              <p className="text-muted-foreground">Lead Designer (solo)</p>
+              <p className="text-muted-foreground">Lead Product Designer</p>
             </div>
             <div className="p-4 bg-accent/50 rounded-lg">
               <p className="font-semibold text-primary">Collaborators:</p>
@@ -123,20 +120,11 @@ const RevampDataService = () => {
               </div>
             </div>
           </div>
-          <div className="w-full mt-8">
-            
-          </div>
         </div>
   }, {
     title: "Prioritizing Quick Wins",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">Given limited engineering bandwidth, I worked with the PMs to define quick wins — changes that required low dev effort but delivered noticeable UX improvements. These changes were shipped in the first few sprints and immediately improved the overall look and feel of the product.</p>
-          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            
-            
-            
-          </ul>
-          
           <div className="w-full mt-8">
             <img src={quickFixesImage} alt="Quick fixes and UI improvements showing before and after states of the data entities interface" className="w-full rounded-lg" />
           </div>
@@ -144,19 +132,8 @@ const RevampDataService = () => {
   }, {
     title: "Designing for Security: Access Control",
     content: <div className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed mb-8">The next step was to introduce a clear way to manage who owns and who can access data. Previously, there were no restrictions — anyone using an entity could read and edit records without limits. This gap was a major concern for large customers, especially when sensitive business information was involved. To solve this, I designed a role-based permission model that balanced simplicity and scalability:
+          <p className="text-muted-foreground leading-relaxed mb-8">The next step was to introduce a clear way to manage who owns and who can access data. Previously, there were no restrictions — anyone using an entity could read and edit records without limits. This gap was a major concern for large customers, especially when sensitive business information was involved. To solve this, I designed a role-based permission model that balanced simplicity and scalability.</p>
 
-
-
-      </p>
-          
-          <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2">
-            
-            
-            
-          </ul>
-          
-          
           <div className="mt-8">
             <BeforeAfterSlider beforeImage={beforeImage} afterImage={afterImage} beforeLabel="Before" afterLabel="After" />
           </div>
@@ -179,7 +156,7 @@ const RevampDataService = () => {
                 <div className="relative z-10 w-full max-w-4xl">
                   <div className="overflow-hidden rounded-2xl border border-border/40 bg-background shadow-2xl">
                     <video className="h-auto w-full" autoPlay loop muted playsInline>
-                      <source src="/videos/revamp-unified-experience.mov" type="video/quicktime" />
+                      <source src="/videos/revamp-unified-experience.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>
@@ -221,6 +198,6 @@ const RevampDataService = () => {
           </ul>
         </div>
   }];
-  return <CaseStudyLayout title="Revamp Data Fabric" subtitle="Simplified the data management flow for UiPath — from fragmentation to a cohesive experience." tags={["Data Management", "Service Design", "Enterprise UX", "Access Control", "Platform Integration"]} heroContent={heroContent} sections={sections} />;
+  return <CaseStudyLayout title="Revamp Data Fabric" subtitle="Simplified the data management flow for UiPath — from fragmentation to a cohesive experience" tags={["Data Management", "Service Design", "Enterprise UX", "Access Control", "Platform Integration"]} heroContent={heroContent} sections={sections} />;
 };
 export default RevampDataService;

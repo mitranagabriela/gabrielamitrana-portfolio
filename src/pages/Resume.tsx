@@ -84,11 +84,11 @@ const Resume = () => {
           </CardHeader>
           <CardContent className="space-y-6">
             {education.map((edu, index) => <div key={index} className="space-y-2">
-                <h3 className="text-lg font-semibold">{edu.degree}</h3>
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                  <span className="font-medium text-muted-foreground">{edu.school}</span>
-                  <Badge variant="outline">{edu.period}</Badge>
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+                  <h3 className="text-lg font-semibold">{edu.degree}</h3>
+                  <Badge variant="outline" className="w-fit">{edu.period}</Badge>
                 </div>
+                <span className="font-medium text-muted-foreground">{edu.school}</span>
               </div>)}
           </CardContent>
         </Card>

@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { FolderOpen, Users, Award } from "lucide-react";
 const Index = () => {
-  const skills = ["UI/UX Design", "Figma", "Adobe Creative Suite", "Prototyping", "User Research", "Design Systems", "Responsive Design", "Branding"];
+  const skills = ["UI/UX Design", "Figma", "Claude Code", "Prototyping", "User Research", "Design Systems", "Responsive Design", "Branding"];
   const stats = [{
     icon: FolderOpen,
     label: "Projects Completed",
@@ -45,7 +45,7 @@ const Index = () => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="group">
-                  <Link to="/usecases">
+                  <Link to="/case-studies">
                     View My Work
                   </Link>
                 </Button>
@@ -60,7 +60,7 @@ const Index = () => {
             <div className="relative">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-purple-600/20 p-8">
                 <div className="w-full h-full rounded-xl overflow-hidden">
-                  <img src="/lovable-uploads/79f69057-22b9-4a99-b407-027f7b628e54.png" alt="Gabriela Mitrana - Product Designer" className="w-full h-full object-cover grayscale" />
+                  <img src="/images/IMG_1262 2.JPG" alt="Gabriela Mitrana - Product Designer" className="w-full h-full object-cover grayscale" />
                 </div>
               </div>
             </div>

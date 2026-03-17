@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls /Users/gabriela.mitranauipath.com/Documents/gabrielamitrana-portfolio/public/images/macbook*.svg)",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/gabriela.mitranauipath.com/Documents/gabrielamitrana-portfolio/public/images/MacBook Pro 16.png\")",
+      "Bash(npx tsc --noEmit)",
+      "Bash(grep -E \"\\\\.tsx$\")",
+      "Bash(brew install ffmpeg)",
+      "Bash(ffmpeg -i public/videos/figma-make-prototype.mov -c:v libx264 -preset fast -crf 23 -c:a aac -movflags +faststart public/videos/figma-make-prototype.mp4)",
+      "Bash(ffmpeg -i public/videos/trace-agent-span-video.mov -c:v libx264 -preset fast -crf 23 -c:a aac -movflags +faststart public/videos/trace-agent-span-video.mp4)",
+      "Bash(ffmpeg -i public/videos/revamp-unified-experience.mov -c:v libx264 -preset fast -crf 23 -c:a aac -movflags +faststart public/videos/revamp-unified-experience.mp4)",
+      "Bash(ffmpeg -i public/videos/agents-trace-recording.mov -c:v libx264 -preset fast -crf 23 -c:a aac -movflags +faststart public/videos/agents-trace-recording.mp4)",
+      "Bash(ffmpeg -i \"/Users/gabriela.mitranauipath.com/Documents/gabrielamitrana-portfolio/public/videos/Screen Recording 2026-03-09 at 15.02.51.mov\" -c:v libx264 -preset fast -crf 23 -c:a aac -movflags +faststart \"/Users/gabriela.mitranauipath.com/Documents/gabrielamitrana-portfolio/public/videos/agent-trace-enhancing.mp4\")"
+    ]
+  }
+}
