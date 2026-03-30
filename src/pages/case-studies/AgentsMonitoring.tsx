@@ -176,7 +176,7 @@ const AgentsMonitoring = () => {
     title: "User Journeys & Information Architecture",
     content: <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            I mapped the end-to-end journey of developers and operators — from discovering agents in the library, to assessing health at a glance, to drilling into specific lifecycle stages for deeper investigation. This helped establish an information hierarchy drive by real user goals. 
+            I mapped the end-to-end journey of developers and operators — from discovering agents in the library, to assessing health at a glance, to drilling into specific lifecycle stages for deeper investigation. This helped establish an information hierarchy driven by real user goals. 
           </p>
           <div className="mt-8">
             <img src="/images/Flow journey.png" alt="User journey and information architecture diagram" className="w-full rounded-lg" />
