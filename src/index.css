@@ -36,6 +36,12 @@
 
     --radius: 0.5rem;
 
+    --radius-card: 2px;
+    --radius-image: 4px;
+    --radius-pill: 999px;
+    --shadow-card: 0 1px 2px rgb(0 0 0 / 0.04);
+    --shadow-card-hover: 0 12px 32px -8px rgb(0 0 0 / 0.12);
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -61,6 +67,32 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  .container-editorial { @apply max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16; }
+  .container-reading   { @apply max-w-[720px]  mx-auto px-6 md:px-8; }
+  .container-wide      { @apply max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16; }
+
+  .editorial-link {
+    @apply text-foreground underline underline-offset-[6px] decoration-1 decoration-muted-foreground/40 hover:decoration-foreground transition-[text-decoration-color] duration-200;
+  }
+
+  .case-study-prose p,
+  .case-study-prose li {
+    font-size: 1.1875rem;
+    line-height: 1.65;
+  }
+  .case-study-prose ul {
+    font-size: 1.1875rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
   }
 }

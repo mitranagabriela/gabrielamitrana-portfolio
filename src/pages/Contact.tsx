@@ -1,62 +1,84 @@
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 const Contact = () => {
-  const contactInfo = [{
-    icon: Mail,
-    label: "Email",
-    value: "mitrana_gabriela2008@yahoo.com",
-    href: "mailto:mitrana_gabriela2008@yahoo.com"
-  }, {
-    icon: Phone,
-    label: "Phone",
-    value: "+40727303250",
-    href: "tel:+40727303250"
-  }, {
-    icon: MapPin,
-    label: "Location",
-    value: "Bucharest, Romania",
-    href: "#"
-  }, {
-    icon: Linkedin,
-    label: "LinkedIn",
-    value: "linkedin.com/in/gabriela-mitrana-714765111",
-    href: "https://www.linkedin.com/in/gabriela-mitrana-714765111/"
-  }];
+  const contactInfo = [
+    {
+      label: "Email",
+      value: "mitrana_gabriela2008@yahoo.com",
+      href: "mailto:mitrana_gabriela2008@yahoo.com",
+      external: false,
+    },
+    {
+      label: "Phone",
+      value: "+40 727 303 250",
+      href: "tel:+40727303250",
+      external: false,
+    },
+    {
+      label: "Location",
+      value: "Bucharest, Romania",
+      href: null,
+      external: false,
+    },
+    {
+      label: "LinkedIn",
+      value: "linkedin.com/in/gabriela-mitrana-714765111",
+      href: "https://www.linkedin.com/in/gabriela-mitrana-714765111/",
+      external: true,
+    },
+  ];
 
-  return <div className="pt-16 min-h-screen bg-background">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  return (
+    <div className="pt-16 min-h-screen bg-background">
+      <div className="container-reading py-section">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Whether you have a project in mind or just want to chat about design, I'd love to hear from you.</p>
-        </div>
+        <header className="mb-section-sm">
+          <span className="block text-label uppercase text-muted-foreground mb-6">Contact</span>
+          <h1 className="text-h1 mb-6">Get in touch.</h1>
+          <p className="text-body-lg text-muted-foreground">
+            Whether you have a project in mind or just want to chat about design, I'd love to hear from you.
+          </p>
+        </header>
 
-        <div className="max-w-2xl mx-auto space-y-8">
-          {/* Contact Information */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Contact Information</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              {contactInfo.map((item, index) => {
-                const Icon = item.icon;
-                return <a key={index} href={item.href} className="flex items-center gap-4 p-3 rounded-lg hover:bg-accent transition-colors duration-200 group">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-200">
-                      <Icon className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-medium">{item.label}</p>
-                      <p className="text-muted-foreground">{item.value}</p>
-                    </div>
-                  </a>;
-              })}
-            </CardContent>
-          </Card>
-        </div>
+        <ul className="border-t border-border">
+          {contactInfo.map((item) => {
+            const content = (
+              <div className="flex items-center justify-between py-8 border-b border-border group">
+                <div>
+                  <span className="block text-label uppercase text-muted-foreground mb-3">
+                    {item.label}
+                  </span>
+                  <span className="text-h3 group-hover:text-primary transition-colors duration-300">
+                    {item.value}
+                  </span>
+                </div>
+                {item.href ? (
+                  <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-foreground" />
+                ) : null}
+              </div>
+            );
+
+            return (
+              <li key={item.label}>
+                {item.href ? (
+                  <a
+                    href={item.href}
+                    target={item.external ? "_blank" : undefined}
+                    rel={item.external ? "noopener noreferrer" : undefined}
+                    className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 rounded-sm"
+                  >
+                    {content}
+                  </a>
+                ) : (
+                  content
+                )}
+              </li>
+            );
+          })}
+        </ul>
       </div>
-    </div>;
+    </div>
+  );
 };
 
 export default Contact;

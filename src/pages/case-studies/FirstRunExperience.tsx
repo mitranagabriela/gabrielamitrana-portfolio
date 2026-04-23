@@ -34,7 +34,7 @@ const FirstRunExperience = () => {
         {title}
       </div>
       <div className="mt-3 space-y-1 text-muted-foreground">
-        {bullets.map(item => <p key={item} className="text-[0.95rem] leading-tight">
+        {bullets.map(item => <p key={item} className="!text-[0.95rem] !leading-snug">
             {item}
           </p>)}
       </div>

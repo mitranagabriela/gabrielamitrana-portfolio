@@ -1,132 +1,167 @@
-
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Download, MapPin, Mail, Phone, Linkedin } from "lucide-react";
 const Resume = () => {
-  const experience = [{
-    title: "Senior Product Designer",
-    company: "UiPath, Bucharest, Romania",
-    period: "JULY 2025 - PRESENT",
-    achievements: ["Currently — designing how AI agents are built, deployed, and monitored."]
-  }, {
-    title: "Product Designer",
-    company: "UiPath, Bucharest, Romania",
-    period: "JULY 2021 - JULY 2025",
-    achievements: ["Led the design of UiPath's data storage service, enabling robust, no-code data modeling and storage for RPA projects", "Built Studio Web from the ground up — a powerful, web-based platform for designing, optimizing, and automating business processes at scale."]
-  }, {
-    title: "UX Designer",
-    company: "Lurtis AI, Bucharest, Romania",
-    period: "JAN 2021 - JULY 2021",
-    achievements: ["As the sole Product Designer at Lurtis AI, I led the design of an AI buildability estimator. I created wireframes and interactive prototypes, conducted usability testing, iterated based on feedback, and delivered an accessible solution aligned with business goals."]
-  }, {
-    title: "Digital Verification Engineer",
-    company: "Infineon Technologies",
-    period: "JUN 2018 - SEP 2019",
-    achievements: ["Specialized in verifying complex automotive digital designs, with a focus on functional accuracy and safety compliance."]
-  }];
-  const education = [{
-    degree: "Master's Degree, Accessibility and Inclusive Design",
-    school: "Universidad Politécnica di Madrid, Madrid, Spain",
-    period: "2020 - 2021"
-  }, {
-    degree: "Master's Degree, Human Computer Interaction and Design",
-    school: "University of Twente, Enschede, Netherlands",
-    period: "2019 - 2020"
-  }, {
-    degree: "Bachelor's Degree, Nanotechnology and Optoelectronics",
-    school: "Faculty of Electronics and Telecommunications, Bucharest, Romania",
-    period: "2015 - 2019"
-  }];
-  const skills = {
-    "Skills": ["Product Design", "Design Thinking", "Interaction Design", "Responsive Design", "Product Strategy", "Information Architecture", "Accessibility and Inclusive Design", "Agile Methodology"],
-    "Software": ["Claude Code", "Codex", "Cursor", "Figma", "Miro", "Adobe Photoshop Lightroom"],
-    "Interests": ["AI, Automation", "Digital & Analog photography", "Sports and Health", "Travelling"]
+  const experience = [
+    {
+      title: "Senior Product Designer",
+      company: "UiPath, Bucharest, Romania",
+      period: "Jul 2025 — Present",
+      achievements: [
+        "Contributed from the ground up to UiPath's AI Agents (Act 2) strategy, defining how enterprises build, deploy, and monitor agents within UiPath's platform."
+
+      ],
+    },
+    {
+      title: "Product Designer",
+      company: "UiPath, Bucharest, Romania",
+      period: "Jul 2021 — Jul 2025",
+      achievements: [
+        "Led redesign of UiPath's Data Fabric, improving how developers create and manage data within automation workflows.",
+        "Built Studio Web from 0→1, a browser-based platform for designing automation workflows.",
+      ],
+    },
+    {
+      title: "UX Designer",
+      company: "Lurtis AI, Bucharest, Romania",
+      period: "Jan 2021 — Jul 2021",
+      achievements: [
+        "As the sole Product Designer I designed an AI-driven tool that maximises the potential of a plot, obtaining a wide variety of optimal building designs."
+      ],
+    },
+  ];
+
+  const education = [
+    {
+      degree: "Master's Degree, Accessibility and Inclusive Design",
+      school: "Universidad Politécnica di Madrid, Madrid, Spain",
+      period: "2020 — 2021",
+    },
+    {
+      degree: "Master's Degree, Human Computer Interaction and Design",
+      school: "University of Twente, Enschede, Netherlands",
+      period: "2019 — 2020",
+    },
+    {
+      degree: "Bachelor's Degree, Nanotechnology and Optoelectronics",
+      school: "Faculty of Electronics and Telecommunications, Bucharest, Romania",
+      period: "2015 — 2019",
+    },
+  ];
+
+  const skills: Record<string, string[]> = {
+    Skills: [
+      "Product Design",
+      "Design Thinking",
+      "Interaction Design",
+      "Responsive Design",
+      "Product Strategy",
+      "Information Architecture",
+      "Accessibility and Inclusive Design",
+      "Agile Methodology",
+    ],
+    Software: ["Claude Code", "Codex", "Cursor", "Figma", "Miro", "Adobe Photoshop Lightroom"],
+    Interests: ["AI, Automation", "Digital & Analog photography", "Sports and Health", "Travelling"],
   };
-  const conferences = ["Figma Config 2025 | San Francisco", "Design Matters '24, Tokyo, 2023", "User Experience Lisbon UXLx — Lisbon, 2022"];
-  return <div className="pt-16 min-h-screen bg-background">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+  const conferences = [
+    "Figma Config 2025 · San Francisco",
+    "Design Matters '24 · Tokyo · 2023",
+    "User Experience Lisbon UXLx · Lisbon · 2022",
+  ];
+
+  const SectionHeader = ({ label }: { label: string }) => (
+    <div className="flex items-center gap-4 mb-10">
+      <span className="text-label uppercase text-muted-foreground">{label}</span>
+      <span aria-hidden className="h-px flex-1 bg-border" />
+    </div>
+  );
+
+  return (
+    <div className="pt-16 min-h-screen bg-background">
+      <div className="container-editorial py-section">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-2">Gabriela Mitrana</h1>
-          <p className="text-xl text-muted-foreground mb-2">Senior Product Designer</p>
-          <p className="text-muted-foreground mb-8">Bucharest, Romania</p>
-        </div>
+        <header className="mb-section-sm max-w-[60ch]">
+          <span className="block text-label uppercase text-muted-foreground mb-6">Résumé</span>
+          <h1 className="text-h1 mb-4">Gabriela Mitrana</h1>
+          <p className="text-body-lg text-muted-foreground">
+            Senior Product Designer — Bucharest, Romania
+          </p>
+        </header>
 
         {/* Experience */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle>Experience</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-8">
-            {experience.map((job, index) => <div key={index} className="border-l-2 border-primary pl-6 relative">
-                <div className="absolute w-3 h-3 bg-primary rounded-full -left-2 top-2"></div>
-                <div className="space-y-2">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                    <h3 className="text-xl font-semibold">{job.title}</h3>
-                    <Badge variant="outline">{job.period}</Badge>
-                  </div>
-                  <div className="flex items-center gap-4 text-muted-foreground">
-                    <span className="font-medium">{job.company}</span>
-                  </div>
-                  <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                    {job.achievements.map((achievement, i) => <li key={i}>{achievement}</li>)}
+        <section className="mb-section-sm">
+          <SectionHeader label="Experience" />
+          <div className="space-y-12">
+            {experience.map((job, index) => (
+              <article key={index} className="grid md:grid-cols-[180px_1fr] gap-4 md:gap-10">
+                <div className="text-meta uppercase tracking-wider text-muted-foreground md:pt-1">
+                  {job.period}
+                </div>
+                <div>
+                  <h3 className="text-h3 mb-1">{job.title}</h3>
+                  <p className="text-body-sm text-muted-foreground mb-4">{job.company}</p>
+                  <ul className="space-y-2">
+                    {job.achievements.map((achievement, i) => (
+                      <li key={i} className="text-body text-muted-foreground leading-relaxed">
+                        {achievement}
+                      </li>
+                    ))}
                   </ul>
                 </div>
-              </div>)}
-          </CardContent>
-        </Card>
+              </article>
+            ))}
+          </div>
+        </section>
 
         {/* Education */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle>Education</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            {education.map((edu, index) => <div key={index} className="space-y-2">
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
-                  <h3 className="text-lg font-semibold">{edu.degree}</h3>
-                  <Badge variant="outline" className="w-fit">{edu.period}</Badge>
+        <section className="mb-section-sm">
+          <SectionHeader label="Education" />
+          <div className="space-y-10">
+            {education.map((edu, index) => (
+              <article key={index} className="grid md:grid-cols-[180px_1fr] gap-4 md:gap-10">
+                <div className="text-meta uppercase tracking-wider text-muted-foreground md:pt-1">
+                  {edu.period}
                 </div>
-                <span className="font-medium text-muted-foreground">{edu.school}</span>
-              </div>)}
-          </CardContent>
-        </Card>
+                <div>
+                  <h3 className="text-h3 mb-1">{edu.degree}</h3>
+                  <p className="text-body-sm text-muted-foreground">{edu.school}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
 
         {/* Skills & Interests */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle>Skills & Interests</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-1 gap-6">
-              {Object.entries(skills).map(([category, skillList]) => <div key={category} className="space-y-3">
-                  <h3 className="font-semibold text-primary">{category}</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {skillList.map(skill => <Badge key={skill} variant="secondary">
-                        {skill}
-                      </Badge>)}
-                  </div>
-                </div>)}
-            </div>
-          </CardContent>
-        </Card>
+        <section className="mb-section-sm">
+          <SectionHeader label="Skills & Interests" />
+          <div className="grid md:grid-cols-3 gap-10 md:gap-12">
+            {Object.entries(skills).map(([category, skillList]) => (
+              <div key={category}>
+                <h3 className="text-h4 mb-4">{category}</h3>
+                <ul className="space-y-2">
+                  {skillList.map((skill) => (
+                    <li key={skill} className="text-body-sm text-muted-foreground">
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* Conferences */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Exchanged ideas at
-          </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-2">
-              {conferences.map((conference, index) => <div key={index} className="text-muted-foreground">
-                  {conference}
-                </div>)}
-            </div>
-          </CardContent>
-        </Card>
+        <section>
+          <SectionHeader label="Exchanged Ideas At" />
+          <ul className="space-y-3">
+            {conferences.map((conference, index) => (
+              <li key={index} className="text-body text-muted-foreground">
+                {conference}
+              </li>
+            ))}
+          </ul>
+        </section>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default Resume;

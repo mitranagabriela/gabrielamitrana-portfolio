@@ -18,6 +18,28 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				mono: ['ui-monospace', 'SFMono-Regular', 'monospace'],
+			},
+			fontSize: {
+				'display':   ['clamp(3rem, 6vw, 5rem)',       { lineHeight: '1.02', letterSpacing: '-0.03em',  fontWeight: '600' }],
+				'h1':        ['clamp(2.25rem, 4vw, 3.5rem)',  { lineHeight: '1.08', letterSpacing: '-0.025em', fontWeight: '600' }],
+				'h2':        ['clamp(1.75rem, 2.5vw, 2.25rem)', { lineHeight: '1.15', letterSpacing: '-0.02em',  fontWeight: '600' }],
+				'h3':        ['1.375rem', { lineHeight: '1.25', letterSpacing: '-0.015em', fontWeight: '600' }],
+				'h4':        ['1.125rem', { lineHeight: '1.35', letterSpacing: '-0.01em',  fontWeight: '600' }],
+				'body-lg':   ['1.125rem', { lineHeight: '1.6',  letterSpacing: '-0.005em', fontWeight: '400' }],
+				'body':      ['1rem',     { lineHeight: '1.65', fontWeight: '400' }],
+				'body-sm':   ['0.9375rem',{ lineHeight: '1.55', fontWeight: '400' }],
+				'label':     ['0.75rem',  { lineHeight: '1.2',  letterSpacing: '0.08em',   fontWeight: '500' }],
+				'meta':      ['0.8125rem',{ lineHeight: '1.4',  fontWeight: '500' }],
+			},
+			spacing: {
+				'section-sm': '4rem',
+				'section':    '6rem',
+				'section-lg': '8rem',
+				'hero':       'clamp(6rem, 12vw, 10rem)',
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

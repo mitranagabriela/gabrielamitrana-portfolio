@@ -1,105 +1,146 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Play } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import agentsMonitoringCover from "@/assets/agents-monitoring-cover-new.jpg";
 import revampDataFabricCover from "@/assets/revamp-data-fabric-cover-final.png";
 import firstRunCover from "@/assets/first-run-experience-hero.png";
+import { fadeUp, viewportOnce, stagger } from "@/lib/motion";
+
 const UseCases = () => {
-  const projects = [{
-    title: "Improving Runtime Monitoring for Agents",
-    description: "Redesigned how enterprises monitor and optimize AI agents",
-    image: agentsMonitoringCover,
-    tags: ["Information Architecture", "AI Monitoring", "Enterprise UX", "Data Visualization"],
-    status: "Completed",
-    results: "In progress",
-    caseStudyPath: "/case-studies/agents-monitoring"
-  }, {
-    title: "Revamp Data Fabric",
-    description: "Simplified the data management flow for UiPath — from fragmentation to a cohesive experience",
-    image: revampDataFabricCover,
-    tags: ["Data Management", "Service Design", "Enterprise UX"],
-    status: "Completed",
-    results: "Increased the data operations by 100%",
-    caseStudyPath: "/case-studies/revamp-data-service"
-  }, {
-    title: "Getting Started with Studio Web",
-    description: "Designed the onboarding experience for an automation builder to increase adoption and reduce drop-off rates",
-    image: firstRunCover,
-    tags: ["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform"],
-    status: "Completed",
-    results: "Reduced the time to build by 40%",
-    caseStudyPath: "/case-studies/first-run-experience"
-  }];
-  return <div className="pt-16 min-h-screen bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  const projects = [
+    {
+      title: "Improving Runtime Monitoring for Agents",
+      description: "Redesigned how enterprises monitor and optimize AI agents",
+      image: agentsMonitoringCover,
+      tags: ["FULL REDESIGN", "AI AGENTS", "WEB"],
+      status: "Completed",
+      results: "In progress",
+      year: "2025",
+      caseStudyPath: "/case-studies/agents-monitoring",
+    },
+    {
+      title: "Revamp Data Fabric",
+      description: "Simplified the data management flow for UiPath, from fragmentation to a cohesive experience",
+      image: revampDataFabricCover,
+      tags: ["FULL REDESIGN", "DATA MANAGEEMNT", "WEB"],
+      status: "Completed",
+      results: "Increased data operations by 100%",
+      year: "2024",
+      caseStudyPath: "/case-studies/revamp-data-service",
+    },
+    {
+      title: "Getting Started with Studio Web",
+      description: "Designed the onboarding experience for an automation builder to increase adoption and reduce drop-off rates",
+      image: firstRunCover,
+      tags: ["0 TO 1 DESIGN", "ONBOARDING", "RPA", "WEB"],
+      status: "Completed",
+      results: "Reduced time to build by 40%",
+      year: "2022",
+      caseStudyPath: "/case-studies/first-run-experience",
+    },
+  ];
+
+  return (
+    <div className="pt-16 min-h-screen bg-background">
+      <div className="container-editorial py-section">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Case Studies</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore my latest design projects and case studies.<br />
-            Each project showcases different aspects of my design process,<br />
-            from research and ideation to final implementation.
-          </p>
-        </div>
+        <header className="mb-section-sm max-w-[60ch]">
+          <span className="block text-label uppercase text-muted-foreground mb-6">Selected Work</span>
+          <h1 className="text-h1 mb-6">What I've designed</h1>
+        </header>
 
-        {/* Projects Grid */}
-        <div className="flex flex-col gap-12 mb-12 max-w-5xl mx-auto">
-          {projects.map((project, index) => <Link key={index} to={project.caseStudyPath} className="group">
-              <Card className="overflow-hidden transition-all duration-500 ease-out cursor-pointer border-2 hover:border-primary/20 hover:shadow-2xl hover:-translate-y-2">
-              <div className={project.image ? "grid md:grid-cols-2 gap-0" : ""}>
-                {/* Text Content */}
-                <div className="p-8 lg:p-12 flex flex-col justify-between bg-accent/30 group-hover:bg-accent/50 transition-colors duration-500">
-                  <div className="space-y-6">
-                    <div className="flex items-start justify-between gap-4">
-                      <h3 className="text-2xl lg:text-3xl font-bold transition-colors duration-300 group-hover:text-primary leading-tight">
+        {/* Projects list */}
+        <motion.div
+          variants={stagger(0.1)}
+          initial="initial"
+          whileInView="animate"
+          viewport={viewportOnce}
+          className="border-t border-border"
+        >
+          {projects.map((project, index) => {
+            const counter = String(index + 1).padStart(2, "0");
+            return (
+              <motion.article key={project.caseStudyPath} variants={fadeUp}>
+                <Link
+                  to={project.caseStudyPath}
+                  className="group block py-section-sm border-b border-border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 rounded-sm"
+                >
+                  {/* Eyebrow row */}
+                  <div className="flex items-center justify-between text-meta uppercase tracking-wider text-muted-foreground">
+                    <span>{counter} / Case Study</span>
+                    <span>{project.year}</span>
+                  </div>
+
+                  <div className="grid md:grid-cols-12 gap-8 lg:gap-12 mt-8 items-start">
+                    {/* Text */}
+                    <div className="md:col-span-5 md:pt-2">
+                      <h2 className="text-h2 mb-5 max-w-[18ch] transition-colors duration-300 group-hover:text-primary">
                         {project.title}
-                      </h3>
-                      <Badge variant={project.status === "Completed" ? "default" : "secondary"} className="whitespace-nowrap transition-transform duration-300 group-hover:scale-110 shrink-0">
-                        {project.status}
-                      </Badge>
+                      </h2>
+                      <p className="text-body-lg text-muted-foreground max-w-[52ch] mb-6">
+                        {project.description}
+                      </p>
+                      <div className="flex flex-wrap items-center gap-2 mb-8">
+                        {project.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="inline-flex items-center rounded-full border border-border/70 bg-muted/50 px-3 py-1 text-meta uppercase tracking-wider text-muted-foreground"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="flex items-center gap-2 text-meta uppercase tracking-wider text-foreground">
+                        View Case Study
+                        <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      </div>
                     </div>
-                    <p className="text-base lg:text-lg text-muted-foreground transition-colors duration-300 group-hover:text-foreground/80 leading-relaxed">
-                      {project.description}
-                    </p>
-                  </div>
-                  
-                  <div className="mt-8 border-t border-border/40 pt-6">
-                    <p className="text-sm font-semibold text-primary mb-1">Key Result:</p>
-                    <p className="text-sm text-muted-foreground group-hover:text-foreground/70 transition-colors duration-300">
-                      {project.results}
-                    </p>
-                  </div>
-                </div>
 
-                {/* Image */}
-                {project.image && (
-                  <div className="aspect-[4/3] md:aspect-auto overflow-hidden relative bg-muted">
-                    <img 
-                      src={project.image} 
-                      alt={`${project.title} preview`}
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/10 to-background/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    {/* Image */}
+                    {project.image ? (
+                      <div className="md:col-span-7 overflow-hidden rounded-[var(--radius-image)] bg-muted aspect-[16/10]">
+                        <img
+                          src={project.image}
+                          alt={`${project.title} preview`}
+                          className="w-full h-full object-cover transition-transform group-hover:scale-[1.02]"
+                          style={{ transitionDuration: "900ms", transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)" }}
+                        />
+                      </div>
+                    ) : null}
                   </div>
-                )}
-              </div>
-            </Card>
-            </Link>)}
-        </div>
 
-        {/* Coming Soon Section */}
-        <Card className="text-center p-8 bg-gradient-to-br from-accent/50 to-primary/5">
-          <CardContent className="space-y-4">
-            <h2 className="text-2xl font-bold">More Projects Coming Soon</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              I'm currently working on several exciting projects that will be added to this portfolio. 
-              Check back soon for detailed case studies, process documentation, and project outcomes.
-            </p>
-          </CardContent>
-        </Card>
+                  {/* Result meta */}
+                  <div className="flex justify-end mt-6">
+                    <span className="text-meta uppercase tracking-wider text-muted-foreground">
+                      Outcome — <span className="text-foreground">{project.results}</span>
+                    </span>
+                  </div>
+                </Link>
+              </motion.article>
+            );
+          })}
+        </motion.div>
+
+        {/* In development */}
+        <motion.div
+          variants={fadeUp}
+          initial="initial"
+          whileInView="animate"
+          viewport={viewportOnce}
+          className="py-section-sm border-b border-border"
+        >
+          <div className="flex items-center justify-between text-meta uppercase tracking-wider text-muted-foreground">
+            <span>— In Development</span>
+            <span>Soon</span>
+          </div>
+          <h2 className="text-h2 mt-8 text-muted-foreground max-w-[18ch]">More projects coming soon</h2>
+          <p className="text-body-lg text-muted-foreground mt-5 max-w-[52ch]">
+            I'm currently working on several projects that will be added to this portfolio. Check back for detailed case studies, process documentation, and outcomes.
+          </p>
+        </motion.div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default UseCases;

@@ -3,6 +3,7 @@ import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import beforeImage from "@/assets/access-control-before.png";
 import afterImage from "@/assets/access-control-after.png";
 import quickFixesImage from "@/assets/quick-fixes.png";
+import { Wrench, Shield, Target } from "lucide-react";
 const RevampDataService = () => {
   const heroContent = null;
   const designProcessSteps = [{
@@ -40,7 +41,7 @@ const RevampDataService = () => {
         {title}
       </div>
       <div className="mt-3 space-y-1 text-muted-foreground">
-        {bullets.map(item => <p key={item} className="text-[0.95rem] leading-tight">
+        {bullets.map(item => <p key={item} className="!text-[0.95rem] !leading-snug">
             {item}
           </p>)}
       </div>
@@ -107,15 +108,15 @@ const RevampDataService = () => {
             <p className="font-semibold text-foreground mb-4">Key Insights:</p>
             <div className="grid md:grid-cols-3 gap-4">
               <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
-                <div className="text-4xl mb-3">🛠️</div>
+                <Wrench className="h-8 w-8 text-foreground mb-3" aria-hidden="true" />
                 <p className="text-muted-foreground leading-relaxed">Schema creation was isolated from the development experience.</p>
               </div>
               <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
-                <div className="text-4xl mb-3">🔒</div>
+                <Shield className="h-8 w-8 text-foreground mb-3" aria-hidden="true" />
                 <p className="text-muted-foreground leading-relaxed">Data access control was poorly handled, creating risks for enterprise use.</p>
               </div>
               <div className="bg-accent/30 p-6 rounded-lg border border-border relative">
-                <div className="text-4xl mb-3">🎯</div>
+                <Target className="h-8 w-8 text-foreground mb-3" aria-hidden="true" />
                 <p className="text-muted-foreground leading-relaxed">The UI lacked clarity around key actions, making features hard to discover.</p>
               </div>
             </div>
