@@ -14,7 +14,7 @@ import { type ReactNode } from "react";
 const RevampDataService = () => {
   const heroContent = null;
   const designProcessSteps = [
-    { title: "Discover & Empathize", bullets: ["Heuristic evaluation", "Product audit"] },
+    { title: "Discover", bullets: ["Heuristic evaluation", "Product audit"] },
     { title: "Define goals", bullets: ["Problem framing", "Prioritization"] },
     { title: "Ideate & Sketch", bullets: ["Brainstorming", "Low-fi sketches", "Co-creation with PMs"] },
     { title: "Prototype & Test", bullets: ["Rapid prototyping", "Usability testing"] },
@@ -54,7 +54,7 @@ const RevampDataService = () => {
       content: (
         <FullBleedBanner
           label="PROBLEM TO SOLVE"
-          headline="Developers faced fragmented data workflows and enterprise customers lacked trustworthy access control, making Data Fabric harder to adopt at scale."
+          headline="Developers couldn’t manage data directly within their workflows, while weak access controls introduced enterprise risk."
         />
       ),
     },
@@ -118,7 +118,7 @@ const RevampDataService = () => {
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed mb-8">
-            The next step was to introduce a clear way to manage who owns and who can access data. Previously, there were no restrictions — anyone using an entity could read and edit records without limits. This gap was a major concern for large customers, especially when sensitive business information was involved. To solve this, I designed a role-based permission model that balanced simplicity and scalability.
+            The next step was to introduce a clear way to manage who owns and who can access data. Previously, there were no restrictions, anyone using an entity could read and edit records without limits. This gap was a major concern for large customers, especially when sensitive business information was involved. To solve this, I designed a role-based permission model that balanced simplicity and scalability.
           </p>
           <div className="mt-8">
             <BeforeAfterSlider beforeImage={beforeImage} afterImage={afterImage} beforeLabel="Before" afterLabel="After" />
@@ -131,7 +131,7 @@ const RevampDataService = () => {
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            With access control solved, the next step was to make Data Fabric feel seamless within developers' workflows. Schema editing lived in a separate portal — forcing users to leave UiPath Studio, make changes, then manually sync them back. To eliminate this friction, I designed a unified schema editor so developers could create, edit, and use data entities without breaking their flow.
+            With access control solved, the next step was to make Data Fabric feel seamless within developers' workflows. Schema editing lived in a separate portal, forcing users to leave UiPath Studio, make changes, then manually sync them back. To eliminate this friction, I designed a unified schema editor so developers could create, edit, and use data entities without breaking their flow.
           </p>
           <div className="mt-8">
             <div className="relative w-full overflow-hidden pt-4 pb-10">
@@ -179,7 +179,7 @@ const RevampDataService = () => {
           <ul className="list-disc list-inside text-muted-foreground leading-relaxed ml-4 space-y-2 marker:text-foreground">
             <li><strong className="text-foreground">Small wins add up.</strong> Even simple UI changes can deliver real value under tight constraints.</li>
             <li><strong className="text-foreground">Meet users where they are.</strong> Embedding tools into existing workflows drove adoption more than feature depth.</li>
-            <li><strong className="text-foreground">Designing for trust matters.</strong> Access control wasn't just a security feature — it unlocked business value and customer confidence.</li>
+            <li><strong className="text-foreground">Designing for trust matters.</strong> Access control wasn't just a security feature. It unlocked business value and customer confidence.</li>
           </ul>
         </div>
       ),

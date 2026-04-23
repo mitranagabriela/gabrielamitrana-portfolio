@@ -23,8 +23,8 @@ const EMERGING_THEMES = [
     description: "Drill into traces to investigate failures and unexpected behavior.",
   },
   {
-    title: "Trace-level annotations",
-    description: "Leave feedback, tag issues, and document findings directly within execution traces.",
+    title: "Error transparency",
+    description: "See how often errors happen and where problems come from.",
   },
 ];
 
@@ -32,25 +32,25 @@ const TRACE_SUBFEATURES = [
   {
     title: "Timeline view",
     description:
-      "A chronological timeline makes it easy to follow how an agent executed step by step, spot slow segments, and understand the order of tool calls and reasoning.",
+      "Introduced a chronological timeline that makes it easy to follow how an agent executed step by step, spot slow segments, and understand the order of tool calls and reasoning.",
     image: "/images/timeline.png",
   },
   {
     title: "Filtering",
     description:
-      "Users can filter trace steps by type, status, or component to zero in on the slice of execution they care about without scrolling through noise.",
+      "Implemented filtering by step type, status, and component so users can quickly isolate the exact part of an execution they need to inspect without scanning through noise.",
     image: "/images/filter.png",
   },
   {
     title: "Searching",
     description:
-      "Search works across both step names and step contents, letting users quickly locate a specific tool invocation, prompt, or output inside long traces.",
+      "Added search across both step names and step content, helping users quickly locate a specific tool invocation, prompt, or output within long traces.",
     image: "/images/search.png",
   },
   {
     title: "Feedback annotations",
     description:
-      "Teams can annotate trace steps with feedback and tags, documenting issues or noteworthy behavior directly where they're observed for later review.",
+      "Built feedback annotations and custom tagging so teams can capture issues and noteworthy behaviors in context, making follow-up and collaboration more effective.",
     image: "/images/annotate.png",
   },
 ];
@@ -102,8 +102,8 @@ const GatheringInsights = () => {
       <p className="text-muted-foreground leading-relaxed">
         To inform our design direction, I analyzed how leading platforms approach agent monitoring and observability. This helped identify the most critical capabilities users expect when managing AI agents at scale and allowed us to prioritize the features with the highest impact.
       </p>
-      <h3 className="mt-14 text-h3 text-foreground">Emerging themes</h3>
-      <div className="mt-12 grid gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] md:items-start md:gap-14">
+      <p className="font-semibold text-foreground mb-4">Key Insights:</p>
+            <div className="mt-12 grid gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] md:items-start md:gap-14">
         <div ref={themesRef} className="space-y-4">
           {EMERGING_THEMES.map((theme) => (
             <div
@@ -180,7 +180,7 @@ const AgentsMonitoring = () => {
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">UiPath had just launched AI Agents, autonomous systems that perceive, reason, act, and learn. To help enterprises, the team introduced a dedicated space to monitor agents executions in production.</p>
-          <p className="text-muted-foreground leading-relaxed">As adoption grew, the monitoring experience quickly became fragmented. Agent executions lived across design, evaluation, and runtime environments, with no clear connection between them. Enterprises struggled to see the full picture: how agents were performing, where issues originated, and what could be optimized.</p>
+          <p className="text-muted-foreground leading-relaxed">As adoption grew, the monitoring experience quickly became fragmented. Agent executions lived across design, evaluation, and production, with no clear connection between them. Enterprises struggled to see the full picture: how agents were performing, where issues originated, and what could be optimized.</p>
         </div>
       ),
     },
@@ -215,7 +215,7 @@ const AgentsMonitoring = () => {
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            I mapped the end-to-end journey of developers and operators — from discovering agents in the library, to assessing health at a glance, to drilling into specific lifecycle stages for deeper investigation. This helped establish an information hierarchy driven by real user goals.
+            I mapped the end-to-end journey of developers and operators: from discovering agents in the library, to assessing health at a glance, to drilling into specific agents for deeper investigation. This helped establish an information hierarchy driven by real user goals.
           </p>
           <div className="mt-8">
             <img src="/images/Flow journey.png" alt="User journey and information architecture diagram" className="w-full rounded-lg" />
@@ -262,8 +262,8 @@ const AgentsMonitoring = () => {
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            With the insights validated, I focused on designing the runtime monitoring experience.
-            I created high-fidelity screens that help users quickly understand agent health, investigate failures, and identify opportunities for optimization.
+            With the insights validated, I focused on designing the runtime monitoring experience. 
+            One of the main challenges was organizing a large volume of monitoring data while keeping the interface easy to scan. I focused on structuring the information in a clear way, while still highlighting critical signals such as errors and degraded agent health.
           </p>
 
           <ShowcaseFrame className="mt-10">
@@ -289,7 +289,7 @@ const AgentsMonitoring = () => {
             </div>
           </ShowcaseFrame>
 
-          <p className="text-muted-foreground leading-relaxed">One of the main design challenges was organizing a large volume of monitoring data while keeping the interface easy to scan. I focused on structuring the information in a clear way, while still highlighting critical signals such as errors and degraded agent health.</p>
+          <p className="text-muted-foreground leading-relaxed">After multiple rounds of internal validation and iteration, I delivered high-fidelity screens that enable users to quickly understand agent health, investigate failures, monitor performance and consumption.</p>
           <div className="mt-8">
             <img src={userFlowsImage} alt="Agent monitoring user interface showing overview and detailed performance metrics" className="w-full" />
           </div>
@@ -312,8 +312,9 @@ const AgentsMonitoring = () => {
               </video>
             </div>
           </div>
+          <div className="h-12" aria-hidden="true" />
 
-          <div className="mt-16 space-y-16">
+          <div className="space-y-16">
             {TRACE_SUBFEATURES.map((feature, index) => {
               const imageFirst = index % 2 === 1;
               return (
@@ -344,14 +345,17 @@ const AgentsMonitoring = () => {
       ),
     },
     {
-      title: "Metrics to Monitor",
+      title: "Results",
       content: (
         <div className="space-y-6">
-          <p className="text-muted-foreground leading-relaxed">The redesign is implemented but monitoring its adoption is currently in progress. The team is actively validating impact across key outcomes:</p>
+          <p className="text-muted-foreground leading-relaxed">
+            Over a 6-month period, our results show enterprises are moving from build to production with greater confidence, with more organizations completing the full deployment journey. This trend highlights how critical it has become to provide monitoring capabilities across the entire agent lifecycle, empowering teams to oversee production usage and maximize value at scale.
+       
+          </p>
           <div className="grid md:grid-cols-3 gap-4">
-            <StatCard label="Deployed Run Rate" />
-            <StatCard label="Created to Deployed Rate" />
-            <StatCard label="Paid Units" />
+            <StatCard label="Deployed run rate" value="+95%" />
+            <StatCard label="Deployment breadth" value="+34%" />
+            <StatCard label="Creation-to-deployment velocity" value="1.3 days (-78%)" />
           </div>
         </div>
       ),

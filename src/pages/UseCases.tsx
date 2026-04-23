@@ -14,7 +14,7 @@ const UseCases = () => {
       image: agentsMonitoringCover,
       tags: ["FULL REDESIGN", "AI AGENTS", "WEB"],
       status: "Completed",
-      results: "In progress",
+      results: "Increased deployed agent runs by 95%",
       year: "2025",
       caseStudyPath: "/case-studies/agents-monitoring",
     },

@@ -9,7 +9,7 @@ const FirstRunExperience = () => {
   const heroContent = null;
   const designProcessSteps = [
     { title: "Discovery", bullets: ["Crazy 8's", "Story mapping", "Diagramming"] },
-    { title: "Features list & flow", bullets: ["MVP definition", "Information architecture"] },
+    { title: "User flows", bullets: ["MVP definition", "Information architecture"] },
     { title: "Ideate & Sketch", bullets: ["Wireframes", "Design critiques"] },
     { title: "Design & Evaluate", bullets: ["Prototype", "Usability testing"] },
     { title: "Implement & Measure", bullets: ["Development handoff", "Telemetry setup"] },
@@ -43,7 +43,7 @@ const FirstRunExperience = () => {
       content: (
         <FullBleedBanner
           label="PROBLEM TO SOLVE"
-          headline="Enterprise users needed to start building automations quickly, but Studio Web onboarding still had too much setup friction and unclear first-value moments."
+          headline="Enterprise users needed to start building automations quickly, but Studio Web still had too much friction and delayed value."
         />
       ),
     },
@@ -72,7 +72,7 @@ const FirstRunExperience = () => {
       content: (
         <FullBleedBanner
           label="HOW MIGHT WE"
-          headline="How might we help first-time users reach a successful first automation fast, with clear guidance, relevant templates, and minimal configuration overhead?"
+          headline="How might we help users to publish their fist automation with clear guidance, and minimal configuration overhead?"
         />
       ),
     },
