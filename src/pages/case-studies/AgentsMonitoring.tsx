@@ -1,4 +1,5 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
+import { FullBleedBanner } from "@/components/FullBleedBanner";
 import userFlowsImage from "@/assets/agents-monitoring-user-flows.png";
 import { Search, Cpu, TrendingUp } from "lucide-react";
 import { useEffect, useRef, useState, type ReactNode } from "react";
@@ -141,39 +142,6 @@ const GatheringInsights = () => {
 };
 
 const AgentsMonitoring = () => {
-  const FullBleedBanner = ({
-    label,
-    headline,
-    bullets
-  }: {
-    label: string;
-    headline: string;
-    bullets?: string[];
-  }) => (
-    <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] border-y border-border/70 bg-muted/25">
-      <div className="container-editorial py-10 md:py-14">
-        <div className="mx-auto max-w-[70ch] text-center">
-          <div className="flex items-center justify-center">
-            <span className="rounded-full border border-border/70 bg-background/60 px-5 py-2 text-meta font-medium uppercase tracking-wider text-muted-foreground shadow-[0_2px_10px_rgba(2,8,23,0.06)]">
-              {label}
-            </span>
-          </div>
-          <p className="mt-6 text-[1.35rem] leading-snug tracking-tight text-foreground md:text-[1.6rem]">
-            {headline}
-          </p>
-          {bullets?.length ? (
-            <ul className="mt-6 space-y-2 text-muted-foreground">
-              {bullets.map((item) => (
-                <li key={item} className="text-[1.05rem] leading-relaxed">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          ) : null}
-        </div>
-      </div>
-    </div>
-  );
   const heroContent = <div className="space-y-6">
     </div>;
   const userJourneySteps = [{
@@ -289,7 +257,7 @@ const AgentsMonitoring = () => {
     variant: "fullBleed",
     content: <FullBleedBanner
       label="PROBLEM TO SOLVE"
-      headline="Enterprise teams couldn’t get a single, trustworthy view of how agents were performing in productio, where issues originated, and what could be optimized."
+      headline="Enterprise teams couldn’t get a single, trustworthy view of how agents were performing in production, where issues originated, and what could be optimized."
       
     />
   }, {
