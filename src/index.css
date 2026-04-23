@@ -30,6 +30,14 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 24 95% 53%;
+    --warning-foreground: 0 0% 100%;
+
+    --brand-gradient-end: 271 81% 56%;
+
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
@@ -39,8 +47,11 @@
     --radius-card: 2px;
     --radius-image: 4px;
     --radius-pill: 999px;
+    --radius-showcase: 1rem;
     --shadow-card: 0 1px 2px rgb(0 0 0 / 0.04);
     --shadow-card-hover: 0 12px 32px -8px rgb(0 0 0 / 0.12);
+    --shadow-ambient: 0 2px 10px rgb(2 8 23 / 0.06);
+    --shadow-ambient-strong: 0 2px 10px rgb(2 8 23 / 0.08);
 
     --sidebar-background: 0 0% 98%;
 
@@ -80,13 +91,15 @@
     @apply text-foreground underline underline-offset-[6px] decoration-1 decoration-muted-foreground/40 hover:decoration-foreground transition-[text-decoration-color] duration-200;
   }
 
-  .case-study-prose p,
-  .case-study-prose li {
-    font-size: 1.1875rem;
-    line-height: 1.65;
+  .text-brand-gradient {
+    @apply bg-gradient-to-r from-primary to-brand-gradient-end bg-clip-text text-transparent;
   }
+
+  .case-study-prose p,
+  .case-study-prose li,
   .case-study-prose ul {
-    font-size: 1.1875rem;
+    font-size: 1.125rem;
+    line-height: 1.65;
   }
 }
 

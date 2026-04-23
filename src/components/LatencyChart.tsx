@@ -46,7 +46,7 @@ const CustomTooltip = ({ active, payload }: { active?: boolean; payload?: Toolti
           <span className="text-sm text-muted-foreground">Latency</span>
           <span 
             className="text-lg font-semibold"
-            style={{ color: isGood ? "#22c55e" : "#f97316" }}
+            style={{ color: isGood ? "hsl(var(--success))" : "hsl(var(--warning))" }}
           >
             {data.latency.toFixed(2)}s
           </span>
@@ -68,7 +68,7 @@ export const LatencyChart = () => {
     const maxLatency = Math.max(...latencyData.map(d => d.latency));
     return latencyData.map((d, index) => ({
       offset: `${(index / (latencyData.length - 1)) * 100}%`,
-      color: d.latency <= LATENCY_THRESHOLD ? "#22c55e" : "#f97316",
+      color: d.latency <= LATENCY_THRESHOLD ? "hsl(var(--success))" : "hsl(var(--warning))",
     }));
   }, []);
 
@@ -84,7 +84,7 @@ export const LatencyChart = () => {
             <span className="text-sm text-muted-foreground">Avg Latency</span>
             <span 
               className="text-3xl font-bold"
-              style={{ color: isCurrentGood ? "#22c55e" : "#f97316" }}
+              style={{ color: isCurrentGood ? "hsl(var(--success))" : "hsl(var(--warning))" }}
             >
               {currentData.latency.toFixed(2)}s
             </span>
@@ -95,11 +95,11 @@ export const LatencyChart = () => {
         </div>
         <div className="flex items-center gap-4 text-xs text-muted-foreground">
           <div className="flex items-center gap-1.5">
-            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: "#22c55e" }} />
+            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: "hsl(var(--success))" }} />
             <span>Good (&lt;{LATENCY_THRESHOLD}s)</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: "#f97316" }} />
+            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: "hsl(var(--warning))" }} />
             <span>Slow (≥{LATENCY_THRESHOLD}s)</span>
           </div>
         </div>
@@ -132,12 +132,12 @@ export const LatencyChart = () => {
               </linearGradient>
               {/* Matching fill gradients for each color */}
               <linearGradient id="greenFillGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#22c55e" stopOpacity={0.35} />
-                <stop offset="100%" stopColor="#22c55e" stopOpacity={0.02} />
+                <stop offset="0%" stopColor="hsl(var(--success))" stopOpacity={0.35} />
+                <stop offset="100%" stopColor="hsl(var(--success))" stopOpacity={0.02} />
               </linearGradient>
               <linearGradient id="orangeFillGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#f97316" stopOpacity={0.35} />
-                <stop offset="100%" stopColor="#f97316" stopOpacity={0.02} />
+                <stop offset="0%" stopColor="hsl(var(--warning))" stopOpacity={0.35} />
+                <stop offset="100%" stopColor="hsl(var(--warning))" stopOpacity={0.02} />
               </linearGradient>
               {/* Combined horizontal + vertical gradient for fill area */}
               <linearGradient id="latencyFillGradient" x1="0" y1="0" x2="1" y2="0">
@@ -199,7 +199,7 @@ export const LatencyChart = () => {
                     cx={cx}
                     cy={cy}
                     r={isActive ? 6 : 4}
-                    fill={isGood ? "#22c55e" : "#f97316"}
+                    fill={isGood ? "hsl(var(--success))" : "hsl(var(--warning))"}
                     stroke="hsl(var(--background))"
                     strokeWidth={2}
                     style={{

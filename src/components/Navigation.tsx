@@ -23,7 +23,7 @@ export const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <Link
             to="/"
-            className="text-h4 font-semibold tracking-tight bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+            className="text-h4 font-semibold tracking-tight text-brand-gradient focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
           >
             Gabriela Mitrana
           </Link>
@@ -57,11 +57,12 @@ export const Navigation = () => {
           <div className="md:hidden">
             <Button
               variant="ghost"
-              size="sm"
+              size="icon"
+              className="h-11 w-11"
               onClick={() => setIsOpen(!isOpen)}
               aria-label={isOpen ? "Close menu" : "Open menu"}
             >
-              {isOpen ? <X size={20} /> : <Menu size={20} />}
+              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           </div>
         </div>
@@ -84,7 +85,7 @@ export const Navigation = () => {
                       key={item.name}
                       to={item.href}
                       className={cn(
-                        "py-3 text-meta tracking-wider transition-colors duration-200",
+                        "py-4 text-meta tracking-wider transition-colors duration-200",
                         isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                       )}
                       onClick={() => setIsOpen(false)}

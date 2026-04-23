@@ -38,7 +38,7 @@ const Index = () => {
 
               <motion.h1 variants={heroItem} className="text-display">
                 Hi, I'm{" "}
-                <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+                <span className="text-brand-gradient">
                   Gabriela Mitrana
                 </span>
               </motion.h1>
@@ -62,7 +62,7 @@ const Index = () => {
                 </Button>
                 <Link
                   to="/resume"
-                  className="text-sm font-medium underline underline-offset-8 decoration-1 decoration-muted-foreground/40 hover:decoration-foreground transition-[text-decoration-color] duration-200"
+                  className="editorial-link text-sm font-medium"
                 >
                   View My Resume
                 </Link>
