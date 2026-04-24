@@ -43,7 +43,8 @@ const Index = () => {
               </motion.h1>
 
               <motion.p variants={heroItem} className="text-body-lg text-muted-foreground max-w-[52ch]">
-                I'm a product designer with a passion for creating meaningful digital experiences. My approach combines user-centered design principles with business objectives to deliver solutions that not only look beautiful but also drive results.
+              Senior Product Designer with 5+ years of experience designing complex, data-driven and AI-powered products. I’m particularly interested in platform products, AI-native experiences, and solving complex problems at scale.
+
               </motion.p>
 
               <motion.div variants={heroItem} className="flex flex-col sm:flex-row items-start sm:items-center gap-5">

@@ -2,6 +2,7 @@ import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { FullBleedBanner } from "@/components/FullBleedBanner";
 import { ProcessDiagram } from "@/components/ProcessDiagram";
 import { ProjectDetails } from "@/components/ProjectDetails";
+import { ShowcaseFrame } from "@/components/ShowcaseFrame";
 import { StatCard } from "@/components/StatCard";
 import { type ReactNode } from "react";
 
@@ -106,7 +107,7 @@ const FirstRunExperience = () => {
       content: (
         <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">
-            To provide a tailored experience, we needed a way to recommend templates suited to users' specific needs. We introduced a profiling mechanism that asks users about their department and the applications they use in their daily routine. This allowed us to offer more relevant and useful templates, enhancing the overall user experience.
+            To provide a tailored experience, I needed a way to recommend templates suited to users' specific needs. I introduced a profiling mechanism that asks users about their department and the applications they use in their daily routine. This allowed us to offer more relevant and useful templates, enhancing the overall user experience.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="w-full">
@@ -117,7 +118,7 @@ const FirstRunExperience = () => {
             </div>
           </div>
           <p className="text-muted-foreground leading-relaxed">
-            We also introduced a guided experience to teach first-time users about the automation building process, providing coachmarks and celebrating their milestones (such as publishing the first automation).
+            I also introduced a guided experience to teach first-time users about the automation building process, providing coachmarks and celebrating their milestones (such as publishing the first automation).
           </p>
           <div className="w-full">
             <img src="/images/fre-guided-experience.png" alt="UiPath Studio guided experience showing step-by-step automation building process with modal dialogs and configuration screens" className="w-full rounded-lg" />
@@ -130,14 +131,33 @@ const FirstRunExperience = () => {
       content: (
         <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">
-            After multiple rounds of usability testing, we discovered user preferred minimal configuration and favored seeing how the automation works directly on the canvas. Participants also valued clear and concise titles and descriptions that accurately conveyed each template's purpose.
+            To validate the right level of configuration, I compared two designs with users: <strong className="text-foreground">Design A</strong>, which exposed all configuration fields upfront, and <strong className="text-foreground">Design B</strong>, which showed only the essential app connections and hid advanced configuration behind the scenes. Users preferred a minimal configuration and favored seeing how the automation works directly on the canvas. They also valued clear and concise titles and descriptions that accurately conveyed each template's purpose.
+
           </p>
+          <ShowcaseFrame className="mt-10">
+            <div className="grid gap-6 md:grid-cols-2 md:gap-8">
+              {[
+                { label: "Design A", src: "/images/DesignA.png" },
+                { label: "Design B", src: "/images/DesignB.png" },
+              ].map((item) => (
+                <figure key={item.label} className="flex flex-col items-center">
+                  <figcaption className="text-meta uppercase tracking-wider text-muted-foreground mb-5">
+                    {item.label}
+                  </figcaption>
+                  <div className="w-full overflow-hidden rounded-lg bg-background border border-border/70 shadow-ambient">
+                    <img
+                      src={item.src}
+                      alt={`${item.label} of the template configuration`}
+                      className="w-full h-auto block"
+                    />
+                  </div>
+                </figure>
+              ))}
+            </div>
+          </ShowcaseFrame>
           <p className="text-muted-foreground leading-relaxed">
-            As a result, we adopted a minimal design that only showcases the essential information. Advanced configuration is handled behind the scenes.
+            As a result, I adopted a minimal design that only showcases the essential information. Advanced configuration is handled behind the scenes.
           </p>
-          <div className="w-full mt-6">
-            <img src="/images/fre-template-customization.png" alt="Template customization interface showing the 'Generate expense report' template with configuration options for Outlook and Google Drive connections" className="w-full rounded-lg" />
-          </div>
         </div>
       ),
     },
@@ -179,6 +199,7 @@ const FirstRunExperience = () => {
       tags={["Enterprise UX", "Onboarding", "Design Sprint", "Automation Platform", "Templates"]}
       heroContent={heroContent}
       sections={sections}
+      currentPath="/case-studies/first-run-experience"
     />
   );
 };

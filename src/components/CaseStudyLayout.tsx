@@ -2,6 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fadeUp, viewportOnce } from "@/lib/motion";
+import { NextCaseStudy } from "./NextCaseStudy";
 
 interface CaseStudySection {
   title?: string;
@@ -15,6 +16,7 @@ interface CaseStudyLayoutProps {
   tags: string[];
   heroContent: React.ReactNode;
   sections: CaseStudySection[];
+  currentPath?: string;
 }
 
 export const CaseStudyLayout = ({
@@ -22,7 +24,8 @@ export const CaseStudyLayout = ({
   subtitle,
   tags,
   heroContent,
-  sections
+  sections,
+  currentPath
 }: CaseStudyLayoutProps) => {
   return (
     <div className="pt-16 min-h-screen bg-background">
@@ -102,6 +105,8 @@ export const CaseStudyLayout = ({
             );
           })()}
         </div>
+
+        {currentPath ? <NextCaseStudy currentPath={currentPath} /> : null}
       </div>
     </div>
   );

@@ -535,6 +535,7 @@ const AgentsMonitoring = () => {
       tags={["Information Architecture", "AI Monitoring", "Enterprise UX", "Data Visualization"]}
       heroContent={heroContent}
       sections={sections}
+      currentPath="/case-studies/agents-monitoring"
     />
   );
 };

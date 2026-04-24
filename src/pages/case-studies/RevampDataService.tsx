@@ -193,6 +193,7 @@ const RevampDataService = () => {
       tags={["Data Management", "Service Design", "Enterprise UX", "Access Control", "Platform Integration"]}
       heroContent={heroContent}
       sections={sections}
+      currentPath="/case-studies/revamp-data-service"
     />
   );
 };

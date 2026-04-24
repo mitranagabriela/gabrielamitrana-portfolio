@@ -5,7 +5,7 @@ const Resume = () => {
       company: "UiPath, Bucharest, Romania",
       period: "Jul 2025 — Present",
       achievements: [
-        "Contributed from the ground up to UiPath's AI Agents (Act 2) strategy, defining how enterprises build, deploy, and monitor agents within UiPath's platform."
+        "Designing AI agent experiences, shaping how enterprises build, deploy, and monitor agents within UiPath’s platform."
 
       ],
     },
@@ -23,7 +23,7 @@ const Resume = () => {
       company: "Lurtis AI, Bucharest, Romania",
       period: "Jan 2021 — Jul 2021",
       achievements: [
-        "As the sole Product Designer I designed an AI-driven tool that maximises the potential of a plot, obtaining a wide variety of optimal building designs."
+        "As a sole UX Designer at Lurtis AI, I designed an AI buildability estimator, owning the product from concept to delivery."
       ],
     },
   ];
