@@ -82,7 +82,7 @@ const Resume = () => {
           <span className="block text-label uppercase text-muted-foreground mb-6">Résumé</span>
           <h1 className="text-h1 mb-4">Gabriela Mitrana</h1>
           <p className="text-body-lg text-muted-foreground">
-            Senior Product Designer — Bucharest, Romania
+            Senior Product Designer, Bucharest, Romania
           </p>
         </header>
 

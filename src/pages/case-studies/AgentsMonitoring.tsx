@@ -38,7 +38,7 @@ const TRACE_SUBFEATURES = [
   {
     title: "Filtering",
     description:
-      "Implemented filtering by step type, status, and component so users can quickly isolate the exact part of an execution they need to inspect without scanning through noise.",
+      "Implemented filtering so users can quickly isolate the exact aspects of an execution they need to inspect without scanning through noise.",
     image: "/images/filter.png",
   },
   {
@@ -54,6 +54,127 @@ const TRACE_SUBFEATURES = [
     image: "/images/annotate.png",
   },
 ];
+
+const IA_PURPLE = "hsl(var(--brand-gradient-end))";
+
+const IA_LINEAR = ["Agents Landing Page", "Agents Library", "Agent Details"];
+const IA_BRANCHES: { title: string; child?: string }[] = [
+  { title: "Design Artifacts", child: "Edit the Agent" },
+  { title: "Deployed Runs", child: "Debug the Trace" },
+  { title: "Feedback & Memory" },
+];
+
+const IAPill = ({
+  children,
+  equalWidth = false,
+}: {
+  children: ReactNode;
+  equalWidth?: boolean;
+}) => (
+  <div
+    className={`inline-flex h-10 items-center justify-center rounded-full border border-border/70 bg-white px-4 text-sm font-medium leading-none tracking-tight text-muted-foreground shadow-ambient-strong whitespace-nowrap ${
+      equalWidth ? "min-w-[9rem]" : ""
+    }`}
+  >
+    {children}
+  </div>
+);
+
+const IADownArrow = () => (
+  <svg
+    width="14"
+    height="32"
+    viewBox="0 0 14 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="block"
+    aria-hidden
+  >
+    <path d="M7 0V26" stroke={IA_PURPLE} strokeWidth="1.5" />
+    <path d="M1 26L7 32L13 26Z" fill={IA_PURPLE} />
+  </svg>
+);
+
+const IADiagram = () => (
+  <div className="flex flex-col items-center">
+    {IA_LINEAR.map((title, i) => (
+      <div key={title} className="flex flex-col items-center">
+        {i > 0 ? <IADownArrow /> : null}
+        <IAPill>{title}</IAPill>
+      </div>
+    ))}
+    <div
+      style={{ width: "1.5px", height: 16, backgroundColor: IA_PURPLE }}
+      aria-hidden
+    />
+    <div className="relative grid w-full grid-cols-3 gap-x-6 pt-4">
+      <svg
+        className="absolute top-0"
+        style={{ left: "calc(16.6667% - 15px)", overflow: "visible" }}
+        width="14"
+        height="16"
+        viewBox="0 0 14 16"
+        fill="none"
+        aria-hidden
+      >
+        <path
+          d="M14 0.75 A 7 7 0 0 0 7 7.75 L 7 16"
+          stroke={IA_PURPLE}
+          strokeWidth="1.5"
+          fill="none"
+        />
+      </svg>
+      <svg
+        className="absolute top-0"
+        style={{ right: "calc(16.6667% - 15px)", overflow: "visible" }}
+        width="14"
+        height="16"
+        viewBox="0 0 14 16"
+        fill="none"
+        aria-hidden
+      >
+        <path
+          d="M0 0.75 A 7 7 0 0 1 7 7.75 L 7 16"
+          stroke={IA_PURPLE}
+          strokeWidth="1.5"
+          fill="none"
+        />
+      </svg>
+      <div
+        className="absolute top-0"
+        style={{
+          left: "calc(16.6667% - 1px)",
+          right: "calc(16.6667% - 1px)",
+          height: "1.5px",
+          backgroundColor: IA_PURPLE,
+        }}
+        aria-hidden
+      />
+      <div
+        className="absolute left-1/2 top-0"
+        style={{
+          width: "1.5px",
+          height: 16,
+          backgroundColor: IA_PURPLE,
+          transform: "translateX(-0.75px)",
+        }}
+        aria-hidden
+      />
+      {IA_BRANCHES.map((col) => (
+        <div key={col.title} className="flex flex-col items-center">
+          <IADownArrow />
+          <IAPill equalWidth>{col.title}</IAPill>
+          {col.child ? (
+            <>
+              <IADownArrow />
+              <IAPill equalWidth>{col.child}</IAPill>
+            </>
+          ) : null}
+        </div>
+      ))}
+    </div>
+  </div>
+);
 
 const COMPETITOR_GROUPS = [
   {
@@ -100,7 +221,7 @@ const GatheringInsights = () => {
   return (
     <div className="space-y-4">
       <p className="text-muted-foreground leading-relaxed">
-        To inform our design direction, I analyzed how leading platforms approach agent monitoring and observability. This helped identify the most critical capabilities users expect when managing AI agents at scale and allowed us to prioritize the features with the highest impact.
+        Agents were still in their early adoption phase, so there was no settled answer on which metrics would bring the most value to enterprises running them in production. To navigate that ambiguity, I analysed how leading platforms were approaching agent monitoring and observability.
       </p>
       <p className="font-semibold text-foreground mb-4">Key Insights:</p>
             <div className="mt-12 grid gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] md:items-start md:gap-14">
@@ -142,6 +263,9 @@ const GatheringInsights = () => {
           </div>
         </div>
       </div>
+      <p className="!mt-10 text-muted-foreground leading-relaxed">
+        These insights helped identify the most critical capabilities users expect when managing AI agents at scale and allowed us to prioritize the features with the highest impact.
+      </p>
     </div>
   );
 };
@@ -213,12 +337,33 @@ const AgentsMonitoring = () => {
     {
       title: "User Journeys & Information Architecture",
       content: (
-        <div className="space-y-4">
+        <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">
             I mapped the end-to-end journey of developers and operators: from discovering agents in the library, to assessing health at a glance, to drilling into specific agents for deeper investigation. This helped establish an information hierarchy driven by real user goals.
           </p>
-          <div className="mt-8">
-            <img src="/images/Flow journey.png" alt="User journey and information architecture diagram" className="w-full rounded-lg" />
+          <div className="grid gap-8 md:grid-cols-2 md:items-center md:gap-12">
+            <div className="rounded-showcase border border-border/60 bg-muted/30 p-6 md:p-8">
+              <IADiagram />
+            </div>
+            <div className="text-muted-foreground leading-relaxed space-y-3">
+              <p>
+                I created the user flow guided by four core design principles that made the monitoring experience easier to navigate and scale.
+              </p>
+              <ol className="list-decimal list-inside space-y-1">
+                <li>
+                  <strong className="text-foreground">Consistency:</strong> Same trace format and interaction patterns across all stages.
+                </li>
+                <li>
+                  <strong className="text-foreground">Context:</strong> Always show where you are in the agent lifecycle.
+                </li>
+                <li>
+                  <strong className="text-foreground">Discoverability:</strong> Multiple ways to find related traces (search, filters, links).
+                </li>
+                <li>
+                  <strong className="text-foreground">Progressive Disclosure:</strong> Start with overview, drill down to details.
+                </li>
+              </ol>
+            </div>
           </div>
         </div>
       ),
@@ -289,7 +434,7 @@ const AgentsMonitoring = () => {
             </div>
           </ShowcaseFrame>
 
-          <p className="text-muted-foreground leading-relaxed">After multiple rounds of internal validation and iteration, I delivered high-fidelity screens that enable users to quickly understand agent health, investigate failures, monitor performance and consumption.</p>
+          <p className="text-muted-foreground leading-relaxed">After multiple rounds of internal validation and iteration, I delivered high-fidelity flows that enable users to quickly understand agent health, investigate failures, monitor performance and consumption.</p>
           <div className="mt-8">
             <img src={userFlowsImage} alt="Agent monitoring user interface showing overview and detailed performance metrics" className="w-full" />
           </div>

@@ -22,7 +22,7 @@ const UseCases = () => {
       title: "Revamp Data Fabric",
       description: "Simplified the data management flow for UiPath, from fragmentation to a cohesive experience",
       image: revampDataFabricCover,
-      tags: ["FULL REDESIGN", "DATA MANAGEEMNT", "WEB"],
+      tags: ["FULL REDESIGN", "DATA MANAGEMENT", "WEB"],
       status: "Completed",
       results: "Increased data operations by 100%",
       year: "2024",

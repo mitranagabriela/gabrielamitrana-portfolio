@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { ease, durations } from "@/lib/motion";
 
 const Index = () => {
-  const meta = ["Strategy", "Systems", "Research", "Prototyping"];
   const stats = [
     { value: "50+", label: "Projects Completed" },
     { value: "75+", label: "Stakeholders Involved" },
@@ -46,15 +45,6 @@ const Index = () => {
               <motion.p variants={heroItem} className="text-body-lg text-muted-foreground max-w-[52ch]">
                 I'm a product designer with a passion for creating meaningful digital experiences. My approach combines user-centered design principles with business objectives to deliver solutions that not only look beautiful but also drive results.
               </motion.p>
-
-              <motion.div variants={heroItem} className="flex flex-wrap items-center gap-x-3 gap-y-1 text-meta uppercase tracking-wider text-muted-foreground">
-                {meta.map((item, i) => (
-                  <span key={item} className="flex items-center gap-x-3">
-                    {i > 0 ? <span aria-hidden className="text-muted-foreground/40">·</span> : null}
-                    {item}
-                  </span>
-                ))}
-              </motion.div>
 
               <motion.div variants={heroItem} className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
                 <Button asChild size="lg">
@@ -105,7 +95,7 @@ const Index = () => {
           <span className="block text-label uppercase text-muted-foreground mb-6">About</span>
           <h2 className="text-h2 mb-8">A curious, outdoor-leaning designer.</h2>
           <p className="text-body-lg text-muted-foreground leading-relaxed">
-            When I'm not designing, I'm usually out photographing or simply enjoying the outdoors. I'm curious by nature and always seeking new perspectives — a mindset that deeply influences my design work.
+            When I'm not designing, I'm usually out photographing or simply enjoying the outdoors. I'm curious by nature and always seeking new perspectives, a mindset that deeply influences my design work.
           </p>
         </div>
       </section>
