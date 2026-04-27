@@ -73,7 +73,7 @@ const FirstRunExperience = () => {
       content: (
         <FullBleedBanner
           label="HOW MIGHT WE"
-          headline="How might we help users to publish their fist automation with clear guidance, and minimal configuration overhead?"
+          headline="How might we help users to publish their first automation with clear guidance, and minimal configuration overhead?"
         />
       ),
     },
@@ -131,7 +131,8 @@ const FirstRunExperience = () => {
       content: (
         <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed">
-            To validate the right level of configuration, I compared two designs with users: <strong className="text-foreground">Design A</strong>, which exposed all configuration fields upfront, and <strong className="text-foreground">Design B</strong>, which showed only the essential app connections and hid advanced configuration behind the scenes. Users preferred a minimal configuration and favored seeing how the automation works directly on the canvas. They also valued clear and concise titles and descriptions that accurately conveyed each template's purpose.
+            To validate the right level of configuration, I compared two designs with users: <strong className="text-foreground">Design A</strong>, which exposed all configuration fields upfront, and <strong className="text-foreground">Design B</strong>, which showed only the essential app connections and hid advanced configuration behind the scenes. 
+            Users preferred a minimal configuration and favored seeing how the automation works directly on the canvas. They also valued clear and concise titles and descriptions that accurately conveyed each template's purpose.
 
           </p>
           <ShowcaseFrame className="mt-10">

@@ -505,27 +505,6 @@ const AgentsMonitoring = () => {
         </div>
       ),
     },
-    {
-      title: "Next Steps",
-      content: (
-        <div className="space-y-4">
-          <ul className="list-disc list-inside text-muted-foreground leading-relaxed space-y-3 ml-2 marker:text-foreground">
-            <li>
-              <strong className="text-foreground">Alerts.</strong> Real-time notifications when agents encounter issues such as high resource consumption, or slow response times.
-            </li>
-            <li>
-              <strong className="text-foreground">Runtime trends.</strong> Identifying common execution paths to understand how agents behave in production.
-            </li>
-            <li>
-              <strong className="text-foreground">Online evaluations.</strong> Running evaluations on live production data to measure agent quality.
-            </li>
-            <li>
-              <strong className="text-foreground">Enhanced feedback capabilities.</strong> Aggregating user feedback by sentiment and transforming it into actionable product insights.
-            </li>
-          </ul>
-        </div>
-      ),
-    },
   ];
 
   return (

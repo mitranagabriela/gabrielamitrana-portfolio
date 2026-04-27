@@ -88,23 +88,6 @@ const UseCases = () => {
           })}
         </motion.div>
 
-        {/* In development */}
-        <motion.div
-          variants={fadeUp}
-          initial="initial"
-          whileInView="animate"
-          viewport={viewportOnce}
-          className="py-section-sm border-b border-border"
-        >
-          <div className="flex items-center justify-between text-meta uppercase tracking-wider text-muted-foreground">
-            <span>— In Development</span>
-            <span>Soon</span>
-          </div>
-          <h2 className="text-h2 mt-8 text-muted-foreground max-w-[18ch]">More projects coming soon</h2>
-          <p className="text-body-lg text-muted-foreground mt-5 max-w-[52ch]">
-            I'm currently working on several projects that will be added to this portfolio. Check back for detailed case studies, process documentation, and outcomes.
-          </p>
-        </motion.div>
       </div>
     </div>
   );
