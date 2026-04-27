@@ -30,7 +30,7 @@ export const caseStudies: CaseStudyProject[] = [
     image: revampDataFabricCover,
     tags: ["FULL REDESIGN", "DATA MANAGEMENT", "WEB"],
     status: "Completed",
-    results: "Increased data operations by 100%",
+    results: "Increased data operations by 90%",
     year: "2024",
     caseStudyPath: "/case-studies/revamp-data-service",
   },
@@ -41,7 +41,7 @@ export const caseStudies: CaseStudyProject[] = [
     tags: ["0 TO 1 DESIGN", "ONBOARDING", "RPA", "WEB"],
     status: "Completed",
     results: "Reduced time to build by 40%",
-    year: "2022",
+    year: "2023",
     caseStudyPath: "/case-studies/first-run-experience",
   },
 ];

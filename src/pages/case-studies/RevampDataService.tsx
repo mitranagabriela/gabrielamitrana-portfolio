@@ -118,9 +118,30 @@ const RevampDataService = () => {
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed mb-8">
-            The next step was to introduce a clear way to manage who owns and who can access data. Previously, there were no restrictions, anyone using an entity could read and edit records without limits. This gap was a major concern for large customers, especially when sensitive business information was involved. To solve this, I designed a role-based permission model that balanced simplicity and scalability.
+            The next step was to introduce a clear way to manage who owns and who can access data. Previously, there were no restrictions, anyone using an entity could read and edit records without limits. This gap was a major concern for large customers, especially when sensitive business information was involved. To solve this, I designed a role-based permission model that displayed each permission directly on the CRUD action itself, with labels like "Read all," "Edit own," or "Delete own" visible by default.
           </p>
-          <div className="mt-8">
+          <div className="grid md:grid-cols-2 gap-8 items-center mt-8">
+            <p className="text-muted-foreground leading-relaxed">
+              The PM proposed an alternative that split permissions into two layers:
+              <ul className="list-disc pl-6 mb-2">
+                <li>Standard CRUD checkboxes</li>
+                <li>A separate dropdown for record visibility (Private, Public read-only, Public read-write)</li>
+              </ul>
+              In this model, users had to mentally combine the checkboxes with the dropdown to figure out what a role could actually do.
+         
+            </p>
+            <figure className="w-full rounded-showcase border border-border/60 bg-muted/30 p-6 flex flex-col items-center">
+              <figcaption className="text-meta uppercase tracking-wider text-muted-foreground mb-5">PM's proposal</figcaption>
+              <div className="w-full overflow-hidden rounded-lg bg-background border border-border/70 shadow-ambient">
+                <img src="/images/PMDS.png" alt="PM's proposal for the access control permission model" className="w-full h-auto block" />
+              </div>
+            </figure>
+          </div>
+          <p className="text-muted-foreground leading-relaxed mt-8">
+            I advocated for my approach because permission systems are read far more often than they're written, and often by people who didn't configure them. Showing what a role can actually do at a glance saves time on the everyday review and audit tasks admins often deal with.
+          </p>
+          <div className="h-8" aria-hidden="true" />
+          <div>
             <BeforeAfterSlider beforeImage={beforeImage} afterImage={afterImage} beforeLabel="Before" afterLabel="After" />
           </div>
         </div>
@@ -163,11 +184,11 @@ const RevampDataService = () => {
       title: "Results",
       content: (
         <div className="space-y-6">
-          <p className="text-muted-foreground leading-relaxed">The redesign was completed and shipped across one release. Key outcomes:</p>
+          <p className="text-muted-foreground leading-relaxed">The redesign was completed and shipped across one release. Key outcomes, measured over 5 months post-launch:</p>
           <div className="grid md:grid-cols-3 gap-4">
-            <StatCard label="Data Operations" value="+ 100%" />
-            <StatCard label="Attach Rate" value="+ 19%" />
-            <StatCard label="Monthly Active Users" value="+ 14%" />
+            <StatCard label="Data Operations" value="+ 90%" baseline="10,840,620 data operations" />
+            <StatCard label="Attach Rate" value="+ 13%" baseline="16.8%" />
+            <StatCard label="Monthly Active Users" value="+ 14%" baseline="10,546 users" />
           </div>
         </div>
       ),

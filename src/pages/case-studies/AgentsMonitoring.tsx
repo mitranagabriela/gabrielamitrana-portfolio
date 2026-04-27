@@ -498,9 +498,9 @@ const AgentsMonitoring = () => {
        
           </p>
           <div className="grid md:grid-cols-3 gap-4">
-            <StatCard label="Deployed run rate" value="+95%" />
-            <StatCard label="Deployment breadth" value="+34%" />
-            <StatCard label="Creation-to-deployment velocity" value="1.3 days (-78%)" />
+            <StatCard label="Deployed run rate" value="+95%" baseline="149K runs" />
+            <StatCard label="Deployment breadth" value="+34%" baseline="398 subsidiaries" />
+            <StatCard label="Creation-to-deployment velocity" value="1.3 days (-78%)" baseline="6 days" />
           </div>
         </div>
       ),

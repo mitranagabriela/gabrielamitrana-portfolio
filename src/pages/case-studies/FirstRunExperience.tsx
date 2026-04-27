@@ -166,11 +166,11 @@ const FirstRunExperience = () => {
       title: "Results",
       content: (
         <div className="space-y-6">
-          <p className="text-muted-foreground leading-relaxed">The redesigned onboarding experience was successfully launched and delivered measurable improvements across key metrics:</p>
+          <p className="text-muted-foreground leading-relaxed">The redesigned onboarding experience was successfully launched and delivered measurable improvements across key metrics, measured over 3 months post-launch:</p>
           <div className="grid md:grid-cols-3 gap-4">
-            <StatCard label="Time to Build" value="- 40%" />
-            <StatCard label="NPS Score" value="44.76" />
-            <StatCard label="Monthly Active Users" value="+ 28.6%" />
+            <StatCard label="Time to Build" value="- 40%" baseline="46 min" />
+            <StatCard label="NPS Score" value="44.76" baseline="27" />
+            <StatCard label="Monthly Active Users" value="+ 28.6%" baseline="6,373 users" />
           </div>
         </div>
       ),
