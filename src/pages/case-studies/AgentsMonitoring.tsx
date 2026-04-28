@@ -400,12 +400,11 @@ const AgentsMonitoring = () => {
             </div>
           </div>
 
-          <div className="mt-16 md:mt-24">
+          <div className="pt-8 md:pt-10">
             <FullBleedBanner
               label="USER QUOTE"
               headline={"“We need to see AI units consumption and overall cost upfront.”"}
               headlineClassName="italic"
-              size="md"
             />
           </div>
         </div>
@@ -512,6 +511,22 @@ const AgentsMonitoring = () => {
             <StatCard label="Creation-to-deployment velocity" value="1.3 days (-78%)" baseline="6 days" />
           </div>
         </div>
+      ),
+    },
+    {
+      title: "Reflections & Learnings",
+      content: (
+        <ul className="list-disc list-inside text-muted-foreground leading-relaxed space-y-3 ml-2 marker:text-foreground">
+          <li>
+            <strong className="text-foreground">Visibility built confidence to deploy.</strong> Exposing agent performance and cost upfront gave users the trust they needed to move agents from build into production.
+          </li>
+          <li>
+            <strong className="text-foreground">A unified lifecycle made the complexity navigable.</strong> Linking design artifacts, deployed runs, and feedback into one space gave users the overview they were missing.
+          </li>
+          <li>
+            <strong className="text-foreground">Debugging is about reducing noise.</strong> Timeline, filtering, search, and annotations worked because they helped users isolate the moment that mattered.
+          </li>
+        </ul>
       ),
     },
   ];

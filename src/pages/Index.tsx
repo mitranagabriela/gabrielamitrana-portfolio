@@ -1,13 +1,42 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { ArrowUpRight, Clock, PenTool, Code2, ScanEye, Heart, Handshake } from "lucide-react";
 import { ease, durations } from "@/lib/motion";
+import { caseStudies } from "@/data/caseStudies";
 
 const Index = () => {
-  const stats = [
-    { value: "50+", label: "Projects Completed" },
-    { value: "75+", label: "Stakeholders Involved" },
-    { value: "5+",  label: "Years Experience" },
+  const strengths = [
+    {
+      icon: Clock,
+      title: "5+ Years of Experience",
+      description: "My background spans enterprise platforms, AI-native products, and complex data-driven tools at scale.",
+    },
+    {
+      icon: PenTool,
+      title: "Proficient in UX & UI Design",
+      description: "I apply design thinking principles to craft intuitive, user-centered solutions that align with business objectives.",
+    },
+    {
+      icon: Code2,
+      title: "Interactive Prototyping with AI",
+      description: "I use coding agents to build interactive prototypes that validate ideas faster and communicate intent clearly to engineers.",
+    },
+    {
+      icon: ScanEye,
+      title: "Master at Visual QA",
+      description: "I catch subtle details others often miss and clearly communicate them to engineers via Jira or Slack.",
+    },
+    {
+      icon: Heart,
+      title: "Humble & Purposeful Mindset",
+      description: "I value feedback, collaboration, and continuous learning to create impactful and user-centered solutions.",
+    },
+    {
+      icon: Handshake,
+      title: "Effective Collaborator",
+      description: "I've successfully worked with product, engineering, data science, and marketing to launch products.",
+    },
   ];
 
   const heroContainer = {
@@ -74,30 +103,70 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats strip */}
-      <section className="border-y border-border">
-        <div className="container-editorial py-section-sm">
-          <dl className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-border">
-            {stats.map((stat) => (
-              <div key={stat.label} className="flex flex-col items-center text-center px-6 py-6 sm:py-2">
-                <dt className="text-meta uppercase tracking-wider text-muted-foreground order-2 mt-2">
-                  {stat.label}
-                </dt>
-                <dd className="text-h2 order-1">{stat.value}</dd>
-              </div>
+      {/* Selected Work */}
+      <section className="py-section border-t border-border">
+        <div className="container-editorial">
+          <div className="mb-12">
+            <span className="block text-label uppercase text-muted-foreground mb-4">Selected Work</span>
+            <h2 className="text-h2">Recent case studies</h2>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {caseStudies.map((project) => (
+              <Link
+                key={project.caseStudyPath}
+                to={project.caseStudyPath}
+                className="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 rounded-[var(--radius-image)]"
+              >
+                <div className="overflow-hidden rounded-[var(--radius-image)] bg-muted aspect-[16/10] border border-border">
+                  <img
+                    src={project.image}
+                    alt={`${project.title} preview`}
+                    className="w-full h-full object-cover transition-transform group-hover:scale-[1.02]"
+                    style={{ transitionDuration: "900ms", transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)" }}
+                  />
+                </div>
+                <div className="mt-5 flex items-center justify-between text-meta uppercase tracking-wider text-muted-foreground">
+                  <span>{project.tags[0]}</span>
+                  <span>{project.year}</span>
+                </div>
+                <h3 className="text-h3 mt-3 transition-colors duration-300 group-hover:text-primary">
+                  {project.title}
+                </h3>
+                <p className="mt-3 text-muted-foreground leading-relaxed">
+                  {project.description}
+                </p>
+                <div className="mt-5 flex items-center gap-2 text-meta uppercase tracking-wider text-foreground">
+                  View Case Study
+                  <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </div>
+              </Link>
             ))}
-          </dl>
+          </div>
         </div>
       </section>
 
-      {/* About */}
-      <section className="py-section">
-        <div className="container-reading">
-          <span className="block text-label uppercase text-muted-foreground mb-6">About</span>
-          <h2 className="text-h2 mb-8">A curious, outdoor-leaning designer.</h2>
-          <p className="text-body-lg text-muted-foreground leading-relaxed">
-            When I'm not designing, I'm usually out photographing or simply enjoying the outdoors. I'm curious by nature and always seeking new perspectives, a mindset that deeply influences my design work.
-          </p>
+      {/* My Key Strengths */}
+      <section className="py-section bg-background border-t border-border">
+        <div className="container-editorial">
+          <h2 className="text-h2 text-center mb-16">My key strengths</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {strengths.map((strength) => {
+              const Icon = strength.icon;
+              return (
+                <div
+                  key={strength.title}
+                  className="flex items-start gap-5 rounded-2xl bg-muted/50 p-6"
+                >
+                  <Icon className="h-8 w-8 shrink-0 text-primary mt-1" strokeWidth={1.5} aria-hidden />
+                  <div>
+                    <h3 className="text-foreground font-semibold leading-snug">{strength.title}</h3>
+                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{strength.description}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
     </div>
