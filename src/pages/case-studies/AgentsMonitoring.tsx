@@ -399,6 +399,15 @@ const AgentsMonitoring = () => {
               </video>
             </div>
           </div>
+
+          <div className="mt-16 md:mt-24">
+            <FullBleedBanner
+              label="USER QUOTE"
+              headline={"“We need to see AI units consumption and overall cost upfront.”"}
+              headlineClassName="italic"
+              size="md"
+            />
+          </div>
         </div>
       ),
     },

@@ -3,6 +3,7 @@ interface FullBleedBannerProps {
   headline: string;
   bullets?: string[];
   size?: "sm" | "md";
+  headlineClassName?: string;
 }
 
 export const FullBleedBanner = ({
@@ -10,6 +11,7 @@ export const FullBleedBanner = ({
   headline,
   bullets,
   size = "sm",
+  headlineClassName,
 }: FullBleedBannerProps) => {
   const isSmall = size === "sm";
 
@@ -23,11 +25,11 @@ export const FullBleedBanner = ({
             </span>
           </div>
           <p
-            className={
+            className={`${
               isSmall
                 ? "mt-4 text-body-lg !font-normal leading-snug tracking-tight text-foreground md:text-h4"
                 : "mt-6 text-h4 !font-normal leading-snug tracking-tight text-foreground md:text-h3"
-            }
+            } ${headlineClassName ?? ""}`}
           >
             {headline}
           </p>

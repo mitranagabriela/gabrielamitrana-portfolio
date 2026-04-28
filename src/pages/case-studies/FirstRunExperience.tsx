@@ -156,6 +156,11 @@ const FirstRunExperience = () => {
               ))}
             </div>
           </ShowcaseFrame>
+          <FullBleedBanner
+            label="USER QUOTE"
+            headline='"I prefer making tweaks to the template directly on the workflow itself"'
+            headlineClassName="italic"
+          />
           <p className="text-muted-foreground leading-relaxed">
             As a result, I adopted a minimal design that only showcases the essential information. Advanced configuration is handled behind the scenes.
           </p>
