@@ -105,7 +105,7 @@ const RevampDataService = () => {
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            Given limited engineering bandwidth, I worked with the PMs to define quick wins — changes that required low dev effort but delivered noticeable UX improvements. These changes were shipped in the first few sprints and immediately improved the overall look and feel of the product.
+            Given limited engineering bandwidth, I worked with the PMs to define quick wins: changes that required low dev effort but delivered noticeable UX improvements. These changes were shipped in the first few sprints and immediately improved the overall look and feel of the product.
           </p>
           <div className="w-full mt-8">
             <img src={quickFixesImage} alt="Quick fixes and UI improvements showing before and after states of the data entities interface" className="w-full rounded-lg" />
@@ -125,7 +125,7 @@ const RevampDataService = () => {
               The PM proposed an alternative that split permissions into two layers:
               <ul className="list-disc pl-6 mb-2">
                 <li>Standard CRUD checkboxes</li>
-                <li>A separate dropdown for record visibility (Private, Public read-only, Public read-write)</li>
+                <li>A separate dropdown for data visibility (Private, Public read-only, Public read-write)</li>
               </ul>
               In this model, users had to mentally combine the checkboxes with the dropdown to figure out what a role could actually do.
          

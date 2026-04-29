@@ -130,10 +130,11 @@ const FirstRunExperience = () => {
       title: "Hiding Complexity",
       content: (
         <div className="space-y-6">
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            To validate the right level of configuration, I did an A/B testing with 10 of our users: <strong className="text-foreground">Design A</strong>, which exposed all configuration fields upfront, and <strong className="text-foreground">Design B</strong>, which showed only the essential app connections and hid advanced configuration behind the scenes.
+          </p>
           <p className="text-muted-foreground leading-relaxed">
-            To validate the right level of configuration, I compared two designs with users: <strong className="text-foreground">Design A</strong>, which exposed all configuration fields upfront, and <strong className="text-foreground">Design B</strong>, which showed only the essential app connections and hid advanced configuration behind the scenes. 
             Users preferred a minimal configuration and favored seeing how the automation works directly on the canvas. They also valued clear and concise titles and descriptions that accurately conveyed each template's purpose.
-
           </p>
           <ShowcaseFrame className="mt-10">
             <div className="grid gap-6 md:grid-cols-2 md:gap-8">
@@ -158,7 +159,7 @@ const FirstRunExperience = () => {
           </ShowcaseFrame>
           <FullBleedBanner
             label="USER QUOTE"
-            headline='"I prefer making tweaks to the template directly on the workflow itself"'
+            headline='"I prefer making tweaks to the template directly on the workflow itself."'
             headlineClassName="italic"
           />
           <p className="text-muted-foreground leading-relaxed">
