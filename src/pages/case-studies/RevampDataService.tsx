@@ -138,7 +138,7 @@ const RevampDataService = () => {
             </figure>
           </div>
           <p className="text-muted-foreground leading-relaxed mt-8">
-            I advocated for my approach because permission systems are read far more often than they're written, and often by people who didn't configure them. Showing what a role can actually do at a glance saves time on the everyday review and audit tasks admins often deal with.
+            I advocated for my approach, and together with the PM we landed on it as the right direction. Permission systems are read far more often than they're written, and often by people who didn't configure them, so showing what a role can actually do at a glance saves time on the everyday review and audit tasks admins deal with.
           </p>
           <div className="h-8" aria-hidden="true" />
           <div>

@@ -373,7 +373,7 @@ const AgentsMonitoring = () => {
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            To quickly validate the new information architecture, I built an interactive prototype using Figma Make and tested it with 10 of our internal developers and AI engineers who design and deploy agents daily.
+            To quickly validate the direction, I built an interactive prototype using Figma Make and tested it with 9 of our internal developers and AI engineers who design and deploy agents daily.
             These sessions helped validate our assumptions and uncover insights about how teams monitor and debug agents in real-world scenarios.
           </p>
           <div className="mt-8">
@@ -415,8 +415,10 @@ const AgentsMonitoring = () => {
       content: (
         <div className="space-y-4">
           <p className="text-muted-foreground leading-relaxed">
-            With the insights validated, I focused on designing the runtime monitoring experience. 
-            One of the main challenges was organizing a large volume of monitoring data while keeping the interface easy to scan. I focused on structuring the information in a clear way, while still highlighting critical signals such as errors and degraded agent health.
+            With the insights validated, I focused on designing the runtime monitoring experience. One of the main challenges was organizing a large volume of monitoring data while keeping the interface easy to scan.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            From iteration to iteration, I worked on adding more structure to the layout while still highlighting critical signals such as errors and degraded agent health. I ultimately settled on a two-column layout with clear headings, topped by a metrics row that surfaces key indicators at a glance alongside their trends over time.
           </p>
 
           <ShowcaseFrame className="mt-10">

@@ -103,38 +103,14 @@ const FirstRunExperience = () => {
       ),
     },
     {
-      title: "Profiling & Walkthrough Guide",
-      content: (
-        <div className="space-y-6">
-          <p className="text-muted-foreground leading-relaxed">
-            To provide a tailored experience, I needed a way to recommend templates suited to users' specific needs. I introduced a profiling mechanism that asks users about their department and the applications they use in their daily routine. This allowed us to offer more relevant and useful templates, enhancing the overall user experience.
-          </p>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="w-full">
-              <img src="/images/fre-department-selection.png" alt="Department selection screen for UiPath Studio onboarding with options like Marketing, HR & Legal, Product & Design, Engineering, and Finance" className="w-full rounded-lg" />
-            </div>
-            <div className="w-full">
-              <img src="/images/fre-app-selection.png" alt="Get started with UiPath Studio screen showing application selection interface with various apps like Google Sheets, Excel, Gmail, Outlook, and others" className="w-full rounded-lg" />
-            </div>
-          </div>
-          <p className="text-muted-foreground leading-relaxed">
-            I also introduced a guided experience to teach first-time users about the automation building process, providing coachmarks and celebrating their milestones (such as publishing the first automation).
-          </p>
-          <div className="w-full">
-            <img src="/images/fre-guided-experience.png" alt="UiPath Studio guided experience showing step-by-step automation building process with modal dialogs and configuration screens" className="w-full rounded-lg" />
-          </div>
-        </div>
-      ),
-    },
-    {
       title: "Hiding Complexity",
       content: (
         <div className="space-y-6">
           <p className="text-muted-foreground leading-relaxed mb-4">
-            To validate the right level of configuration, I did an A/B testing with 10 of our users: <strong className="text-foreground">Design A</strong>, which exposed all configuration fields upfront, and <strong className="text-foreground">Design B</strong>, which showed only the essential app connections and hid advanced configuration behind the scenes.
+            To validate the right level of configuration, I did an A/B testing with 10 of our users comparing <strong className="text-foreground">Design A</strong>, which exposed all configuration fields upfront, against <strong className="text-foreground">Design B</strong>, which showed only the essential app connections and hid advanced configuration behind the scenes.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Users preferred a minimal configuration and favored seeing how the automation works directly on the canvas. They also valued clear and concise titles and descriptions that accurately conveyed each template's purpose.
+            8 out of 10 participants preferred a minimal configuration and favored seeing how the automation works directly on the canvas. They also valued clear and concise titles and descriptions that accurately conveyed each template's purpose.
           </p>
           <ShowcaseFrame className="mt-10">
             <div className="grid gap-6 md:grid-cols-2 md:gap-8">
@@ -165,6 +141,30 @@ const FirstRunExperience = () => {
           <p className="text-muted-foreground leading-relaxed">
             As a result, I adopted a minimal design that only showcases the essential information. Advanced configuration is handled behind the scenes.
           </p>
+        </div>
+      ),
+    },
+    {
+      title: "Profiling & Walkthrough Guide",
+      content: (
+        <div className="space-y-6">
+          <p className="text-muted-foreground leading-relaxed">
+            To provide a tailored experience, I needed a way to recommend templates suited to users' specific needs. I introduced a profiling mechanism that asks users about their department and the applications they use in their daily routine. This allowed us to offer more relevant and useful templates, enhancing the overall user experience.
+          </p>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="w-full">
+              <img src="/images/fre-department-selection.png" alt="Department selection screen for UiPath Studio onboarding with options like Marketing, HR & Legal, Product & Design, Engineering, and Finance" className="w-full rounded-lg" />
+            </div>
+            <div className="w-full">
+              <img src="/images/fre-app-selection.png" alt="Get started with UiPath Studio screen showing application selection interface with various apps like Google Sheets, Excel, Gmail, Outlook, and others" className="w-full rounded-lg" />
+            </div>
+          </div>
+          <p className="text-muted-foreground leading-relaxed">
+            I also introduced a guided experience to teach first-time users about the automation building process, providing coachmarks and celebrating their milestones (such as publishing the first automation).
+          </p>
+          <div className="w-full">
+            <img src="/images/fre-guided-experience.png" alt="UiPath Studio guided experience showing step-by-step automation building process with modal dialogs and configuration screens" className="w-full rounded-lg" />
+          </div>
         </div>
       ),
     },
